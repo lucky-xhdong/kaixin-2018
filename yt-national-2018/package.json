@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp.spritesmith": "^6.9.0",
+    "open": "^0.0.5"
+  }
+}

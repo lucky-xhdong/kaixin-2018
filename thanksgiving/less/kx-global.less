@@ -1,0 +1,407 @@
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+ul {
+  .mar(0);
+  .pad(0);
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+/***************************margin start****************************/
+@mar0auto: 0 auto;
+.marxauto(@x) {
+  margin: @x auto;
+}
+
+.mar(@x) {
+  margin: @x;
+}
+
+.marI(@x) {
+  margin: @x !important;
+}
+
+.mar-hororver(@x, @y) {
+  margin: @arguments;
+}
+
+.mar-hororverI(@x, @y) {
+  margin: @arguments !important;
+}
+
+.mar-t(@x) {
+  margin-top: @x;
+}
+
+.mar-tI(@x) {
+  margin-top: @x !important;
+}
+
+.mar-l(@x) {
+  margin-left: @x;
+}
+
+.mar-lI(@x) {
+  margin-left: @x !important;
+}
+
+.mar-r(@x) {
+  margin-right: @x;
+}
+
+.mar-rI(@x) {
+  margin-right: @x !important;
+}
+
+.mar-b(@x) {
+  margin-bottom: @x;
+}
+
+.mar-bI(@x) {
+  margin-bottom: @x !important;
+}
+
+.mar-all(@t,@r,@b,@l) {
+  margin: @arguments;
+}
+
+.mar-allI(@t,@r,@b,@l) {
+  margin: @arguments !important;
+}
+
+/***************************margin end******************************/
+/**************************padding start****************************/
+.pad(@x) {
+  padding: @x;
+}
+
+.padI(@x) {
+  padding: @x !important;
+}
+
+.pad-hororver(@x, @y) {
+  padding: @arguments;
+}
+
+.pad-hororverI(@x, @y) {
+  padding: @arguments !important;
+}
+
+.pad-t(@x) {
+  padding-top: @x;
+}
+
+.pad-tI(@x) {
+  padding-top: @x !important;
+}
+
+.pad-l(@x) {
+  padding-left: @x;
+}
+
+.pad-lI(@x) {
+  padding-left: @x !important;
+}
+
+.pad-r(@x) {
+  padding-right: @x;
+}
+
+.pad-rI(@x) {
+  padding-right: @x !important;
+}
+
+.pad-b(@x) {
+  padding-bottom: @x;
+}
+
+.pad-bI(@x) {
+  padding-bottom: @x !important;
+}
+
+.pad-all(@t,@r,@b,@l) {
+  padding: @arguments;
+}
+
+.pad-allI(@t,@r,@b,@l) {
+  padding: @arguments !important;
+}
+
+/**************************padding end******************************/
+
+/***************************f-...浮动 start**************************/
+.float(@x) {
+  float: @x;
+}
+
+.floatI(@x) {
+  float: @x !important;
+}
+
+/**************************f-...浮动 end*****************************/
+/**********************dis-...元素显示方式 start**********************/
+.display(@x) {
+  display: @x;
+  *display: @x;
+  zoom: 1;
+}
+
+.displayI(@x) {
+  display: @x !important;
+}
+
+/***********************dis-...元素显示方式 end***********************/
+/******************ver-align-...元素对齐方式 start********************/
+.ver-align(@x) {
+  vertical-align: @x;
+}
+
+.ver-alignI(@x) {
+  vertical-align: @x !important;
+}
+
+/******************ver-align-...元素对齐方式 end*********************/
+/*******************font-size-...字体大小 start**********************/
+.font-size(@x) {
+  font-size: @x;
+}
+
+.font-sizeI(@x) {
+  font-size: @x !important;
+}
+
+/*******************font-size-...字体大小 end***********************/
+/*************************text-...对齐 start************************/
+.text-align(@x) {
+  text-align: @x;
+}
+
+.text-alignI(@x) {
+  text-align: @x !important;
+}
+
+.text-indent(@x) {
+  text-indent: @x;
+}
+
+.text-indentI(@x) {
+  text-indent: @x !important;
+}
+
+/************************text-...对齐 end***************************/
+/*******************text-...文字省略/换行 start**********************/
+.white-space(@x) {
+  white-space: @x;
+}
+
+.white-spaceI(@x) {
+  white-space: @x !important;
+}
+
+.word-bread(@x) {
+  word-break: @x;
+}
+
+.word-breadI(@x) {
+  word-break: @x !important;
+}
+
+.word-wrap(@x) {
+  word-wrap: @x;
+}
+
+.word-wrapI(@x) {
+  word-wrap: @x !important;
+}
+
+.text-nowrap() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.text-break() {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+/******************text-...文字省略/换行 end*************************/
+/******************line-height-...仅行高 start**********************/
+.line-height(@x) {
+  line-height: @x;
+}
+
+.line-heightI(@x) {
+  line-height: @x !important;
+}
+
+.hei-over() {
+  height: auto;
+  overflow: hidden;
+}
+
+/******************line-height-...仅行高 end************************/
+/******************line-hh-...元素高度+行高 start********************/
+/*******************line-hh-...元素高度+行高 end*********************/
+/**********************color-...字体颜色 start**********************/
+.color(@x) {
+  color: @x;
+}
+
+.colorI(@x) {
+  color: @x !important;
+}
+
+/*********************color-...字体颜色 end*************************/
+/********************bg-color-...背景色 start***********************/
+.bg-color(@x) {
+  background-color: @x;
+}
+
+.bg-colorI(@x) {
+  background-color: @x !important;
+}
+
+/********************bg-color-...背景色 end************************/
+/***********************bor-...边框 start**************************/
+/***********************bor-...边框 end****************************/
+/*****************bor-radius-...圆角 start*************************/
+.border-radius(@x) {
+  border-radius: @x;
+  -moz-border-radius: @x;
+  -webkit-border-radius: @x;
+}
+
+.border-radiusI(@x) {
+  border-radius: @x !important;
+  -moz-border-radius: @x !important;
+  -webkit-border-radius: @x !important;
+}
+
+.border-radius-all(@t,@r,@b,@l) {
+  border-radius: @arguments;
+  -moz-border-radius: @arguments;
+  -webkit-border-radius: @arguments;
+}
+
+.border-radiusI-all(@t,@r,@b,@l) {
+  border-radius: @arguments !important;
+  -moz-border-radius: @arguments !important;
+  -webkit-border-radius: @arguments !important;
+}
+
+/*****************bor-radius-...圆角 end***************************/
+/*******************box-sh-...阴影 start***************************/
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow: @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+
+.text-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-text-shadow: @style @c;
+  text-shadow: @style @c;
+}
+
+.text-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .text-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+
+/*******************box-sh-...阴影 end*****************************/
+/*********************pt-...定位 start*****************************/
+.position(@x) {
+  position: @x;
+}
+
+.positionI(@x) {
+  position: @x !important;
+}
+
+@top: 0px;
+@left: 0px;
+@right: 0px;
+@bottom: 0px;
+@per-top: 50%;
+@per-left: 50%;
+.pos-value-a() {
+  top: @top;
+  left: @left;
+  right: @right;
+  bottom: @bottom;
+}
+
+.z-index(@x) {
+  z-index: @x;
+}
+
+.z-indexI(@x) {
+  z-index: @x !important;
+}
+
+/*********************pt-...定位 end*******************************/
+
+/**************************背景图 start*****************************/
+
+/**************************背景图 end*******************************/
+.width(@x) {
+  width: @x;
+}
+
+.widthI(@x) {
+  width: @x !important;
+}
+
+.maxwidth(@x) {
+  max-width: @x;
+}
+
+.maxwidthI(@x) {
+  max-width: @x !important;
+}
+
+.minwidth(@x) {
+  min-width: @x;
+}
+
+.minwidthI(@x) {
+  min-width: @x !important;
+}
+
+.height (@x) {
+  height: @x;
+}
+
+.heightI (@x) {
+  height: @x !important;
+}
+
+.maxheight(@x) {
+  max-height: @x;
+}
+
+.maxheightI(@x) {
+  max-height: @x !important;
+}
+
+.minheight(@x) {
+  min-height: @x;
+}
+
+.minheightI(@x) {
+  min-height: @x !important;
+}
+
+.cursor(@x) {
+  cursor: @x;
+}

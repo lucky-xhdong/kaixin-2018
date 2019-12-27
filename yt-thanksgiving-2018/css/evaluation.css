@@ -1,0 +1,599 @@
+body {
+  margin: 0;
+}
+@media (min-width: 1000px) {
+  .evaluation-container {
+    padding: 40px 50px;
+  }
+  .evaluation-container .header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation-container .header .icon-logo,
+  .evaluation-container .header .txt {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .evaluation-container .header .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+  }
+  .evaluation-container .header .txt:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    left: 0;
+    top: 0;
+  }
+  .evaluation-container .baseinfo {
+    margin: 100px 0 40px;
+    padding: 25px 50px 25px;
+    border: 2px dotted #979797;
+    display: flex;
+    position: relative;
+  }
+  .evaluation-container .baseinfo:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #333333;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -180px;
+  }
+  .evaluation-container .baseinfo .baseinfo__left,
+  .evaluation-container .baseinfo .baseinfo__right {
+    flex: 1;
+  }
+  .evaluation-container .baseinfo .baseinfo__left {
+    border-right: 1px solid #979797;
+  }
+  .evaluation-container .baseinfo .baseinfo__left .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__left .txt:before {
+    content: attr(data-before);
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    line-height: 32px;
+    min-width: 90px;
+  }
+  .evaluation-container .baseinfo .baseinfo__right {
+    padding: 15px 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score,
+  .evaluation-container .baseinfo .baseinfo__right .txt-time {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score {
+    background: #17b6fe;
+    border: 1px solid #17b6fe;
+    border-radius: 2px;
+    width: 215px;
+    height: 38px;
+    font-family: PingFangSC-Regular;
+    line-height: 38px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score:before {
+    content: attr(data-before);
+  }
+  .evaluation-container .baseinfo .baseinfo__right .txt-time {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #999999;
+  }
+  .evaluation-container .comprehensive-analysis:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+    margin-bottom: 30px;
+  }
+  .evaluation-container .comprehensive-analysis .comment {
+    padding: 0 50px;
+  }
+  .evaluation-container .comprehensive-analysis .comment .txt {
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 32px;
+    text-align: left;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info {
+    padding: 0 50px;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info .txt:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: #f0f;
+    position: absolute;
+    left: 0;
+  }
+  .evaluation-container .achievement-analysis:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+    margin-bottom: 39px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper {
+    margin: 0 50px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    margin-bottom: 34px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table {
+    width: 100%;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody {
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th {
+    background-color: #e8e7e7;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    text-align: center;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module {
+    color: #333333;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    color: #666;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A1 {
+    background-color: #f44336;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.first,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.third {
+    background-color: #ccc;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.second {
+    background-color: #e8e7e7;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td {
+    border-bottom: 1px dashed #eee;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    display: block;
+    font-size: 0;
+    height: 16px;
+    background-color: #f00;
+    margin: 12px 0;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1 {
+    background-color: #f44336;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation-container .achievement-analysis .analysis-result {
+    padding: 20px 50px;
+  }
+  .evaluation-container .achievement-analysis .analysis-result .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation-container .training-suggestions:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+  }
+  .evaluation-container .training-suggestions .txt-wrapper {
+    padding: 30px 50px;
+  }
+  .evaluation-container .training-suggestions .txt-wrapper .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .evaluation-container {
+    padding: 5px 10px;
+  }
+  .evaluation-container .header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation-container .header .icon-logo,
+  .evaluation-container .header .txt {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .evaluation-container .header .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+  }
+  .evaluation-container .header .txt:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    left: 0;
+    top: 0;
+  }
+  .evaluation-container .baseinfo {
+    margin: 70px 0 20px;
+    padding: 10px 15px;
+    border: 2px dotted #979797;
+    position: relative;
+  }
+  .evaluation-container .baseinfo:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #333333;
+    position: absolute;
+    top: -60px;
+    left: 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__left {
+    border-bottom: 1px solid #979797;
+    padding-bottom: 10px;
+  }
+  .evaluation-container .baseinfo .baseinfo__left .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__left .txt:before {
+    content: attr(data-before);
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    line-height: 32px;
+    min-width: 90px;
+  }
+  .evaluation-container .baseinfo .baseinfo__right {
+    padding: 15px 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score,
+  .evaluation-container .baseinfo .baseinfo__right .txt-time {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score {
+    background: #17b6fe;
+    border: 1px solid #17b6fe;
+    border-radius: 2px;
+    width: 215px;
+    height: 38px;
+    font-family: PingFangSC-Regular;
+    line-height: 38px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score:before {
+    content: attr(data-before);
+  }
+  .evaluation-container .baseinfo .baseinfo__right .txt-time {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #999999;
+  }
+  .evaluation-container .comprehensive-analysis:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+  }
+  .evaluation-container .comprehensive-analysis .comment {
+    padding: 0 10px;
+  }
+  .evaluation-container .comprehensive-analysis .comment .txt {
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 32px;
+    text-align: left;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info {
+    padding: 0 10px;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info .txt:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: #f0f;
+    position: absolute;
+    left: 0;
+  }
+  .evaluation-container .achievement-analysis:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    margin-bottom: 34px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table {
+    width: 100%;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody {
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th {
+    background-color: #e8e7e7;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    text-align: center;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module {
+    color: #333333;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    color: #666;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A1 {
+    background-color: #f44336;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.first,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.third {
+    background-color: #ccc;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.second {
+    background-color: #e8e7e7;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td {
+    border-bottom: 1px dashed #eee;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    display: block;
+    font-size: 0;
+    height: 16px;
+    background-color: #f00;
+    margin: 12px 0;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1 {
+    background-color: #f44336;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation-container .achievement-analysis .analysis-result {
+    padding: 10px 15px;
+  }
+  .evaluation-container .achievement-analysis .analysis-result .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation-container .training-suggestions:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+  }
+  .evaluation-container .training-suggestions .txt-wrapper {
+    padding: 10px 15px;
+  }
+  .evaluation-container .training-suggestions .txt-wrapper .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+}

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/jquery.smoove.js"></script><!--支持页面动画效果插件-->
+    <script src="js/jquery.marquee.js"></script>
+    <script src="js/gameplat-monster.js"></script>
+    <script src="js/gameplat-shuffle.js"></script>
+    <script src="js/gameplat-spring.js"></script>
+    <link rel="stylesheet" href="css/gameplat_global_en.css"><!--飞豆 公共头尾样式-->
+    <link rel="stylesheet" href="css/gameplat-spring2018.css">
+    <script src="js/respond.src.js"></script><!--支持IE8使用媒体查询-->
+    <script src="js/rem.js"></script><!--支持响应式适配使用-->
+</head>
+<body>
+<!--公共头 start-->
+<div class="topBar">
+    <div class="inner">
+        <h1 class="logoC"><div class="kxLogo"><a href="http://www.heyshell.com" target="_blank">Heyshell</a></div></h1>
+        <!-- BEGIN logout_menu -->
+        <div class="fr">
+            <a class="facebookLogin dev_fblogin" href="javascript:void(0);" onclick="return false;" data-goto="http://www.heyshell.com/award/tg15/">Login with Facebook</a>
+            <ul class="funList">
+                <li><a href="/login.php?url=http%3A%2F%2Fwww.heyshell.com%2Faward%2Ftg15%2F">Login</a></li>
+                <li><a href="/reg.php">Sign up</a></li>
+            </ul>
+        </div>
+        <!-- END logout_menu -->
+    </div>
+</div>
+<!--公共头 end-->
+<!--礼品箱 start-->
+<div class="gift-wrapper">
+    <a href="javascript:;" class="btn-gift-box">礼品箱</a>
+</div>
+<!--礼品箱 end-->
+<div class="spring-wrapper">
+    <div class="spring-container">
+        <!-- header start -->
+        <header class="spring-header">
+            <a href="javascript:;" target="_blank" class="logo">logo</a>
+            <ul>
+                <li><a href="javascript:;" target="_blank">forum</a></li>
+                <li><a href="javascript:;" target="_blank">home</a></li>
+                <li><a href="javascript:;" target="_blank">FB</a></li>
+                <li><a href="javascript:;" target="_blank">download</a></li>
+            </ul>
+        </header>
+        <!-- header end -->
+        <!--祝福语 start-->
+        <div class="spring-wishes" id="spring-wishes" data-before="Best Wishes">
+            <div class="smoove" data-move-x="0" data-move-y="100px">
+                <div class="wish-lists">
+                    <div class="wish-lists-marquee">
+                        <ul>
+                            <li data-before="AAAAAAAAAA:"><span>hello hello hello hello hello hello hello hello hello hello </span></li>
+                            <li data-before="BBBBBBBBBB:"><span>hello hello hello hello</span></li>
+                            <li data-before="DDDDDDDDDD:"><span>hello hello hello hello hello hello hello hello hello hello </span></li>
+                            <li data-before="EEEEEEEEEE:"><span>hello hello hello</span></li>
+                            <li data-before="FFFFFFFFFF:"><span>hello hello hello hello</span></li>
+                            <li data-before="HHHHHHHHHH:"><span>hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wish-text">
+                    <p>hello hello hello hello hello hello hello hello hello hello hello</p>
+                </div>
+                <div class="wish-input">
+                    <div class="left">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="right">
+                        <button class="btn-send">send</button>
+                    </div>
+                </div>
+                <div class="rules">
+                    <ul>
+                        <li data-before="Time:"><p>Oct.30th –Nov.8th</p></li>
+                        <li data-before="Server:"><p>All Servers</p></li>
+                        <li data-before="Details:"><p>Everyday you have a chance to click the button below the pumpkin to claim rewards,which will be released in the form of the gift code. You will be surprised by your rewards that including resources and a candy.</p></li>
+                        <li data-before="Note:">
+                            <p>1. Everyone only has one chance to claim rewards in one day.</p>
+                            <p> 2. The resources in rewards can be claimed through gift code to exchange in game,while the candy will be directly counted and claim big rewards in event 3 as ticket.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--祝福语 end-->
+        <!--灯笼模块 start-->
+        <!-- 连续7天签到：
+        灯笼默认状态：lantern-normal
+        灯笼高亮状态：lantern-light
+        -->
+        <!-- 签到按钮状态：
+        已签到：btn-claim-gray
+        未签到：btn-claim-normal
+        登录后：btn-claim-light
+        -->
+        <div class="spring-lantern smoove" id="spring-lantern" data-move-x="0" data-move-y="100px" data-before="Click Me Everyday">
+            <div class="lantern-lists">
+                <ul>
+                    <li class="lantern-normal">
+                        <span class="date">Feb.15th</span>
+                        <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        <div class="pop-tips">
+                            <p>11111111</p>
+                            <p>11111111</p>
+                            <p>11111111</p>
+                        </div>
+                    </li>
+                    <li class="lantern-light">
+                        <span class="date">Feb.16th</span>
+                        <a href="javascript:;" class="btn-claim btn-claim-gray">claim</a>
+                        <div class="pop-tips">
+                            <p>11111111</p>
+                            <p>11111111</p>
+                            <p>11111111</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="date">Feb.17th</span>
+                        <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        <div class="pop-tips">
+                            <p>11111111</p>
+                            <p>11111111</p>
+                            <p>11111111</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="date">Feb.18th</span>
+                        <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        <div class="pop-tips">
+                            <p>11111111</p>
+                            <p>11111111</p>
+                            <p>11111111</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="date">Feb.19th</span>
+                        <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        <div class="pop-tips">
+                            <p>11111111</p>
+                            <p>11111111</p>
+                            <p>11111111</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="date">Feb.20th</span>
+                        <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        <div class="pop-tips">
+                            <p>11111111</p>
+                            <p>11111111</p>
+                            <p>11111111</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="date">Feb.21th</span>
+                        <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        <div class="pop-tips">
+                            <p>11111111</p>
+                            <p>11111111</p>
+                            <p>11111111</p>
+                        </div>
+                    </li>
+                    <!--open-redbag可点 open-redbag-gray不可点 opened-redbag领取过-->
+                    <li class="open-redbag">
+                        <a href="javascript:;" class="btn-open">open</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rules">
+                <ul>
+                    <li data-before="Time:"><p>Oct.30th –Nov.8th</p></li>
+                    <li data-before="Server:"><p>All Servers</p></li>
+                    <li data-before="Details:"><p>Everyday you have a chance to click the button below the pumpkin to claim rewards,which will be released in the form of the gift code. You will be surprised by your rewards that including resources and a candy.</p></li>
+                    <li data-before="Note:">
+                        <p>1. Everyone only has one chance to claim rewards in one day.</p>
+                        <p> 2. The resources in rewards can be claimed through gift code to exchange in game,while the candy will be directly counted and claim big rewards in event 3 as ticket.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--灯笼模块 end-->
+        <!--Quick Thinking start-->
+        <div class="spring-thinking smoove" id="spring-thinking" data-move-x="0" data-move-y="100px" data-before="Quick Thinking">
+            <div class="quick-thinking">
+                <ul>
+                    <li><a href="javascript:;"><img src="images/poker.png" alt="扑克牌"></a></li>
+                    <li><a href="javascript:;"><img src="images/poker.png" alt="扑克牌"></a></li>
+                    <li><a href="javascript:;"><img src="images/poker.png" alt="扑克牌"></a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <a href="javascript:;" class="btn-start">start</a>
+            </div>
+            <div class="rules">
+                <ul>
+                    <li data-before="Time:"><p>Oct.30th –Nov.8th</p></li>
+                    <li data-before="Server:"><p>All Servers</p></li>
+                    <li data-before="Details:"><p>Everyday you have a chance to click the button below the pumpkin to claim rewards,which will be released in the form of the gift code. You will be surprised by your rewards that including resources and a candy.</p></li>
+                    <li data-before="Note:">
+                        <p>1. Everyone only has one chance to claim rewards in one day.</p>
+                        <p>2. The resources in rewards can be claimed through gift code to exchange in game,while the candy will be directly counted and claim big rewards in event 3 as ticket.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Quick Thinking end-->
+        <!--年兽列表 start-->
+        <div class="spring-monster smoove" id="spring-monster" data-move-x="0" data-move-y="100px" data-before="Pop Monster Nian">
+            <div class="toolbar">
+                <a href="javascript:;" class="btn-start">start</a>
+                <span class="count" data-before="Numbers of wiping out Little Nian:">12345</span>
+            </div>
+            <div class="monster-lists">
+                <ul>
+                    <li data-before="01" data-after="Numbers of Nian：1-9">
+                        <div class="firecracker"><a href="javascript:;" class="text">Firecracker*1</a></div>
+                        <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                    </li>
+                    <li data-before="02" data-after="Numbers of Nian：10-49">
+                        <div class="gift"><a href="javascript:;" class="text">Lv.1 gift pack</a></div>
+                        <div class="firecracker"><a href="javascript:;" class="text">Firecracker*1</a></div>
+                        <a href="javascript:;" class="btn-claim btn-claim-light">claim</a>
+                    </li>
+                    <li data-before="03" data-after="Numbers of Nian：50-79">
+                        <div class="gift"><a href="javascript:;" class="text">Lv.2 gift pack</a></div>
+                        <div class="firecracker"><a href="javascript:;" class="text">Firecracker*1</a></div>
+                        <a href="javascript:;" class="btn-claim btn-claim-gray">claim</a>
+                    </li>
+                    <li data-before="04" data-after="Numbers of Nian：80">
+                        <div class="gift"><a href="javascript:;" class="text">Lv.3 gift pack</a></div>
+                        <div class="firecracker"><a href="javascript:;" class="text">Firecracker*1</a></div>
+                        <a href="javascript:;" class="btn-claim btn-claim-gray">claim</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rules">
+                <ul>
+                    <li data-before="Time:"><p>Oct.30th –Nov.8th</p></li>
+                    <li data-before="Server:"><p>All Servers</p></li>
+                    <li data-before="Details:"><p>Everyday you have a chance to click the button below the pumpkin to claim rewards,which will be released in the form of the gift code. You will be surprised by your rewards that including resources and a candy.</p></li>
+                    <li data-before="Note:">
+                        <p>1. Everyone only has one chance to claim rewards in one day.</p>
+                        <p>2. The resources in rewards can be claimed through gift code to exchange in game,while the candy will be directly counted and claim big rewards in event 3 as ticket.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--年兽列表 end-->
+        <!--攻击年兽 start-->
+        <div class="spring-attack smoove" id="spring-attack" data-move-x="0" data-move-y="100px" data-before="Collect Firecrackers to Attack Nian">
+            <div class="left">
+                <div class="figure-card">
+                    <a href="javascript:;">
+                        <img src="images/img-figure.png" alt="">
+                    </a>
+                </div>
+                <div class="count-wrapper">
+                    <div class="top">
+                        <span>Firecracker * <em>110</em></span>
+                    </div>
+                    <div class="bottom">
+                        <a href="javascript:;" class="left-decrease"><<</a>
+                        <input class="count" value="0"/>
+                        <a href="javascript:;" class="right-increase">>></a>
+                    </div>
+                </div>
+                <div class="monster-wrapper">
+                    <ul>
+                        <li><a href="javascript:;" class="btn-attack">attack</a></li>
+                        <li><a href="javascript:;" class="btn-attack">attack</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="health-point">
+                    <div class="ht-wrapper">
+                        <span style="height:10%" class="hp-percent">生命值</span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <li>
+                            <span class="hp-value">HP:10</span>
+                            <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        </li>
+                        <li>
+                            <span class="hp-value">HP:30</span>
+                            <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        </li>
+                        <li>
+                            <span class="hp-value">HP:50</span>
+                            <a href="javascript:;" class="btn-claim btn-claim-normal">claim</a>
+                        </li>
+                        <li>
+                            <span class="hp-value">HP:70</span>
+                            <a href="javascript:;" class="btn-claim btn-claim-gray">claim</a>
+                        </li>
+                        <li>
+                            <span class="hp-value">HP:80</span>
+                            <a href="javascript:;" class="btn-claim btn-claim-gray">claim</a>
+                        </li>
+                        <li>
+                            <span class="hp-value">HP:90</span>
+                            <a href="javascript:;" class="btn-claim btn-claim-gray">claim</a>
+                        </li>
+                        <li>
+                            <span class="hp-value">HP:100</span>
+                            <a href="javascript:;" class="btn-claim btn-claim-gray">claim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rules">
+                <ul>
+                    <li data-before="Time:"><p>Oct.30th –Nov.8th</p></li>
+                    <li data-before="Server:"><p>All Servers</p></li>
+                    <li data-before="Details:"><p>Everyday you have a chance to click the button below the pumpkin to claim rewards,which will be released in the form of the gift code. You will be surprised by your rewards that including resources and a candy.</p></li>
+                    <li data-before="Note:">
+                        <p>1. Everyone only has one chance to claim rewards in one day.</p>
+                        <p>2. The resources in rewards can be claimed through gift code to exchange in game,while the candy will be directly counted and claim big rewards in event 3 as ticket.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--攻击年兽 end-->
+    </div>
+</div>
+
+<!--公共尾 start-->
+<div class="footer cfix">
+    <div class="fl">Copyright © 2013 heyshell.com All Rights Reserved </div>
+</div>
+<!--公共尾 end-->
+<!-- 漂浮导航 start -->
+<div class="float-nav">
+    <ul>
+        <li><a href="#spring-wishes" class="anchor">Best Wishes</a></li>
+        <li><a href="#spring-lantern" class="anchor">Click Me Everyday</a></li>
+        <li><a href="#spring-thinking" class="anchor">Quick Thinking</a></li>
+        <li><a href="#spring-monster" class="anchor">Wiping out Little Nian</a></li>
+        <li><a href="#spring-attack" class="anchor">Attack Little Nian</a></li>
+        <li><a href="javascript:;" class="shareTofb"><em>+10</em>Share To FB</a></li>
+        <li><a href="javascript:;" class="gototop">TOP</a></li>
+    </ul>
+</div>
+<!-- 漂浮导航 end -->
+
+<!--弹框 start-->
+<!--1 获得礼品码和爆竹组合 start -->
+<div class="popup pop-combination">
+    <a href="javascript:;" class="close">&times;</a>
+    <div class="pop-body">
+        <p class="p1" data-before="Congratulations on getting" data-after="Here is your gift code:"> Gift*<span class="count-gift">1</span>+Firecracker*<span class="count-firecracker">1</span>!,</p>
+        <p class="p2" data-before="Your Code:">11111111</p>
+    </div>
+</div>
+<!--1 获得礼品码和爆竹组合 end -->
+<!--1.1 获得礼品码 start -->
+<div class="popup pop-giftcode">
+    <a href="javascript:;" class="close">&times;</a>
+    <div class="pop-body">
+        <p class="p1" data-before="Congratulations on getting" data-after="Here is your gift code:"> Gift*<span class="count-gift">1</span>!,</p>
+        <p class="p2" data-before="Your Code:">11111111</p>
+    </div>
+</div>
+<!--1.1 获得礼品码 end -->
+<!--1.2 获得爆竹 start -->
+<div class="popup pop-firetracker">
+    <a href="javascript:;" class="close">&times;</a>
+    <div class="pop-body">
+        <p class="p1" data-before="Congratulations on getting"> Firecracker*<span class="count-firecracker">1</span>!,</p>
+    </div>
+</div>
+<!--1.2 获得爆竹 end -->
+<!--2 答题 start -->
+<div class="popup pop-questions">
+    <a href="javascript:;" class="close">&times;</a>
+    <div class="pop-body">
+        <p class="p1" data-before="Quick Thinking Starts ">You can Get Amazing Gifts and Firecrackers Rewards If Answer Correctly!</p>
+        <div class="question-wrapper right" data-right="&radic;" data-wrong="&times;">
+            <h2>kdsljfldsjkdsljfldsjkdsljfldsjkdsljfldsjkdsljfldsj</h2>
+            <ul>
+                <li><a href="javascript:;" data-before="A.">ffffffffffffffffffffffffffffffffff</a></li>
+                <li><a href="javascript:;" data-before="B.">ffffffffffffffffffffffffffffffffff</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <a href="javascript:;" class="btn-ok">OK</a>
+        </div>
+    </div>
+</div>
+<!--2 答题 end -->
+<!--3 失败 start -->
+<div class="popup pop-fail">
+    <a href="javascript:;" class="close">&times;</a>
+    <div class="pop-body">
+        <p class="p1">Unfortunately!</p>
+        <p class="p2" data-before="You lose the Gift rewards!">But you still can get Firecracker* <span class="count">1</span>!</p>
+    </div>
+</div>
+<!--3 失败 end -->
+<!--4 成功 start-->
+<div class="popup pop-success">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <p class="p1" data-before="Congratulations!">You get amazing Gift*<span class="count">1</span></p>
+        <p class="p2">Firecracker*<span class="count">10</span></p>
+        <p class="p3" data-before="Your Code:">11111111</p>
+    </div>
+</div>
+<!--4 成功 end-->
+<!--5 攻击年兽 start-->
+<div class="popup pop-attack">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <p class="p1">Are you sure to consume<span class="count">2</span>firecrackers to attack the Monster Nian?</p>
+        <div class="btn-group">
+            <a href="javascript:;" class="btn-yes">yes</a>
+            <a href="javascript:;" class="btn-no">no</a>
+        </div>
+    </div>
+</div>
+<!--5 攻击年兽 end-->
+<!--6 礼品箱 start-->
+<div class="popup pop-giftbox">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <div class="gift-table">
+            <table>
+                <thead>
+                <tr>
+                    <th><span>日期</span></th>
+                    <th><span>奖励</span></th>
+                    <th><span>礼品码</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><span>2017.1.5</span></td>
+                    <td><span>奖励1</span></td>
+                    <td><span>1111111111111111111</span></td>
+                </tr>
+                <tr>
+                    <td><span>2017.1.5</span></td>
+                    <td><span>奖励1</span></td>
+                    <td><span>1111111111111111111</span></td>
+                </tr>
+                <tr>
+                    <td><span>2017.1.5</span></td>
+                    <td><span>奖励1</span></td>
+                    <td><span>1111111111111111111</span></td>
+                </tr>
+                <tr>
+                    <td><span>2017.1.5</span></td>
+                    <td><span>奖励1</span></td>
+                    <td><span>1111111111111111111</span></td>
+                </tr>
+                <tr>
+                    <td><span>2017.1.5</span></td>
+                    <td><span>奖励1</span></td>
+                    <td><span>1111111111111111111</span></td>
+                </tr>
+                <tr>
+                    <td><span>2017.1.5</span></td>
+                    <td><span>奖励1</span></td>
+                    <td><span>1111111111111111111</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--6 礼品箱 end-->
+<!--7 翻牌前提示 start-->
+<div class="popup pop-shuffle">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <p class="p1">Please click "start" button to start!</p>
+        <div class="btn-group">
+            <a href="javascript:;" class="btn-ok">ok</a>
+        </div>
+    </div>
+</div>
+<!--7 翻牌前提示 end-->
+<!--攻击年兽提示框 start-->
+<div class="pop-tip pop-tip-success">
+    <p>Congratulations,You Attacked Real Nian Successfully!</p>
+</div>
+<div class="pop-tip pop-tip-fail">
+    <p>Unfortunately, You Attacked His Shadow!</p>
+</div>
+<!--攻击年兽提示框 end-->
+<div class="mask"></div>
+<!-- 弹出框 end -->
+<!-- 弹层和年兽雨的遮罩 start-->
+<div class="monster-snow fn-hide"></div>
+<!-- 此处元素涌来气辅助作用 -->
+<div class="monster-extra fn-hide"></div>
+<!-- 此处是弹层和年兽雨的遮罩 end -->
+</body>
+</html>

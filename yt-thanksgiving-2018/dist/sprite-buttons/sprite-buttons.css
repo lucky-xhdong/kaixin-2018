@@ -1,0 +1,145 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-btn-claim-gray {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -53px;
+  width: 103px;
+  height: 31px;
+}
+.icon-btn-claim {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -149px;
+  width: 103px;
+  height: 31px;
+}
+.icon-btn-fb {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -117px;
+  width: 175px;
+  height: 31px;
+}
+.icon-btn-login {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -85px;
+  width: 173px;
+  height: 31px;
+}
+.icon-btn-signin {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px 0px;
+  width: 66px;
+  height: 25px;
+}
+.icon-btn-signined {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -26px;
+  width: 66px;
+  height: 26px;
+}
+.icon-click-hover {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -400px;
+  width: 175px;
+  height: 72px;
+}
+.icon-click {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -181px;
+  width: 175px;
+  height: 72px;
+}
+.icon-collect-hover {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -254px;
+  width: 175px;
+  height: 72px;
+}
+.icon-collect {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -911px;
+  width: 175px;
+  height: 72px;
+}
+.icon-draw-gray {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -1060px;
+  width: 196px;
+  height: 75px;
+}
+.icon-draw {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -984px;
+  width: 196px;
+  height: 75px;
+}
+.icon-login-gray {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -473px;
+  width: 175px;
+  height: 72px;
+}
+.icon-login-hover {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -546px;
+  width: 175px;
+  height: 72px;
+}
+.icon-login {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -619px;
+  width: 175px;
+  height: 72px;
+}
+.icon-scratch-hover {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -692px;
+  width: 175px;
+  height: 72px;
+}
+.icon-scratch {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -765px;
+  width: 175px;
+  height: 72px;
+}
+.icon-share-hover {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -838px;
+  width: 175px;
+  height: 72px;
+}
+.icon-share {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -327px;
+  width: 175px;
+  height: 72px;
+}
+.icon-start-gray {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -1136px;
+  width: 139px;
+  height: 138px;
+}
+.icon-start {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -1275px;
+  width: 139px;
+  height: 138px;
+}
+

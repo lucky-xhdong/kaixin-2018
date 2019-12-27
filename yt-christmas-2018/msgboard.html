@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" height="100%">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/jquery.smoove.js"></script><!--支持页面动画效果插件-->
+    <link rel="stylesheet" href="css/gameplat_global.css"><!--飞豆 公共头尾样式-->
+    <!--<link rel="stylesheet" href="css/gameplat-christmas-cn2017.css">-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/respond.src.js"></script><!--支持IE8使用媒体查询-->
+    <script src="js/rem.js"></script><!--支持响应式适配使用-->
+</head>
+<body>
+<div class="topBar">
+    <div class="inner">
+        <h1 class="logoC">
+            <div class="kxLogo"><a href="http://www.kaixin001.com" target="_blank">开心网</a></div>
+            <div class="line"></div>
+            <div class="fdLogo"><a href="/">飞豆网_开心网</a></div>
+        </h1>
+        <!-- BEGIN login_menu -->
+        <div class="fr">
+            <ul class="funList">
+                <li><a href="/">游戏首页</a></li>
+                <li><a href="/pay/" target="_blank">充值中心</a></li>
+                <li><a href="/bbs/" target="_blank">游戏论坛</a></li>
+                <!-- <li id="userCenter" class="userCenter"><a href="javascript:;">账号<i></i></a></li> -->
+                <li class="userCenter" id="userCenter">
+                    <a href="javascript:;">账号<i></i></a>
+                    <ul class="userCenterFun dn" id="userCenterFun">
+                        <li class="set"><a href="/set/"><i></i>设置中心</a></li>
+                        <li class="exit"><a href="/logout.php"><i></i>退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- END login_menu -->
+    </div>
+</div>
+<div class="christmas-cn2018">
+    <div class="christmas-container">
+        <div class="christmas-nav">
+            <div class="smoove" data-move-x="0" data-move-y="100px">
+                <ul>
+                    <li><a href="index.html">转盘大富翁</a></li>
+                    <li class="active"><a href="msgboard.html">国庆留言板</a></li>
+                    <li><a href="prize.html">连线赢大奖</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="christmas-main">
+            <div class="christmas-msgboard smoove" data-move-x="0" data-move-y="100px">
+                <div class="comment">
+                    <div class="select-lists">
+                        <select name="" id="1">
+                            <option value="请选择服务器">请选择服务器</option>
+                            <option value="请选择服务器">请选择服务器</option>
+                            <option value="请选择服务器">请选择服务器</option>
+                            <option value="请选择服务器">请选择服务器</option>
+                        </select>
+                        <select name="" id="2">
+                            <option value="请选择角色名">请选择角色名</option>
+                            <option value="请选择角色名">请选择角色名</option>
+                            <option value="请选择角色名">请选择角色名</option>
+                            <option value="请选择角色名">请选择角色名</option>
+                        </select>
+                    </div>
+                    <textarea name="content" id="content" cols="30" rows="10" placeholder="请您先登录再留言！" onblur="this.placeholder='请您先登录再留言！'" onfocus="this.placeholder=''"></textarea>
+                    <div class="toolbar">
+                        <div class="toolbar-left" data-before="验证码：">
+                            <input id="verify" name="verify" type="text">
+                            <a href="javascript:;"><img src="images/qrcode.jpg" alt="验证码"></a>
+                        </div>
+                        <div class="toolbar-right">
+                            <button data-event="clear_message" type="button" class="btn-clear-sm">清空内容</button>
+                            <button data-event="post_message" type="button" class="btn-publish-sm">发&nbsp;表</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-lists">
+                    <ul>
+                        <li>
+                            <div class="lists-left">
+                                <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                            </div>
+                            <div class="lists-right">
+                                <div class="msg">
+                                    <div class="msg-left">
+                                        <span>eedsa</span>
+                                        <span>2015年07月05日 14:47</span>
+                                    </div>
+                                    <div class="msg-right"><span>28楼</span></div>
+                                    <div class="clearfix"></div>
+                                    <div class="msg-bottom">
+                                        <span>希望降低典韦英雄副本难度</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lists-left">
+                                <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                            </div>
+                            <div class="lists-right">
+                                <div class="msg">
+                                    <div class="msg-left">
+                                        <span>eedsa</span>
+                                        <span>2015年07月05日 14:47</span>
+                                    </div>
+                                    <div class="msg-right"><span>28楼</span></div>
+                                    <div class="clearfix"></div>
+                                    <div class="msg-bottom">
+                                        <span>希望降低典韦英雄副本难度</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lists-left">
+                                <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                            </div>
+                            <div class="lists-right">
+                                <div class="msg">
+                                    <div class="msg-left">
+                                        <span>eedsa</span>
+                                        <span>2015年07月05日 14:47</span>
+                                    </div>
+                                    <div class="msg-right"><span>28楼</span></div>
+                                    <div class="clearfix"></div>
+                                    <div class="msg-bottom">
+                                        <span>希望降低典韦英雄副本难度</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="page">
+                        <a href="javascript:;">上一页</a>
+                        <a href="javascript:;" class="active">1</a>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">下一页</a>
+                    </div>
+                </div>
+            </div>
+            <div class="christmas-instructions-msgboard smoove" data-move-x="0" data-move-y="100px">
+                <div class="time" data-before="活动时间">
+                    <p><span>2017年10月1日-10月7日（7天）</span></p>
+                </div>
+                <div class="content" data-before="活动内容">
+                    <p>活动期间，玩家可在活动版块留言，写下自己的在一统的四年中，最难忘的人和事，或者最想说的话。参与即可获得活动礼包一份。</p>
+                </div>
+                <div class="reward" data-before="活动奖励">
+                    <p><span>200W</span>粮食+<span>50</span>募兵令+<span>5</span>颗一星宝石</p>
+                </div>
+                <div class="reward" data-before="活动规则">
+                    <p>1、玩家进入活动页面，先验证是否为登录状态，如果不是自动提示登录；</p>
+                    <p>2、需注明自己的区服、角色名，按照要求回复；</p>
+                    <p>3、留言后自动获得礼品码，同一账号可多次回帖，但只有首次留言发放礼品码。</p>
+                </div>
+                <div class="remark">
+                    <p>注：</p>
+                    <p>1、 必须按照指定的格式参与活动。</p>
+                    <p>2、 如果活动中的回帖不符合活动要求，那么该楼获奖资格取消。</p>
+                    <p>3、 同一角色可以进行多次跟帖，不可重复得奖，即每个角色只能获得一个礼包。</p>
+                    <p>4、 严禁回帖中出现谩骂，人身攻击等内容，蓄意破坏活动的人员，一经发现直接取消活动获奖资格。</p>
+                    <p>5、 本活动最终解释权归《一统天下》运营团队所有。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div style="width: 980px;margin: 20px auto -30px;">
+        <h3 class="mb f14">友情链接</h3>
+        <p>
+            <a href="http://www.ptbus.com" target="_blank">口袋巴士</a> |
+            <a href="http://apple.766.com" target="_blank">766苹果中文网</a> |
+            <a href="http://www.shouyoubus.com/" target="_blank">手游巴士</a> |
+            <a href="http://app.kaifu.com/" target="_blank">手机网游</a> |
+            <a href="http://kf.40407.com/" target="_blank">网页游戏开服表</a> |
+            <a href="http://www.huiyong123.com/index.php?eventId=131" target="_blank">天翼•汇用市场</a> |
+            <a href="http://www.980apk.com/ " target="_blank">澳门手游</a> |
+            <a href="http://www.shouyou520.com/ " target="_blank">爱手游网</a> |
+            <a href="http://www.anfensi.com/" target="_blank">好玩的安卓游戏</a>
+        </p>
+    </div>
+    <div class="footer cfix">
+        <div class="fl">
+            <a href="" target="_blank">
+                <img src="http://cdn.feidou.com/i3/gameplat/beian_70.png" width="39px" height="45px">
+            </a>
+        </div>
+        <div style="margin-left:55px;margin-top:5px">Copyright © 2013 feidou.com All Rights Reserved 飞豆游戏中心·北京开心人信息技术有限公司<br>京网文[2015]2180-400号•京ICP证08005250号-4</div>
+        <div class="fr"><a class="c9" href="/care/" target="_blank">游戏组件未成年人家长监护工程</a>　 <span class="logo"><a href="/">飞豆网_开心网</a></span></div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function(){
+        if($(window).width() > 1000) {
+            $('.smoove').smoove({offset:'40%'});
+        }
+    })
+</script>
+</body>
+</html>

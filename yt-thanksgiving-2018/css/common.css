@@ -1,0 +1,168 @@
+.national-header-wrapper {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  padding: 27px 0 53px;
+  background: url("../images/bg-index-header.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  z-index: 1;
+}
+.national-header-wrapper .national-header {
+  width: 1175px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.national-header-wrapper .national-header .national-header_left ul,
+.national-header-wrapper .national-header .national-header_right ul {
+  font-size: 0;
+}
+.national-header-wrapper .national-header .national-header_left ul li,
+.national-header-wrapper .national-header .national-header_right ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 12px;
+}
+.national-header-wrapper .national-header .national-header_left ul li:before,
+.national-header-wrapper .national-header .national-header_right ul li:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 66px;
+  left: -12px;
+  top: -22px;
+  background: url("../images/bg-index-header.png") no-repeat;
+  background-position: 0 -389px;
+}
+.national-header-wrapper .national-header .national-header_left ul li:first-child:before,
+.national-header-wrapper .national-header .national-header_right ul li:first-child:before {
+  background: none;
+}
+.national-header-wrapper .national-header .national-header_left ul li a,
+.national-header-wrapper .national-header .national-header_right ul li a {
+  display: block;
+  height: 32px;
+  width: 112px;
+}
+.national-header-wrapper .national-header .national-header_left {
+  float: left;
+}
+.national-header-wrapper .national-header .national-header_left ul li {
+  height: 32px;
+  width: 112px;
+  background: url("../images/sprite-index-header.png") no-repeat;
+}
+.national-header-wrapper .national-header .national-header_left ul li:first-child {
+  background-position: 0 -190px;
+}
+.national-header-wrapper .national-header .national-header_left ul li:first-child:hover,
+.national-header-wrapper .national-header .national-header_left ul li:first-child.active {
+  background-position: 0 -158px;
+}
+.national-header-wrapper .national-header .national-header_left ul li:first-child + li {
+  background-position: 0 0;
+}
+.national-header-wrapper .national-header .national-header_left ul li:first-child + li:hover,
+.national-header-wrapper .national-header .national-header_left ul li:first-child + li.active {
+  background-position: 0 -31px;
+}
+.national-header-wrapper .national-header .national-header_left ul li:first-child + li + li {
+  background-position: -3px -358px;
+}
+.national-header-wrapper .national-header .national-header_left ul li:first-child + li + li:hover,
+.national-header-wrapper .national-header .national-header_left ul li:first-child + li + li.active {
+  background-position: 0 -318px;
+}
+.national-header-wrapper .national-header .national-header_right {
+  float: right;
+}
+.national-header-wrapper .national-header .national-header_right ul li {
+  height: 32px;
+  width: 112px;
+  background: url("../images/sprite-index-header.png") no-repeat;
+}
+.national-header-wrapper .national-header .national-header_right ul li:first-child {
+  background-position: 0 -254px;
+}
+.national-header-wrapper .national-header .national-header_right ul li:first-child:hover,
+.national-header-wrapper .national-header .national-header_right ul li:first-child.active {
+  background-position: 0 -222px;
+}
+.national-header-wrapper .national-header .national-header_right ul li:first-child + li {
+  background-position: 0 -126px;
+}
+.national-header-wrapper .national-header .national-header_right ul li:first-child + li:hover,
+.national-header-wrapper .national-header .national-header_right ul li:first-child + li.active {
+  background-position: 0 -286px;
+}
+.national-header-wrapper .national-header .national-header_right ul li:first-child + li + li {
+  background-position: 0 -94px;
+}
+.national-header-wrapper .national-header .national-header_right ul li:first-child + li + li:hover,
+.national-header-wrapper .national-header .national-header_right ul li:first-child + li + li.active {
+  background-position: 0 -62px;
+}
+.nc-nav {
+  margin-bottom: 35px;
+}
+.nc-nav ul {
+  font-size: 0;
+  text-align: center;
+}
+.nc-nav ul li {
+  display: inline-block;
+  margin-left: 87px;
+  background: url("../images/sprite-nav.png") no-repeat;
+}
+.nc-nav ul li a {
+  display: block;
+  width: 170px;
+  height: 64px;
+}
+.nc-nav ul li:first-child {
+  width: 170px;
+  height: 64px;
+  margin-left: 0;
+  background-position: 0 -65px;
+}
+.nc-nav ul li:first-child:hover,
+.nc-nav ul li:first-child.active {
+  background-position: 0 0;
+}
+.nc-nav ul li:first-child + li {
+  width: 169px;
+  height: 64px;
+  background-position: 0 -520px;
+}
+.nc-nav ul li:first-child + li:hover,
+.nc-nav ul li:first-child + li.active {
+  background-position: 0 -455px;
+}
+.nc-nav ul li:first-child + li + li {
+  width: 170px;
+  height: 64px;
+  background-position: 0 -195px;
+}
+.nc-nav ul li:first-child + li + li:hover,
+.nc-nav ul li:first-child + li + li.active {
+  background-position: 0 -130px;
+}
+.nc-nav ul li:first-child + li + li + li {
+  width: 170px;
+  height: 64px;
+  background-position: 0 -325px;
+}
+.nc-nav ul li:first-child + li + li + li:hover,
+.nc-nav ul li:first-child + li + li + li.active {
+  background-position: 0 -260px;
+}
+.nc-nav ul li:first-child + li + li + li + li {
+  width: 171px;
+  height: 65px;
+  background-position: 0 -585px;
+}
+.nc-nav ul li:first-child + li + li + li + li:hover,
+.nc-nav ul li:first-child + li + li + li + li.active {
+  background-position: 0 -390px;
+}

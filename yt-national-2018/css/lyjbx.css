@@ -1,0 +1,190 @@
+.anniversary-msgboard .comment {
+  padding: 50px 30px;
+  background: url("../images/bg-block1.jpg") no-repeat;
+}
+.anniversary-msgboard .comment .select-lists {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+.anniversary-msgboard .comment .select-lists select {
+  display: inline-block;
+  vertical-align: middle;
+  width: 265px;
+  height: 42px;
+  padding: 0 15px;
+  margin-right: 30px;
+  font: 14px 'SimSun';
+  outline: 1px solid #a33c00;
+  border: 1px solid #f1c894;
+  background-color: #2c130c;
+  color: #fff;
+}
+.anniversary-msgboard .comment textarea {
+  width: 100%;
+  height: 300px;
+  padding: 30px 20px;
+  font: 14px 'SimSun';
+  outline: 1px solid #a33c00;
+  border: 1px solid #f1c894;
+  background-color: #2c130c;
+  color: #fff;
+  resize: none;
+}
+.anniversary-msgboard .comment textarea:focus {
+  outline: none;
+}
+.anniversary-msgboard .comment .toolbar {
+  text-align: right;
+  margin: 17px 0;
+}
+.anniversary-msgboard .comment .toolbar-left,
+.anniversary-msgboard .comment .toolbar-right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.anniversary-msgboard .comment .toolbar-left:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  font: 14px 'SimSun';
+  color: #f1c894;
+}
+.anniversary-msgboard .comment .toolbar-left input,
+.anniversary-msgboard .comment .toolbar-left img {
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.anniversary-msgboard .comment .toolbar-left input {
+  width: 91px;
+  height: 32px;
+  border: 1px solid #f1c894;
+  background-color: #fef6ec;
+}
+.anniversary-msgboard .comment .toolbar-left img {
+  width: 71px;
+  height: 32px;
+}
+.anniversary-msgboard .comment .toolbar-right .btn-clear-sm,
+.anniversary-msgboard .comment .toolbar-right .btn-publish-sm {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 91px;
+  height: 32px;
+  margin: 0 5px;
+  border: none;
+  font: 16px 'Microsoft YaHei';
+  color: #a2170f;
+  line-height: 32px;
+  background: url("../images/btn-confirm.png") no-repeat;
+  -webkit-background-size: 100% ;
+  background-size: 100% 100%;
+}
+.anniversary-msgboard .comment .toolbar-right .btn-clear-sm:hover,
+.anniversary-msgboard .comment .toolbar-right .btn-publish-sm:hover {
+  background: url("../images/btn-confirm-hover.png") no-repeat;
+  -webkit-background-size: 100% ;
+  background-size: 100% 100%;
+}
+.anniversary-msgboard .comment .toolbar-right .btn-clear-sm:focus,
+.anniversary-msgboard .comment .toolbar-right .btn-publish-sm:focus {
+  outline: none;
+}
+.anniversary-msgboard .comment-lists {
+  margin: 50px 0 10px;
+  padding: 50px;
+  background: url("../images/bg-block6.jpg") no-repeat;
+}
+.anniversary-msgboard .comment-lists ul li {
+  margin-bottom: 45px;
+}
+.anniversary-msgboard .comment-lists ul li:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.anniversary-msgboard .comment-lists ul li .lists-left {
+  float: left;
+  width: 114px;
+  height: 114px;
+  outline: 2px solid #a33c00;
+  border: 2px solid #f1c894;
+}
+.anniversary-msgboard .comment-lists ul li .lists-left img {
+  max-width: 100%;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right {
+  float: right;
+  width: 942px;
+  outline: 2px solid #a33c00;
+  border: 2px solid #f1c894;
+  background-color: #2c130c;
+  padding: 20px 40px;
+  position: relative;
+  min-height: 114px;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right:before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 35px;
+  left: -25px;
+  top: -4px;
+  background: url("../images/bg-comment-arrow.png") no-repeat;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right .msg-left span,
+.anniversary-msgboard .comment-lists ul li .lists-right .msg-right span {
+  font: 16px 'SimSun';
+  color: #e78304;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right .msg-left {
+  float: left;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right .msg-left span {
+  margin-right: 42px;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right .msg-right {
+  float: right;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right .msg-right span {
+  font: 16px 'SimSun';
+  color: #a2170f;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right .msg .clearfix {
+  clear: both;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right .msg-bottom {
+  margin-top: 20px;
+}
+.anniversary-msgboard .comment-lists ul li .lists-right .msg-bottom span {
+  font: 12px 'SimSun';
+  color: #fff;
+}
+.anniversary-msgboard .comment-lists .page {
+  font-size: 0;
+  text-align: center;
+  margin: 30px 0;
+}
+.anniversary-msgboard .comment-lists .page a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 8px;
+  border: 1px solid #7d001e;
+  background-color: #f1c894;
+  -webkit-transition: all 0.1s ease 0.1s;
+  -moz-transition: all 0.1s ease 0.1s;
+  -ms-transition: all 0.1s ease 0.1s;
+  -o-transition: all 0.1s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
+  font: 12px 'SimSun';
+  color: #fff;
+  margin: 0 5px;
+}
+.anniversary-msgboard .comment-lists .page a:hover,
+.anniversary-msgboard .comment-lists .page a.active {
+  border: 1px solid transparent;
+  background-color: #7d001e;
+}
+.anniversary-msgboard .comment-lists .page a.active {
+  cursor: default;
+}

@@ -1,0 +1,551 @@
+@media (min-width: 1200px) {
+  .national-header-wrapper {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    padding: 27px 0 53px;
+    background: url("../images/bg-index-header.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    z-index: 1;
+    .national-header {
+      width: 1175px;
+      margin: 0 auto;
+      overflow: hidden;
+      .national-header_left,
+      .national-header_right {
+        ul {
+          font-size: 0;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            margin: 0 12px;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 4px;
+              height: 66px;
+              left: -12px;
+              top: -22px;
+              background: url("../images/bg-index-header.png") no-repeat;
+              background-position: 0 -389px;
+            }
+            &:first-child {
+              &:before {
+                background: none;
+              }
+            }
+            a {
+              display: block;
+              height: 32px;
+              width: 112px;
+            }
+          }
+        }
+      }
+      .national-header_left {
+        float: left;
+        ul {
+          li {
+            height: 32px;
+            width: 112px;
+            background: url("../images/sprite-index-header.png") no-repeat;
+            &:first-child {
+              background-position: 0 -190px;
+              &:hover, &.active {
+                background-position: 0 -158px;
+              }
+            }
+            &:first-child + li {
+              background-position: 0 0;
+              &:hover, &.active {
+                background-position: 0 -31px;
+              }
+            }
+            &:first-child + li + li {
+              background-position: -3px -358px;
+              &:hover, &.active {
+                background-position: 0 -318px;
+              }
+            }
+          }
+        }
+      }
+      .national-header_right {
+        float: right;
+        ul {
+          li {
+            height: 32px;
+            width: 112px;
+            background: url("../images/sprite-index-header.png") no-repeat;
+            &:first-child {
+              background-position: 0 -254px;
+              &:hover, &.active {
+                background-position: 0 -222px;
+              }
+            }
+            &:first-child + li {
+              background-position: 0 -126px;
+              &:hover, &.active {
+                background-position: 0 -286px;
+              }
+            }
+            &:first-child + li + li {
+              background-position: 0 -94px;
+              &:hover, &.active {
+                background-position: 0 -62px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .nc-nav {
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 1;
+    ul {
+      font-size: 0;
+      text-align: center;
+      li {
+        display: inline-block;
+        margin-left: 87px;
+        background: url("../images/sprite-nav.png") no-repeat;
+        a {
+          display: block;
+          width: 170px;
+          height: 64px;
+        }
+        &:first-child {
+          width: 170px;
+          height: 64px;
+          margin-left: 0;
+          background-position: 0 -65px;
+          &:hover, &.active {
+            background-position: 0 0;
+          }
+        }
+        &:first-child + li {
+          width: 169px;
+          height: 64px;
+          background-position: 0 -520px;
+          &:hover, &.active {
+            background-position: 0 -455px;
+          }
+        }
+        &:first-child + li + li {
+          width: 170px;
+          height: 64px;
+          background-position: 0 -195px;
+          &:hover, &.active {
+            background-position: 0 -130px;
+          }
+        }
+        &:first-child + li + li + li {
+          width: 170px;
+          height: 64px;
+          background-position: 0 -325px;
+          &:hover, &.active {
+            background-position: 0 -260px;
+          }
+        }
+        &:first-child + li + li + li + li {
+          width: 171px;
+          height: 65px;
+          background-position: 0 -585px;
+          &:hover, &.active {
+            background-position: 0 -390px;
+          }
+        }
+      }
+    }
+  }
+  .nc-rules-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 640px;
+    position: relative;
+    background: url("../images/bg-rule.jpg") repeat-y;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+    }
+    &:before {
+      width: 100%;
+      height: 630px;
+      top: 0;
+      left: 0;
+      background: url("../images/bg-rule-top.jpg") no-repeat;
+    }
+    &:after {
+      width: 100%;
+      height: 12px;
+      bottom: 0;
+      left: 0;
+      background: url("../images/bg-rule-bottom.jpg") no-repeat;
+    }
+    .nc-rules {
+      position: relative;
+      padding: 35px 60px;
+      background: url("../images/bg-rule.jpg") no-repeat;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+      }
+      &:before {
+        width: 73px;
+        height: 138px;
+        right: 0;
+        top: 0;
+        background: url("../images/sprite-figures.png") no-repeat;
+        background-position: 0 0;
+      }
+      &:after {
+        width: 62px;
+        height: 63px;
+        bottom: 140px;
+        right: 150px;
+        background: url("../images/sprite-figures.png") no-repeat;
+        background-position: 0 -139px;
+      }
+      .txt {
+        font: 20px 'Microsoft YaHei';
+        color: #fbefc4;
+        line-height: 32px;
+      }
+      .nc-rules__module1{
+        ul {
+          li {
+            padding-left: 150px;
+            position: relative;
+            line-height: 32px;
+            &:before {
+              content: attr(data-before);
+              position: absolute;
+              left: 0;
+              font: 20px 'Microsoft YaHei';
+              color: #fbefc4;
+              line-height: 32px;
+            }
+            .txt {
+              span {
+                font: 36px 'Microsoft YaHei';
+                color: #fffd2b;
+              }
+            }
+          }
+        }
+      }
+      .nc-rules__remark2 {
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font: 20px 'Microsoft YaHei';
+          color: #fbefc4;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .national-header-wrapper {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    padding: 0.432rem 0 0.848rem;
+    background: url("../images/bg-index-header.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    z-index: 1;
+    .national-header {
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      .national-header_left,
+      .national-header_right {
+        ul {
+          font-size: 0;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            margin: 0 0.192rem;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 0.064rem;
+              height: 1.056rem;
+              left: -0.192rem;
+              top: -0.352rem;
+              background: url("../images/bg-index-header.png") no-repeat;
+              -webkit-background-size: 1.84rem 7.28rem;
+              background-size: 1.84rem 7.28rem;
+              background-position: 0 -6.224rem;
+            }
+            &:first-child {
+              &:before {
+                background: none;
+              }
+            }
+            a {
+              display: block;
+              height: 0.512rem;
+              width: 1.792rem;
+            }
+          }
+        }
+      }
+      .national-header_left {
+        float: left;
+        ul {
+          li {
+            height: 0.512rem;
+            width: 1.792rem;
+            background: url("../images/sprite-index-header.png") no-repeat;
+            -webkit-background-size: 1.84rem 7.28rem;
+            background-size: 1.84rem 7.28rem;
+            &:first-child {
+              background-position: 0 -3.04rem;
+              &:hover, &.active {
+                background-position: 0 -2.528rem;
+              }
+            }
+            &:first-child + li {
+              background-position: 0 0;
+              &:hover, &.active {
+                background-position: 0 -0.496rem;
+              }
+            }
+            &:first-child + li + li {
+              background-position: -0.048rem -5.728rem;
+              &:hover, &.active {
+                background-position: 0 -5.088rem;
+              }
+            }
+          }
+        }
+      }
+      .national-header_right {
+        float: right;
+        ul {
+          li {
+            height: 0.512rem;
+            width: 1.792rem;
+            background: url("../images/sprite-index-header.png") no-repeat;
+            -webkit-background-size: 1.84rem 7.28rem;
+            background-size: 1.84rem 7.28rem;
+            &:first-child {
+              background-position: 0 -4.064rem;
+              &:hover, &.active {
+                background-position: 0 -3.552rem;
+              }
+            }
+            &:first-child + li {
+              background-position: 0 -2.016rem;
+              &:hover, &.active {
+                background-position: 0 -4.576rem;
+              }
+            }
+            &:first-child + li + li {
+              background-position: 0 -1.504rem;
+              &:hover, &.active {
+                background-position: 0 -0.992rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .nc-nav {
+    margin-bottom: 0.56rem;
+    position: relative;
+    z-index: 1;
+    ul {
+      font-size: 0;
+      text-align: center;
+      li {
+        display: inline-block;
+        margin-left: .5rem;
+        background: url("../images/sprite-nav.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        a {
+          display: block;
+          width: 2.72rem;
+          height: 1.024rem;
+        }
+        &:first-child {
+          width: 2.72rem;
+          height: 1.024rem;
+          margin-left: 0;
+          background-position: 0 -1.04rem;
+          &:hover, &.active {
+            background-position: 0 0;
+          }
+        }
+        &:first-child + li {
+          width: 2.704rem;
+          height: 1.024rem;
+          background-position: 0 -8.32rem;
+          &:hover, &.active {
+            background-position: 0 -7.28rem;
+          }
+        }
+        &:first-child + li + li {
+          width: 2.72rem;
+          height: 1.024rem;
+          background-position: 0 -3.12rem;
+          &:hover, &.active {
+            background-position: 0 -2.08rem;
+          }
+        }
+        &:first-child + li + li + li {
+          width: 2.72rem;
+          height: 1.024rem;
+          background-position: 0 -5.2rem;
+          &:hover, &.active {
+            background-position: 0 -4.16rem;
+          }
+        }
+        &:first-child + li + li + li + li {
+          width: 2.736rem;
+          height: 1.04rem;
+          background-position: 0 -9.36rem;
+          &:hover, &.active {
+            background-position: 0 -6.24rem;
+          }
+        }
+      }
+    }
+  }
+  .nc-rules-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 10.24rem;
+    position: relative;
+    .nc-rules {
+      position: relative;
+      padding: 0.5rem;
+      margin: 0 .2rem;
+      border: 1px solid #5c0202;
+      background-color: #490305;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+      }
+      &:before {
+        width: 1.168rem;
+        height: 2.208rem;
+        right: 0;
+        top: 0;
+        background: url("../images/sprite-figures.png") no-repeat;
+        -webkit-background-size: 3.248rem 3.232rem;
+        background-size: 3.248rem 3.232rem;
+        background-position: 0 0;
+      }
+      &:after {
+        width: 0.992rem;
+        height: 1.008rem;
+        bottom: 2.24rem;
+        right: 2.4rem;
+        background: url("../images/sprite-figures.png") no-repeat;
+        -webkit-background-size: 3.248rem 3.232rem;
+        background-size: 3.248rem 3.232rem;
+        background-position: 0 -2.224rem;
+      }
+      .txt {
+        color: #fbefc4;
+      }
+      .nc-rules__module1{
+        ul {
+          li {
+            padding-left: 3rem;
+            position: relative;
+            line-height: 0.512rem;
+            &:before {
+              content: attr(data-before);
+              position: absolute;
+              left: 0;
+              color: #fbefc4;
+            }
+            .txt {
+              span {
+                color: #fffd2b;
+              }
+            }
+          }
+        }
+      }
+      .nc-rules__remark2 {
+        &:before {
+          content: attr(data-before);
+          display: block;
+          color: #fbefc4;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) and (orientation: landscape) {
+  .nc-rules-wrapper {
+    .nc-rules {
+      .txt {
+        font: .32rem 'Microsoft YaHei';
+      }
+      .nc-rules__module1{
+        ul {
+          li {
+            &:before {
+              font: .32rem 'Microsoft YaHei';
+            }
+            .txt {
+              span {
+                font: .48rem 'Microsoft YaHei';
+              }
+            }
+          }
+        }
+      }
+      .nc-rules__remark2 {
+        &:before {
+          content: attr(data-before);
+          font: .32rem 'Microsoft YaHei';
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) and (orientation: portrait) {
+  .nc-rules-wrapper {
+    .nc-rules {
+      .txt {
+        font: .48rem 'Microsoft YaHei';
+      }
+      .nc-rules__module1{
+        ul {
+          li {
+            &:before {
+              font: .48rem 'Microsoft YaHei';
+            }
+            .txt {
+              span {
+                font: .6rem 'Microsoft YaHei';
+              }
+            }
+          }
+        }
+      }
+      .nc-rules__remark2 {
+        &:before {
+          content: attr(data-before);
+          font: .48rem 'Microsoft YaHei';
+        }
+      }
+    }
+  }
+}

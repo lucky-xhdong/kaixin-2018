@@ -1,0 +1,821 @@
+@media (min-width: 1000px) {
+  .national-cn2018-gqgwc {
+    background: #000 url("../images/bg-gqgwc-body.jpg") top center no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 332px;
+    padding-bottom: 100px;
+    background: url("../images/bg-gqgwc-container.jpg") top center no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper {
+    position: relative;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle {
+    position: absolute;
+    width: 1200px;
+    height: 770px;
+    background: url("../images/bg-castle.png") no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-default:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayone:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daytwo:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daythree:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayfour:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayfive:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daysix:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayseven:before {
+    content: '';
+    position: absolute;
+    width: 121px;
+    height: 164px;
+    animation: motion 2s ease-in-out alternate infinite;
+    -webkit-animation: motion 2s ease-in-out alternate infinite;
+    background: url("../images/lvbu.png") no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-default:before {
+    left: 93px;
+    bottom: 158px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayone:before {
+    left: 206px;
+    top: 179px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daytwo:before {
+    left: 172px;
+    bottom: 216px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daythree:before {
+    left: 268px;
+    bottom: 346px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayfour:before {
+    left: 580px;
+    top: 221px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayfive:before {
+    left: 713px;
+    bottom: 255px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daysix:before {
+    left: 712px;
+    top: 202px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayseven:before {
+    left: 792px;
+    bottom: 207px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle .svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.dayone .svg-dayone {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.daytwo .svg-daytwo {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.daythree .svg-daythree {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.dayfour .svg-dayfour {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.dayfive .svg-dayfive {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.daysix .svg-daysix {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.dayseven .svg-dayseven {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin {
+    width: 1200px;
+    height: 770px;
+    position: relative;
+    z-index: 3;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin:after {
+    content: '';
+    position: absolute;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin:before {
+    width: 31px;
+    height: 49px;
+    left: 152px;
+    bottom: 158px;
+    z-index: 2;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -138px -72px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin:after {
+    width: 63px;
+    height: 62px;
+    right: 80px;
+    bottom: 120px;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -74px -72px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul {
+    position: relative;
+    height: 770px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li {
+    position: absolute;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li .btn-signin {
+    display: block;
+    width: 66px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li .btn-signin:after {
+    content: attr(data-after);
+    display: block;
+    color: #fff;
+    line-height: 20px;
+    margin-top: -2px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li .btn-signin:hover {
+    background: url("../images/sprite-buttons.png") no-repeat;
+    background-position: -422px -99px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li .btn-signin.disabled {
+    cursor: default;
+    background: url("../images/sprite-buttons.png") no-repeat;
+    background-position: -354px -99px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child {
+    left: 154px;
+    top: 372px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li {
+    left: 279px;
+    bottom: 171px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li {
+    left: 442px;
+    bottom: 294px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li + li {
+    left: 564px;
+    top: 435px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li + li + li {
+    left: 675px;
+    bottom: 187px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li + li + li + li {
+    right: 235px;
+    top: 358px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li + li + li + li + li {
+    right: 182px;
+    bottom: 146px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards {
+    position: relative;
+    margin-bottom: 135px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards:before {
+    content: '';
+    display: table;
+    width: 795px;
+    height: 109px;
+    margin: 58px auto 72px;
+    background: url("../images/img-title.png") no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards:after {
+    content: '';
+    display: table;
+    clear: both;
+    height: 0;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .total-cards {
+    position: absolute;
+    width: 100%;
+    line-height: 30px;
+    text-align: right;
+    top: 145px;
+    right: 10px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .total-cards .txt {
+    padding: 0 30px;
+    color: #fff;
+    font: 14px 'SimSun';
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right {
+    width: 585px;
+    height: 526px;
+    background: url("../images/bg-card.png") no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left:before,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font: 20px "Microsoft YaHei";
+    color: #fffc05;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000000;
+    line-height: 45px;
+    margin-top: 35px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul {
+    font-size: 0;
+    position: relative;
+    padding: 0 34px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    width: 172px;
+    height: 213px;
+    cursor: pointer;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .reverse,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .reverse {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal {
+    -webkit-transition: all 0.4s ease 0.2s;
+    -moz-transition: all 0.4s ease 0.2s;
+    -ms-transition: all 0.4s ease 0.2s;
+    -o-transition: all 0.4s ease 0.2s;
+    transition: all 0.4s ease 0.2s;
+    opacity: 1;
+    z-index: 2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal a,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -8px -223px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal a:hover,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal a:hover {
+    background-position: -8px 0;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .reverse,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .reverse {
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease 0.2s;
+    -moz-transition: all 0.4s ease 0.2s;
+    -ms-transition: all 0.4s ease 0.2s;
+    -o-transition: all 0.4s ease 0.2s;
+    transition: all 0.4s ease 0.2s;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .reverse img,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .reverse img {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li.selected .normal,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li.selected .normal {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    opacity: 0;
+    z-index: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li.selected .reverse,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li.selected .reverse {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    opacity: 1;
+    z-index: 2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left .total-card,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right .total-card {
+    font: 15px 'Microsoft YaHei';
+    color: #b03030;
+    text-align: right;
+    margin-top: -10px;
+    margin-right: 40px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left {
+    float: left;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul:before {
+    content: '';
+    position: absolute;
+    width: 129px;
+    height: 71px;
+    left: -34px;
+    top: -96px;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -74px 0;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal {
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -8px -452px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .reverse {
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -8px -452px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right {
+    float: right;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul:before,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul:after {
+    content: '';
+    position: absolute;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul:before {
+    width: 58px;
+    height: 63px;
+    right: -28px;
+    top: -128px;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -63px -139px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul:after {
+    width: 63px;
+    height: 62px;
+    right: -30px;
+    bottom: -28px;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -74px -72px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal {
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -8px -898px;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .reverse {
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -8px -1111px;
+  }
+}
+@media (max-width: 1000px) {
+  .national-cn2018-gqgwc {
+    background: #000 url("../images/bg-gqgwc-body.jpg") top center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .national-cn2018-gqgwc .national-container {
+    width: 19.2rem;
+    margin: 0 auto;
+    padding-top: 5.312rem;
+    padding-bottom: 1.6rem;
+    background: url("../images/bg-gqgwc-container.jpg") top center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper {
+    position: relative;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle {
+    position: absolute;
+    width: 19.2rem;
+    height: 12.32rem;
+    background: url("../images/bg-castle.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-default:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayone:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daytwo:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daythree:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayfour:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayfive:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daysix:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayseven:before {
+    content: '';
+    position: absolute;
+    width: 1.936rem;
+    height: 2.624rem;
+    animation: motion 2s ease-in-out alternate infinite;
+    background: url("../images/lvbu.png") no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-default:before {
+    left: 1.488rem;
+    bottom: 2.528rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayone:before {
+    left: 3.296rem;
+    top: 2.864rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daytwo:before {
+    left: 2.752rem;
+    bottom: 3.456rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daythree:before {
+    left: 4.288rem;
+    bottom: 5.536rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayfour:before {
+    left: 9.28rem;
+    top: 3.536rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayfive:before {
+    left: 11.408rem;
+    bottom: 4.08rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-daysix:before {
+    left: 11.392rem;
+    top: 3.232rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.stay-dayseven:before {
+    left: 12.672rem;
+    bottom: 3.312rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle .svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.dayone .svg-dayone {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.daytwo .svg-daytwo {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.daythree .svg-daythree {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.dayfour .svg-dayfour {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.dayfive .svg-dayfive {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.daysix .svg-daysix {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-castle.dayseven .svg-dayseven {
+    display: block;
+    z-index: 2;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin {
+    width: 19.2rem;
+    height: 12.32rem;
+    position: relative;
+    z-index: 3;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin:before,
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin:after {
+    content: '';
+    position: absolute;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin:before {
+    width: 0.496rem;
+    height: 0.784rem;
+    left: 2.432rem;
+    bottom: 2.528rem;
+    z-index: 2;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -2.208rem -1.152rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin:after {
+    width: 1.008rem;
+    height: 0.992rem;
+    right: 1.28rem;
+    bottom: 1.92rem;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -1.184rem -1.152rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul {
+    position: relative;
+    height: 12.32rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li {
+    position: absolute;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li .btn-signin {
+    display: block;
+    width: 1.056rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: #fff;
+    text-align: center;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li .btn-signin:after {
+    content: attr(data-after);
+    display: block;
+    color: #fff;
+    line-height: 0.32rem;
+    margin-top: -0.032rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li .btn-signin:hover {
+    background: url("../images/sprite-buttons.png") no-repeat;
+    background-position: -6.752rem -1.584rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li .btn-signin.disabled {
+    cursor: default;
+    background: url("../images/sprite-buttons.png") no-repeat;
+    background-position: -5.664rem -1.584rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child {
+    left: 2.464rem;
+    top: 5.952rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li {
+    left: 4.464rem;
+    bottom: 2.736rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li {
+    left: 7.072rem;
+    bottom: 4.704rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li + li {
+    left: 9.024rem;
+    top: 6.96rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li + li + li {
+    left: 10.8rem;
+    bottom: 2.992rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li + li + li + li {
+    right: 3.76rem;
+    top: 5.728rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-castle-wapper .nc-signin ul li:first-child + li + li + li + li + li + li {
+    right: 2.912rem;
+    bottom: 2.336rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards {
+    position: relative;
+    margin-bottom: 2.16rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards:before {
+    content: '';
+    display: table;
+    width: 12.72rem;
+    height: 1.744rem;
+    margin: 0.928rem auto 1.152rem;
+    background: url("../images/img-title.png") no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards:after {
+    content: '';
+    display: table;
+    clear: both;
+    height: 0;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .total-cards {
+    position: absolute;
+    width: 100%;
+    line-height: 0.48rem;
+    text-align: right;
+    top: 2.32rem;
+    right: 0.16rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .total-cards .txt {
+    padding: 0 0.48rem;
+    color: #fff;
+    font: 0.224rem 'SimSun';
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right {
+    width: 9.36rem;
+    height: 8.416rem;
+    background: url("../images/bg-card.png") no-repeat;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left:before,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font: 0.32rem "Microsoft YaHei";
+    color: #fffc05;
+    letter-spacing: 0.032rem;
+    text-shadow: 0.016rem 0.016rem 0.016rem #000000;
+    line-height: 0.72rem;
+    margin-top: 0.56rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul {
+    font-size: 0;
+    position: relative;
+    padding: 0 0.544rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    width: 2.752rem;
+    height: 3.408rem;
+    cursor: pointer;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .reverse,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .reverse {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal {
+    -webkit-transition: all 0.4s ease 0.2s;
+    -moz-transition: all 0.4s ease 0.2s;
+    -ms-transition: all 0.4s ease 0.2s;
+    -o-transition: all 0.4s ease 0.2s;
+    transition: all 0.4s ease 0.2s;
+    opacity: 1;
+    z-index: 2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal a,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -0.128rem -3.568rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal a:hover,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal a:hover {
+    background-position: -0.128rem 0;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .reverse,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .reverse {
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease 0.2s;
+    -moz-transition: all 0.4s ease 0.2s;
+    -ms-transition: all 0.4s ease 0.2s;
+    -o-transition: all 0.4s ease 0.2s;
+    transition: all 0.4s ease 0.2s;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .reverse img,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .reverse img {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li.selected .normal,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li.selected .normal {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    opacity: 0;
+    z-index: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li.selected .reverse,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li.selected .reverse {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    opacity: 1;
+    z-index: 2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left .total-card,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right .total-card {
+    font: 0.24rem 'Microsoft YaHei';
+    color: #b03030;
+    text-align: right;
+    margin-top: -0.16rem;
+    margin-right: 0.64rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left {
+    float: left;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul:before {
+    content: '';
+    position: absolute;
+    width: 2.064rem;
+    height: 1.136rem;
+    left: -0.544rem;
+    top: -1.536rem;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -1.184rem 0;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .normal {
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -0.128rem -7.232rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__left ul li .reverse {
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -0.128rem -7.232rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right {
+    float: right;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul:before,
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul:after {
+    content: '';
+    position: absolute;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul:before {
+    width: 0.928rem;
+    height: 1.008rem;
+    right: -0.448rem;
+    top: -2.048rem;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -1.008rem -2.224rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul:after {
+    width: 1.008rem;
+    height: 0.992rem;
+    right: -0.48rem;
+    bottom: -0.448rem;
+    background: url("../images/sprite-figures.png") no-repeat;
+    background-position: -1.184rem -1.152rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .normal {
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -0.128rem -14.368rem;
+  }
+  .national-cn2018-gqgwc .national-container .nc-cards .nc-cards__right ul li .reverse {
+    background: url("../images/sprite-cards.png") no-repeat;
+    background-position: -0.128rem -17.776rem;
+  }
+}
+@keyframes motion {
+  0% {
+    transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+    -o-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+  }
+}

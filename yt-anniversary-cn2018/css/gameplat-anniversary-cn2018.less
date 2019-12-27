@@ -1,0 +1,1476 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3c2c15;
+}
+
+.topBar .logoC {
+  height: 35px;
+}
+
+.anniversary-cn2018 {
+  background: url("../images/bg-body.jpg") top center no-repeat;
+  .anniversary-container {
+    width: 1200px;
+    margin: 0 auto;
+    background: url("../images/bg-container.jpg") top center no-repeat;
+    .icon-gift {
+      position: fixed;
+      width: 155px;
+      height: 134px;
+      text-align: center;
+      font: 28px 'MicroSoft YaHei';
+      line-height: 134px;
+      font-weight: bold;
+      color: #ee5f19;
+      text-shadow: 0 1px 1px #fff;
+      top: 50%;
+      margin-top: -67px;
+      right: 0;
+      z-index: 1;
+      background: url("../images/sprite-anniversary.png") no-repeat;
+      background-position: 0 -693px;
+      &:hover {
+        background-position: -159px -693px;
+      }
+    }
+    .anniversary-nav {
+      padding-top: 1022px;
+      ul {
+        font-size: 0;
+        text-align: center;
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 30px 16px;
+          a {
+            display: block;
+            width: 322px;
+            height: 124px;
+            background: url("../images/sprite-nav.png") no-repeat;
+          }
+          &:first-child {
+            a {
+              background-position: 0 0;
+            }
+            &:hover, &.active {
+              a {
+                background-position: -322px 0;
+              }
+            }
+          }
+          &:first-child + li {
+            a {
+              background-position: 0 -124px;
+            }
+            &:hover, &.active {
+              a {
+                background-position: -322px -124px;
+              }
+            }
+          }
+          &:first-child + li + li {
+            a {
+              background-position: 0 -245px;
+            }
+            &:hover, &.active {
+              a {
+                background-position: -322px -245px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .anniversary-sword {
+      width: 1200px;
+      height: 462px;
+      margin-top: 102px;
+      margin-bottom: 160px;
+      position: relative;
+      background: url("../images/bg-block1.jpg") no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      &:before {
+        content: '';
+        position: absolute;
+        width:844px;
+        height: 62px;
+        top: -90px;
+        left:50%;
+        margin-left: -422px;
+        background: url("../images/header-title1.png") no-repeat;
+      }
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+        height: 0;
+      }
+      .sword-left {
+        width: 1044px;
+        float: left;
+        position: relative;
+        .sword-wrapper {
+          position: relative;
+          .sword-gray, .sword-light {
+            position: absolute;
+            width: 975px;
+            height: 340px;
+          }
+          .sword-gray {
+            background: url("../images/baojian-gray.png") no-repeat;
+          }
+        }
+        .total-times {
+          position: absolute;
+          font: 28px/30px 'Microsoft YaHei';
+          color: #b64a1e;
+          left: 40px;
+          bottom: 45px;
+        }
+        .time-lists {
+          margin-top: 220px;
+          margin-left: 100px;
+          position: relative;
+          z-index: 1;
+          ul {
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0 20px;
+              span {
+                font: 22px/24px 'Microsoft YaHei';
+                color: #f29223;
+                text-shadow: 0 1px 0 #000;
+              }
+            }
+          }
+        }
+        .box-lists {
+          margin-top: 20px;
+          ul {
+            margin-left: 240px;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              width: 103px;
+              height: 120px;
+              margin: 0 50px;
+              position: relative;
+              &.box-open {
+                background: url("../images/img-box-open.png") bottom center no-repeat;
+              }
+              &.box-close {
+                background: url("../images/img-box.png") bottom center no-repeat;
+              }
+              .btn-open {
+                display: block;
+                width: 96px;
+                height: 32px;
+                font-size: 0;
+                position: absolute;
+                bottom: -45px;
+                left: 50%;
+                margin-left: -48px;
+                background: url("../images/btn-open-normal.jpg") no-repeat;
+              }
+            }
+          }
+        }
+      }
+      .sword-right {
+        position: absolute;
+        right:0;
+        top:0;
+        bottom:0;
+        .btn-sword {
+          width: 260px;
+          height: 300px;
+          margin:80px 0;
+          border: none;
+          font-size: 0;
+          background: url("../images/btn-zhujian.png") no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    .anniversary-puzzle {
+      width: 1200px;
+      height: 760px;
+      margin-bottom: 160px;
+      position: relative;
+      background: url("../images/bg-block2.jpg") no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      &:before {
+        content: '';
+        position: absolute;
+        width:784px;
+        height: 62px;
+        top: -90px;
+        left:50%;
+        margin-left: -392px;
+        background: url("../images/header-title2.png") no-repeat;
+      }
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .puzzle-left {
+        float: left;
+        width: 400px;
+        margin-left: 120px;
+        .btn-group {
+          .btn-confirm {
+            display: block;
+            width: 225px;
+            height: 63px;
+            background: url("../images/btn-confirm.png") no-repeat;
+            margin:0 auto;
+            font-size: 0;
+          }
+        }
+        ul {
+          margin:30px 0;
+          text-align: center;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            &:hover, &.select {
+              &:before {
+                content: '';
+                position: absolute;
+                left: 11px;
+                top: 11px;
+                border: 2px solid #f00;
+                right: 11px;
+                bottom: 11px;
+                border-radius: 6px;
+              }
+            }
+          }
+        }
+      }
+      .puzzle-right {
+        width: 564px;
+        height: 740px;
+        margin-right: 100px;
+        float: right;
+        ul {
+          position: relative;
+          li {
+            position: absolute;
+            &:hover, &.select {
+              &:before {
+                content: '';
+                position: absolute;
+                left: 18px;
+                top: 20px;
+                border: 2px solid #f00;
+                right: 18px;
+                bottom: 24px;
+                border-radius: 8px;
+              }
+            }
+            &:first-child {
+              left:0;
+              top:0;
+            }
+            &:first-child + li {
+              left: 175px;
+              top:0;
+            }
+            &:first-child + li + li {
+              left: 350px;
+              top:0;
+            }
+            &:first-child + li + li + li {
+              left: 0;
+              top: 236px;
+            }
+            &:first-child + li + li + li + li {
+              left: 175px;
+              top: 236px;
+            }
+            &:first-child + li + li + li + li + li {
+              left: 350px;
+              top: 236px;
+            }
+            &:first-child + li + li + li + li + li + li {
+              left: 0;
+              top: 472px;
+            }
+            &:first-child + li + li + li + li + li + li + li {
+              left: 175px;
+              top: 472px;
+            }
+            &:first-child + li + li + li + li + li + li + li + li {
+              left: 350px;
+              top: 472px;
+            }
+          }
+        }
+      }
+    }
+    .anniversary-gifts {
+      position: relative;
+      margin: 0 4px;
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+        height: 0;
+      }
+      .anniversary-points {
+        float: left;
+      }
+      .anniversary-lottery {
+        float: right;
+      }
+      .anniversary-points {
+        width: 580px;
+        background: url("../images/bg-block3.jpg") no-repeat;
+        -webkit-background-size:100%;
+        background-size:100%;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          width:541px;
+          height: 47px;
+          top: -90px;
+          left:50%;
+          margin-left: -270px;
+          background: url("../images/header-title3.png") no-repeat;
+        }
+        ul {
+          text-align: center;
+          margin:10px 0;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            width: 141px;
+            height: 176px;
+            margin:5px 15px;
+            background: url("../images/bg-points.png") no-repeat;
+            .img-wrapper {
+              position: absolute;
+              height: 90px;
+              margin-top: 10px;
+              width:100%;
+              .img-point {
+                text-align: center;
+                max-width: 100%;
+                margin-top: 5px;
+              }
+            }
+            .p1 {
+              font: 15px 'Microsoft YaHei';
+              margin-top: 95px;
+            }
+            .p2 {
+              font: 12px 'Microsoft YaHei';
+            }
+            .p1, .p2, .p3 {
+              color: #fff;
+              height: 18px;
+            }
+            .btn-exchange {
+              display: block;
+              width: 87px;
+              height: 24px;
+              margin: 2px auto;
+              font-size: 0;
+              background: url("../images/btn-exchange.jpg") no-repeat;
+            }
+          }
+        }
+      }
+      .anniversary-lottery {
+        position: relative;
+        width: 580px;
+        background: url("../images/bg-block3.jpg") no-repeat;
+        -webkit-background-size:100%;
+        background-size:100%;
+        .lottery {
+          &:before {
+            content: '';
+            position: absolute;
+            width:541px;
+            height: 58px;
+            top: -90px;
+            left:50%;
+            margin-left: -270px;
+            background: url("../images/header-title4.png") no-repeat;
+          }
+          ul {
+            position: relative;
+            width: 444px;
+            height: 362px;
+            margin: 15px auto;
+            li {
+              position: absolute;
+              display: table;
+              width: 141px;
+              height: 119px;
+              background: url("../images/bg-lottery.png") no-repeat;
+              text-align: center;
+              &.active {
+                &:after {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  border: 2px solid #d31a11;
+                }
+              }
+              a {
+                display: table-cell;
+                vertical-align: middle;
+                position: relative;
+                &:after {
+                  content: attr(data-after);
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  font: 18px 'MicroSoft YaHei';
+                  color: #eabe6a;
+                  text-shadow: 0 1px 1px #f00;
+                  line-height: 30px;
+                }
+              }
+              img {
+                max-width: 100%;
+                -webkit-transition: all .2s ease .2s;
+                -moz-transition: all .2s ease .2s;
+                -ms-transition: all .2s ease .2s;
+                -o-transition: all .2s ease .2s;
+                transition: all .2s ease .2s;
+              }
+              &:hover {
+                img {
+                  -webkit-transform: scale(1.2, 1.2);
+                  -moz-transform: scale(1.2, 1.2);
+                  -ms-transform: scale(1.2, 1.2);
+                  -o-transform: scale(1.2, 1.2);
+                  transform: scale(1.2, 1.2);
+                }
+              }
+              &:first-child {
+                left: 0;
+                top: 0;
+              }
+              &:first-child + li {
+                left: 152px;
+                top: 0;
+              }
+              &:first-child + li + li {
+                left: 304px;
+                top: 0;
+              }
+              &:first-child + li + li + li {
+                left: 304px;
+                top: 122px;
+              }
+              &:first-child + li + li + li + li {
+                left: 304px;
+                top: 244px;
+              }
+              &:first-child + li + li + li + li + li {
+                left: 152px;
+                top: 244px;
+              }
+              &:first-child + li + li + li + li + li + li {
+                left: 0;
+                top: 244px;
+              }
+              &:first-child + li + li + li + li + li + li + li {
+                left: 0;
+                top: 122px;
+              }
+              &:first-child + li + li + li + li + li + li + li + li {
+                left: 152px;
+                top: 122px;
+              }
+              &.btn-group {
+                .btn-start, .btn-won, .btn-unactive {
+                  font-size: 0;
+                  width: 110px;
+                  height: 110px;
+                }
+                .btn-start {
+                  background: url("../images/btn-start.png") no-repeat;
+                }
+                .btn-won {
+                  background: url("../images/btn-won.png") no-repeat;
+                }
+                .btn-unactive {
+                  background: url("../images/btn-unactive.png") no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .anniversary-msgboard {
+      padding: 18px 30px;
+      .comment {
+        .select-lists {
+          font-size: 0;
+          margin-bottom: 10px;
+          select {
+            display: inline-block;
+            vertical-align: middle;
+            width: 171px;
+            height: 32px;
+            margin-right: 30px;
+            font: 14px 'SimSun';
+            border: 1px solid #f1c894;
+            background-color: #fef6ec;
+            color: #c07414;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        textarea {
+          width: 100%;
+          height: 233px;
+          padding: 30px 20px;
+          font: 14px 'SimSun';
+          border: 1px solid #fcf5eb;
+          background-color: #f1c894;
+          color: #c07414;
+          resize: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        .toolbar {
+          text-align: right;
+          margin: 17px 0;
+          &-left, &-right {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          &-left {
+            &:before {
+              content: attr(data-before);
+              display: inline-block;
+              vertical-align: middle;
+              font: 14px 'SimSun';
+              color: #f1c894;
+            }
+            input, img {
+              vertical-align: middle;
+              margin: 0 5px;
+            }
+            input {
+              width: 91px;
+              height: 32px;
+              border: 1px solid #f1c894;
+              background-color: #fef6ec;
+            }
+            img {
+              width: 71px;
+              height: 32px;
+            }
+          }
+          &-right {
+            .btn-clear-sm, .btn-publish-sm {
+              display: inline-block;
+              vertical-align: middle;
+              text-align: center;
+              width: 91px;
+              height: 32px;
+              margin: 0 5px;
+              border: none;
+              font: 16px 'Microsoft YaHei';
+              color: #a2170f;
+              line-height: 32px;
+              background: url("../images/sprite-anniversary.png") no-repeat;
+              background-position: -172px -829px;
+              &:hover {
+                background-position: -172px -863px;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+      .comment-lists {
+        margin: 50px 0;
+        ul {
+          li {
+            margin-bottom: 34px;
+            &:after {
+              content: '';
+              display: table;
+              clear: both;
+            }
+            .lists-left {
+              float: left;
+              width: 114px;
+              height: 114px;
+              border: 2px solid #f1c894;
+              img {
+                max-width: 100%;
+              }
+            }
+            .lists-right {
+              float: right;
+              width: 772px;
+              border: 2px solid #f1c894;
+              background-color: #fbead5;
+              padding: 20px 40px;
+              position: relative;
+              min-height: 114px;
+              &:before {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 32px;
+                left: -23px;
+                top: -2px;
+                background: url("../images/sprite-anniversary.png") no-repeat;
+                background-position: -304px 0;
+              }
+              .msg {
+                &-left, &-right {
+                  span {
+                    font: 16px 'SimSun';
+                    color: #e78304;
+                  }
+                }
+                &-left {
+                  float: left;
+                  span {
+                    margin-right: 42px;
+                  }
+                }
+                &-right {
+                  float: right;
+                  span {
+                    font: 16px 'SimSun';
+                    color: #a2170f;
+                  }
+                }
+                .clearfix {
+                  clear: both;
+                }
+                &-bottom {
+                  margin-top: 20px;
+                  span {
+                    font: 12px 'SimSun';
+                    color: #e78304;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .page {
+          font-size: 0;
+          text-align: center;
+          margin: 30px 0;
+          a {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 4px 8px;
+            border: 1px solid #fcf5eb;
+            background-color: #f1c894;
+            font: 12px 'SimSun';
+            color: #e78304;
+            margin: 0 5px;
+            &:hover, &.active {
+              border: 1px solid transparent;
+              background-color: transparent;
+            }
+            &.active {
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+    .anniversary-instructions {
+      padding: 26px 43px;
+      .time {
+        margin-bottom: 15px;
+        &:before {
+          content: attr(data-before);
+          display: inline-block;
+          vertical-align: middle;
+          font: 22px 'Microsoft YaHei';
+          line-height: 54px;
+          color: #a0907c;
+        }
+        span {
+          font: 20px 'Microsoft YaHei';
+          color: #a0907c;
+          vertical-align: middle;
+        }
+      }
+      .content, .rule {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 118px;
+        &:before {
+          content: attr(data-before);
+          position: absolute;
+          left:0;
+          top:0;
+          width: 141px;
+          font: 22px/30px 'Microsoft YaHei';
+          color: #a0907c;
+        }
+        p {
+          font: 20px 'Microsoft YaHei';
+          color: #a0907c;
+          line-height: 32px;
+        }
+      }
+      .reward {
+        margin-bottom: 52px;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          width: 141px;
+          font: 22px/30px 'Microsoft YaHei';
+          color: #a0907c;
+        }
+        p {
+          font: 20px 'Microsoft YaHei';
+          color: #a0907c;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}
+
+.mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: .8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+
+.popup {
+  z-index: 11;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 5px solid #fef3e5;
+  background-color: #f1c894;
+  .close {
+    position: absolute;
+    border: 5px solid #fef3e5;
+    right: -5px;
+    top: -5px;
+    font-size: 0;
+    width: 57px;
+    height: 57px;
+    background: #f1c894 url("../images/sprite-anniversary.png") no-repeat;
+    background-position: -282px -32px;
+  }
+  &.pop-girl {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 413px;
+      height: 429px;
+      background: url("../images/bg-pop.png") no-repeat;
+      left: -206px;
+      bottom: -5px;
+    }
+  }
+  &.pop-girl-lg {
+    &:before {
+      content: '';
+      position: absolute;
+      background: url("../images/bg-pop-lg.png") no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      z-index: -1;
+    }
+  }
+  &.pop-girl-lg.pop-goods {
+    &:before {
+      width: 492px;
+      height: 500px;
+      left: -290px;
+      top: -50px;
+    }
+  }
+  &.pop-girl-lg.pop-giftbox {
+    &:before {
+      width: 358px;
+      height: 364px;
+      left: -150px;
+      top: -130px;
+    }
+  }
+}
+
+.pop-giftcode {
+  display: none;
+  width: 750px;
+  height: 303px;
+  margin-left: -320px;
+  margin-top: -150px;
+  padding-top: 55px;
+  .pop-body {
+    h1 {
+      text-align: center;
+      padding-bottom: 54px;
+      font: 24px 'Arial';
+      color: #b41618;
+      font-weight: bold;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        font: 32px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 8px;
+      }
+    }
+    .p1, .p2 {
+      font: 14px 'SimSun';
+      color: #b41618;
+      text-align: center;
+      line-height: 26px;
+      a {
+        color: #b41618;
+      }
+    }
+  }
+}
+
+.pop-questions {
+  display: none;
+  width: 750px;
+  height: 384px;
+  margin-left: -320px;
+  margin-top: -192px;
+  padding: 40px 130px;
+  .pop-body {
+    h2 {
+      text-align: center;
+      padding-bottom: 18px;
+      margin-bottom: 14px;
+      margin-left: 18px;
+      margin-right: 18px;
+      border-bottom: 1px solid #a2290a;
+      font: 20px 'Arial';
+      font-weight: bold;
+      color: #b41618;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        font: 26px 'NSimHei';
+        color: #931d01;
+        margin-bottom: 8px;
+        text-shadow: 0 1px 1px #fff;
+      }
+    }
+    p {
+      font: 14px 'SimSun';
+      color: #b41618;
+      text-align: center;
+      line-height: 26px;
+    }
+    .question {
+      position: relative;
+      padding-left: 35px;
+      &.right, &.wrong {
+        &:before {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          font: 36px 'SimHei';
+          font-weight: bold;
+          margin-left: -15px;
+          margin-top: -15px;
+          top: 50%;
+          left: 50%;
+        }
+      }
+      &.right {
+        &:before {
+          content: attr(data-right);
+          color: #13a709;
+        }
+      }
+      &.wrong {
+        &:before {
+          content: attr(data-wrong);
+          color: #b41618;
+        }
+      }
+      .caption {
+        font: 20px 'NSimHei';
+        text-shadow: 0 1px 1px #fff;
+        color: #931d01;
+        display: block;
+        margin-top: 24px;
+      }
+      ul {
+        li {
+          margin: 5px 0;
+          a {
+            display: inline-block;
+            font: 16px 'SimSun';
+            color: #b41618;
+            padding: 6px 18px;
+            &:before {
+              content: attr(data-before);
+            }
+          }
+          &.active {
+            a {
+              background-color: #f2e0c9;
+            }
+          }
+        }
+      }
+      .btn-submit {
+        display: block;
+        margin: 0 auto;
+        width: 117px;
+        height: 36px;
+        font: 20px 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 38px;
+        font-weight: bold;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -172px -897px;
+        &:hover {
+          background-position: -172px -937px;
+        }
+      }
+    }
+  }
+}
+
+.pop-wrong {
+  display: none;
+  width: 750px;
+  height: 296px;
+  margin-left: -320px;
+  margin-top: -148px;
+  padding: 90px 130px;
+  .pop-body {
+    h2 {
+      font: 32px 'NSimHei';
+      color: #931d01;
+      text-shadow: 0 1px 1px #fff;
+      margin-bottom: 42px;
+      text-align: center;
+    }
+    .btn-submit {
+      display: block;
+      margin: 0 auto;
+      width: 117px;
+      height: 38px;
+      font: 20px 'Microsoft YaHei';
+      color: #480a33;
+      text-align: center;
+      line-height: 38px;
+      font-weight: bold;
+      background: url("../images/sprite-anniversary.png") no-repeat;
+      background-position: -172px -897px;
+      &:hover {
+        background-position: -172px -937px;
+      }
+    }
+  }
+}
+
+.pop-right {
+  display: none;
+  width: 750px;
+  height: 296px;
+  margin-left: -320px;
+  margin-top: -148px;
+  padding: 50px 130px;
+  .pop-body {
+    h2 {
+      color: #931d01;
+      text-align: center;
+      font: 20px 'NSimHei';
+      text-shadow: 0 1px 1px #fff;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        font: 30px 'NSimHei';
+        margin-bottom: 15px;
+      }
+      &:after {
+        content: attr(data-after);
+        display: block;
+        font: 24px 'NSimHei';
+        margin-top: 35px;
+      }
+    }
+    .btn-group {
+      width: 290px;
+      margin: 20px auto;
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .btn-submit {
+        float: left;
+      }
+      .btn-cancel {
+        float: right;
+      }
+    }
+    .btn-submit, .btn-cancel {
+      display: block;
+      margin: 0 auto;
+      width: 117px;
+      height: 38px;
+      font: 20px 'Microsoft YaHei';
+      color: #480a33;
+      text-align: center;
+      line-height: 38px;
+      font-weight: bold;
+      background: url("../images/sprite-anniversary.png") no-repeat;
+    }
+    .btn-submit {
+      background-position: -172px -895px;
+      &:hover {
+        background-position: -172px -934px;
+      }
+    }
+    .btn-cancel {
+      background-position: -172px -973px;
+      &:hover {
+        background-position: -172px -1012px;
+      }
+    }
+  }
+}
+
+.pop-generals {
+  display: none;
+  width: 868px;
+  height: 295px;
+  margin-left: -434px;
+  margin-top: -147px;
+  padding: 50px 34px;
+  .pop-body {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    &-left {
+      float: left;
+    }
+    &-right {
+      float: right;
+      width: 626px;
+      margin-right: 24px;
+      h2 {
+        text-align: center;
+        font: 24px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        margin: 15px 0 25px;
+      }
+      h3 {
+        text-align: center;
+        font: 18px 'Arial';
+        font-weight: bold;
+        color: #931d01;
+        margin-bottom: 30px;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          color: #931d01;
+          font: 22px 'NSimHei';
+          text-shadow: 0 1px 1px #fff;
+          margin-bottom: 5px;
+        }
+      }
+      .p1, .p2 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+        a {
+          color: #b41618;
+        }
+      }
+    }
+  }
+}
+
+.pop-turntable {
+  display: none;
+  width: 878px;
+  height: 325px;
+  margin-left: -380px;
+  margin-top: -162px;
+  padding: 80px 80px 65px 200px;
+  .pop-body {
+    h2 {
+      font: 24px 'NSimHei';
+      color: #931d01;
+      text-shadow: 0 1px 1px #fff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font: 20px 'NSimHei';
+      color: #931d01;
+      text-align: center;
+      text-shadow: 0 1px 1px #fff;
+      margin-bottom: 45px;
+      .caption {
+        font: 24px 'Microsoft YaHei';
+        color: #931d01;
+        font-weight: bold;
+        padding: 0 10px;
+      }
+    }
+    .p1, .p2 {
+      font: 14px 'SimSun';
+      color: #b41618;
+      text-align: center;
+      line-height: 26px;
+      a {
+        color: #b41618;
+      }
+    }
+  }
+}
+
+.pop-avatar-turntable {
+  display: none;
+  width: 878px;
+  height: 375px;
+  margin-left: -380px;
+  margin-top: -186px;
+  padding: 25px 46px;
+  .pop-body {
+    &-left {
+      float: left;
+      width: 220px;
+      height: 326px;
+      ul {
+        position: relative;
+        width: 220px;
+        height: 326px;
+        li {
+          position: absolute;
+          width: 91px;
+          height: 122px;
+          &:first-child {
+            left: 0;
+            top: 0;
+            z-index: 11;
+          }
+          &:first-child + li {
+            right: 0;
+            top: 0;
+            z-index: 11;
+          }
+          &:first-child + li + li {
+            top: 50%;
+            left: 50%;
+            margin-left: -45px;
+            margin-top: -61px;
+            z-index: 1;
+          }
+          &:first-child + li + li + li {
+            left: 0;
+            bottom: 0;
+            z-index: 11;
+          }
+          &:first-child + li + li + li + li {
+            right: 0;
+            bottom: 0;
+            z-index: 11;
+          }
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    &-right {
+      float: right;
+      width: 550px;
+      padding: 80px 20px;
+      h2 {
+        font: 22px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      h3 {
+        font: 18px 'NSimHei';
+        color: #931d01;
+        text-align: center;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 45px;
+        .caption {
+          font: 22px 'Microsoft YaHei';
+          color: #931d01;
+          font-weight: bold;
+          padding: 0 10px;
+        }
+      }
+      .p1, .p2 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+        a {
+          color: #b41618;
+        }
+      }
+    }
+  }
+}
+
+.pop-goods {
+  display: none;
+  width: 657px;
+  height: 560px;
+  margin-left: -300px;
+  margin-top: -280px;
+  .pop-body {
+    padding: 40px 56px;
+    border: 5px solid #fef3e5;
+    background-color: #f1c894;
+    margin: -5px;
+    .form-group {
+      h3 {
+        text-align: center;
+        font: 20px 'NSimHei';
+        color: #b41618;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font: 26px 'NSimHei';
+          color: #931d01;
+          margin-bottom: 8px;
+          text-shadow: 0 1px 1px #fff;
+        }
+      }
+      ul {
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font: 14px 'SimSun';
+          color: #b41618;
+          margin-bottom: 10px;
+        }
+        li {
+          margin-bottom: 10px;
+          padding: 0 50px;
+          &:before {
+            content: attr(data-before);
+            display: inline-block;
+            vertical-align: middle;
+            font: 14px 'SimSun';
+            color: #b41618;
+            width: 100px;
+            text-align: right;
+          }
+          &:after {
+            content: attr(data-after);
+            display: block;
+            font: 14px 'SimSun';
+            color: #b41618;
+            margin-top: 10px;
+            margin-left: 100px;
+          }
+          input, select {
+            width: 250px;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 5px;
+            color: #b41618;
+            background-color: #f1c894;
+            border: 1px solid #b41618;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+      .btn-submit {
+        display: block;
+        margin: 10px auto;
+        width: 117px;
+        height: 38px;
+        font: 20px 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 38px;
+        font-weight: bold;
+        border: none;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -172px -895px;
+        &:hover {
+          background-position: -172px -935px;
+        }
+      }
+      .p1, .p2 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+        a {
+          color: #b41618;
+        }
+      }
+    }
+  }
+}
+
+.pop-success {
+  display: none;
+  width: 749px;
+  height: 373px;
+  margin-left: -375px;
+  margin-top: -186px;
+  padding-top: 80px;
+  padding-bottom: 64px;
+  .pop-body {
+    padding-left: 50px;
+    h3 {
+      text-align: center;
+      padding-bottom: 20px;
+      font: 24px 'Arial';
+      color: #b41618;
+      font-weight: bold;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        font: 32px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 8px;
+      }
+    }
+    .btn-lg {
+      display: block;
+      width: 386px;
+      height: 58px;
+      text-align: center;
+      margin: 20px auto;
+      font: 24px 'MicroSoft YaHei';
+      font-weight: bold;
+      line-height: 50px;
+      color: #480a33;
+      background: url("../images/btn-lg.jpg") no-repeat;
+    }
+    .p1 {
+      font: 14px 'SimSun';
+      color: #b41618;
+      text-align: center;
+      line-height: 26px;
+      a {
+        color: #b41618;
+      }
+    }
+  }
+}
+
+.pop-giftbox {
+  display: none;
+  width: 760px;
+  height: 393px;
+  margin-left: -380px;
+  margin-top: -196px;
+  .pop-body {
+    padding: 50px 76px;
+    border: 5px solid #fef3e5;
+    background-color: #f1c894;
+    margin: -5px;
+    &:before {
+      content: attr(data-before);
+      display: block;
+      text-align: center;
+      font: 28px 'NSimHei';
+      color: #931d01;
+      text-shadow: 0 1px 1px #fff;
+      margin-bottom: 15px;
+    }
+    &:after {
+      content: attr(data-after);
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      font: 14px 'SimSun';
+      color: #b41618;
+    }
+    .gift-table-wrapper {
+      height: 186px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      .gift-table {
+        table {
+          width: 100%;
+          text-align: center;
+          border-collapse: collapse;
+          border: 1px solid #b41618;
+          thead {
+            th {
+              line-height: 40px;
+              text-align: center;
+              border: 1px solid #b41618;
+              color: #f6dcaa;
+              background-color: #9f0e06;
+            }
+          }
+          tbody {
+            td {
+              line-height: 35px;
+              color: #b41618;
+              border: 1px solid #b41618;
+              a {
+                background-color: #e99f42;
+                padding: 4px 6px;
+                color: #9f0e06;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

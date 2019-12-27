@@ -1,0 +1,2665 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #450601;
+}
+
+@media (min-width: 1000px) {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background: url("../images/bg-body-repeat.jpg") repeat;
+    }
+    .topBar .logoC {
+        height: 35px;
+    }
+    .anniversary-cn2018 {
+        background: url("../images/bg-body.jpg") top center no-repeat;
+    }
+    .anniversary-cn2018 .anniversary-container {
+        width: 1000px;
+        margin: 0 auto;
+        background: url("../images/bg-container.jpg") top center no-repeat;
+    }
+    .anniversary-cn2018 .anniversary-container .icon-gift {
+        position: fixed;
+        width: 155px;
+        height: 134px;
+        text-align: center;
+        font: 28px 'MicroSoft YaHei';
+        line-height: 134px;
+        font-weight: bold;
+        color: #ee5f19;
+        text-shadow: 0 1px 1px #fff;
+        top: 50%;
+        margin-top: -67px;
+        right: 0;
+        z-index: 1;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: 0 -693px;
+    }
+    .anniversary-cn2018 .anniversary-container .icon-gift:hover {
+        background-position: -159px -693px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav {
+        padding-top: 1022px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul {
+        font-size: 0;
+        text-align: center;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 30px 16px;
+        width: 282px;
+        height: 138px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul li a {
+        display: block;
+        padding: 67px 20px 30px 20px;
+        text-shadow: 0 0 2px #fff;
+        font: 30px 'MicroSoft YaHei';
+        color: #811a02;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: 0 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul li:hover a,
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul li.active a {
+        background-position: 0 -138px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin {
+        width: 1000px;
+        height: 862px;
+        margin-top: 32px;
+        position: relative;
+        background: url("../images/bg-calendar.png") no-repeat;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin:after {
+        content: '';
+        display: table;
+        clear: both;
+        height: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left {
+        width: 225px;
+        float: left;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .calendar {
+        text-align: center;
+        color: #fbc98a;
+        width: 186px;
+        height: 218px;
+        margin: 65px auto 16px;
+        background: url("../images/bg-calendar-sm.png") no-repeat;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .calendar h2 {
+        font: 46px 'Microsoft YaHei';
+        font-weight: bold;
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .calendar h1 {
+        font: 84px 'Arial';
+        font-weight: bold;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .flop-times {
+        text-align: center;
+        color: #99120a;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .flop-times p {
+        font: 20px 'Microsoft YaHei';
+        margin-bottom: 5px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .flop-times b {
+        font: 24px 'Microsoft YaHei';
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group {
+        margin: 40px 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid {
+        display: block;
+        width: 171px;
+        height: 70px;
+        text-align: center;
+        font: 24px 'MicroSoft YaHei';
+        color: #eabe6a;
+        text-shadow: 0 0 1px #000;
+        padding: 23px 10px;
+        margin: 0 auto;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-signin,
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-answer {
+        background-position: 0 -829px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-signin:hover,
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-answer:hover {
+        background-position: 0 -899px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-answered {
+        color: #fef4da;
+        cursor: default;
+        background-position: 0 -969px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right {
+        float: right;
+        width: 775px;
+        padding: 5px 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul {
+        font-size: 0;
+        padding: 20px 10px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li {
+        display: inline-block;
+        vertical-align: top;
+        width: 140px;
+        height: 189px;
+        margin: 10px 6px 10px 5px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li center {
+        position: relative;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li .avatar,
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li .card {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li .card {
+        -webkit-transition: all .4s ease .2s;
+        -moz-transition: all .4s ease .2s;
+        -ms-transition: all .4s ease .2s;
+        -o-transition: all .4s ease .2s;
+        transition: all .4s ease .2s;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li .avatar {
+        opacity: 0;
+        left: 0;
+        top: 0;
+        -webkit-transition: all .4s ease .2s;
+        -moz-transition: all .4s ease .2s;
+        -ms-transition: all .4s ease .2s;
+        -o-transition: all .4s ease .2s;
+        transition: all .4s ease .2s;
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    /***
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li:hover .card {
+      opacity: 0;
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li:hover .avatar {
+      opacity: 1;
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    ***/
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery {
+        position: relative;
+        margin: 0 4px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery:after {
+        content: '';
+        display: table;
+        clear: both;
+        height: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left {
+        float: left;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right {
+        float: right;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right {
+        margin: 52px 11px 49px;
+        position: relative;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery:before,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery:before {
+        content: attr(data-before);
+        display: block;
+        width: 334px;
+        margin: 24px auto 36px;
+        padding-top: 17px;
+        padding-bottom: 14px;
+        text-align: center;
+        font: 36px 'MicroSoft YaHei';
+        font-weight: bold;
+        color: #f4ce1f;
+        text-shadow: 0 1px 1px #000;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: 0 -613px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul {
+        position: relative;
+        width: 474px;
+        height: 352px;
+        border: 10px solid #ca9902;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li {
+        position: absolute;
+        display: table;
+        width: 152px;
+        height: 112px;
+        text-align: center;
+        border: 1px solid #ca9902;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.active:after,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.active:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #d31a11;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li a,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li a {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        height: 112px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li a:after,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li a:after {
+        content: attr(data-after);
+        font: 18px 'MicroSoft YaHei';
+        line-height: 30px;
+        color: #eabe6a;
+        position: absolute;
+        top: 82px;
+        left: 0;
+        right: 0;
+        text-shadow: 0 1px 1px #f00;
+        text-align: center;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li img,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li img {
+        max-width: 100%;
+        -webkit-transition: all .2s ease .2s;
+        -moz-transition: all .2s ease .2s;
+        -ms-transition: all .2s ease .2s;
+        -o-transition: all .2s ease .2s;
+        transition: all .2s ease .2s;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:hover img,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:hover img {
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child {
+        left: 0;
+        top: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li {
+        left: 152px;
+        top: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li {
+        left: 304px;
+        top: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li {
+        left: 304px;
+        top: 112px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li {
+        left: 304px;
+        top: 224px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li + li {
+        left: 152px;
+        top: 224px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li + li + li {
+        left: 0;
+        top: 224px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li + li + li + li {
+        left: 0;
+        top: 112px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li + li + li + li + li {
+        left: 152px;
+        top: 112px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-start,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-start,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-won,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-won,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-unactive,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-unactive {
+        font-size: 0;
+        width: 110px;
+        height: 110px;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-start,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-start {
+        background-position: 0 -277px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-start:hover,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-start:hover {
+        background-position: -152px -277px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-won,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-won {
+        background-position: 0 -389px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-won:hover,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-won:hover {
+        background-position: -152px -389px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-unactive,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-unactive {
+        cursor: default;
+        background-position: 0 -501px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard {
+        padding: 18px 30px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists {
+        font-size: 0;
+        margin-bottom: 10px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists select {
+        display: inline-block;
+        vertical-align: middle;
+        width: 171px;
+        height: 32px;
+        margin-right: 30px;
+        font: 14px 'SimSun';
+        border: 1px solid #f1c894;
+        background-color: #fef6ec;
+        color: #c07414;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists select:focus {
+        outline: none;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment textarea {
+        width: 100%;
+        height: 233px;
+        padding: 30px 20px;
+        font: 14px 'SimSun';
+        border: 1px solid #fcf5eb;
+        background-color: #f1c894;
+        color: #c07414;
+        resize: none;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment textarea:focus {
+        outline: none;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar {
+        text-align: right;
+        margin: 17px 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left:before {
+        content: attr(data-before);
+        display: inline-block;
+        vertical-align: middle;
+        font: 14px 'SimSun';
+        color: #f1c894;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left input,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left img {
+        vertical-align: middle;
+        margin: 0 5px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left input {
+        width: 91px;
+        height: 32px;
+        border: 1px solid #f1c894;
+        background-color: #fef6ec;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left img {
+        width: 71px;
+        height: 32px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        width: 91px;
+        height: 32px;
+        margin: 0 5px;
+        border: none;
+        font: 16px 'Microsoft YaHei';
+        color: #a2170f;
+        line-height: 32px;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -172px -829px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm:hover,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm:hover {
+        background-position: -172px -863px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm:focus,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm:focus {
+        outline: none;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists {
+        margin: 50px 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li {
+        margin-bottom: 34px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-left {
+        float: left;
+        width: 114px;
+        height: 114px;
+        border: 2px solid #f1c894;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-left img {
+        max-width: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right {
+        float: right;
+        width: 772px;
+        border: 2px solid #f1c894;
+        background-color: #fbead5;
+        padding: 20px 40px;
+        position: relative;
+        min-height: 114px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right:before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 32px;
+        left: -23px;
+        top: -2px;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -304px 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left span,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right span {
+        font: 16px 'SimSun';
+        color: #e78304;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left {
+        float: left;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left span {
+        margin-right: 42px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right {
+        float: right;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right span {
+        font: 16px 'SimSun';
+        color: #a2170f;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg .clearfix {
+        clear: both;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-bottom {
+        margin-top: 20px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-bottom span {
+        font: 12px 'SimSun';
+        color: #e78304;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page {
+        font-size: 0;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 4px 8px;
+        border: 1px solid #fcf5eb;
+        background-color: #f1c894;
+        font: 12px 'SimSun';
+        color: #e78304;
+        margin: 0 5px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a:hover,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a.active {
+        border: 1px solid transparent;
+        background-color: transparent;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a.active {
+        cursor: default;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions {
+        padding: 26px 43px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .time {
+        margin-bottom: 52px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .time:before {
+        content: attr(data-before);
+        display: inline-block;
+        vertical-align: middle;
+        width: 141px;
+        height: 54px;
+        font: 22px 'Microsoft YaHei';
+        line-height: 54px;
+        color: #cc9a00;
+        text-shadow: 0 1px 1px #000;
+        padding-left: 13px;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -152px -501px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .time span {
+        font: 26px 'Microsoft YaHei';
+        color: #fbc98a;
+        vertical-align: middle;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .content {
+        margin-bottom: 52px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .content:before {
+        content: attr(data-before);
+        display: block;
+        width: 141px;
+        height: 54px;
+        font: 22px 'Microsoft YaHei';
+        line-height: 54px;
+        color: #cc9a00;
+        text-shadow: 0 1px 1px #000;
+        padding-left: 13px;
+        margin-bottom: 26px;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -152px -501px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .content p {
+        font: 20px 'Microsoft YaHei';
+        color: #ffc986;
+        line-height: 32px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .reward {
+        margin-bottom: 52px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .reward:before {
+        content: attr(data-before);
+        display: block;
+        width: 141px;
+        height: 54px;
+        font: 22px 'Microsoft YaHei';
+        line-height: 54px;
+        color: #cc9a00;
+        text-shadow: 0 1px 1px #000;
+        padding-left: 13px;
+        margin-bottom: 26px;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -152px -501px;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .reward p {
+        font: 20px 'Microsoft YaHei';
+        color: #ffc986;
+        line-height: 32px;
+    }
+    .mask {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: .8;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    }
+    .popup {
+        z-index: 11;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        border: 5px solid #fef3e5;
+        background-color: #f1c894;
+    }
+    .popup .close {
+        position: absolute;
+        border: 5px solid #fef3e5;
+        right: -5px;
+        top: -5px;
+        font-size: 0;
+        width: 57px;
+        height: 57px;
+        background: #f1c894 url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -282px -32px;
+    }
+    .popup.pop-girl:before {
+        content: '';
+        position: absolute;
+        width: 413px;
+        height: 429px;
+        background: url("../images/bg-pop.png") no-repeat;
+        left: -206px;
+        bottom: -5px;
+    }
+    .popup.pop-girl-lg:before {
+        content: '';
+        position: absolute;
+        background: url("../images/bg-pop-lg.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        z-index: -1;
+    }
+    .popup.pop-girl-lg.pop-goods:before {
+        width: 492px;
+        height: 500px;
+        left: -290px;
+        top: -50px;
+    }
+    .popup.pop-girl-lg.pop-giftbox:before {
+        width: 358px;
+        height: 364px;
+        left: -150px;
+        top: -130px;
+    }
+    .pop-giftcode {
+        display: none;
+        width: 750px;
+        height: 303px;
+        margin-left: -320px;
+        margin-top: -150px;
+        padding-top: 55px;
+    }
+    .pop-giftcode .pop-body h1 {
+        text-align: center;
+        padding-bottom: 54px;
+        font: 24px 'Arial';
+        color: #b41618;
+        font-weight: bold;
+    }
+    .pop-giftcode .pop-body h1:before {
+        content: attr(data-before);
+        display: block;
+        font: 32px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 8px;
+    }
+    .pop-giftcode .pop-body .p1,
+    .pop-giftcode .pop-body .p2 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+    }
+    .pop-giftcode .pop-body .p1 a,
+    .pop-giftcode .pop-body .p2 a {
+        color: #b41618;
+    }
+    .pop-questions {
+        display: none;
+        width: 750px;
+        height: 384px;
+        margin-left: -320px;
+        margin-top: -192px;
+        padding: 40px 130px;
+    }
+    .pop-questions .pop-body h2 {
+        text-align: center;
+        padding-bottom: 18px;
+        margin-bottom: 14px;
+        margin-left: 18px;
+        margin-right: 18px;
+        border-bottom: 1px solid #a2290a;
+        font: 20px 'Arial';
+        font-weight: bold;
+        color: #b41618;
+    }
+    .pop-questions .pop-body h2:before {
+        content: attr(data-before);
+        display: block;
+        font: 26px 'NSimHei';
+        color: #931d01;
+        margin-bottom: 8px;
+        text-shadow: 0 1px 1px #fff;
+    }
+    .pop-questions .pop-body p {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+    }
+    .pop-questions .pop-body .question {
+        position: relative;
+        padding-left: 35px;
+    }
+    .pop-questions .pop-body .question.right:before,
+    .pop-questions .pop-body .question.wrong:before {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        font: 36px 'SimHei';
+        font-weight: bold;
+        margin-left: -15px;
+        margin-top: -15px;
+        top: 50%;
+        left: 50%;
+    }
+    .pop-questions .pop-body .question.right:before {
+        content: attr(data-right);
+        color: #13a709;
+    }
+    .pop-questions .pop-body .question.wrong:before {
+        content: attr(data-wrong);
+        color: #b41618;
+    }
+    .pop-questions .pop-body .question .caption {
+        font: 20px 'NSimHei';
+        text-shadow: 0 1px 1px #fff;
+        color: #931d01;
+        display: block;
+        margin-top: 24px;
+    }
+    .pop-questions .pop-body .question ul li {
+        margin: 5px 0;
+    }
+    .pop-questions .pop-body .question ul li a {
+        display: inline-block;
+        font: 16px 'SimSun';
+        color: #b41618;
+        padding: 6px 18px;
+    }
+    .pop-questions .pop-body .question ul li a:before {
+        content: attr(data-before);
+    }
+    .pop-questions .pop-body .question ul li.active a {
+        background-color: #f2e0c9;
+    }
+    .pop-questions .pop-body .question .btn-submit {
+        display: block;
+        margin: 0 auto;
+        width: 117px;
+        height: 36px;
+        font: 20px 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 38px;
+        font-weight: bold;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -172px -897px;
+    }
+    .pop-questions .pop-body .question .btn-submit:hover {
+        background-position: -172px -937px;
+    }
+    .pop-wrong {
+        display: none;
+        width: 750px;
+        height: 296px;
+        margin-left: -320px;
+        margin-top: -148px;
+        padding: 90px 130px;
+    }
+    .pop-wrong .pop-body h2 {
+        font: 32px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 42px;
+        text-align: center;
+    }
+    .pop-wrong .pop-body .btn-submit {
+        display: block;
+        margin: 0 auto;
+        width: 117px;
+        height: 38px;
+        font: 20px 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 38px;
+        font-weight: bold;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -172px -897px;
+    }
+    .pop-wrong .pop-body .btn-submit:hover {
+        background-position: -172px -937px;
+    }
+    .pop-right {
+        display: none;
+        width: 750px;
+        height: 296px;
+        margin-left: -320px;
+        margin-top: -148px;
+        padding: 50px 130px;
+    }
+    .pop-right .pop-body h2 {
+        color: #931d01;
+        text-align: center;
+        font: 20px 'NSimHei';
+        text-shadow: 0 1px 1px #fff;
+    }
+    .pop-right .pop-body h2:before {
+        content: attr(data-before);
+        display: block;
+        font: 30px 'NSimHei';
+        margin-bottom: 15px;
+    }
+    .pop-right .pop-body h2:after {
+        content: attr(data-after);
+        display: block;
+        font: 24px 'NSimHei';
+        margin-top: 35px;
+    }
+    .pop-right .pop-body .btn-group {
+        width: 290px;
+        margin: 20px auto;
+    }
+    .pop-right .pop-body .btn-group:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .pop-right .pop-body .btn-group .btn-submit {
+        float: left;
+    }
+    .pop-right .pop-body .btn-group .btn-cancel {
+        float: right;
+    }
+    .pop-right .pop-body .btn-submit,
+    .pop-right .pop-body .btn-cancel {
+        display: block;
+        margin: 0 auto;
+        width: 117px;
+        height: 38px;
+        font: 20px 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 38px;
+        font-weight: bold;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+    }
+    .pop-right .pop-body .btn-submit {
+        background-position: -172px -895px;
+    }
+    .pop-right .pop-body .btn-submit:hover {
+        background-position: -172px -934px;
+    }
+    .pop-right .pop-body .btn-cancel {
+        background-position: -172px -973px;
+    }
+    .pop-right .pop-body .btn-cancel:hover {
+        background-position: -172px -1012px;
+    }
+    .pop-generals {
+        display: none;
+        width: 868px;
+        height: 295px;
+        margin-left: -434px;
+        margin-top: -147px;
+        padding: 50px 34px;
+    }
+    .pop-generals .pop-body:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .pop-generals .pop-body-left {
+        float: left;
+    }
+    .pop-generals .pop-body-right {
+        float: right;
+        width: 626px;
+        margin-right: 24px;
+    }
+    .pop-generals .pop-body-right h2 {
+        text-align: center;
+        font: 24px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        margin: 15px 0 25px;
+    }
+    .pop-generals .pop-body-right h3 {
+        text-align: center;
+        font: 18px 'Arial';
+        font-weight: bold;
+        color: #931d01;
+        margin-bottom: 30px;
+    }
+    .pop-generals .pop-body-right h3:before {
+        content: attr(data-before);
+        display: block;
+        color: #931d01;
+        font: 22px 'NSimHei';
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 5px;
+    }
+    .pop-generals .pop-body-right .p1,
+    .pop-generals .pop-body-right .p2 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+    }
+    .pop-generals .pop-body-right .p1 a,
+    .pop-generals .pop-body-right .p2 a {
+        color: #b41618;
+    }
+    .pop-turntable {
+        display: none;
+        width: 878px;
+        height: 325px;
+        margin-left: -380px;
+        margin-top: -162px;
+        padding: 80px 80px 65px 200px;
+    }
+    .pop-turntable .pop-body h2 {
+        font: 24px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .pop-turntable .pop-body h3 {
+        font: 20px 'NSimHei';
+        color: #931d01;
+        text-align: center;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 45px;
+    }
+    .pop-turntable .pop-body h3 .caption {
+        font: 24px 'Microsoft YaHei';
+        color: #931d01;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    .pop-turntable .pop-body .p1,
+    .pop-turntable .pop-body .p2 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+    }
+    .pop-turntable .pop-body .p1 a,
+    .pop-turntable .pop-body .p2 a {
+        color: #b41618;
+    }
+    .pop-avatar-turntable {
+        display: none;
+        width: 878px;
+        height: 375px;
+        margin-left: -380px;
+        margin-top: -186px;
+        padding: 25px 46px;
+    }
+    .pop-avatar-turntable .pop-body-left {
+        float: left;
+        width: 220px;
+        height: 326px;
+    }
+    .pop-avatar-turntable .pop-body-left ul {
+        position: relative;
+        width: 220px;
+        height: 326px;
+    }
+    .pop-avatar-turntable .pop-body-left ul li {
+        position: absolute;
+        width: 91px;
+        height: 122px;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child {
+        left: 0;
+        top: 0;
+        z-index: 11;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child + li {
+        right: 0;
+        top: 0;
+        z-index: 11;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child + li + li {
+        top: 50%;
+        left: 50%;
+        margin-left: -45px;
+        margin-top: -61px;
+        z-index: 1;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child + li + li + li {
+        left: 0;
+        bottom: 0;
+        z-index: 11;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child + li + li + li + li {
+        right: 0;
+        bottom: 0;
+        z-index: 11;
+    }
+    .pop-avatar-turntable .pop-body-left ul li img {
+        max-width: 100%;
+    }
+    .pop-avatar-turntable .pop-body-right {
+        float: right;
+        width: 550px;
+        padding: 80px 20px;
+    }
+    .pop-avatar-turntable .pop-body-right h2 {
+        font: 22px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .pop-avatar-turntable .pop-body-right h3 {
+        font: 18px 'NSimHei';
+        color: #931d01;
+        text-align: center;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 45px;
+    }
+    .pop-avatar-turntable .pop-body-right h3 .caption {
+        font: 22px 'Microsoft YaHei';
+        color: #931d01;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    .pop-avatar-turntable .pop-body-right .p1,
+    .pop-avatar-turntable .pop-body-right .p2 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+    }
+    .pop-avatar-turntable .pop-body-right .p1 a,
+    .pop-avatar-turntable .pop-body-right .p2 a {
+        color: #b41618;
+    }
+    .pop-goods {
+        display: none;
+        width: 657px;
+        height: 560px;
+        margin-left: -300px;
+        margin-top: -280px;
+    }
+    .pop-goods .pop-body {
+        padding: 40px 56px;
+        border: 5px solid #fef3e5;
+        background-color: #f1c894;
+        margin: -5px;
+    }
+    .pop-goods .pop-body .form-group h3 {
+        text-align: center;
+        font: 20px 'NSimHei';
+        color: #b41618;
+    }
+    .pop-goods .pop-body .form-group h3:before {
+        content: attr(data-before);
+        display: block;
+        font: 26px 'NSimHei';
+        color: #931d01;
+        margin-bottom: 8px;
+        text-shadow: 0 1px 1px #fff;
+    }
+    .pop-goods .pop-body .form-group ul:before {
+        content: attr(data-before);
+        display: block;
+        font: 14px 'SimSun';
+        color: #b41618;
+        margin-bottom: 10px;
+    }
+    .pop-goods .pop-body .form-group ul li {
+        margin-bottom: 10px;
+        padding: 0 50px;
+    }
+    .pop-goods .pop-body .form-group ul li:before {
+        content: attr(data-before);
+        display: inline-block;
+        vertical-align: middle;
+        font: 14px 'SimSun';
+        color: #b41618;
+        width: 100px;
+        text-align: right;
+    }
+    .pop-goods .pop-body .form-group ul li:after {
+        content: attr(data-after);
+        display: block;
+        font: 14px 'SimSun';
+        color: #b41618;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .pop-goods .pop-body .form-group ul li input,
+    .pop-goods .pop-body .form-group ul li select {
+        width: 250px;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 5px;
+        color: #b41618;
+        background-color: #f1c894;
+        border: 1px solid #b41618;
+    }
+    .pop-goods .pop-body .form-group ul li input:focus,
+    .pop-goods .pop-body .form-group ul li select:focus {
+        outline: none;
+    }
+    .pop-goods .pop-body .form-group .btn-submit {
+        display: block;
+        margin: 10px auto;
+        width: 117px;
+        height: 38px;
+        font: 20px 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 38px;
+        font-weight: bold;
+        border: none;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        background-position: -172px -895px;
+    }
+    .pop-goods .pop-body .form-group .btn-submit:hover {
+        background-position: -172px -935px;
+    }
+    .pop-goods .pop-body .form-group .p1,
+    .pop-goods .pop-body .form-group .p2 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+    }
+    .pop-goods .pop-body .form-group .p1 a,
+    .pop-goods .pop-body .form-group .p2 a {
+        color: #b41618;
+    }
+    .pop-success {
+        display: none;
+        width: 749px;
+        height: 373px;
+        margin-left: -375px;
+        margin-top: -186px;
+        padding-top: 80px;
+        padding-bottom: 64px;
+    }
+    .pop-success .pop-body {
+        padding-left: 50px;
+    }
+    .pop-success .pop-body h3 {
+        text-align: center;
+        padding-bottom: 20px;
+        font: 24px 'Arial';
+        color: #b41618;
+        font-weight: bold;
+    }
+    .pop-success .pop-body h3:before {
+        content: attr(data-before);
+        display: block;
+        font: 32px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 8px;
+    }
+    .pop-success .pop-body .btn-lg {
+        display: block;
+        width: 386px;
+        height: 58px;
+        text-align: center;
+        margin: 20px auto;
+        font: 24px 'MicroSoft YaHei';
+        font-weight: bold;
+        line-height: 50px;
+        color: #480a33;
+        background: url("../images/btn-lg.jpg") no-repeat;
+    }
+    .pop-success .pop-body .p1 {
+        font: 14px 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 26px;
+    }
+    .pop-success .pop-body .p1 a {
+        color: #b41618;
+    }
+    .pop-giftbox {
+        display: none;
+        width: 760px;
+        height: 393px;
+        margin-left: -380px;
+        margin-top: -196px;
+    }
+    .pop-giftbox .pop-body {
+        padding: 50px 76px;
+        border: 5px solid #fef3e5;
+        background-color: #f1c894;
+        margin: -5px;
+    }
+    .pop-giftbox .pop-body:before {
+        content: attr(data-before);
+        display: block;
+        text-align: center;
+        font: 28px 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 1px 1px #fff;
+        margin-bottom: 15px;
+    }
+    .pop-giftbox .pop-body:after {
+        content: attr(data-after);
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+        font: 14px 'SimSun';
+        color: #b41618;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper {
+        height: 186px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper .gift-table table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #b41618;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper .gift-table table thead th {
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #b41618;
+        color: #f6dcaa;
+        background-color: #9f0e06;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper .gift-table table tbody td {
+        line-height: 35px;
+        color: #b41618;
+        border: 1px solid #b41618;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper .gift-table table tbody td a {
+        background-color: #e99f42;
+        padding: 4px 6px;
+        color: #9f0e06;
+    }
+}
+@media (max-width: 1000px) {
+    .topBar .logoC {
+        height: 35px;
+        padding: 5px 0 !important;
+    }
+    .topBar .inner,
+    .footer {
+        width: auto;
+    }
+    .topBar .logoC .line {
+        margin:0 2px;
+    }
+    .topBar .logoC .kxLogo {
+        width: 40px;
+        background-position: center center;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .topBar .logoC .fdLogo {
+        width: 40px;
+        background-position: center center;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .topBar .funList li {
+        padding: 0 5px;
+    }
+    .topBar .facebookLogin {
+        margin: 5px 0 0 0 ;
+    }
+    .anniversary-cn2018 {
+        background: url("../images/bg-body.jpg") top center no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container {
+        width: 16rem;
+        margin: 0 auto;
+        background: url("../images/bg-container.jpg") top center no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .icon-gift {
+        position: fixed;
+        width: 2.48rem;
+        height: 2.144rem;
+        text-align: center;
+        font: 0.64rem 'MicroSoft YaHei';
+        line-height: 2.144rem;
+        font-weight: bold;
+        color: #ee5f19;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        top: 50%;
+        margin-top: -1.072rem;
+        right: 0;
+        z-index: 1;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+        background-position: 0 -11.088rem;
+    }
+    .anniversary-cn2018 .anniversary-container .icon-gift:hover {
+        background-position: -2.544rem -11.088rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav {
+        padding-top: 16.352rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul {
+        font-size: 0;
+        text-align: center;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0.48rem 0.256rem;
+        width: 4.512rem;
+        height: 2.208rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul li a {
+        display: block;
+        padding: 1rem 0.32rem 0.2rem 0.32rem;
+        text-shadow: 0 0 0.032rem #fff;
+        font: 0.64rem 'MicroSoft YaHei';
+        color: #811a02;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+        background-position: 0 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul li:hover a,
+    .anniversary-cn2018 .anniversary-container .anniversary-nav ul li.active a {
+        background-position: 0 -2.208rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin {
+        width: 16rem;
+        height: 13.792rem;
+        margin-top: 0.512rem;
+        position: relative;
+        background: url("../images/bg-calendar.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin:after {
+        content: '';
+        display: table;
+        clear: both;
+        height: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left {
+        width: 3.6rem;
+        float: left;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .calendar {
+        text-align: center;
+        color: #fbc98a;
+        width: 2.976rem;
+        height: 3.488rem;
+        margin: 1.04rem auto 0.256rem;
+        background: url("../images/bg-calendar-sm.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .calendar h2,
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .calendar h1 {
+        font-weight: bold;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .calendar h2 {
+        font: 0.75rem 'NSimHei';
+        padding-top: 0.6rem;
+        padding-bottom: 0.112rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .calendar h1 {
+        font: 1.35rem 'NSimHei';
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .flop-times {
+        text-align: center;
+        color: #99120a;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .flop-times p {
+        font: 0.48rem 'Microsoft YaHei';
+        margin-bottom: 0.08rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .flop-times b {
+        font: 0.64rem 'Microsoft YaHei';
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group {
+        margin: 0.64rem 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid {
+        display: block;
+        width: 2.736rem;
+        height: 1.12rem;
+        text-align: center;
+        font: 0.48rem 'MicroSoft YaHei';
+        color: #eabe6a;
+        text-shadow: 0 0 0.016rem #000;
+        padding: 0.26rem 0.16rem;
+        margin: 0 auto;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-signin,
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-answer {
+        background-position: 0 -13.264rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-signin:hover,
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-answer:hover {
+        background-position: 0 -14.384rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-left .btn-group .btn-mid.btn-answered {
+        color: #fef4da;
+        cursor: default;
+        background-position: 0 -15.504rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right {
+        float: right;
+        width: 12.4rem;
+        height: 13.4rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 0.08rem 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul {
+        font-size: 0;
+        padding: 0.32rem 0.16rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li {
+        display: inline-block;
+        vertical-align: top;
+        width: 2.82rem;
+        height: 3.8rem;
+        margin: 0.16rem 0.096rem 0.16rem 0.08rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li img {
+        max-width: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li center {
+        position: relative;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li .avatar,
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li .card {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li .card {
+        -webkit-transition: all .4s ease .2s;
+        -moz-transition: all .4s ease .2s;
+        -ms-transition: all .4s ease .2s;
+        -o-transition: all .4s ease .2s;
+        transition: all .4s ease .2s;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li .avatar {
+        opacity: 0;
+        left: 0;
+        top: 0;
+        -webkit-transition: all .4s ease .2s;
+        -moz-transition: all .4s ease .2s;
+        -ms-transition: all .4s ease .2s;
+        -o-transition: all .4s ease .2s;
+        transition: all .4s ease .2s;
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li:hover .card {
+        opacity: 0;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-signin-right ul li:hover .avatar {
+        opacity: 1;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery {
+        position: relative;
+        margin: 0 0.064rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery:after {
+        content: '';
+        display: table;
+        clear: both;
+        height: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right {
+        display: block;
+        width: 10.8rem;
+        margin: 0.832rem auto;
+        position: relative;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery:before,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery:before {
+        content: attr(data-before);
+        display: block;
+        width: 5.344rem;
+        margin: 0.384rem auto 0.8rem;
+        padding-top: 0.15rem;
+        padding-bottom: 0.2rem;
+        text-align: center;
+        font: 0.576rem 'MicroSoft YaHei';
+        font-weight: bold;
+        color: #f4ce1f;
+        text-shadow: 0 0.016rem 0.016rem #000;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+        background-position: 0 -9.808rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul {
+        position: relative;
+        width: 10.784rem;
+        height: 8.832rem;
+        border: 0.16rem solid #ca9902;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li {
+        position: absolute;
+        display: table;
+        width: 3.55rem;
+        height: 2.9rem;
+        border: 1px solid #ca9902;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.active,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.active {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #d31a11;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li a,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li a {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        text-align: center;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li a:after,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li a:after {
+        content: attr(data-after);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        font: 0.48rem 'MicroSoft YaHei';
+        color: #eabe6a;
+        text-shadow: 0 0.016rem 0.016rem #f00;
+        line-height: 0.8rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li img,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li img {
+        max-width: 2rem;
+        -webkit-transition: all .2s ease .2s;
+        -moz-transition: all .2s ease .2s;
+        -ms-transition: all .2s ease .2s;
+        -o-transition: all .2s ease .2s;
+        transition: all .2s ease .2s;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:hover img,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:hover img {
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child {
+        left: 0;
+        top: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li {
+        left: 3.48rem;
+        top: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li {
+        left: 6.96rem;
+        top: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li {
+        left: 6.96rem;
+        top: 2.85rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li {
+        left: 6.96rem;
+        top: 5.69rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li + li {
+        left: 3.48rem;
+        top: 5.69rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li + li + li {
+        left: 0;
+        top: 5.69rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li + li + li + li {
+        left: 0;
+        top: 2.85rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li:first-child + li + li + li + li + li + li + li + li,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li:first-child + li + li + li + li + li + li + li + li {
+        left: 3.48rem;
+        top: 2.85rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-start,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-start,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-won,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-won,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-unactive,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-unactive {
+        font-size: 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-start,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-start {
+        background: url("../images/btn-start.jpg") center no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-won,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-won {
+        background: url("../images/btn-won.jpg") center no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-left .lottery ul li.btn-group .btn-unactive,
+    .anniversary-cn2018 .anniversary-container .anniversary-lottery-right .lottery ul li.btn-group .btn-unactive {
+        cursor: default;
+        background: url("../images/btn-unactive.jpg") center no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard {
+        padding: 0.288rem 0.48rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists {
+        font-size: 0;
+        margin-bottom: 0.5rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists select {
+        display: inline-block;
+        vertical-align: middle;
+        width: 4rem;
+        height: 0.8rem;
+        margin-right: 0.48rem;
+        font: 0.48rem 'SimSun';
+        border: 1px solid #f1c894;
+        background-color: #fef6ec;
+        color: #c07414;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists select:focus {
+        outline: none;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment textarea {
+        width: 100%;
+        height: 3.728rem;
+        padding: 0.48rem 0.32rem;
+        font: 0.48rem 'SimSun';
+        border: 1px solid #fcf5eb;
+        background-color: #f1c894;
+        color: #c07414;
+        resize: none;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment textarea:focus {
+        outline: none;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar {
+        text-align: right;
+        margin: 0.272rem 0;
+        white-space: nowrap;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left:before {
+        content: attr(data-before);
+        display: inline-block;
+        vertical-align: middle;
+        font: 0.224rem 'SimSun';
+        color: #f1c894;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left input,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left img {
+        vertical-align: middle;
+        margin: 0 0.08rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left input {
+        width: 2rem;
+        height: 0.8rem;
+        border: 1px solid #f1c894;
+        background-color: #fef6ec;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left img {
+        width: 2rem;
+        height: 0.8rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        width: 3rem;
+        height: .8rem;
+        margin: 0 0.08rem;
+        border: none;
+        font: 0.48rem 'Microsoft YaHei';
+        color: #a2170f;
+        line-height: 0.512rem;
+        background: url("../images/btn-toolbar.jpg") no-repeat;
+        -webkit-background-size:100%;
+        background-size:100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm:hover,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm:hover {
+        background: url("../images/btn-toolbar-hover.jpg") no-repeat;
+        -webkit-background-size:100%;
+        background-size:100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm:focus,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm:focus {
+        outline: none;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists {
+        margin: 0.8rem 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-left {
+        float: left;
+        width: 1.824rem;
+        height: 1.824rem;
+        border: 2px solid #f1c894;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-left img {
+        max-width: 100%;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right {
+        float: right;
+        width: 12.352rem;
+        border: 2px solid #f1c894;
+        background-color: #fbead5;
+        padding: 0.32rem 0.64rem;
+        position: relative;
+        min-height: 1.824rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right:before {
+        content: '';
+        position: absolute;
+        width: 0.384rem;
+        height: 0.512rem;
+        left: -0.368rem;
+        top: -0.032rem;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+        background-position: -4.864rem 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left span,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right span {
+        font: 0.48rem 'SimSun';
+        color: #e78304;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left {
+        float: left;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left span {
+        margin-right: 0.672rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right {
+        float: right;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right span {
+        font: 0.48rem 'SimSun';
+        color: #a2170f;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg .clearfix {
+        clear: both;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-bottom {
+        margin-top: 0.32rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-bottom span {
+        font: 0.48rem 'SimSun';
+        color: #e78304;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page {
+        font-size: 0;
+        text-align: center;
+        margin: 0.48rem 0;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0.064rem 0.128rem;
+        border: 1px solid #fcf5eb;
+        background-color: #f1c894;
+        font: 0.48rem 'SimSun';
+        color: #e78304;
+        margin: 0 0.08rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a:hover,
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a.active {
+        border: 1px solid transparent;
+        background-color: transparent;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a.active {
+        cursor: default;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions {
+        padding: 0.416rem 0.688rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .time {
+        margin-bottom: 0.832rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .time:before {
+        content: attr(data-before);
+        display: inline-block;
+        vertical-align: middle;
+        width: 2.256rem;
+        height: 0.864rem;
+        font: 0.48rem 'Microsoft YaHei';
+        line-height: 0.864rem;
+        color: #cc9a00;
+        text-shadow: 0 0.016rem 0.016rem #000;
+        padding-left: 0.1rem;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+        background-position: -2.432rem -8.016rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .time span {
+        font: 0.48rem 'Microsoft YaHei';
+        color: #fbc98a;
+        vertical-align: middle;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .content {
+        margin-bottom: 0.832rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .content:before {
+        content: attr(data-before);
+        display: block;
+        width: 2.256rem;
+        height: 0.864rem;
+        font: 0.48rem 'Microsoft YaHei';
+        line-height: 0.864rem;
+        color: #cc9a00;
+        text-shadow: 0 0.016rem 0.016rem #000;
+        padding-left: 0.1rem;
+        margin-bottom: 0.416rem;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+        background-position: -2.432rem -8.016rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .content p {
+        font: 0.48rem 'Microsoft YaHei';
+        color: #ffc986;
+        line-height: 0.8rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .reward {
+        margin-bottom: 0.832rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .reward:before {
+        content: attr(data-before);
+        display: block;
+        width: 2.256rem;
+        height: 0.864rem;
+        font: 0.48rem 'Microsoft YaHei';
+        line-height: 0.864rem;
+        color: #cc9a00;
+        text-shadow: 0 0.016rem 0.016rem #000;
+        padding-left: 0.1rem;
+        margin-bottom: 0.416rem;
+        background: url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+        background-position: -2.432rem -8.016rem;
+    }
+    .anniversary-cn2018 .anniversary-container .anniversary-instructions .reward p {
+        font: 0.48rem 'Microsoft YaHei';
+        color: #ffc986;
+        line-height: 0.8rem;
+    }
+    footer {
+        padding:0 .5rem;
+    }
+    footer > div {
+        width:100% !important;
+    }
+    .mask {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: .8;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    }
+    .popup {
+        z-index: 11;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        border: 2px solid #fef3e5;
+        background-color: #f1c894;
+    }
+    .popup .close {
+        position: absolute;
+        border: 2px solid #fef3e5;
+        right: -0.08rem;
+        top: -0.08rem;
+        font-size: 0;
+        width: 0.912rem;
+        height: 0.912rem;
+        background: #f1c894 url("../images/sprite-anniversary.png") no-repeat;
+        -webkit-background-size: 5.232rem 16.8rem;
+        background-size: 5.232rem 16.8rem;
+        background-position: -4.512rem -0.512rem;
+    }
+    .popup.pop-girl:before {
+        content: '';
+        position: absolute;
+        width: 6.608rem;
+        height: 6.864rem;
+        background: url("../images/bg-pop.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        left: -3.296rem;
+        bottom: -0.08rem;
+    }
+    .popup.pop-girl-lg:before {
+        content: '';
+        position: absolute;
+        background: url("../images/bg-pop-lg.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        z-index: -1;
+    }
+    .popup.pop-girl-lg.pop-goods:before {
+        width: 7.872rem;
+        height: 8rem;
+        left: -4.64rem;
+        top: -0.8rem;
+    }
+    .popup.pop-girl-lg.pop-giftbox:before {
+        width: 5.728rem;
+        height: 5.824rem;
+        left: -2.4rem;
+        top: -2.08rem;
+    }
+    .pop-giftcode {
+        display: none;
+        width: 12rem;
+        height: 6.6rem;
+        margin-left: -5.12rem;
+        margin-top: -3.3rem;
+        padding-top: 0.88rem;
+    }
+    .pop-giftcode .pop-body h1 {
+        text-align: center;
+        padding-bottom: 0.864rem;
+        font: 0.384rem 'Arial';
+        color: #b41618;
+        font-weight: bold;
+    }
+    .pop-giftcode .pop-body h1:before {
+        content: attr(data-before);
+        display: block;
+        font: 0.512rem 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        margin-bottom: 0.128rem;
+    }
+    .pop-giftcode .pop-body .p1,
+    .pop-giftcode .pop-body .p2 {
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 0.8rem;
+        padding:0 1rem;
+    }
+    .pop-giftcode .pop-body .p1 a,
+    .pop-giftcode .pop-body .p2 a {
+        color: #b41618;
+    }
+    .pop-questions {
+        display: none;
+        width: 12rem;
+        height: 9rem;
+        margin-left: -5.12rem;
+        margin-top: -4.5rem;
+        padding: 0.64rem 2.08rem;
+    }
+    .pop-questions .pop-body h2 {
+        text-align: center;
+        padding-bottom: 0.288rem;
+        margin-bottom: 0.224rem;
+        margin-left: 0.288rem;
+        margin-right: 0.288rem;
+        border-bottom: 1px solid #a2290a;
+        font: 0.32rem 'Arial';
+        font-weight: bold;
+        color: #b41618;
+    }
+    .pop-questions .pop-body h2:before {
+        content: attr(data-before);
+        display: block;
+        font: 0.416rem 'NSimHei';
+        color: #931d01;
+        margin-bottom: 0.128rem;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+    }
+    .pop-questions .pop-body p {
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .pop-questions .pop-body .question {
+        position: relative;
+        padding-left: 1.68rem;
+    }
+    .pop-questions .pop-body .question.right:before,
+    .pop-questions .pop-body .question.wrong:before {
+        position: absolute;
+        width: 0.48rem;
+        height: 0.48rem;
+        font: 0.576rem 'SimHei';
+        font-weight: bold;
+        margin-left: -0.24rem;
+        margin-top: -0.24rem;
+        top: 50%;
+        left: 50%;
+    }
+    .pop-questions .pop-body .question.right:before {
+        content: attr(data-right);
+        color: #13a709;
+    }
+    .pop-questions .pop-body .question.wrong:before {
+        content: attr(data-wrong);
+        color: #b41618;
+    }
+    .pop-questions .pop-body .question .caption {
+        font: 0.384rem 'NSimHei';
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        color: #931d01;
+        display: block;
+        margin: 0.384rem 0;
+    }
+    .pop-questions .pop-body .question ul li {
+        margin: 0.08rem 0;
+    }
+    .pop-questions .pop-body .question ul li a {
+        display: inline-block;
+        font: 0.256rem 'SimSun';
+        color: #b41618;
+        padding: 0.096rem 0.288rem;
+    }
+    .pop-questions .pop-body .question ul li a:before {
+        content: attr(data-before);
+    }
+    .pop-questions .pop-body .question ul li.active a {
+        background-color: #f2e0c9;
+    }
+    .pop-questions .pop-body .question .btn-submit {
+        display: block;
+        margin: 0 auto;
+        width: 3rem;
+        height: .8rem;
+        font: 0.32rem 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: .8rem;
+        font-weight: bold;
+        background: url("../images/btn-submit.jpg") no-repeat;
+        -webkit-background-size:100%;
+        background-size:100%;
+    }
+    .pop-wrong {
+        display: none;
+        width: 12rem;
+        height: 4.736rem;
+        margin-left: -5.12rem;
+        margin-top: -2.368rem;
+        padding: 1.44rem 2.08rem;
+    }
+    .pop-wrong .pop-body h2 {
+        font: 0.512rem 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        margin-bottom: 0.672rem;
+        text-align: center;
+    }
+    .pop-wrong .pop-body .btn-submit {
+        display: block;
+        margin: 0 auto;
+        width: 3rem;
+        height: 0.8rem;
+        font: 0.32rem 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 0.8rem;
+        font-weight: bold;
+        background: url("../images/btn-submit.jpg") no-repeat;
+        -webkit-background-size:100%;
+        background-size:100%;
+    }
+    .pop-right {
+        display: none;
+        width: 12rem;
+        height: 5.6rem;
+        margin-left: -5.12rem;
+        margin-top: -2.8rem;
+        padding: 0.8rem 2.08rem;
+    }
+    .pop-right .pop-body h2 {
+        color: #931d01;
+        text-align: center;
+        font: 0.32rem 'NSimHei';
+        text-shadow: 0 0.016rem 0.016rem #fff;
+    }
+    .pop-right .pop-body h2:before {
+        content: attr(data-before);
+        display: block;
+        font: 0.48rem 'NSimHei';
+        margin-bottom: 0.24rem;
+    }
+    .pop-right .pop-body h2:after {
+        content: attr(data-after);
+        display: block;
+        font: 0.384rem 'NSimHei';
+        margin-top: 0.56rem;
+    }
+    .pop-right .pop-body .btn-group {
+        width: 4.64rem;
+        margin: 0.32rem auto;
+    }
+    .pop-right .pop-body .btn-group:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .pop-right .pop-body .btn-group .btn-submit {
+        float: left;
+    }
+    .pop-right .pop-body .btn-group .btn-cancel {
+        float: right;
+    }
+    .pop-right .pop-body .btn-submit,
+    .pop-right .pop-body .btn-cancel {
+        display: block;
+        margin: 0 auto;
+        width: 2rem;
+        height: 0.8rem;
+        font: 0.32rem 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 0.8rem;
+        font-weight: bold;
+    }
+    .pop-right .pop-body .btn-submit {
+        background: url("../images/btn-submit.jpg") no-repeat;
+        -webkit-background-size:2rem 0.8rem;
+        background-size:2rem 0.8rem;
+    }
+    .pop-right .pop-body .btn-cancel {
+        background: url("../images/btn-cancel.jpg") no-repeat;
+        -webkit-background-size:2rem 0.8rem;
+        background-size:2rem 0.8rem;
+    }
+    .pop-generals {
+        display: none;
+        width: 13.888rem;
+        height: 8rem;
+        margin-left: -6.944rem;
+        margin-top: -4rem;
+        padding: 0.8rem 0.544rem;
+    }
+    .pop-generals .pop-body:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .pop-generals .pop-body-left {
+        float: left;
+        width:3rem;
+    }
+    .pop-generals .pop-body-left img {
+        max-width: 100%;
+    }
+    .pop-generals .pop-body-right {
+        float: right;
+        width: 9rem;
+        margin-right: 0.384rem;
+    }
+    .pop-generals .pop-body-right h2 {
+        text-align: center;
+        font: 0.384rem 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        margin: 0.24rem 0 0.4rem;
+    }
+    .pop-generals .pop-body-right h3 {
+        text-align: center;
+        font: 0.288rem 'Arial';
+        font-weight: bold;
+        color: #931d01;
+        margin-bottom: 0.48rem;
+    }
+    .pop-generals .pop-body-right h3:before {
+        content: attr(data-before);
+        display: block;
+        color: #931d01;
+        font: 0.352rem 'NSimHei';
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        margin-bottom: 0.08rem;
+    }
+    .pop-generals .pop-body-right .p1,
+    .pop-generals .pop-body-right .p2 {
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .pop-generals .pop-body-right .p1 a,
+    .pop-generals .pop-body-right .p2 a {
+        color: #b41618;
+    }
+    .pop-turntable {
+        display: none;
+        width: 14.048rem;
+        height: 7.6rem;
+        margin-left: -6.08rem;
+        margin-top: -3.8rem;
+        padding: 1.28rem 1.28rem 1.04rem 3.2rem;
+    }
+    .pop-turntable .pop-body h2 {
+        font: 0.384rem 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+    .pop-turntable .pop-body h3 {
+        font: 0.32rem 'NSimHei';
+        color: #931d01;
+        text-align: center;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        margin-bottom: 0.3rem;
+    }
+    .pop-turntable .pop-body h3 .caption {
+        font: 0.384rem 'Microsoft YaHei';
+        color: #931d01;
+        font-weight: bold;
+        text-decoration: underline;
+        padding: 0 0.16rem;
+    }
+    .pop-turntable .pop-body .p1,
+    .pop-turntable .pop-body .p2 {
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .pop-turntable .pop-body .p1 a,
+    .pop-turntable .pop-body .p2 a {
+        color: #b41618;
+    }
+    .pop-avatar-turntable {
+        display: none;
+        width: 14.048rem;
+        height: 9rem;
+        margin-left: -7.024rem;
+        margin-top: -4.5rem;
+        padding: 0.4rem 0.736rem;
+    }
+    .pop-avatar-turntable .pop-body-left {
+        float: left;
+        width: 3.52rem;
+        height: 5.216rem;
+        padding: 0.6rem 0;
+    }
+    .pop-avatar-turntable .pop-body-left ul {
+        position: relative;
+        width: 3.52rem;
+        height: 5.216rem;
+    }
+    .pop-avatar-turntable .pop-body-left ul li {
+        position: absolute;
+        width: 1.456rem;
+        height: 1.952rem;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child {
+        left: 0;
+        top: 0;
+        z-index: 11;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child + li {
+        right: 0;
+        top: 0;
+        z-index: 11;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child + li + li {
+        top: 50%;
+        left: 50%;
+        margin-left: -0.72rem;
+        margin-top: -0.976rem;
+        z-index: 1;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child + li + li + li {
+        left: 0;
+        bottom: 0;
+        z-index: 11;
+    }
+    .pop-avatar-turntable .pop-body-left ul li:first-child + li + li + li + li {
+        right: 0;
+        bottom: 0;
+        z-index: 11;
+    }
+    .pop-avatar-turntable .pop-body-left ul li img {
+        max-width: 100%;
+    }
+    .pop-avatar-turntable .pop-body-right {
+        float: right;
+        width:8.4rem;
+        padding: .6rem 0.32rem;
+    }
+    .pop-avatar-turntable .pop-body-right h2 {
+        font: 0.352rem 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        text-align: center;
+        margin-bottom: 0.48rem;
+    }
+    .pop-avatar-turntable .pop-body-right h3 {
+        font: 0.288rem 'NSimHei';
+        color: #931d01;
+        text-align: center;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        margin-bottom: 0.72rem;
+    }
+    .pop-avatar-turntable .pop-body-right h3 .caption {
+        font: 0.352rem 'Microsoft YaHei';
+        color: #931d01;
+        font-weight: bold;
+        text-decoration: underline;
+        padding: 0 0.16rem;
+    }
+    .pop-avatar-turntable .pop-body-right .p1,
+    .pop-avatar-turntable .pop-body-right .p2 {
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .pop-avatar-turntable .pop-body-right .p1 a,
+    .pop-avatar-turntable .pop-body-right .p2 a {
+        color: #b41618;
+    }
+    .pop-goods {
+        display: none;
+        width: 12rem;
+        height: 15.72rem;
+        margin-left: -6rem;
+        margin-top: -7.86rem;
+    }
+    .pop-goods .pop-body {
+        padding: 0.64rem 0.7rem;
+        border: 2px solid #fef3e5;
+        background-color: #f1c894;
+        margin: -0.08rem;
+    }
+    .pop-goods .pop-body .form-group h3 {
+        text-align: center;
+        font: 0.32rem 'NSimHei';
+        color: #b41618;
+    }
+    .pop-goods .pop-body .form-group h3:before {
+        content: attr(data-before);
+        display: block;
+        font: 0.416rem 'NSimHei';
+        color: #931d01;
+        margin-bottom: 0.128rem;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+    }
+    .pop-goods .pop-body .form-group ul:before {
+        content: attr(data-before);
+        display: block;
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        margin-bottom: 0.16rem;
+    }
+    .pop-goods .pop-body .form-group ul li {
+        margin-bottom: 0.16rem;
+        padding: 0 0.8rem;
+    }
+    .pop-goods .pop-body .form-group ul li:before {
+        content: attr(data-before);
+        display: inline-block;
+        vertical-align: middle;
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        width: 3rem;
+        text-align: right;
+    }
+    .pop-goods .pop-body .form-group ul li:after {
+        content: attr(data-after);
+        display: block;
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        margin-top: 0.16rem;
+    }
+    .pop-goods .pop-body .form-group ul li input,
+    .pop-goods .pop-body .form-group ul li select {
+        width: 4rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        padding: 0 0.08rem;
+        color: #b41618;
+        background-color: #f1c894;
+        border: 1px solid #b41618;
+    }
+    .pop-goods .pop-body .form-group ul li input:focus,
+    .pop-goods .pop-body .form-group ul li select:focus {
+        outline: none;
+    }
+    .pop-goods .pop-body .form-group .btn-submit {
+        display: block;
+        margin: 0.16rem auto;
+        width: 3rem;
+        height: 0.8rem;
+        font: 0.32rem 'Microsoft YaHei';
+        color: #480a33;
+        text-align: center;
+        line-height: 0.8rem;
+        font-weight: bold;
+        border: none;
+        background: url("../images/btn-submit.jpg") no-repeat;
+        -webkit-background-size:100%;
+        background-size:100%;
+    }
+    .pop-goods .pop-body .form-group .btn-submit:hover {
+        background-position: -2.752rem -14.96rem;
+    }
+    .pop-goods .pop-body .form-group .p1,
+    .pop-goods .pop-body .form-group .p2 {
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .pop-goods .pop-body .form-group .p1 a,
+    .pop-goods .pop-body .form-group .p2 a {
+        color: #b41618;
+    }
+    .pop-success {
+        display: none;
+        width: 11.984rem;
+        height: 8rem;
+        margin-left: -6rem;
+        margin-top: -4rem;
+        padding-top: 1.28rem;
+        padding-bottom: 1.024rem;
+    }
+    .pop-success .pop-body {
+        padding-left: 2rem;
+        padding-right:1rem;
+    }
+    .pop-success .pop-body h3 {
+        text-align: center;
+        padding-bottom: 0.32rem;
+        font: 0.384rem 'Arial';
+        line-height:.8rem;
+        color: #b41618;
+        font-weight: bold;
+    }
+    .pop-success .pop-body h3:before {
+        content: attr(data-before);
+        display: block;
+        font: 0.512rem 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        margin-bottom: 0.128rem;
+    }
+    .pop-success .pop-body .btn-lg {
+        display: block;
+        width: 6.176rem;
+        height: 0.928rem;
+        text-align: center;
+        margin: 0.32rem auto;
+        font: 0.384rem 'MicroSoft YaHei';
+        font-weight: bold;
+        line-height: 0.8rem;
+        color: #480a33;
+        background: url("../images/btn-lg.jpg") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .pop-success .pop-body .p1 {
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .pop-success .pop-body .p1 a {
+        color: #b41618;
+    }
+    .pop-giftbox {
+        display: none;
+        width: 14rem;
+        height: 10rem;
+        margin-left: -7rem;
+        margin-top: -5rem;
+    }
+    .pop-giftbox .pop-body {
+        padding: 0.8rem .5rem;
+        border: 2px solid #fef3e5;
+        background-color: #f1c894;
+        margin: -0.08rem;
+    }
+    .pop-giftbox .pop-body:before {
+        content: attr(data-before);
+        display: block;
+        text-align: center;
+        font: 0.448rem 'NSimHei';
+        color: #931d01;
+        text-shadow: 0 0.016rem 0.016rem #fff;
+        margin-bottom: 0.24rem;
+    }
+    .pop-giftbox .pop-body:after {
+        content: attr(data-after);
+        display: block;
+        text-align: center;
+        margin: 0.32rem 0;
+        font: 0.224rem 'SimSun';
+        color: #b41618;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper {
+        height: 5.8rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper .gift-table table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid #b41618;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper .gift-table table thead th {
+        line-height: 1rem;
+        text-align: center;
+        border: 1px solid #b41618;
+        color: #f6dcaa;
+        background-color: #9f0e06;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper .gift-table table tbody td {
+        line-height: 0.9rem;
+        color: #b41618;
+        border: 1px solid #b41618;
+    }
+    .pop-giftbox .pop-body .gift-table-wrapper .gift-table table tbody td a {
+        background-color: #e99f42;
+        padding: 0.064rem 0.096rem;
+        color: #9f0e06;
+    }
+}

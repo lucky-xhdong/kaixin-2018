@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<div class="move_line2">
+<svg xmlns="http://www.w3.org/2000/svg" width="600px" height="500px">
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M335.088,373.962c23.125-7.219,54.068,12.896,69.115,44.93s8.498,63.855-14.625,71.074c-23.125,7.221-54.068-12.895-69.115-44.928
+ S311.965,381.183,335.088,373.962z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M209.983,9.426c87.495,4.372,158.857,76.303,158.857,160.122c0,46.699-22.158,87.484-56.91,113.702
+ c22.268,46.217,33.992,89.483,14.348,125.051c4.02-7.537,6.611-15.313,8.555-23.193c11.648,26.85,14.068,52.875-6.887,75.711
+ c-64.363,13.082-86.986-18.811-194.209-8.391l-3.699-107.049l-0.92-22.406l0.873,22.42c-22.874-5.814-45.173-11.861-65.204-17.99
+ l10.062-44.714l49.898,2.646c-43.949-22.82-74.717-76.747-73.621-131.665C51.125,69.85,122.487,5.053,209.983,9.426L209.983,9.426z
+ "></path><script>
+        <![CDATA[
+            (function() {
+             function toArray(arr) {
+                return Array.prototype.slice.call(arr);
+             }
+             var svg2 = document.querySelector('.move_line2 svg');
+             //svg2.parentNode.style.display = 'block';
+             svg2.style.visibility = 'hidden';
+             function fullSketch() {
+                 svg2.style.visibility = '';
+                 var paths = toArray(svg2.children);
+                 var begin = 0;
+                 var durations = paths.map(function(path2) {
+                      var length;
+                      console.log(path2.tagName);
+                      if(path2.tagName == "path"){
+                          length = path2.getTotalLength();
+                      }
+                      path2.style.strokeDasharray = length + ' ' + length;
+                      path2.style.strokeDashoffset = length;
+                      return Math.pow(length, 0.5) * 0.02;
+                 });
+                 paths[0].getBoundingClientRect();
+                 paths.forEach(function(path, i) {
+                 ('stroke-dashoffset ' + durations[i] + 's ' + begin + 's ease-in-out')
+                      path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset ' + durations[i] + 's ' + begin + 's ease-in-out';
+                      path.style.strokeDashoffset = '0';
+                      path.setAttribute("class", "shade");
+                      begin += durations[i] + 0.1;
+                 });
+             }
+                window.addEventListener('load', fullSketch);
+             }());
+        ]]>
+    </script>
+</svg>
+
+</div>

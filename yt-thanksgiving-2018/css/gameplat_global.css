@@ -1,0 +1,1968 @@
+@charset "utf-8";
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td {
+    font-weight: 400;
+    margin: 0;
+    padding: 0
+}
+
+h1, h2, h3, h4, h4, h5 {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #e3e3e3;
+    color: #707070;
+    font-family: tahoma, Arial, Helvetica, sans-serif, 'SimSun';
+    font-size: 12px;
+    padding: 0;
+    text-align: left
+}
+
+select {
+    font-size: 12px
+}
+
+table {
+    border-collapse: collapse;
+    border: none
+}
+
+fieldset, img {
+    border: 0 none
+}
+
+fieldset {
+    margin: 0;
+    padding: 0
+}
+
+fieldset p {
+    margin: 0;
+    padding: 0 0 0 8px
+}
+
+address, caption, em, i {
+    font-style: normal;
+    font-weight: 400
+}
+
+table caption {
+    margin-left: -1px
+}
+
+ol, ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none
+}
+
+caption, th {
+    text-align: left
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: ""
+}
+
+div {
+    word-break: break-all;
+    word-wrap: break-word
+}
+
+.cfix {
+    display: block;
+    zoom: 1
+}
+
+.cfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden
+}
+
+a {
+    text-decoration: none;
+    color: #707070
+}
+
+a:hover {
+    text-decoration: none;
+    color: #369
+}
+
+.c9, a.c9 {
+    color: #999
+}
+
+.c6, a.c6 {
+    color: #666
+}
+
+.cblue, a.cblue {
+    color: #91bde2
+}
+
+.sl, a.sl {
+    color: #369
+}
+
+a.sl:hover {
+    color: #36c
+}
+
+.sl2, a.sl2 {
+    color: #369
+}
+
+a.sl2:hover {
+    color: #36c;
+    text-decoration: underline
+}
+
+.red, a.red.a.red:hover {
+    color: #f00
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.dn {
+    display: none
+}
+
+.mt {
+    margin-top: 10px
+}
+
+.mb {
+    margin-bottom: 10px
+}
+
+.mb5 {
+    margin-bottom: 5px
+}
+
+.mb15 {
+    margin-bottom: 15px
+}
+
+.mb25 {
+    margin-bottom: 25px
+}
+
+.mb40 {
+    margin-bottom: 40px
+}
+
+.m_8_0 {
+    margin: 8px 0
+}
+
+.ml10 {
+    margin-left: 10px
+}
+
+.ml30 {
+    margin-left: 30px
+}
+
+.mt5 {
+    margin-top: 5px
+}
+
+.mt15 {
+    margin-top: 15px
+}
+
+.mt20 {
+    margin-top: 20px
+}
+
+.mt35 {
+    margin-top: 35px
+}
+
+.f14 {
+    font-size: 14px
+}
+
+.f16 {
+    font-size: 16px
+}
+
+.p_0_30 {
+    padding: 0 30px
+}
+
+.lh20 {
+    line-height: 20px
+}
+
+.cp {
+    cursor: pointer
+}
+
+.topBar, .topBar .qqLogin, .topBar .weiboLogin, .topBar .funList li, .topBar .funList .userCenter a i, .topBar .userCenterFun li.set i, .topBar .userCenterFun li.exit i, .topBar_tg .funList .userCenter a i, .topBar_tg .userCenterFun li.set i, .topBar_tg .userCenterFun li.exit i, .avatar_90, .editinfoBtn, .sideLine, .sideNav li.gameCenter a i, .sideNav li.cur a, .goBtn, .goBtn2, .rating, .rating i, .rating2, .rating2 i, .errorTip, .pageTil h2, .greenBtn, .greenBtn b, .qmark, .panelTipOk i, .panelTipError i, .tipBox p i {
+    background-image: url(http://img1.kaixin001.com.cn/i3/gameplat/sprite_global3.png);
+    background-repeat: no-repeat
+}
+
+.topBar {
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    height: 35px;
+    color: #fff
+}
+
+.topBar a {
+    color: #fff
+}
+
+.topBar a:hover {
+    color: #fff
+}
+
+.topBar .inner {
+    width: 1002px;
+    margin: 0 auto
+}
+
+.topBar .logoC {
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/bg_logoC.png) repeat-x;
+    float: left;
+    height: 25px;
+    padding: 5px 16px;
+    zoom: 1
+}
+
+.topBar .logoC .kxLogo {
+    float: left;
+    height: 25px;
+    width: 64px;
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/kxLogo.png) no-repeat;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://img1.kaixin001.com.cn/i3/gameplat/kxLogo.png')
+}
+
+.topBar .logoC .fdLogo {
+    float: left;
+    height: 25px;
+    width: 70px;
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/logo.png) no-repeat;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://img1.kaixin001.com.cn/i3/gameplat/logo.png')
+}
+
+.topBar .logoC a {
+    display: block;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+.topBar .logoC .line {
+    float: left;
+    width: 1px;
+    height: 25px;
+    overflow: hidden;
+    border-left: 1px solid #c9c9c9;
+    background: #fff;
+    margin: 0 3px 0 6px
+}
+
+.topBar .qqLogin {
+    background-position: 0 -40px;
+    float: left;
+    width: 84px;
+    height: 24px;
+    margin: 5px 8px 0 0;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+.topBar .qqLogin:hover {
+    background-position: 0 -70px
+}
+
+.topBar .weiboLogin {
+    background-position: 0 -100px;
+    float: left;
+    width: 91px;
+    height: 24px;
+    margin: 5px 2px 0 0;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+.topBar .weiboLogin:hover {
+    background-position: 0 -130px
+}
+
+.topBar .funList {
+    float: left;
+    margin-top: 10px;
+    margin-top: 12px \9;
+    _margin-top: 10px
+}
+
+.topBar .funList li {
+    padding: 0 10px 0 11px;
+    background-position: -499px 2px;
+    background-position: -499px 0 \9;
+    _background-position: -499px 2px;
+    float: left;
+    margin-left: -1px
+}
+
+.topBar .funList .userCenter {
+    padding-right: 6px;
+    position: relative;
+    cursor: pointer;
+    height: 25px
+}
+
+.topBar .funList .userCenter a {
+    padding-right: 15px;
+    zoom: 1
+}
+
+.topBar .funList .userCenter a i {
+    background-position: -480px 0;
+    width: 7px;
+    height: 4px;
+    position: absolute;
+    top: 6px;
+    top: 4px \9;
+    _top: 6px;
+    right: 6px
+}
+
+.topBar .fr {
+    position: relative;
+    z-index: 9999
+}
+
+.topBar .userCenterFun {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 118px;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    background: #fff;
+    overflow: hidden
+}
+
+.topBar .userCenterFun li {
+    position: relative;
+    padding: 0;
+    width: 119px
+}
+
+.topBar .userCenterFun li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    line-height: 32px \9;
+    overflow: hidden;
+    padding-left: 32px;
+    color: #333
+}
+
+.topBar .userCenterFun li a:hover {
+    background: #e1dfdf;
+    color: #333
+}
+
+.topBar .userCenterFun li.set i {
+    width: 15px;
+    height: 15px;
+    background-position: -480px -70px;
+    position: absolute;
+    top: 7px;
+    left: 9px
+}
+
+.topBar .userCenterFun li.exit i {
+    width: 15px;
+    height: 15px;
+    background-position: -480px -100px;
+    position: absolute;
+    top: 7px;
+    left: 9px
+}
+
+.main {
+    margin: 15px auto 0;
+    width: 1002px;
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/bgMain.png) repeat-y -2020px 0
+}
+
+.main .main_hc {
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/bgMain.png) no-repeat 0 0;
+    height: 5px;
+    overflow: hidden
+}
+
+.main .main_fc {
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/bgMain.png) no-repeat -1010px 0;
+    height: 5px;
+    overflow: hidden
+}
+
+.colSide {
+    float: left;
+    width: 140px;
+    margin-left: 37px;
+    padding: 10px 0;
+    _display: inline;
+    color: #333
+}
+
+.colContent {
+    float: right;
+    width: 773px;
+    padding: 10px 0 30px;
+    margin-right: 26px;
+    min-height: 600px;
+    _height: 600px;
+    _display: inline
+}
+
+.col_fl {
+    float: left;
+    width: 541px
+}
+
+.col_fr {
+    float: right;
+    width: 206px
+}
+
+.sideLine {
+    background-position: -200px -100px;
+    width: 160px;
+    margin: 15px 0 12px -20px;
+    height: 1px;
+    overflow: hidden
+}
+
+.avatar_90 {
+    display: block;
+    width: 90px;
+    height: 90px;
+    padding: 6px;
+    background-color: #fff;
+    background-position: -200px -130px
+}
+
+.editinfoBtn {
+    width: 102px;
+    height: 28px;
+    display: inline-block;
+    background-position: 0 -300px;
+    text-align: center;
+    line-height: 28px;
+    line-height: 30px \9;
+    _line-height: 26px;
+    color: #5c768f;
+    overflow: hidden
+}
+
+.editinfoBtn:hover {
+    background-position: 0 -330px;
+    color: #369
+}
+
+.typeItem {
+    display: inline-block;
+    display: inline \9;
+    zoom: 1;
+    height: 17px;
+    padding: 0 8px;
+    background: #91bde2;
+    line-height: 17px;
+    line-height: 19px \9;
+    color: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+
+.rating {
+    display: block;
+    height: 12px;
+    width: 65px;
+    background-position: -200px -15px;
+    overflow: hidden
+}
+
+.rating i {
+    display: block;
+    height: 12px;
+    background-position: -200px 0;
+    overflow: hidden
+}
+
+.rating2 {
+    display: block;
+    height: 15px;
+    width: 85px;
+    background-position: -300px -15px;
+    overflow: hidden
+}
+
+.rating2 i {
+    display: block;
+    height: 15px;
+    background-position: -300px 0;
+    overflow: hidden
+}
+
+.goBtn {
+    display: block;
+    width: 107px;
+    height: 31px;
+    background-position: 0 -220px;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+.goBtn:hover {
+    background-position: 0 -260px
+}
+
+.goBtn2 {
+    display: block;
+    width: 62px;
+    height: 22px;
+    background-position: 0 -160px;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+.goBtn2:hover {
+    background-position: 0 -190px
+}
+
+.sideuserInfo {
+    margin-bottom: 38px
+}
+
+.sideuserInfo .userName {
+    width: 102px;
+    text-align: center;
+    margin: 12px 0 8px;
+    font-size: 14px
+}
+
+.sideuserInfo .userName a {
+    color: #333
+}
+
+.sideuserInfo .userName a:hover {
+    color: #369
+}
+
+.sideNav h3, .sidemyGame h3, .sidehotGame h3 {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px
+}
+
+.sideNav li a {
+    display: block;
+    height: 34px;
+    padding-left: 24px;
+    line-height: 34px;
+    line-height: 36px \9;
+    _line-height: 34px;
+    overflow: hidden;
+    position: relative
+}
+
+.sideNav li a i {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 9px;
+    left: 0
+}
+
+.sideNav li.cur a {
+    background-position: -200px -40px;
+    padding-left: 31px;
+    color: #369
+}
+
+.sideNav li.cur a i {
+    left: 7px
+}
+
+.sideNav li.gameCenter a i {
+    background-position: -480px -40px
+}
+
+.sidemyGame li {
+    margin-top: 15px
+}
+
+.sidemyGame li .gameI {
+    float: left;
+    width: 46px
+}
+
+.sidemyGame li .gameInfo {
+    padding-left: 52px
+}
+
+.sidemyGame li h4 {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 5px;
+    margin-bottom: 7px
+}
+
+.sidemyGame li h4 a {
+    color: #333
+}
+
+.sidemyGame li h4 a:hover {
+    color: #369
+}
+
+.sidemyGame li p a {
+    color: #999
+}
+
+.sidemyGame li p a:hover {
+    color: #999;
+    text-decoration: underline
+}
+
+.sidehotGame li {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 10px
+}
+
+.sidehotGame li a {
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
+    padding-left: 23px
+}
+
+.md .hd {
+    height: 30px;
+    border-top: 1px solid #d7d7d7;
+    padding-top: 1px;
+    position: relative
+}
+
+.md .hd .inner {
+    height: 30px;
+    line-height: 30px;
+    line-height: 32px \9;
+    overflow: hidden;
+    background: #f1f1f1;
+    padding: 0 13px;
+    color: #333;
+    font-size: 12px
+}
+
+.md .hd .inner i {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin: 6px 8px 0 0;
+    background-image: url(http://img1.kaixin001.com.cn/i3/gameplat/sprite_mdicon2.png);
+    background-repeat: no-repeat
+}
+
+.md .hd .inner span {
+    margin-left: 9px;
+    font-family: "SimSun";
+    font-weight: 400
+}
+
+.md .hd .inner a, .md .hd .inner a:hover {
+    color: #333
+}
+
+.md .hd i.iconHot {
+    background-position: 0 0
+}
+
+.md .hd i.iconFash {
+    background-position: 0 -30px
+}
+
+.md .hd i.iconIntro {
+    background-position: 0 -60px
+}
+
+.md .hd i.iconNews {
+    background-position: 0 -90px
+}
+
+.md .hd i.iconGl {
+    background-position: 0 -120px
+}
+
+.md .hd i.iconImg {
+    background-position: 0 -150px
+}
+
+.md .hd i.iconUser {
+    background-position: 0 -180px
+}
+
+.md .hd i.iconMedia {
+    background-position: 0 -210px
+}
+
+.md .hd i.iconTj_1 {
+    background-position: 0 -240px
+}
+
+.md .hd i.iconTj_2 {
+    background-position: 0 -270px
+}
+
+.md .hd .tabs {
+    height: 30px;
+    overflow: hidden;
+    background: #f1f1f1;
+    padding: 0 13px;
+    overflow: hidden;
+    position: relative
+}
+
+.md .hd .tabs ul {
+    float: left;
+    margin-top: 3px;
+    _overflow: hidden
+}
+
+.md .hd .tabs li {
+    float: left;
+    height: 26px;
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/tab_line.png) no-repeat 100% 0;
+    margin-top: 1px;
+    width: 94px;
+    text-align: center;
+    line-height: 26px;
+    overflow: hidden;
+    margin-left: -2px
+}
+
+.md .hd .tabs li.cur {
+    background: none;
+    border: 1px solid #d7d7d7;
+    margin-top: 0;
+    width: 92px;
+    background: #fff;
+    font-weight: 700;
+    position: relative
+}
+
+.md .hd .tabs li a {
+    color: #333
+}
+
+.md .hd .tabs li a:hover {
+    color: #369
+}
+
+.md .hd .more {
+    padding-left: 14px;
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/arrow_more.png) no-repeat 0 50%;
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    line-height: normal
+}
+
+.md .bdTabs {
+    background: #f9f9f9;
+    height: 39px;
+    padding-left: 1px;
+    overflow: hidden
+}
+
+.md .bdTabs li {
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #d7d7d7;
+    margin-left: -1px;
+    position: relative;
+    border-top: none;
+    font-weight: 700;
+    color: #666
+}
+
+.md .bdTabs li.cur {
+    border-color: #fff;
+    background: #fff;
+    position: static
+}
+
+.md .bdTabs li a {
+    display: block;
+    padding: 0 35px;
+    color: #666
+}
+
+.md .bdTabs li a:hover {
+    color: #369
+}
+
+.md2 .bd {
+    border-top: 1px solid #d7d7d7;
+    margin-top: 1px
+}
+
+.turnPage {
+    text-align: center;
+    margin-top: 15px
+}
+
+.turnPage a {
+    display: inline-block;
+    line-height: 19px;
+    height: 19px;
+    border: 1px solid #d8d8d8;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    background: #f5f5f5;
+    text-decoration: none;
+    padding: 0 7px;
+    color: #7a7a7a;
+    vertical-align: bottom;
+    margin: 0 3px;
+    box-shadow: inset 1px 1px 1px #fff;
+    font-family: '宋体'
+}
+
+.turnPage a:hover, .turnPage a.current {
+    color: #333;
+    border: 1px solid #afafaf;
+    border-top: 1px solid #d0d0d0;
+    border-left: 1px solid #d0d0d0;
+    box-shadow: inset -1px -1px 1px #fff
+}
+
+.fileIpt {
+    padding: 3px
+}
+
+.errorTip {
+    color: #ff4646;
+    padding-left: 19px;
+    background-position: -480px -300px;
+    padding-top: 2px \9;
+    _padding-top: 0
+}
+
+.pageTil {
+    padding: 0 13px 18px;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 15px
+}
+
+.pageTil h2 {
+    padding-left: 26px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #333
+}
+
+.payTil h2 {
+    background-position: -480px -190px
+}
+
+.setTil h2 {
+    background-position: -480px -190px
+}
+
+.kfTil h2 {
+    background-position: -480px -220px
+}
+
+.greenBtn {
+    display: inline-block;
+    background-position: -350px -390px;
+    padding-left: 17px;
+    height: 27px;
+    overflow: hidden
+}
+
+.greenBtn b {
+    display: inline-block;
+    background-position: 100% -390px;
+    padding-right: 17px;
+    height: 27px;
+    line-height: 27px;
+    *line-height: 29px;
+    line-height: 31px \0;
+    _line-height: 27px;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer
+}
+
+.greenBtn:hover {
+    background-position: -350px -420px
+}
+
+.greenBtn:hover b {
+    background-position: 100% -420px
+}
+
+.qmark {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-position: -480px -330px
+}
+
+.qmark:hover {
+    background-position: -480px -360px
+}
+
+.panelBox {
+    width: 740px;
+    min-height: 395px;
+    _height: 395px;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    margin: 100px auto;
+    color: #333
+}
+
+.panelBox .inner {
+    padding: 75px 75px 75px
+}
+
+.panelBox .inner h2 {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px
+}
+
+.panelTipOk, .panelTipError {
+    padding: 10px 16px 10px 69px;
+    background: #f9f7f7;
+    border: 1px solid #d7d7d7;
+    margin: 15px 0;
+    min-height: 43px;
+    _height: 43px;
+    position: relative
+}
+
+.panelTipOk i, .panelTipError i {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    width: 35px;
+    height: 35px;
+    background-position: -200px -250px
+}
+
+.panelTipOk p, .panelTipError p {
+    padding-top: 14px;
+    color: #333
+}
+
+.panelTipError {
+    border-color: #f1d393;
+    background: #fff5d1
+}
+
+.panelTipError i {
+    background-position: -250px -250px
+}
+
+.columnwrap {
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    border-radius: 7px;
+    width: 1000px;
+    margin: 15px auto;
+    color: #333
+}
+
+.item_404 {
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/404.png) no-repeat;
+    width: 336px;
+    padding-top: 290px;
+    margin: 100px auto 150px;
+    text-align: center
+}
+
+.footer {
+    width: 1002px;
+    padding: 12px 0 40px;
+    margin: 50px auto 0;
+    border-top: 1px solid #d1d1d1;
+    color: #999;
+    line-height: 19px
+}
+
+.footer a:hover {
+    color: #369;
+    text-decoration: underline
+}
+
+.footer .logo {
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    margin-right: 3px;
+    background: url(http://cdn.feidou.com/i3/gameplat/logo_1.png) no-repeat;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://img1.kaixin001.com.cn/i3/gameplat/logo.png');
+    vertical-align: text-top;
+    position: relative;
+    _position: static;
+    top: -4px
+}
+
+.footer .logo a {
+    display: block;
+    width: 70px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+.topBar_tg, .topBar_tg .qqLogin, .topBar_tg .weiboLogin, .topBar_tg .funList li, .topBar_tg .notice {
+    background-image: url(http://img1.kaixin001.com.cn/i3/gameplat/sprite_top_tg1.png);
+    background-repeat: no-repeat
+}
+
+.topBar_tg {
+    background-position: 0 -160px;
+    background-repeat: repeat-x;
+    height: 34px;
+    color: #333
+}
+
+.topBar_tg a {
+    color: #333
+}
+
+.topBar_tg a:hover {
+    color: #369;
+    text-decoration: underline
+}
+
+.topBar_tg .inner {
+    width: 1002px;
+    margin: 0 auto
+}
+
+.topBar_tg .logoC {
+    float: left;
+    height: 25px;
+    padding: 4px 0;
+    zoom: 1
+}
+
+.topBar_tg .logoC .kxLogo {
+    float: left;
+    height: 25px;
+    width: 64px;
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/kxLogo.png) no-repeat;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://img1.kaixin001.com.cn/i3/gameplat/kxLogo.png')
+}
+
+.topBar_tg .logoC .fdLogo {
+    float: left;
+    height: 25px;
+    width: 70px;
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/logo.png) no-repeat;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://img1.kaixin001.com.cn/i3/gameplat/logo.png')
+}
+
+.topBar_tg .logoC a {
+    display: block;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+.topBar_tg .logoC .line {
+    float: left;
+    width: 1px;
+    height: 25px;
+    overflow: hidden;
+    border-left: 1px solid #c9c9c9;
+    background: #fff;
+    margin: 0 3px 0 6px
+}
+
+.topBar_tg .qqLogin {
+    background-position: 0 -50px;
+    float: left;
+    width: 45px;
+    padding-left: 24px;
+    height: 22px;
+    line-height: 22px;
+    line-height: 24px \9;
+    margin: 6px 8px 0 0;
+    overflow: hidden
+}
+
+.topBar_tg .qqLogin:hover {
+    text-decoration: none
+}
+
+.topBar_tg .weiboLogin {
+    background-position: 0 -100px;
+    float: left;
+    width: 52px;
+    padding-left: 24px;
+    height: 22px;
+    line-height: 22px;
+    line-height: 24px \9;
+    margin: 6px 6px 0 0;
+    overflow: hidden
+}
+
+.topBar_tg .weiboLogin:hover {
+    text-decoration: none
+}
+
+.topBar_tg .funList {
+    float: left;
+    margin-top: 10px;
+    margin-top: 12px \9;
+    _margin-top: 10px;
+    overflow: hidden
+}
+
+.topBar_tg .funList li {
+    padding: 0 6px 0 7px;
+    background-position: -180px 2px;
+    background-position: -180px 0 \9;
+    _background-position: -180px 2px;
+    float: left;
+    margin-left: -1px
+}
+
+.topBar_tg .funList .userCenter {
+    padding-right: 6px;
+    position: relative;
+    cursor: pointer
+}
+
+.topBar_tg .funList .userCenter a {
+    padding-right: 15px;
+    zoom: 1
+}
+
+.topBar_tg .funList .userCenter a i {
+    background-position: -480px -15px;
+    width: 7px;
+    height: 4px;
+    position: absolute;
+    top: 6px;
+    top: 4px \9;
+    _top: 6px;
+    right: 6px
+}
+
+.topBar_tg .fr {
+    position: relative;
+    z-index: 9999
+}
+
+.topBar_tg .userCenterFun {
+    position: absolute;
+    top: 34px;
+    right: 0;
+    width: 118px;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    background: #fff;
+    overflow: hidden
+}
+
+.topBar_tg .userCenterFun li {
+    position: relative
+}
+
+.topBar_tg .userCenterFun li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    line-height: 32px \9;
+    overflow: hidden;
+    padding-left: 32px;
+    color: #333
+}
+
+.topBar_tg .userCenterFun li a:hover {
+    background: #e1dfdf;
+    color: #333;
+    text-decoration: none
+}
+
+.topBar_tg .userCenterFun li.set i {
+    width: 15px;
+    height: 15px;
+    background-position: -480px -70px;
+    position: absolute;
+    top: 7px;
+    left: 9px
+}
+
+.topBar_tg .userCenterFun li.exit i {
+    width: 15px;
+    height: 15px;
+    background-position: -480px -100px;
+    position: absolute;
+    top: 7px;
+    left: 9px
+}
+
+.topBar_tg .gamesLink {
+    height: 33px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin-left: 18px;
+    float: left;
+    width: 335px;
+    padding-left: 28px;
+    line-height: 33px
+}
+
+.topBar_tg .gamesLink a {
+    padding: 0 8px
+}
+
+.topBar_tg a.red, .topBar_tg a.red:hover {
+    color: #f00
+}
+
+.topBar_tg .notice {
+    float: right;
+    height: 33px;
+    width: 173px;
+    padding-left: 17px;
+    background-position: -180px -50px;
+    border-right: 1px solid #ddd;
+    margin-right: 15px;
+    padding-right: 15px;
+    position: relative;
+    overflow: hidden
+}
+
+.topBar_tg .notice ul {
+    position: relative
+}
+
+.topBar_tg .notice li {
+    height: 33px;
+    line-height: 33px;
+    width: 173px;
+    float: left;
+    overflow: hidden
+}
+
+.dialogLogreg {
+    width: 395px;
+    padding: 32px 11px 10px;
+    background: #54b2ef url(http://img1.kaixin001.com.cn/i3/gameplat/bg_dialog_logreg.png) repeat-x 0 0;
+    border-radius: 5px;
+    color: #333;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -205px;
+    z-index: 999
+}
+
+.dialogLogreg .close, .dialogLogreg .logregTab, .dialogLogreg .otherLog a, .dialogLogreg .formList .startBtn {
+    background-image: url(http://img1.kaixin001.com.cn/i3/gameplat/sprite_dialog_logreg.png);
+    background-repeat: no-repeat
+}
+
+.dialogLogreg .close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-position: -375px -120px;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.dialogLogreg .logregTab li {
+    width: 177px;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+    text-indent: -9999px
+}
+
+.dialogLogreg .logregTab {
+    background-position: 0 0;
+    height: 53px;
+    padding-left: 14px;
+    overflow: hidden
+}
+
+.dialogLogreg .tabLog {
+    background-position: 0 -60px;
+    height: 53px;
+    overflow: hidden
+}
+
+.dialogLogreg .dconBox {
+    background: #fff;
+    border-left: 1px solid #92a7bc;
+    border-right: 1px solid #92a7bc;
+    min-height: 270px;
+    _height: 270px;
+    padding: 20px 0 10px;
+    position: relative
+}
+
+.dialogLogreg .otherLog {
+    height: 57px;
+    padding-top: 21px;
+    background: #efefef;
+    border-left: 1px solid #92a7bc;
+    border-right: 1px solid #92a7bc;
+    border-bottom: 1px solid #92a7bc;
+    text-align: center;
+    border-radius: 0 0 5px 5px
+}
+
+.dialogLogreg .otherLog a {
+    display: inline-block;
+    width: 155px;
+    height: 37px;
+    margin: 0 7px;
+    overflow: hidden
+}
+
+.dialogLogreg .otherLog .qq {
+    background-position: 0 -180px
+}
+
+.dialogLogreg .otherLog .qq:hover {
+    background-position: -200px -180px
+}
+
+.dialogLogreg .otherLog .weibo {
+    background-position: 0 -240px
+}
+
+.dialogLogreg .otherLog .weibo:hover {
+    background-position: -200px -240px
+}
+
+.dialogLogreg .error {
+    color: #f00;
+    margin-bottom: 5px;
+    padding-left: 102px
+}
+
+.dialogLogreg .formList li {
+    padding-bottom: 12px;
+    *padding-bottom: 9px
+}
+
+.dialogLogreg .formList .lab {
+    float: left;
+    text-align: right;
+    width: 97px;
+    padding-right: 5px;
+    line-height: 34px;
+    line-height: 37px \9
+}
+
+.dialogLogreg .formList .element {
+    float: left;
+    width: 280px
+}
+
+.dialogLogreg .formList .ipt {
+    border: 1px solid #cbcccb;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 5px #f1f1f1, inset -1px -1px 5px #f1f1f1;
+    width: 246px;
+    height: 16px;
+    padding: 8px 5px
+}
+
+.dialogLogreg .formList .normal {
+    color: 999px;
+    margin-top: 5px;
+    color: #999
+}
+
+.dialogLogreg .formList .btnL {
+    padding: 6px 0 0 0;
+    padding-left: 102px
+}
+
+.dialogLogreg .formList .startBtn {
+    display: inline-block;
+    width: 153px;
+    height: 48px;
+    background-position: 0 -120px;
+    overflow: hidden
+}
+
+.dialogLogreg .formList .startBtn:hover {
+    background-position: -200px -120px
+}
+
+.dialogLogreg .logC {
+    padding-top: 13px
+}
+
+.dialogLogreg .logC .lab {
+    width: 139px
+}
+
+.dialogLogreg .logC .element {
+    width: 239px
+}
+
+.dialogLogreg .logC .ipt {
+    width: 204px
+}
+
+.dialogLogreg .logC .error {
+    padding-left: 144px
+}
+
+.dialogLogreg .logC .btnL {
+    padding: 23px 0 0 144px
+}
+
+.panel-mask {
+    background: #000;
+    filter: alpha(opacity:10);
+    -ms-filter: alpha(opacity:0.1);
+    opacity: 0.1
+}
+
+.panel {
+    z-index: 299;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0
+}
+
+.panel .hd {
+    zoom: 1;
+    width: auto
+}
+
+.panel .sd, .panel .kxDialogClose, .panel .resize {
+    z-index: 3
+}
+
+.panel .kxDialogClose {
+    cursor: pointer
+}
+
+.panel .resize {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px
+}
+
+.panel .panel-iframe {
+    width: 100%;
+    height: 100%;
+    _height: 3000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: alpha(opacity=0)
+}
+
+.panel .sd {
+    background: none;
+    padding: 0
+}
+
+.kxDialogBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0
+}
+
+.kxDialogMask {
+    background: #000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    _position: absolute;
+    z-index: 90000;
+    opacity: 0.08;
+    filter: alpha(opacity=30)
+}
+
+.kxDialog {
+    border: 1px #b0b0b0 solid;
+    border-color: rgba(0, 0, 0, 0.25);
+    z-index: 90100;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px
+}
+
+.kxDialog .hd, .kxDialog .kxDialogClose, .kxDialogAlert .kxDialogClose {
+    background-image: url(http://img1.kaixin001.com.cn/i3/gameplat//spt_kxdialog.png);
+    background-repeat: no-repeat
+}
+
+.kxDialog .hd {
+    height: 36px;
+    line-height: 36px;
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    border-bottom: 1px #eaeaea solid;
+    text-indent: 12px;
+    font-size: 14px;
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0
+}
+
+.kxDialog .hd h3 {
+    font-size: 14px;
+    color: #333
+}
+
+.kxDialog .bd {
+    border: none;
+    padding: 0px
+}
+
+.kxDialog .bd iframe {
+    border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    -ms-border-radius: 0 0 3px 3px
+}
+
+.kxDialog .kxDialogClose {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-position: 0 0;
+    width: 37px;
+    height: 36px;
+    margin-left: -37px;
+    cursor: pointer;
+    text-indent: -9999em;
+    z-index: 20;
+    border-radius: 0 3px 0 0;
+    -webkit-border-radius: 0 3px 0 0;
+    -moz-border-radius: 0 3px 0 0;
+    -o-border-radius: 0 3px 0 0;
+    -ms-border-radius: 0 3px 0 0
+}
+
+.kxDialogFt {
+    width: 100%;
+    height: 44px;
+    border-top: 1px #f4f5f6 solid;
+    background: #fbfbfb;
+    border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    -ms-border-radius: 0 0 3px 3px
+}
+
+.kxDialog .kxDialogFt, .kxDialog_cont .kxDialogFt {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.kxDialogFt .kxDialogBtn {
+    padding: 7px 14px 0;
+    text-align: right
+}
+
+.kxDialogFt .kxDialog_label {
+    margin-top: 4px;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.kxDialog_s {
+}
+
+.kxDialog_s .hd {
+    height: 29px;
+    line-height: 29px;
+    background-position: 0 -335px;
+    font-size: 12px
+}
+
+.kxDialog_s .hd h3 {
+    font-size: 12px
+}
+
+.kxDialog_s .kxDialogClose {
+    width: 30px;
+    height: 29px;
+    background-position: -37px 0;
+    margin-left: -30px
+}
+
+.kxDialog_s .kxDialogFt {
+    height: 40px;
+    display: none
+}
+
+.kxDialog_s .kxDialogFt .kxDialog_label {
+    margin-top: 2px
+}
+
+.kxDialog .panel-content {
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px
+}
+
+.kxDialog .sd {
+    display: none
+}
+
+.kxDialog .ft {
+    display: none
+}
+
+.kxDialogAlert {
+    background: #fff;
+    border: 1px solid #b0b0b0;
+    border-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px
+}
+
+.kxDialogAlert .bd {
+    padding-bottom: 40px
+}
+
+.kxDialogAlert .sd, .kxDialogAlert .ft, .kxDialogAlert .hd {
+    display: none
+}
+
+.kxDialogAlert .kxDialogBtnWrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fafafa;
+    border-top: 1px #eee solid;
+    border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    -ms-border-radius: 0 0 3px 3px
+}
+
+.kxDialogAlert .kxDialogBtn {
+    text-align: right;
+    padding: 7px
+}
+
+.kxDialogAlert .kxDialogBtn .kxbtn {
+    margin-left: 5px
+}
+
+.kxDialogAlert .kxDialogClose {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    right: 8px;
+    top: 8px;
+    text-indent: -9999em;
+    background-position: -46px -8px
+}
+
+.kxDialogAlert .mbox-t1 {
+    padding: 40px 25px
+}
+
+.kxDialogAlert .mbox-t1 .ct {
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    margin: 0
+}
+
+.kxbtn {
+    display: inline-block;
+    vertical-align: top
+}
+
+.kxbtn * {
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: '宋体'
+}
+
+.kxbtn button {
+    border: 0;
+    background: none;
+    *overflow: visible;
+    padding: 0;
+    margin: 0
+}
+
+.kxbtn button::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+.kxbtn_m .normal em, .kxbtn_m span {
+    background: url(http://img1.kaixin001.com.cn/i3/gameplat/kxbtn.png)
+}
+
+.kxbtn_gray_m .normal em, .kxbtn_gray_m span {
+    background-image: url(http://img1.kaixin001.com.cn/i3/gameplat/kxbtn_gray.png)
+}
+
+.kxbtn span {
+    line-height: 28px
+}
+
+.kxbtn span i, .kxbtn span input {
+    padding: 1px 15px 0;
+    color: #fff;
+    font-size: 14px
+}
+
+.kxbtn span input {
+    background: none;
+    border: 0;
+    line-height: 25px
+}
+
+.kxbtn_gray_m span i, .kxbtn_gray_m span input {
+    color: #666
+}
+
+.kxbtn_gray_m span input, .kxbtn_m span input {
+    height: 29px
+}
+
+.kxbtn .normal em {
+    background-position: 0 0;
+    padding-left: 5px
+}
+
+.kxbtn .normal span {
+    background-position: right -40px;
+    padding-right: 5px
+}
+
+.kxbtn .normal:hover em {
+    background-position: 0 -80px
+}
+
+.kxbtn .normal:hover span {
+    background-position: right -120px
+}
+
+.kxbtn .normal:active em {
+    background-position: 0 -160px
+}
+
+.kxbtn .normal:active span {
+    background-position: right -200px
+}
+
+.kxbtn .disabled, .kxbtn .disabled * {
+    cursor: default
+}
+
+.kxbtn .disabled em, .kxbtn .disabled:hover em, .kxbtn .disabled:active em {
+    background-position: 0 -240px
+}
+
+.kxbtn .disabled span, .kxbtn .disabled:hover span, .kxbtn .disabled:active span {
+    background-position: right -280px
+}
+
+.kxbtn .disabled span i, .kxbtn .disabled:hover span i, .kxbtn .disabled:active span i {
+    color: #999
+}
+
+#choose_city {
+    width: 456px;
+    margin: 0px auto;
+    font-size: 12px;
+    color: #005eac
+}
+
+.cityBg_top {
+    background: url(http://img1.kaixin001.com.cn/i/cityBg_top2.gif) top no-repeat;
+    width: 456px;
+    height: 25px
+}
+
+.cityBg_bot {
+    background: url(http://img1.kaixin001.com.cn/i/cityBg_bot2.gif) top no-repeat;
+    width: 456px;
+    height: 15px
+}
+
+.cityBg {
+    width: 454px;
+    border-left: solid 1px #c9c9c9;
+    border-right: solid 1px #c9c9c9;
+    background: #f7f7f7
+}
+
+.cityBg .cbox {
+    cursor: pointer;
+    width: 410px;
+    padding: 3px 3px 3px 7px;
+    margin: 0 auto;
+    background: #fff;
+    border: solid 1px #c8c8c8;
+    line-height: 180%
+}
+
+.cityBg .cbox span {
+    color: #369;
+    padding: 2px 6px
+}
+
+.cityBg .cbox span.curr {
+    background: #e9f2fd;
+    padding: 2px 6px
+}
+
+.cityBg .city_list {
+    padding: 0;
+    margin: 0;
+    width: 410px
+}
+
+.cityBg .city_list span {
+    line-height: 24px;
+    padding: 0 11px 0 10px;
+    background: url(http://img1.kaixin001.com.cn/i/dot.gif) left no-repeat;
+    word-break: keep-all
+}
+
+.cityBg .btn_area {
+    padding: 10px 0 4px 392px
+}
+
+.gb3, .gb4 {
+    height: 23px;
+    font-size: 12px;
+    color: black;
+    background: #E5E5E5;
+    padding: 3px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid #6A6A6A;
+    border-bottom: 1px solid #6A6A6A;
+    cursor: pointer
+}
+
+.gb4 {
+    background: #ddd
+}
+
+.ts3 {
+    height: 25px;
+    background: #7bb441;
+    border-bottom: 1px solid #565656;
+    font-weight: bold
+}
+
+.ts31 {
+    float: left;
+    font-size: 13px;
+    color: white;
+    padding: 3px 8px
+}
+
+.ts32 {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    padding: 2px 3px
+}

@@ -1,0 +1,260 @@
+@media (min-width: 1200px) {
+  .national-cn2018-index {
+    min-height: 1200px;
+    background: url("../images/bg-index-body.jpg") top center no-repeat;
+    .nci-nav {
+      width: 1175px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 785px;
+      ul {
+        font-size: 0;
+        position: relative;
+        min-height: 283px;
+        li {
+          position: absolute;
+          width: 132px;
+          height: 283px;
+          top: 0;
+          background: url("../images/sprite-index-nav.png") no-repeat;
+          &:after {
+            content: '';
+            position: absolute;
+            width: 368px;
+            height: 123px;
+            bottom: 0;
+            left: 50%;
+            margin-left: -184px;
+            background: url("../images/sprite-index-nav.png") no-repeat;
+            background-position: -527px 0;
+            -webkit-transition: all .2s ease .1s;
+            -moz-transition: all .2s ease .1s;
+            -ms-transition: all .2s ease .1s;
+            -o-transition: all .2s ease .1s;
+            transition: all .2s ease .1s;
+            animation: nav-scale 5s ease-in-out infinite;
+            -moz-animation: nav-scale 5s ease-in-out infinite;
+            -webkit-animation: nav-scale 5s ease-in-out infinite;
+            -ms-animation: nav-scale 5s ease-in-out infinite;
+            -o-animation: nav-scale 5s ease-in-out infinite;
+            visibility: hidden;
+          }
+          a {
+            display: block;
+            width: 132px;
+            height: 283px;
+          }
+          &:first-child {
+            left: 0;
+            background-position: -394px 0;
+          }
+          &:first-child + li {
+            left: 354px;
+            background-position: -262px 0;
+          }
+          &:first-child + li + li {
+            left: 696px;
+            background-position: 0 0;
+          }
+          &:first-child + li + li + li {
+            left: 1040px;
+            background-position: -131px 0;
+          }
+          &:hover, &.active {
+            &:after {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .giftbox-wrapper {
+    position: fixed;
+    width: 220px;
+    height: 228px;
+    background: url("../images/bg-giftbox.png") no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+    font-size: 0;
+    top: 50%;
+    margin-top: -114px;
+    right: 0;
+    z-index: 3;
+    .btn-giftbox {
+      display: block;
+      width: 220px;
+      height: 228px;
+    }
+    &:hover {
+      background: url("../images/bg-giftbox-hover.png") no-repeat;
+      -webkit-background-size:100%;
+      background-size:100%;
+    }
+  }
+
+  @keyframes nav-scale {
+    0%{
+      transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+      transform: scale(1.2); /*放大1.1倍*/
+    }
+    50%{
+      transform: scale(1);
+    }
+    75%{
+      transform: scale(1.2);
+    }
+  }
+  @-moz-keyframes nav-scale {
+    0%{
+      transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+      transform: scale(1.2); /*放大1.1倍*/
+    }
+    50%{
+      transform: scale(1);
+    }
+    75%{
+      transform: scale(1.2);
+    }
+  }
+  @-webkit-keyframes nav-scale {
+    0%{
+      transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+      transform: scale(1.2); /*放大1.1倍*/
+    }
+    50%{
+      transform: scale(1);
+    }
+    75%{
+      transform: scale(1.2);
+    }
+  }
+  @-ms-keyframes nav-scale {
+    0%{
+      transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+      transform: scale(1.2); /*放大1.1倍*/
+    }
+    50%{
+      transform: scale(1);
+    }
+    75%{
+      transform: scale(1.2);
+    }
+  }
+  @-o-keyframes nav-scale {
+    0%{
+      transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+      transform: scale(1.2); /*放大1.1倍*/
+    }
+    50%{
+      transform: scale(1);
+    }
+    75%{
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .national-cn2018-index {
+    min-height: 19.2rem;
+    background: url("../images/bg-index-body.jpg") top center no-repeat;
+    -webkit-background-size: 30.72rem 19.2rem;
+    background-size: 30.72rem 19.2rem;
+    .nci-nav {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 12.56rem;
+      ul {
+        font-size: 0;
+        position: relative;
+        min-height: 4.528rem;
+        li {
+          position: absolute;
+          width: 2.112rem;
+          height: 4.528rem;
+          top: 0;
+          background: url("../images/sprite-index-nav.png") no-repeat;
+          -webkit-background-size: 14.32rem 4.528rem;
+          background-size: 14.32rem 4.528rem;
+          &:after {
+            content: '';
+            position: absolute;
+            width: 2.112rem;
+            height: 1.968rem;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.056rem;
+            background: url("../images/sprite-index-nav.png") no-repeat;
+            -webkit-background-size: 14.32rem 4.528rem;
+            background-size: 14.32rem 4.528rem;
+            background-position: -10.28rem 0;
+            visibility: hidden;
+          }
+          a {
+            display: block;
+            width: 2.112rem;
+            height: 4.528rem;
+          }
+          &:first-child {
+            left: 0;
+            background-position: -6.304rem 0;
+          }
+          &:first-child + li {
+            left: 4.6rem;
+            background-position: -4.192rem 0;
+          }
+          &:first-child + li + li {
+            left: 9.2rem;
+            background-position: 0 0;
+          }
+          &:first-child + li + li + li {
+            right: 0;
+            background-position: -2.096rem 0;
+          }
+          &:hover, &.active {
+            &:after {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .giftbox-wrapper {
+    position: fixed;
+    width: 3.52rem;
+    height: 3.648rem;
+    background: url("../images/bg-giftbox.png") no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+    font-size: 0;
+    top: 50%;
+    margin-top: -1.824rem;
+    right: 0;
+    z-index: 3;
+    .btn-giftbox {
+      display: block;
+      width: 3.52rem;
+      height: 3.648rem;
+    }
+    &:hover {
+      background: url("../images/bg-giftbox-hover.png") no-repeat;
+      -webkit-background-size:100%;
+      background-size:100%;
+    }
+  }
+}

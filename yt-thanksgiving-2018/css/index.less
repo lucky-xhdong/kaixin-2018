@@ -1,0 +1,1704 @@
+@media (min-width: 1200px) {
+  .giftbox-wrapper {
+    position: fixed;
+    width: 102px;
+    height: 128px;
+    right: 0;
+    top: 50%;
+    margin-top: -64px;
+    background: url("../images/bg-gift-box.png") no-repeat;
+    .btn-giftbox {
+      width: 182px;
+      height: 128px;
+      display: block;
+      font-size: 0;
+    }
+  }
+  .thanksgiving-en2018 {
+    overflow: hidden;
+    background: url("../images/bg-body.jpg") top center no-repeat;
+    .thanksgiving-container {
+      width: 1200px;
+      margin: 0 auto;
+      background: url("../images/bg-container.jpg") no-repeat;
+
+      .thanksgiving-nav {
+        padding-top: 780px;
+        margin-bottom: 62px;
+        position: relative;
+        &:before {
+          content: '';
+          float: right;
+          width: 80px;
+          height: 89px;
+          margin-right: 240px;
+          margin-bottom: 20px;
+          background: url("../images/bg-turkey.png") no-repeat;
+        }
+        ul {
+          font-size: 0;
+          clear: both;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 61px;
+            a {
+              display: block;
+              width: 175px;
+              height: 72px;
+              background: url("../images/sprite-buttons.png") no-repeat;
+            }
+            &:first-child {
+              a {
+                background-position: 0px -181px;
+              }
+              &:hover {
+                a {
+                  background-position: 0px -400px;
+                }
+              }
+            }
+            &:first-child + li {
+              a {
+                background-position: 0px -765px;
+              }
+              &:hover {
+                a {
+                  background-position: 0px -692px;
+                }
+              }
+            }
+            &:first-child + li + li {
+              a {
+                background-position: 0px -911px;
+              }
+              &:hover {
+                a {
+                  background-position: 0px -254px;
+                }
+              }
+            }
+            &:first-child + li + li + li {
+              a {
+                background-position: 0px -327px;
+              }
+              &:hover {
+                a {
+                  background-position: 0px -838px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .thanksgiving-signin {
+        width: 1208px;
+        height: 643px;
+        margin-left: -4px;
+        background: url("../images/bg-acvitity-01.png") no-repeat;
+        .red-heart-lists, .blue-heart-lists {
+          ul {
+            font-size: 0;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              margin: 5px 57px;
+              position: relative;
+              .heart {
+                display: block;
+                width: 67px;
+                height: 60px;
+                margin: 0 auto;
+                .pop-prize-lists {
+                  position: absolute;
+                  min-width: 350px;
+                  border: 4px solid #fdb730;
+                  background-color: #fff;
+                  padding: 10px 20px 70px;
+                  left: 68px;
+                  top: 20px;
+                  z-index: 1;
+                  display: none;
+                  &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 15px;
+                  }
+                  &:before {
+                    width: 144px;
+                    height: 55px;
+                    left: 22px;
+                    background: url("../images/bg-popup-01.png") no-repeat;
+                  }
+                  &:after {
+                    width: 124px;
+                    height: 57px;
+                    right: 22px;
+                    background: url("../images/bg-popup-02.png") no-repeat;
+                  }
+                  ul {
+                    &:before {
+                      content: attr(data-before);
+                      display: block;
+                      font: 24px 'SimHei';
+                      color: #8d4d1a;
+                      text-align: center;
+                      margin: 5px 0;
+                    }
+                    li {
+                      margin-left: 40px;
+                      margin-right: 40px;
+                      margin-bottom: 10px;
+                      &:before {
+                        content: '';
+                        display: none;
+                        width: 0;
+                        height: 0;
+                        margin: 0 auto;
+                      }
+                      img, a {
+                        display: inline-block;
+                        vertical-align: middle;
+                      }
+                      a {
+                        white-space: nowrap;
+                        font: 14px 'SimHei';
+                        color: #8d4d1a;
+                        margin-left: 10px;
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  .pop-prize-lists {
+                    display: block;
+                    z-index: 11;
+                  }
+                }
+              }
+              .btn-claim, .btn-claim-gray {
+                display: block;
+                width: 66px;
+                height: 25px;
+                font: 14px/25px 'SimHei';
+                color: #fff;
+                text-align: center;
+                margin: 5px 0;
+                text-transform: capitalize;
+                background: url("../images/sprite-buttons.png") no-repeat;
+              }
+              .btn-claim {
+                background-position: 0 0;
+              }
+              .btn-claim-gray {
+                cursor: default;
+                background-position: 0 -26px;
+              }
+            }
+          }
+        }
+        .red-heart-lists {
+          margin: 0 150px;
+          padding-top: 100px;
+          ul {
+            li {
+              .heart {
+                background: url("../images/sprite-icons.png") no-repeat;
+                background-position: 0 -72px;
+              }
+              &:first-child + li + li + li + li,
+              &:first-child + li + li + li + li + li + li + li + li + li {
+                .heart {
+                  .pop-prize-lists {
+                    left: auto;
+                    right: 68px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .blue-heart-lists {
+          position: relative;
+          width: 724px;
+          margin: 0 auto;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            text-align: center;
+            font: 16px 'SimHei';
+            text-shadow: 1px 1px 1px rgba(0,0,0, .4);
+            color: #ff181e;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            left: 86px;
+            right: 86px;
+            height: 16px;
+            bottom: 44px;
+            border-radius: 4px;
+            background-color: #b28850;
+            z-index: 0;
+          }
+          ul {
+            position: relative;
+            z-index: 1;
+            li {
+              .heart {
+                background: url("../images/sprite-icons.png") no-repeat;
+                background-position: -82px 0;
+              }
+              &:first-child + li + li + li {
+                .heart {
+                  .pop-prize-lists {
+                    left: auto;
+                    right: 68px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .rules-wrapper {
+          position: relative;
+          padding: 20px 30px;
+          margin: 0 140px;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            font: 16px 'SimHei';
+            color: #fff;
+          }
+          .rules {
+            p {
+              font: 16px 'SimHei';
+              color: #fff;
+              word-break: break-word;
+            }
+          }
+        }
+      }
+
+      .thanksgiving-scratch {
+        width: 1028px;
+        min-height: 643px;
+        margin: 145px auto 100px;
+        overflow: hidden;
+        background: url("../images/bg-scratch-top.png") no-repeat;
+        &:after {
+          content: '';
+          display: block;
+          position: relative;
+          width: 1028px;
+          height: 45px;
+          clear: both;
+          background: url("../images/bg-scratch-bottom.png") no-repeat;
+        }
+        .thanksgiving-scratch__inner {
+          padding: 0 52px;
+          width: 1028px;
+          margin-top: 100px;
+          background: url("../images/bg-scratch.png") repeat-y;
+          .thanksgiving-scratch__left {
+            float: left;
+            position: relative;
+            width: 412px;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 242px;
+              height: 295px;
+              background: url("../images/diaochan.png") no-repeat;
+              left: 50%;
+              margin-left: -121px;
+            }
+            .rules-wrapper {
+              position: relative;
+              margin-top: 240px;
+              background-color: #580d12;
+              &:before, &:after {
+                content: '';
+                position: absolute;
+              }
+              &:before {
+                width: 412px;
+                height: 65px;
+                top: -65px;
+                background: url("../images/bg-scratch-rule-top.png") no-repeat;
+              }
+              &:after {
+                width: 412px;
+                height: 180px;
+                background: url("../images/bg-scratch-rule-bottom.jpg") no-repeat;
+              }
+              .rules {
+                padding: 0 10px;
+                p {
+                  font: 16px 'SimHei';
+                  color: #fff;
+                  word-break: break-word;
+                }
+              }
+            }
+          }
+          .thanksgiving-scratch__right {
+            float: right;
+            width: 500px;
+            height: 490px;
+            margin: 55px 0;
+            background: url("../images/bg-scratch-cards.png") no-repeat;
+            .card-wrapper {
+              width: 305px;
+              height: 371px;
+              margin: 65px auto 45px;
+              &.card-diaochan {
+                background: url("../images/bg-scratch-diaochan.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-luxun {
+                background: url("../images/bg-scratch-luxun.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-mayunlu {
+                background: url("../images/bg-scratch-mayunlu.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-shuijing {
+                background: url("../images/bg-scratch-shuijing.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-sunce {
+                background: url("../images/bg-scratch-sunce.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-zhaoyun {
+                background: url("../images/bg-scratch-zhaoyun.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-zuoci {
+                background: url("../images/bg-scratch-zuoci.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              .card {
+                display: block;
+                width: 100%;
+                height: 100%;
+                &.reverse {
+                  background: url("../images/bg-scratch-reverse.png") no-repeat;
+                }
+              }
+            }
+            .btn-group {
+              width: 100%;
+              height: 100px;
+              margin-top: -300px;
+              position: relative;
+              z-index: 11;
+              &:after {
+                content: '';
+                position: absolute;
+                height: 160px;
+                left: 13px;
+                right: 13px;
+                top: -30px;
+                background-color: #b2926c;
+                opacity: .51;
+                -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=51);
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=51);
+              }
+              .btn-draw-normal, .btn-draw-disabled {
+                z-index: 1;
+                position: relative;
+                display: block;
+                width: 196px;
+                height: 75px;
+                text-align: center;
+                font-size: 0;
+                margin: 0 auto;
+                text-transform: capitalize;
+                background: url("../images/sprite-buttons.png") no-repeat;
+              }
+              .btn-draw-normal {
+                background-position: 0 -984px;
+              }
+              .btn-draw-disabled {
+                background-position: 0 -1060px;
+              }
+              .txt {
+                font: 24px 'SimHei';
+                color: #fff;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                &:before {
+                  content: attr(data-before);
+                  font: 24px 'SimHei';
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .thanksgiving-collect {
+        width: 1028px;
+        margin: 232px auto 100px;
+        background: url("../images/bg-collect.png") repeat-y;
+        position: relative;
+        padding: 0 30px;
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+        }
+        &:before {
+          width: 1028px;
+          height: 1050px;
+          top: -100px;
+          background: url("../images/bg-collect-top.png") no-repeat;
+        }
+        &:after {
+          width: 1028px;
+          height: 45px;
+          bottom: -45px;
+          clear: both;
+          background: url("../images/bg-collect-bottom.png") no-repeat;
+        }
+        .total {
+          overflow: hidden;
+          position: relative;
+          .turkeys {
+            float: left;
+          }
+          .corns {
+            float: right;
+          }
+          .turkeys, .corns {
+            font: 22px 'SimHei';
+            color: #fdfbc6;
+            &:before {
+              content: attr(data-before);
+              font: 22px 'SimHei';
+              color: #fdfbc6;
+              padding-right: 10px;
+            }
+          }
+        }
+        .lottery-wrapper {
+          width: 882px;
+          height: 613px;
+          margin: 0 auto;
+          position: relative;
+          overflow: hidden;
+          background: url("../images/bg-lottery.png") no-repeat;
+          .lottery {
+            margin: 58px 150px;
+            ul {
+              position: relative;
+              width: 488px;
+              height: 488px;
+              &:before {
+                content: '';
+                position: absolute;
+                width: 405px;
+                height: 431px;
+                left: 50%;
+                top: 50%;
+                margin-top: -215px;
+                margin-left: -202px;
+                background: url("../images/corns.png") no-repeat;
+              }
+              li {
+                position: absolute;
+                width: 465px;
+                height: 466px;
+                left: 13px;
+                top: 16px;
+                &:first-child {
+                  &.active {
+                    background: url("../images/bg-lottery-active1.png") no-repeat;
+                  }
+                }
+                &:first-child + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active2.png") no-repeat;
+                  }
+                }
+                &:first-child + li + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active3.png") no-repeat;
+                  }
+                }
+                &:first-child + li + li + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active4.png") no-repeat;
+                  }
+                }
+                &:first-child + li + li + li + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active5.png") no-repeat;
+                  }
+                }
+                &:first-child + li + li + li + li + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active6.png") no-repeat;
+                  }
+                }
+                &.btn-group {
+                  width: 139px;
+                  height: 138px;
+                  left: 50%;
+                  top: 50%;
+                  margin-top: -69px;
+                  margin-left: -69px;
+                  &.mask {
+                    &:before {
+                      content: '';
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      left: 0;
+                      top: 0;
+                      background-color: transparent;
+                      opacity: 0;
+                      -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    }
+                  }
+                  .btn-start, .btn-unactive {
+                    width: 139px;
+                    height: 138px;
+                    display: block;
+                    font-size: 0;
+                    background: url("../images/sprite-buttons.png") no-repeat;
+                  }
+                  .btn-start {
+                    background-position: 0px -1275px;
+                  }
+                  .btn-unactive {
+                    cursor: default;
+                    background-position: 0px -1136px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .package-lists {
+          position: relative;
+          ul {
+            text-align: center;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0 85px;
+              position: relative;
+              .package {
+                display: block;
+                margin: 0 auto;
+                width: 116px;
+                height: 118px;
+                background: url("../images/bg-package.png") no-repeat;
+                .pop-prize-lists {
+                  position: absolute;
+                  min-width: 350px;
+                  border: 4px solid #fdb730;
+                  background-color: #fff;
+                  padding: 10px 20px 70px;
+                  z-index: 1;
+                  left: 110px;
+                  top: 50px;
+                  display: none;
+                  &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 15px;
+                  }
+                  &:before {
+                    width: 144px;
+                    height: 55px;
+                    left: 22px;
+                    background: url("../images/bg-popup-01.png") no-repeat;
+                  }
+                  &:after {
+                    width: 124px;
+                    height: 57px;
+                    right: 22px;
+                    background: url("../images/bg-popup-02.png") no-repeat;
+                  }
+                  ul {
+                    text-align: left;
+                    &:before {
+                      content: attr(data-before);
+                      display: block;
+                      font: 24px 'SimHei';
+                      color: #8d4d1a;
+                      text-align: center;
+                      margin: 5px 0;
+                    }
+                    li {
+                      margin-left: 40px;
+                      margin-right: 40px;
+                      margin-bottom: 10px;
+                      &:before {
+                        content: '';
+                        display: none;
+                        width: 0;
+                        height: 0;
+                        margin: 0 auto;
+                      }
+                      img, a {
+                        display: inline-block;
+                        vertical-align: middle;
+                      }
+                      a {
+                        white-space: nowrap;
+                        font: 14px 'SimHei';
+                        color: #8d4d1a;
+                        margin-left: 10px;
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  .pop-prize-lists {
+                    display: block;
+                  }
+                }
+              }
+              &:first-child + li + li {
+                .package {
+                  .pop-prize-lists {
+                    left: auto;
+                    right: 110px;
+                  }
+                }
+              }
+              .total {
+                font: 14px 'SimHei';
+                color: #ffda01;
+                display: block;
+                text-align: center;
+                margin: 5px 0;
+              }
+              .btn-claim, .btn-claim-gray {
+                display: block;
+                width: 103px;
+                height: 31px;
+                font-size: 0;
+                color: #fff;
+                text-align: center;
+                margin: 5px 0;
+                background: url("../images/sprite-buttons.png") no-repeat;
+              }
+              .btn-claim {
+                background-position: 0px -149px;
+              }
+              .btn-claim-gray {
+                cursor: default;
+                background-position: 0px -53px;
+              }
+            }
+          }
+        }
+        .rules-wrapper {
+          position: relative;
+          padding: 50px 30px;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            font: 16px 'SimHei';
+            color: #fff;
+          }
+          .rules {
+            p {
+              font: 16px 'SimHei';
+              color: #fff;
+              word-break: break-word;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .topBar .logoC {
+    height: 35px;
+    padding: 5px 0 !important;
+  }
+  .topBar .inner,
+  .footer {
+    width: auto;
+  }
+  .topBar .logoC .kxLogo {
+    width: 60px;
+    background-position: center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .topBar .funList li {
+    padding: 0 5px;
+  }
+  .topBar .facebookLogin {
+    margin: 5px 0 0 0 ;
+  }
+  .giftbox-wrapper {
+    position: fixed;
+    width: 1.632rem;
+    height: 2.048rem;
+    right: 0;
+    top: 50%;
+    margin-top: -1.024rem;
+    z-index: 11;
+    background: url("../images/bg-gift-box.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    .btn-giftbox {
+      width: 2.912rem;
+      height: 2.048rem;
+      display: block;
+      font-size: 0;
+    }
+  }
+  .thanksgiving-en2018 {
+    overflow: hidden;
+    background: url("../images/bg-body.jpg") top center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    .thanksgiving-container {
+      width: 100%;
+      margin: 0 auto;
+      background: #000 url("../images/bg-container.jpg") no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+
+      .thanksgiving-nav {
+        padding-top: 10.5rem;
+        margin-bottom: 1rem;
+        position: relative;
+        &:before {
+          content: '';
+          float: right;
+          width: 1.28rem;
+          height: 1.424rem;
+          margin-right: 3.84rem;
+          margin-bottom: 0.32rem;
+          background: url("../images/bg-turkey.png") no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+        }
+        ul {
+          font-size: 0;
+          clear: both;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0.6rem;
+            a {
+              display: block;
+              width: 2.8rem;
+              height: 1.152rem;
+              background: url("../images/sprite-buttons.png") no-repeat;
+              -webkit-background-size: 3.136rem 22.608rem;
+              background-size: 3.136rem 22.608rem;
+            }
+            &:first-child {
+              a {
+                background-position: 0px -2.896rem;
+              }
+              &:hover {
+                a {
+                  background-position: 0px -6.4rem;
+                }
+              }
+            }
+            &:first-child + li {
+              a {
+                background-position: 0px -12.24rem;
+              }
+              &:hover {
+                a {
+                  background-position: 0px -11.072rem;
+                }
+              }
+            }
+            &:first-child + li + li {
+              a {
+                background-position: 0px -14.576rem;
+              }
+              &:hover {
+                a {
+                  background-position: 0px -4.064rem;
+                }
+              }
+            }
+            &:first-child + li + li + li {
+              a {
+                background-position: 0px -5.232rem;
+              }
+              &:hover {
+                a {
+                  background-position: 0px -13.408rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .thanksgiving-signin {
+        width: 100%;
+        height: 8.6rem;
+        overflow: hidden;
+        background: url("../images/bg-acvitity-01.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        .thanksgiving-signin__inner {
+          margin: 1.6rem 1.4rem 0;
+          max-height: 6.4rem;
+          overflow-x: hidden;
+          overflow-y: auto;
+          .red-heart-lists, .blue-heart-lists {
+            ul {
+              font-size: 0;
+              li {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0.1rem 0.11rem;
+                position: relative;
+                .heart {
+                  display: block;
+                  width: 1.072rem;
+                  height: 0.96rem;
+                  margin: 0 auto;
+                  .pop-prize-lists {
+                    position: absolute;
+                    min-width: 5.6rem;
+                    border: 4px solid #fdb730;
+                    background-color: #fff;
+                    padding: 0.16rem 0.32rem 1.12rem;
+                    left: 1.5rem;
+                    top: 0.5rem;
+                    z-index: 1;
+                    display: none;
+                    &:before, &:after {
+                      content: '';
+                      position: absolute;
+                      bottom: 0.24rem;
+                    }
+                    &:before {
+                      width: 2.304rem;
+                      height: 0.88rem;
+                      left: 0.352rem;
+                      background: url("../images/bg-popup-01.png") no-repeat;
+                      -webkit-background-size: 100%;
+                      background-size: 100%;
+                    }
+                    &:after {
+                      width: 1.984rem;
+                      height: 0.912rem;
+                      right: 0.352rem;
+                      background: url("../images/bg-popup-02.png") no-repeat;
+                      -webkit-background-size: 100%;
+                      background-size: 100%;
+                    }
+                    ul {
+                      &:before {
+                        content: attr(data-before);
+                        display: block;
+                        font: 0.384rem 'SimHei';
+                        color: #8d4d1a;
+                        text-align: center;
+                        margin: 0.08rem 0;
+                        white-space: nowrap;
+                      }
+                      li {
+                        margin-left: 0.64rem;
+                        margin-right: 0.64rem;
+                        margin-bottom: 0.16rem;
+                        &:before {
+                          content: '';
+                          display: none;
+                          width: 0;
+                          height: 0;
+                          margin: 0 auto;
+                        }
+                        a {
+                          display: block;
+                          white-space: nowrap;
+                          font: 0.224rem 'SimHei';
+                          color: #8d4d1a;
+                        }
+                      }
+                    }
+                  }
+                  &:hover {
+                    .pop-prize-lists {
+                      display: block;
+                      z-index: 11;
+                    }
+                  }
+                }
+                .btn-claim, .btn-claim-gray {
+                  display: block;
+                  color: #fff;
+                  text-align: center;
+                  border-radius: 4px;
+                  text-transform: capitalize;
+                }
+                .btn-claim {
+                  background-color: #e6ac60;
+                }
+                .btn-claim-gray {
+                  cursor: default;
+                  background-color: #9f9f9f;
+                }
+              }
+            }
+          }
+          .red-heart-lists {
+            ul {
+              li {
+                .heart {
+                  background: url("../images/sprite-icons.png") no-repeat;
+                  -webkit-background-size: 2.384rem 2.112rem;
+                  background-size: 2.384rem 2.112rem;
+                  background-position: 0 -1.152rem;
+                }
+                &:first-child + li + li + li,
+                &:first-child + li + li + li + li,
+                &:first-child + li + li + li + li + li + li + li + li,
+                &:first-child + li + li + li + li + li + li + li + li + li {
+                  .heart {
+                    .pop-prize-lists {
+                      left: auto;
+                      right: 1.5rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .blue-heart-lists {
+            position: relative;
+            width: 10.5rem;
+            margin: 0 auto;
+            &:before {
+              content: attr(data-before);
+              display: block;
+              text-align: center;
+              font: 0.256rem 'SimHei';
+              text-shadow: 0.016rem 0.016rem 0.016rem rgba(0, 0, 0, .4);
+              color: #ff181e;
+            }
+            &:after {
+              content: '';
+              position: absolute;
+              left: 1.376rem;
+              right: 1.376rem;
+              height: 0.256rem;
+              bottom: 1rem;
+              border-radius: 4px;
+              background-color: #b28850;
+              z-index: 0;
+            }
+            ul {
+              position: relative;
+              z-index: 1;
+              li {
+                .heart {
+                  background: url("../images/sprite-icons.png") no-repeat;
+                  -webkit-background-size: 2.384rem 2.112rem;
+                  background-size: 2.384rem 2.112rem;
+                  background-position: -1.312rem 0;
+                }
+                &:first-child + li + li,
+                &:first-child + li + li + li {
+                  .heart {
+                    .pop-prize-lists {
+                      left: auto;
+                      right: 1.5rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .rules-wrapper {
+            position: relative;
+            padding: 0.32rem 0.48rem;
+            &:before {
+              content: attr(data-before);
+              display: block;
+              color: #fff;
+            }
+            .rules {
+              p {
+                color: #fff;
+                word-break: break-word;
+              }
+            }
+          }
+        }
+      }
+
+      .thanksgiving-scratch {
+        width: 100%;
+        min-height: 10.4rem;
+        margin: 2.5rem auto 1.5rem;
+        padding: 2rem 0.2rem 0;
+        background: url("../images/bg-scratch-top.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 0.72rem;
+          bottom: -0.72rem;
+          clear: both;
+          background: url("../images/bg-scratch-bottom.png") no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+        }
+        .thanksgiving-scratch__inner {
+          background: url("../images/bg-scratch.png") repeat-y;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+          .thanksgiving-scratch__left {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 3rem;
+            background-color: #580d12;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 3.872rem;
+              height: 4.72rem;
+              background: url("../images/diaochan.png") no-repeat;
+              -webkit-background-size: 100%;
+              background-size: 100%;
+              left: 50%;
+              margin-left: -1.936rem;
+            }
+            .rules-wrapper {
+              position: relative;
+              margin-top: 4.5rem;
+              padding: .4rem 0;
+              &:before, &:after {
+                content: '';
+                position: absolute;
+              }
+              &:before {
+                width: 100%;
+                height: 2.5rem;
+                top: -2rem;
+                background: url("../images/bg-scratch-rule-top.png") repeat-x;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &:after {
+                width: 7rem;
+                height: 3.4rem;
+                left: 50%;
+                margin-left: -3.5rem;
+                background: url("../images/bg-scratch-rule-bottom.jpg") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              .rules {
+                padding: 0 0.48rem;
+                p {
+                  color: #fff;
+                  word-break: break-word;
+                }
+              }
+            }
+          }
+          .thanksgiving-scratch__right {
+            width: 100%;
+            height: 16rem;
+            margin-top: 1.28rem;
+            overflow: hidden;
+            background: url("../images/bg-scratch-cards.png") no-repeat;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+            .card-wrapper {
+              width: 10rem;
+              height: 12.2rem;
+              margin: 1.6rem auto 1rem;
+              &.card-diaochan {
+                background: url("../images/bg-scratch-diaochan.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-luxun {
+                background: url("../images/bg-scratch-luxun.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-mayunlu {
+                background: url("../images/bg-scratch-mayunlu.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-shuijing {
+                background: url("../images/bg-scratch-shuijing.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-sunce {
+                background: url("../images/bg-scratch-sunce.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-zhaoyun {
+                background: url("../images/bg-scratch-zhaoyun.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              &.card-zuoci {
+                background: url("../images/bg-scratch-zuoci.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              .card {
+                display: block;
+                width: 100%;
+                height: 100%;
+                &.reverse {
+                  background: url("../images/bg-scratch-reverse.png") no-repeat;
+                  -webkit-background-size: 100%;
+                  background-size: 100%;
+                }
+              }
+            }
+            .btn-group {
+              width: 100%;
+              height: 1.6rem;
+              position: relative;
+              margin-top: -8rem;
+              &:after {
+                content: '';
+                position: absolute;
+                height: 2.56rem;
+                left: 0.208rem;
+                right: 0.208rem;
+                top: -0.48rem;
+                background-color: #b2926c;
+                opacity: .51;
+                -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=51);
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=51);
+              }
+              .btn-draw-normal, .btn-draw-disabled {
+                z-index: 1;
+                position: relative;
+                display: block;
+                width: 3.136rem;
+                height: 1.2rem;
+                font-size: 0;
+                margin: 0 auto;
+                background: url("../images/sprite-buttons.png") no-repeat;
+                -webkit-background-size: 3.136rem 22.608rem;
+                background-size: 3.136rem 22.608rem;
+              }
+              .btn-draw-normal {
+                background-position: 0px -15.744rem;
+              }
+              .btn-draw-disabled {
+                background-position: 0px -16.96rem;
+              }
+              .txt {
+                color: #fff;
+                text-align: center;
+                &:before {
+                  content: attr(data-before);
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .thanksgiving-collect {
+        width: 100%;
+        margin: 3rem auto 1.5rem;
+        background: url("../images/bg-collect.png") repeat-y;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        position: relative;
+        padding: 0 0.48rem;
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+        }
+        &:before {
+          width: 100%;
+          height: 16.8rem;
+          top: -1.6rem;
+          background: url("../images/bg-collect-top.png") no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+        }
+        &:after {
+          width: 100%;
+          height: 0.72rem;
+          bottom: -0.72rem;
+          clear: both;
+          background: url("../images/bg-collect-bottom.png") no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+        }
+        .total {
+          overflow: hidden;
+          position: relative;
+          .turkeys {
+            float: left;
+          }
+          .corns {
+            float: right;
+          }
+          .turkeys, .corns {
+            color: #fdfbc6;
+            &:before {
+              content: attr(data-before);
+              color: #fdfbc6;
+              padding-right: 0.16rem;
+            }
+          }
+        }
+        .lottery-wrapper {
+          width: 14.112rem;
+          height: 9.808rem;
+          margin: 0 auto;
+          position: relative;
+          overflow: hidden;
+          background: url("../images/bg-lottery.png") no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+          .lottery {
+            margin: 0.928rem 2.4rem;
+            ul {
+              position: relative;
+              width: 7.808rem;
+              height: 7.808rem;
+              &:before {
+                content: '';
+                position: absolute;
+                width: 6.48rem;
+                height: 6.896rem;
+                left: 50%;
+                top: 50%;
+                margin-top: -3.44rem;
+                margin-left: -3.232rem;
+                background: url("../images/corns.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+              }
+              li {
+                position: absolute;
+                width: 7.44rem;
+                height: 7.456rem;
+                left: 0.208rem;
+                top: 0.256rem;
+                &:first-child {
+                  &.active {
+                    background: url("../images/bg-lottery-active1.png") no-repeat;
+                    -webkit-background-size: 100%;
+                    background-size: 100%;
+                  }
+                }
+                &:first-child + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active2.png") no-repeat;
+                    -webkit-background-size: 100%;
+                    background-size: 100%;
+                  }
+                }
+                &:first-child + li + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active3.png") no-repeat;
+                    -webkit-background-size: 100%;
+                    background-size: 100%;
+                  }
+                }
+                &:first-child + li + li + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active4.png") no-repeat;
+                    -webkit-background-size: 100%;
+                    background-size: 100%;
+                  }
+                }
+                &:first-child + li + li + li + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active5.png") no-repeat;
+                    -webkit-background-size: 100%;
+                    background-size: 100%;
+                  }
+                }
+                &:first-child + li + li + li + li + li {
+                  &.active {
+                    background: url("../images/bg-lottery-active6.png") no-repeat;
+                    -webkit-background-size: 100%;
+                    background-size: 100%;
+                  }
+                }
+                &.btn-group {
+                  width: 2.224rem;
+                  height: 2.208rem;
+                  left: 50%;
+                  top: 50%;
+                  margin-top: -1.104rem;
+                  margin-left: -1.104rem;
+                  .btn-start, .btn-unactive {
+                    width: 2.224rem;
+                    height: 2.208rem;
+                    display: block;
+                    font-size: 0;
+                    background: url("../images/sprite-buttons.png") no-repeat;
+                    -webkit-background-size: 3.136rem 22.608rem;
+                    background-size: 3.136rem 22.608rem;
+                  }
+                  .btn-start {
+                    background-position: 0px -20.4rem;
+                  }
+                  .btn-unactive {
+                    cursor: default;
+                    background-position: 0px -18.176rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .package-lists {
+          position: relative;
+          ul {
+            text-align: center;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0 1.36rem;
+              position: relative;
+              .package {
+                display: block;
+                margin: 0 auto;
+                width: 1.856rem;
+                height: 1.888rem;
+                background: url("../images/bg-package.png") no-repeat;
+                -webkit-background-size: 100%;
+                background-size: 100%;
+                .pop-prize-lists {
+                  position: absolute;
+                  min-width: 5.6rem;
+                  border: 4px solid #fdb730;
+                  background-color: #fff;
+                  padding: 0.16rem 0.32rem 1.12rem;
+                  z-index: 1;
+                  left: 1.76rem;
+                  top: 0.8rem;
+                  display: none;
+                  &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0.24rem;
+                  }
+                  &:before {
+                    width: 2.304rem;
+                    height: 0.88rem;
+                    left: 0.352rem;
+                    background: url("../images/bg-popup-01.png") no-repeat;
+                    -webkit-background-size: 100%;
+                    background-size: 100%;
+                  }
+                  &:after {
+                    width: 1.984rem;
+                    height: 0.912rem;
+                    right: 0.352rem;
+                    background: url("../images/bg-popup-02.png") no-repeat;
+                    -webkit-background-size: 100%;
+                    background-size: 100%;
+                  }
+                  ul {
+                    &:before {
+                      content: attr(data-before);
+                      display: block;
+                      color: #8d4d1a;
+                      text-align: center;
+                      margin: 0.08rem 0;
+                      white-space: nowrap;
+                    }
+                    li {
+                      margin-left: 0.64rem;
+                      margin-right: 0.64rem;
+                      margin-bottom: 0.16rem;
+                      &:before {
+                        content: '';
+                        display: none;
+                        width: 0;
+                        height: 0;
+                        margin: 0 auto;
+                      }
+                      a {
+                        display: block;
+                        white-space: nowrap;
+                        color: #8d4d1a;
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  .pop-prize-lists {
+                    display: block;
+                  }
+                }
+              }
+              &:first-child + li + li {
+                .package {
+                  .pop-prize-lists {
+                    left: auto;
+                    right: 1.76rem;
+                  }
+                }
+              }
+              .total {
+                font: 0.224rem 'SimHei';
+                color: #ffda01;
+                display: block;
+                text-align: center;
+                margin: 0.08rem 0;
+              }
+              .btn-claim, .btn-claim-gray {
+                display: block;
+                width: 1.648rem;
+                height: 0.496rem;
+                font-size: 0;
+                color: #fff;
+                text-align: center;
+                margin: 0.08rem 0;
+                background: url("../images/sprite-buttons.png") no-repeat;
+                -webkit-background-size: 3.136rem 22.608rem;
+                background-size: 3.136rem 22.608rem;
+              }
+              .btn-claim {
+                background-position: 0px -2.384rem;
+              }
+              .btn-claim-gray {
+                cursor: default;
+                background-position: 0px -0.848rem;
+              }
+            }
+          }
+        }
+        .rules-wrapper {
+          position: relative;
+          padding: 0.8rem 0.48rem;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            color: #fff;
+          }
+          .rules {
+            p {
+              color: #fff;
+              word-break: break-word;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+  .thanksgiving-en2018 {
+    .thanksgiving-container {
+      .thanksgiving-signin {
+        .red-heart-lists, .blue-heart-lists {
+          ul {
+            li {
+              .btn-claim, .btn-claim-gray {
+                width: 1.8rem;
+                height: 0.6rem;
+                margin: 0.08rem .31rem;
+                font: 0.32rem/0.6rem 'SimHei';
+              }
+            }
+          }
+        }
+        .blue-heart-lists {
+          &:before {
+            font: .32rem 'SimHei';
+          }
+        }
+        .rules-wrapper {
+          &:before {
+            font: 0.32rem 'SimHei';
+          }
+          .rules {
+            p {
+              font: 0.32rem 'SimHei';
+            }
+          }
+        }
+      }
+
+      .thanksgiving-scratch {
+        .thanksgiving-scratch__left {
+          .rules-wrapper {
+            .rules {
+              p {
+                font: 0.32rem 'SimHei';
+              }
+            }
+          }
+        }
+        .thanksgiving-scratch__right {
+          .btn-group {
+            .txt {
+              font: 0.32rem 'SimHei';
+              &:before {
+                content: attr(data-before);
+                font: 0.32rem 'SimHei';
+              }
+            }
+          }
+        }
+      }
+
+      .thanksgiving-collect {
+        .total {
+          .turkeys, .corns {
+            font: 0.32rem 'SimHei';
+            &:before {
+              font: 0.32rem 'SimHei';
+            }
+          }
+        }
+        .package-lists {
+          ul {
+            li {
+              .total {
+                font: 0.32rem 'SimHei';
+              }
+            }
+          }
+        }
+        .rules-wrapper {
+          &:before {
+            font: 0.32rem 'SimHei';
+          }
+          .rules {
+            p {
+              font: 0.32rem 'SimHei';
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) and (orientation: portrait) {
+  .thanksgiving-en2018 {
+    .thanksgiving-container {
+      .thanksgiving-signin {
+        .red-heart-lists, .blue-heart-lists {
+          ul {
+            li {
+              .btn-claim, .btn-claim-gray {
+                width: 2.4rem;
+                height: 0.7rem;
+                margin: 0.08rem 0;
+                font: 0.48rem/0.7rem 'SimHei';
+              }
+            }
+          }
+        }
+        .blue-heart-lists {
+          &:before {
+            font: .48rem 'SimHei';
+          }
+        }
+        .rules-wrapper {
+          &:before {
+            font: 0.56rem 'SimHei';
+          }
+          .rules {
+            p {
+              font: 0.56rem 'SimHei';
+            }
+          }
+        }
+      }
+
+      .thanksgiving-scratch {
+        .thanksgiving-scratch__left {
+          .rules-wrapper {
+            .rules {
+              p {
+                font: 0.56rem 'SimHei';
+              }
+            }
+          }
+        }
+        .thanksgiving-scratch__right {
+          .btn-group {
+            .txt {
+              font: 0.48rem 'SimHei';
+              &:before {
+                content: attr(data-before);
+                font: 0.48rem 'SimHei';
+              }
+            }
+          }
+        }
+      }
+
+      .thanksgiving-collect {
+        .total {
+          .turkeys, .corns {
+            font: 0.48rem 'SimHei';
+            &:before {
+              font: 0.48rem 'SimHei';
+            }
+          }
+        }
+        .package-lists {
+          ul {
+            li {
+              .total {
+                font: 0.48rem 'SimHei';
+              }
+            }
+          }
+        }
+        .rules-wrapper {
+          &:before {
+            font: 0.56rem 'SimHei';
+          }
+          .rules {
+            p {
+              font: 0.56rem 'SimHei';
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" height="100%">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/jquery.smoove.js"></script><!--支持页面动画效果插件-->
+    <script src="js/jquery.lottery.js"></script>
+    <script src="js/gameplat-anniversary.js"></script>
+    <link rel="stylesheet" href="css/gameplat_global.css"><!--飞豆 公共头尾样式-->
+    <link rel="stylesheet" href="css/gameplat-anniversary-cn2018.css">
+    <!--<link rel="stylesheet" href="css/responsive.css">-->
+    <script src="js/respond.src.js"></script><!--支持IE8使用媒体查询-->
+    <script src="js/rem.js"></script><!--支持响应式适配使用-->
+</head>
+<body>
+<div class="topBar">
+    <div class="inner">
+        <h1 class="logoC"><div class="kxLogo"><a href="http://www.kaixin001.com" target="_blank">开心网</a></div><div class="line"></div><div class="fdLogo"><a href="/">飞豆网_开心网</a></div></h1>
+        <!-- BEGIN login_menu -->
+        <div class="fr">
+            <ul class="funList">
+                <li><a href="/">游戏首页</a></li>
+                <li><a href="/pay/" target="_blank">充值中心</a></li>
+                <li><a href="/bbs/" target="_blank">游戏论坛</a></li>
+                <!-- <li id="userCenter" class="userCenter"><a href="javascript:;">账号<i></i></a></li> -->
+                <li class="userCenter" id="userCenter">
+                    <a href="javascript:;">账号<i></i></a>
+                    <ul class="userCenterFun dn" id="userCenterFun">
+                        <li class="set"><a href="/set/"><i></i>设置中心</a></li>
+                        <li class="exit"><a href="/logout.php"><i></i>退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- END login_menu -->
+    </div>
+</div>
+<div class="anniversary-cn2018">
+    <div class="anniversary-container">
+        <a href="javascript:;" class="icon-gift">礼品箱</a>
+        <!--导航 start-->
+        <div class="anniversary-nav">
+            <div class="smoove" data-move-x="0" data-move-y="100px">
+                <ul>
+                    <li class="active"><a href="javascript:;">签到集武将</a></li>
+                    <li><a href="javascript:;">周年留言板</a></li>
+                    <li><a href="javascript:;">填词赢大奖</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--导航 end-->
+        <!--铸剑 start-->
+        <div class="smoove" data-move-x="0" data-move-y="100px">
+            <div class="anniversary-sword">
+                <div class="sword-left">
+                    <div class="sword-wrapper">
+                        <div class="sword-gray">灰剑</div>
+                        <div class="sword-light">亮剑</div>
+                    </div>
+                    <div class="time-lists">
+                        <ul>
+                            <li><span>1次</span></li>
+                            <li><span>2次</span></li>
+                            <li><span>3次</span></li>
+                            <li><span>4次</span></li>
+                            <li><span>5次</span></li>
+                            <li><span>6次</span></li>
+                            <li><span>7次</span></li>
+                        </ul>
+                    </div>
+                    <p class="total-times">累计次数：<span><em>1</em>/<em>7</em></span>次</p>
+                    <div class="box-lists">
+                        <ul>
+                            <li class="box-open"><a href="javascript:;" class="btn-open">开启</a></li>
+                            <li class="box-close"><a href="javascript:;" class="btn-open">开启</a></li>
+                            <li class="box-close"><a href="javascript:;" class="btn-open">开启</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sword-right">
+                    <button class="btn-sword">铸剑</button>
+                </div>
+            </div>
+        </div>
+        <!--铸剑 end-->
+        <!--拼图 start-->
+        <div class="smoove" data-move-x="0" data-move-y="100px">
+            <div class="anniversary-puzzle">
+                <div class="puzzle-left">
+                    <div class="puzzle-cards">
+                        <ul>
+                            <li class="person" data-index="0" data-person-large="images/person-large-01.png">
+                                <a href="javascript:;"><img src="images/person-small-01.png" alt=""></a>
+                            </li>
+                            <li class="person" data-index="1" data-person-large="images/person-large-02.png">
+                                <a href="javascript:;"><img src="images/person-small-02.png" alt=""></a>
+                            </li>
+                            <li class="person" data-index="2" data-person-large="images/person-large-03.png">
+                                <a href="javascript:;"><img src="images/person-small-03.png" alt=""></a>
+                            </li>
+                            <li class="person" data-index="3" data-person-large="images/person-large-04.png">
+                                <a href="javascript:;"><img src="images/person-small-04.png" alt=""></a>
+                            </li>
+                            <li class="person" data-index="4" data-person-large="images/person-large-05.png">
+                                <a href="javascript:;"><img src="images/person-small-05.png" alt=""></a>
+                            </li>
+                            <li class="person" data-index="5" data-person-large="images/person-large-06.png">
+                                <a href="javascript:;"><img src="images/person-small-06.png" alt=""></a>
+                            </li>
+                            <li class="person" data-index="6" data-person-large="images/person-large-07.png">
+                                <a href="javascript:;"><img src="images/person-small-07.png" alt=""></a>
+                            </li>
+                            <li class="person" data-index="7" data-person-large="images/person-large-08.png">
+                                <a href="javascript:;"><img src="images/person-small-08.png" alt=""></a>
+                            </li>
+                            <li class="person" data-index="8" data-person-large="images/person-large-09.png">
+                                <a href="javascript:;"><img src="images/person-small-09.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;" class="btn-confirm">确认</a>
+                    </div>
+                </div>
+                <div class="puzzle-right">
+                    <div class="puzzle-person">
+                        <ul>
+                            <li class="card" data-card-large="images/card-large-01.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                            <li class="card" data-card-large="images/card-large-02.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                            <li class="card" data-card-large="images/card-large-03.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                            <li class="card" data-card-large="images/card-large-01.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                            <li class="card" data-card-large="images/card-large-02.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                            <li class="card" data-card-large="images/card-large-03.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                            <li class="card" data-card-large="images/card-large-01.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                            <li class="card" data-card-large="images/card-large-02.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                            <li class="card" data-card-large="images/card-large-03.png">
+                                <a href="javascript:;"><img src="images/card-large-01.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--拼图 end-->
+        <!--点数/抽奖 start-->
+        <div class="smoove" data-move-x="0" data-move-y="100px">
+            <div class="anniversary-gifts">
+                <div class="anniversary-points">
+                    <ul>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="images/xing.png" alt="" class="img-point">
+                            </div>
+                            <p class="p1">888W粮食</p>
+                            <p class="p2">需消耗神兵点数：**</p>
+                            <p class="p3">兑换上限：（1/1)</p>
+                            <a href="javascript:;" class="btn-exchange">兑换</a>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="images/xing.png" alt="" class="img-point">
+                            </div>
+                            <p class="p1">888W粮食</p>
+                            <p class="p2">需消耗神兵点数：**</p>
+                            <p class="p3">兑换上限：（1/1)</p>
+                            <a href="javascript:;" class="btn-exchange">兑换</a>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="images/xing.png" alt="" class="img-point">
+                            </div>
+                            <p class="p1">888W粮食</p>
+                            <p class="p2">需消耗神兵点数：**</p>
+                            <p class="p3">兑换上限：（1/1)</p>
+                            <a href="javascript:;" class="btn-exchange">兑换</a>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="images/xing.png" alt="" class="img-point">
+                            </div>
+                            <p class="p1">888W粮食</p>
+                            <p class="p2">需消耗神兵点数：**</p>
+                            <p class="p3">兑换上限：（1/1)</p>
+                            <a href="javascript:;" class="btn-exchange">兑换</a>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="images/xing.png" alt="" class="img-point">
+                            </div>
+                            <p class="p1">888W粮食</p>
+                            <p class="p2">需消耗神兵点数：**</p>
+                            <p class="p3">兑换上限：（1/1)</p>
+                            <a href="javascript:;" class="btn-exchange">兑换</a>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="images/xing.png" alt="" class="img-point">
+                            </div>
+                            <p class="p1">888W粮食</p>
+                            <p class="p2">需消耗神兵点数：**</p>
+                            <p class="p3">兑换上限：（1/1)</p>
+                            <a href="javascript:;" class="btn-exchange">兑换</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="anniversary-lottery">
+                    <div class="lottery lucky-lottery" data-before="幸运转盘">
+                        <ul>
+                            <li class="lottery-unit-1"><a href="javascript:;" data-after="300金币"><img src="images/jinbi.png" alt=""/></a></li>
+                            <li class="lottery-unit-2"><a href="javascript:;" data-after="玉  玺"><img src="images/yuxi.png" alt=""/></a></li>
+                            <li class="lottery-unit-3"><a href="javascript:;" data-after="9级宝石"><img src="images/baoshi.png" alt=""/></a></li>
+                            <li class="lottery-unit-4"><a href="javascript:;" data-after="抱 枕"><img src="images/baozhen.png" alt=""/></a></li>
+                            <li class="lottery-unit-5"><a href="javascript:;" data-after="2888W粮食"><img src="images/liangshi.png" alt=""/></a></li>
+                            <li class="lottery-unit-6"><a href="javascript:;" data-after="纪念邮票"><img src="images/jinianyoupiao.png" alt=""/></a></li>
+                            <li class="lottery-unit-7"><a href="javascript:;" data-after="1888点券"><img src="images/dianjuan.png" alt=""/></a></li>
+                            <li class="lottery-unit-8"><a href="javascript:;" data-after="纪念笔"><img src="images/jinianbi.png" alt=""/></a></li>
+                            <li class="btn-group">
+                                <!--未激活按钮 start-->
+                                <a href="javascript:;" class="btn-start">start</a>
+                                <!--<a href="javascript:;" class="btn-won">won</a>-->
+                                <!--<a href="javascript:;" class="btn-unactive">unactive</a>-->
+                                <!--未激活按钮 end-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--点数/抽奖 end-->
+        <!--活动说明 start-->
+        <div class="smoove" data-move-x="0" data-move-y="100px">
+            <div class="anniversary-instructions">
+                <div class="time" data-before="活动时间：">
+                    <span>7天</span>
+                </div>
+                <div class="content" data-before="活动内容：">
+                    <p>活动期间玩家可每天点击“铸剑”进行签到，签到成功可获得当日签到奖励。神兵点数*3、拼图碎片*1及当日小游戏，小游戏为随机摇骰子猜单双数，回答正确获得额外奖励、拼图碎片*1及神兵点数*2。拼图碎片共9块，整个拼图全部点亮后可获得秘钥*1，消耗秘钥可以激活实物转盘哦。</p>
+                </div>
+                <div class="rule" data-before="活动规则：">
+                    <p>在铸剑活动区域内增设铸剑进度条，每日通过点击“铸剑”进行铸造一次，累计铸剑进度可领取宝箱（累计登录3、5、7天）。未达进度时，宝箱置灰；满足进度条件时，宝箱变为可点击状态，点击宝箱获得奖励。每个宝箱只可领取一次，领取后宝箱按钮变为开启样式并置灰。</p>
+                </div>
+                <div class="reward" data-before="注：">
+                    <p>1、必须按照指定的格式参与活动；</p>
+                    <p>2、如果活动中的回帖不符合活动要求，那么该楼获奖资格取消；</p>
+                    <p>3、同一角色可以进行多次跟帖，不可重复得奖，即每个角色只能获得一个礼包；</p>
+                    <p>4、严禁回帖中出现谩骂，人身攻击等内容，蓄意破坏活动的人员，一经发现直接取消活动获奖资格；</p>
+                    <p>5、本活动最终解释权归《一统天下》团队所有。</p>
+                </div>
+            </div>
+        </div>
+        <!--活动说明 end-->
+    </div>
+</div>
+<footer>
+    <div style="width: 980px;margin: 20px auto -30px;">
+        <h3 class="mb f14">友情链接</h3>
+        <p>
+            <a href="http://www.ptbus.com" target="_blank">口袋巴士</a> |
+            <a href="http://apple.766.com" target="_blank">766苹果中文网</a> |
+            <a href="http://www.shouyoubus.com/" target="_blank">手游巴士</a> |
+            <a href="http://app.kaifu.com/" target="_blank">手机网游</a> |
+            <a href="http://kf.40407.com/" target="_blank">网页游戏开服表</a> |
+            <a href="http://www.huiyong123.com/index.php?eventId=131" target="_blank">天翼•汇用市场</a> |
+            <a href="http://www.980apk.com/ " target="_blank">澳门手游</a> |
+            <a href="http://www.shouyou520.com/ " target="_blank">爱手游网</a> |
+            <a href="http://www.anfensi.com/" target="_blank">好玩的安卓游戏</a>
+        </p>
+    </div>
+    <div class="footer cfix">
+        <div class="fl">
+            <a href="" target="_blank">
+                <img src="http://cdn.feidou.com/i3/gameplat/beian_70.png" width="39px" height="45px">
+            </a>
+        </div>
+        <div style="margin-left:55px;margin-top:5px">Copyright © 2013 feidou.com All Rights Reserved 飞豆游戏中心·北京开心人信息技术有限公司<br>京网文[2015]2180-400号•京ICP证08005250号-4</div>
+        <div class="fr"><a class="c9" href="/care/" target="_blank">游戏组件未成年人家长监护工程</a>　 <span class="logo"><a href="/">飞豆网_开心网</a></span></div>
+    </div>
+</footer>
+
+<!--弹框 start-->
+<!--1 礼品码 start -->
+<div class="popup pop-girl pop-giftcode">
+    <a href="javascript:;" class="close">&times;</a>
+    <div class="pop-body">
+        <h1 data-before="恭喜您获得礼品码：">KHDUKHKDHKFHKFHKFH</h1>
+        <p class="p1">请主公前往游戏体验更多精彩：<a href="http://www.feidou.com/yttx/"></a></p>
+        <p class="p2">提示：每种奖励每个游戏账号只能使用一次，您可在<a href="javascript:;">礼品箱</a>中查询领取记录。</p>
+    </div>
+</div>
+<!--1 礼品码 end -->
+<!--2 小问题 start-->
+<div class="popup pop-girl pop-questions">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <h2 data-before="恭喜您获得礼品码：">KHDUKHKDHKFHKFHKFH</h2>
+        <p>以下是您的今日问题，答对可活的一次翻牌机会。收集武将，大奖就在眼前！</p>
+        <div class="question wrong" data-right="&radic;" data-wrong="&times;">
+            <a href="javascript:;" id="ask" class="caption">三国中谁被称为鬼才？</a>
+            <ul>
+                <li class="active"><a href="javascript:;" id="answa" data-before="A.">郭嘉 </a></li>
+                <li><a href="javascript:;" id="answb" data-before="B.">甘宁</a></li>
+            </ul>
+            <a href="javascript:;" class="btn-submit">确定</a>
+        </div>
+    </div>
+</div>
+<!--2 小问题 end-->
+<!--3 答错提示 start-->
+<div class="popup pop-girl pop-wrong">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <h2>很遗憾您没有回答对哦~</h2>
+        <a href="javascript:;" class="btn-submit">确定</a>
+    </div>
+</div>
+<!--3 答错提示 end-->
+<!--4 答对提示 获得翻牌机会 start-->
+<div class="popup pop-girl pop-right">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <h2 data-before="恭喜您答对了，获得1次翻牌机会。" data-after="收集武将，大奖就在眼前！">您可翻开下方任意一栏位，获得武将及相应奖励。</h2>
+        <div class="btn-group">
+            <a href="javascript:;" class="btn-submit">确定</a>
+            <a href="javascript:;" class="btn-cancel">取消</a>
+        </div>
+    </div>
+</div>
+<!--4 答对提示 获得翻牌机会 end-->
+<!--5 获得武将 无按钮 start-->
+<div class="popup pop-generals">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <div class="pop-body-left">
+            <a href="javascript:;"><img alt=""></a>
+        </div>
+        <div class="pop-body-right">
+            <h2>恭喜您获得武将魏：<span>张辽</span>，及武将奖励：<span>魏：150募兵令</span></h2>
+            <h3 data-before="恭喜您获得礼品码：">KHDUKHKDHKFHKFHKFH</h3>
+
+            <p class="p1">请主公前往游戏体验更多精彩：<a href="http://www.feidou.com/yttx/" target="_blank">www.feidou.com/yttx/</a></p>
+            <p class="p2">提示：每种奖励每个游戏账号只能使用一次，您可在<a href="javascript:;" class="btn-gift-box">礼品箱</a>中查询领取记录。</p>
+        </div>
+    </div>
+</div>
+<!--5 获得武将 无按钮 end-->
+<!--6 激活幸运转盘 start-->
+<div class="popup pop-girl pop-turntable">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <h2>恭喜您集齐魏：<span id="pop-6">张辽、典韦、夏侯惇、司马懿、郭嘉</span></h2>
+        <h3>您已激活<a href="javascript:;" class="caption">幸运转盘</a>，可点击转盘进行抽奖</h3>
+        <p class="p1">请主公前往游戏体验更多精彩：<a href="http://www.feidou.com/yttx/" target="_blank">www.feidou.com/yttx/</a></p>
+        <p class="p2">提示：每种奖励每个游戏账号只能使用一次，您可在<a href="javascript:;" class="btn-gift-box">礼品箱</a>中查询领取记录。</p>
+    </div>
+</div>
+<!--6 激活幸运转盘 end-->
+<!--7 激活幸运转盘2 start-->
+<div class="popup pop-avatar-turntable">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <div class="pop-body-left">
+            <ul>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div class="pop-body-right">
+            <h2>恭喜您集齐魏：<span>张辽、典韦、夏侯惇、司马懿、郭嘉</span></h2>
+            <h3>您已激活<a href="javascript:;" class="caption">幸运转盘</a>，可点击转盘进行抽奖</h3>
+            <p class="p1">请主公前往游戏体验更多精彩：<a href="http://www.feidou.com/yttx/" target="_blank">www.feidou.com/yttx/</a></p>
+            <p class="p2">提示：每种奖励每个游戏账号只能使用一次，您可在<a href="javascript:;" class="btn-gift-box">礼品箱</a>中查询领取记录。</p>
+        </div>
+    </div>
+</div>
+<!--7 激活幸运转盘2 end-->
+<!--8 实物奖 start-->
+<div class="popup pop-girl-lg pop-goods">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <div class="form-group">
+            <h3 id="loeetrys" data-before="恭喜您，您获得：">实物奖励1</h3><br>
+            <ul data-before="请认真填写以下个人信息，因信息有误无法寄达的，视为自动放弃获奖机会。">
+                <li data-before="姓名：">
+                    <input id="name" type="text"/>
+                </li>
+                <li data-before="电话：">
+                    <input id="phone" type="text"/>
+                </li>
+                <li data-before="地址：">
+                    <input id="address" type="text"/>
+                </li>
+                <li data-before="邮编：">
+                    <input id="zipcode" type="text"/>
+                </li>
+                <li data-before="服务器名称：">
+                    <select name="" id="server">
+                        <!--option value="服务器1"></option>
+                        <option value="服务器2"></option>
+                        <option value="服务器3"></option>
+                        <option value="服务器4"></option>
+                        <option value="服务器5"></option-->
+                    </select>
+                </li>
+                <li data-before="角色名：">
+                    <select name="" id="role">
+                        <!--option value="角色名1"></option>
+                        <option value="角色名2"></option>
+                        <option value="角色名3"></option-->
+                    </select>
+                </li>
+                <li data-before="备注：" data-after="(手机壳分iphone4/4S/5/5S,尽量按需发货)">
+                    <input id="msg" type="text"/>
+                </li>
+            </ul>
+            <button type="submit" class="btn-submit">提交</button>
+            <p class="p1">请主公前往游戏体验更多精彩：<a href="http://www.feidou.com/yttx/" target="_blank">www.feidou.com/yttx/</a></p>
+            <p class="p2">活动期间可在<a href="javascript:;" class="btn-gift-box">礼品箱</a>对实物奖品邮寄地址修改一次，活动结束后将无法提交或修改。</p>
+        </div>
+    </div>
+</div>
+<!--8 实物奖 end-->
+<!--9 信息提交成功 start-->
+<div class="popup pop-girl pop-success">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body">
+        <h3 data-before="恭喜您，信息提交成功！">我们将于活动结束后为您派发奖品，请注意查收！</h3>
+        <a href="http://www.feidou.com/yttx/" class="btn-lg">请主公前往游戏体验更多精彩</a>
+        <p class="p1">活动期间可在<a href="javascript:;">礼品箱</a>对实物奖品邮寄地址修改一次，活动结束后将无法提交或修改。</p>
+    </div>
+</div>
+<!--9 信息提交成功 end-->
+<!--10 礼品箱 start-->
+<div class="popup pop-girl-lg pop-giftbox">
+    <a href="javascript:;" class="close"><span>&times;</span></a>
+    <div class="pop-body" data-before="礼品箱" data-after="提示：请移步至游戏内使用礼品码，每种奖励每个游戏账号只能使用一次。">
+        <div class="gift-table-wrapper">
+            <div class="gift-table">
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th><span>日期</span></th>
+                        <th><span>奖励</span></th>
+                        <th><span>礼品码</span></th>
+                        <th><span>操作</span></th>
+                    </tr>
+                    </thead>
+                    <tbody id="gifts_list">
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    <tr>
+                        <td><span>2017.1.5</span></td>
+                        <td><span>奖励1</span></td>
+                        <td><span>1111111111111111111</span></td>
+                        <td><a href="javascript:;">修改地址</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div></div>
+    </div>
+</div>
+<!--10 礼品箱 end-->
+<div class="mask"></div>
+<!-- 弹出框 end -->
+</body>
+</html>

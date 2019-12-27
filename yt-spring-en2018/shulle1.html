@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>演示：“创造一个独特的利用z - index和jquery的幻灯片</title>
+    <style>
+        @charset "utf-8";
+        *{margin:0;padding:0;list-style-type:none;}
+        a,img{border:0;}
+        body{font:12px/180% "Microsoft YaHei";background:#22384d;color:#555555;}
+        a{color:#0F67A1;text-decoration:none;}
+        a:hover{text-decoration:underline;}
+
+        #gallery{position:relative;width:300px;margin:40px auto 0 auto;}
+        #pictures{position:relative;height:308px;}
+        #pictures img{position:absolute;top:0;
+            width:150px;
+            height: 150px; border: 1px solid #f00}
+        #prev{float:left;display:inline;margin-left:40px;}
+        #next{float:right;display:inline;margin-right:40px;}
+        #prev,#next{margin-top:10px;text-align:center;font-size:2.0em;}
+    </style>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="gallery">
+    <div id="pictures">
+        <img src="" alt="1" />
+        <img src="" alt="2" />
+        <img src="" alt="3" />
+        <img src="" alt="4" />
+        <img src="" alt="5" />
+    </div>
+    <div id="prev"><a href="#prev">&laquo; 上一张</a></div>
+    <div id="next"><a href="#next">下一张 &raquo;</a></div>
+</div>
+<script>
+    $(document).ready(function() { //perform actions when DOM is
+        var item = $('#pictures img');
+        setTimeout(function () {
+            item.each(function(index, element) { //process each image
+                if(index % 2 == 0) { //if its the image we need to process
+                    item.eq(index).animate({
+                                'left' : 0 }, 'slow',
+                            function() { //animate the img above/under the gallery (assuming all pictures are equal height)
+                                $(this).css('z-index', index) //set new z-index
+                                        .animate({ 'left' : $(this).width() / 2 + 'px' }, 'slow');
+                            });
+                } else { //not the image we need to process, only in/de-crease z-index
+                    item.eq(index).animate({
+                        'left' : $(this).width() }, 'slow', function() { //make sure to wait swapping the z-index when image is above/under the gallery
+                        $(this).css('z-index', index).animate({
+                            'left' : $(this).width() / 2 + 'px'
+                        }); //in/de-crease the z-index by one
+                    });
+                }
+            });
+        }, 10)
+    });
+</script>
+</body>
+</html>

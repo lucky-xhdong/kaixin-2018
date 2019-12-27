@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>twitterLove</title>
+</head>
+<body>
+<canvas width="100" height="100" style="border: 1px black solid">
+    必须要把style写在内联，不然会变成椭圆。而且width与height要单独写出来
+    注意：1，每画一个图形都要提起笔。不然会连在一起
+    2，arc的(centerX[圆心横坐标，以父节点的右上角为坐标原点，向左向下建立坐标轴],centerY,r[半径],
+    startAngle[起始点的角度。起始以（1，0）表示0，（0，1）表示3/2*PI计算。当设置为逆时针的时候画出来是起点到终点之间的扇形出去中心三角],
+    endAngle,anticlockwise（是否逆时针）)
+    3，画图的时候要计算好坐标
+    4，最好以角度值百分比计算。流式布局更能适应各种大小的缩放
+    5，注意提取公共函数
+    6，要划分步骤
+    7，注意上一幅图与下一幅图的关系。用clearRect来清除
+</canvas>
+<script>
+    var canvas=(document.getElementsByTagName("canvas"))[0];//获取绘图区域，是一个正方形区域
+    var ctx=canvas.getContext("2d");//获取画笔
+    //必须写在外面，公共的
+    var centerX=(canvas.width)*0.5;
+    var centerY=(canvas.height)*0.5;//获取中心,是一个正方形
+    //获得一个爱心
+    function love(color,centerX,centerY,size){
+        ctx.beginPath();
+        //上半部
+        var smallRadius=Math.round(centerX/size);//小圆的半径
+        var smallMoveLen=smallRadius*Math.sqrt(3)/2;
+        ctx.fillStyle=color||"red";
+        ctx.arc(centerX-smallMoveLen,centerY,smallRadius,Math.PI*7/4,Math.PI,true);
+        ctx.arc(centerX+smallMoveLen,centerY,smallRadius,0,Math.PI*5/4,true);
+        //下半部
+        var bigRadius=smallRadius*2.73;
+        ctx.arc(centerX+smallMoveLen,centerY,bigRadius,Math.PI,Math.PI*0.6,true);
+        ctx.arc(centerX-smallMoveLen,centerY,bigRadius,Math.PI*0.4,0,true);
+        ctx.fill();
+        ctx.closePath();
+    }
+    love("grey",centerX,centerY,8);//默认灰色
+    //注册监听
+    canvas.addEventListener("click",function () {
+        if(ctx.fillStyle=="#808080"){//表示为灰色
+            // alert("点赞");
+            //1，爱心消失//清除画板内容
+            ctx.clearRect(0,0,centerX*2,centerY*2);
+            //动态图
+            var bigRadius=centerX/2;
+            var midRadius=centerX/5;
+            var smallRadius=centerX/10;
+            //2，小圆,圆心都是中心位置
+            setTimeout(function () {
+                ctx.beginPath();
+                ctx.fillStyle="#FF6BDB";
+                ctx.arc(centerX,centerY,smallRadius,0,2*Math.PI,false);
+                ctx.fill();
+                ctx.closePath();//必须要提笔。不然和前面一只笔相当于没提起来
+            },100);
+            //3，中圆
+            setTimeout(function () {
+                ctx.beginPath();
+                ctx.fillStyle="#9FD5FF";
+                ctx.arc(centerX,centerY,midRadius,0,2*Math.PI,false);
+                ctx.fill();
+                ctx.closePath();
+            },200);
+            //4，大圆
+            setTimeout(function () {
+                ctx.beginPath();
+                ctx.fillStyle="#FF84A6";
+                ctx.arc(centerX,centerY,bigRadius,0,2*Math.PI,false);
+                ctx.fill();
+                ctx.closePath();
+            },300);
+            //5，小爱心
+            setTimeout(function () {
+                ctx.clearRect(0,0,centerX*2,centerY*2);
+                ctx.beginPath();
+                ctx.fillStyle="#FF84A6";
+                ctx.arc(centerX,centerY,bigRadius,0,2*Math.PI,false);
+                ctx.fill();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.fillStyle="#ffffff";
+                ctx.arc(centerX,centerY,midRadius*2,0,2*Math.PI,false);
+                ctx.fill();
+                ctx.closePath();
+                ctx.beginPath();
+                love("purple",centerX,centerY,16);
+                ctx.closePath();
+            },400);
+            //6，四周小圆
+            setTimeout(function () {
+                ctx.clearRect(0,0,centerX*2,centerY*2);
+                var e=bigRadius/(Math.sqrt(2));
+                var centerXArr=[centerX-bigRadius,centerX-e,centerX,centerX+e,centerX+bigRadius,centerX+e,centerX,centerX-e];
+                var centerYArr=[centerY,centerY-e,centerY-bigRadius,centerY-e,centerY,centerY+e,centerY+bigRadius,centerY+e];
+                for(var i=0;i<8;i++){
+                    ctx.beginPath();
+                    ctx.fillStyle="blue";
+                    ctx.arc(centerXArr[i],centerYArr[i],smallRadius/4,0,2*Math.PI,false);
+                    ctx.fill();
+                    ctx.closePath();
+                }
+                ctx.fillStyle="#ff0000";
+                love("ff0000",centerX,centerY,8);//red
+            },500);
+            //7，红色大爱心
+            setTimeout(function () {
+                ctx.clearRect(0,0,centerX*2,centerY*2);
+                ctx.beginPath();
+                love("ff0000",centerX,centerY,8);
+                ctx.closePath();
+            },600);
+        }
+        else if(ctx.fillStyle=="#ff0000"){//表示为红色
+            // alert("取消赞");
+            ctx.fillStyle="#ff0000";
+            love("#808080",centerX,centerY,8);
+        }
+    },false);
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow {
+  background-image: url(sprite-buttons.png);
+  background-position: -491px -52px;
+  width: 25px;
+  height: 34px;
+}
+.icon-btn-clear-open {
+  background-image: url(sprite-buttons.png);
+  background-position: -172px -281px;
+  width: 171px;
+  height: 51px;
+}
+.icon-btn-clear {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -281px;
+  width: 171px;
+  height: 51px;
+}
+.icon-btn-close {
+  background-image: url(sprite-buttons.png);
+  background-position: -489px -99px;
+  width: 21px;
+  height: 20px;
+}
+.icon-btn-gray {
+  background-image: url(sprite-buttons.png);
+  background-position: -354px -99px;
+  width: 67px;
+  height: 26px;
+}
+.icon-btn-open-hover {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -229px;
+  width: 171px;
+  height: 51px;
+}
+.icon-btn-open {
+  background-image: url(sprite-buttons.png);
+  background-position: -172px -229px;
+  width: 171px;
+  height: 51px;
+}
+.icon-btn-popup {
+  background-image: url(sprite-buttons.png);
+  background-position: -354px -52px;
+  width: 136px;
+  height: 46px;
+}
+.icon-btn-publish-hover {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px -177px;
+  width: 171px;
+  height: 51px;
+}
+.icon-btn-publish {
+  background-image: url(sprite-buttons.png);
+  background-position: -354px 0px;
+  width: 171px;
+  height: 51px;
+}
+.icon-btn-signin {
+  background-image: url(sprite-buttons.png);
+  background-position: -422px -99px;
+  width: 66px;
+  height: 25px;
+}
+.icon-btn-unopen {
+  background-image: url(sprite-buttons.png);
+  background-position: -172px -177px;
+  width: 171px;
+  height: 51px;
+}
+.icon-right {
+  background-image: url(sprite-buttons.png);
+  background-position: -354px -126px;
+  width: 21px;
+  height: 17px;
+}
+.icon-start {
+  background-image: url(sprite-buttons.png);
+  background-position: 0px 0px;
+  width: 176px;
+  height: 176px;
+}
+.icon-unstart {
+  background-image: url(sprite-buttons.png);
+  background-position: -177px 0px;
+  width: 176px;
+  height: 176px;
+}
+.icon-wrong {
+  background-image: url(sprite-buttons.png);
+  background-position: -376px -126px;
+  width: 15px;
+  height: 14px;
+}

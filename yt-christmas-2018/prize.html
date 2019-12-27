@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" height="100%">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/jquery.smoove.js"></script><!--支持页面动画效果插件-->
+    <link rel="stylesheet" href="css/gameplat_global.css"><!--飞豆 公共头尾样式-->
+    <!--<link rel="stylesheet" href="css/gameplat-christmas-cn2017.css">-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/respond.src.js"></script><!--支持IE8使用媒体查询-->
+    <script src="js/rem.js"></script><!--支持响应式适配使用-->
+</head>
+<body>
+<div class="topBar">
+    <div class="inner">
+        <h1 class="logoC"><div class="kxLogo"><a href="http://www.kaixin001.com" target="_blank">开心网</a></div><div class="line"></div><div class="fdLogo"><a href="/">飞豆网_开心网</a></div></h1>
+        <!-- BEGIN login_menu -->
+        <div class="fr">
+            <ul class="funList">
+                <li><a href="/">游戏首页</a></li>
+                <li><a href="/pay/" target="_blank">充值中心</a></li>
+                <li><a href="/bbs/" target="_blank">游戏论坛</a></li>
+                <!-- <li id="userCenter" class="userCenter"><a href="javascript:;">账号<i></i></a></li> -->
+                <li class="userCenter" id="userCenter">
+                    <a href="javascript:;">账号<i></i></a>
+                    <ul class="userCenterFun dn" id="userCenterFun">
+                        <li class="set"><a href="/set/"><i></i>设置中心</a></li>
+                        <li class="exit"><a href="/logout.php"><i></i>退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- END login_menu -->
+    </div>
+</div>
+<div class="christmas-cn2018">
+    <div class="christmas-container">
+        <div class="christmas-nav">
+            <div class="smoove" data-move-x="0" data-move-y="100px">
+                <ul>
+                    <li><a href="index.html">转盘大富翁</a></li>
+                    <li><a href="msgboard.html">国庆留言板</a></li>
+                    <li class="active"><a href="prize.html">连线赢大奖</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="christmas-main">
+            <div class="christmas-instructions-prize smoove" data-move-x="0" data-move-y="100px">
+                <div class="time" data-before="活动时间">
+                    <p><span>2017年10月1日-10月7日（7天）</span></p>
+                </div>
+                <div class="content" data-before="活动内容">
+                    <p>活动期间，玩家通过官方公众号转载指定文章（文章文章内含问题）到自己的朋友圈并评论回答问题，截图上传到官方微信公众号，答对即可获大奖，答错也有参与奖哦~快来参与吧~</p>
+                </div>
+                <div class="reward" data-before="活动奖励">
+                    <p>答题礼包：<span>150</span>金币+<span>200</span>点券+<span>1000W</span>粮食</p>
+                    <p>参与礼包：<span>50</span>金币+<span>100</span>点券+<span>500W</span>粮食</p>
+                </div>
+                <div class="rule" data-before="活动规则">
+                    <p>1、页面中显示活动说明和官网微信二维码；</p>
+                    <p>2、每个账号仅有1次上传机会；</p>
+                    <p>3、每个微信仅1次转载有效；</p>
+                    <p>4、活动结束后我们将通过礼包形式在游戏中发放；</p>
+                    <p>5、文章文案将届时由微信转发。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div style="width: 980px;margin: 20px auto -30px;">
+        <h3 class="mb f14">友情链接</h3>
+        <p>
+            <a href="http://www.ptbus.com" target="_blank">口袋巴士</a> |
+            <a href="http://apple.766.com" target="_blank">766苹果中文网</a> |
+            <a href="http://www.shouyoubus.com/" target="_blank">手游巴士</a> |
+            <a href="http://app.kaifu.com/" target="_blank">手机网游</a> |
+            <a href="http://kf.40407.com/" target="_blank">网页游戏开服表</a> |
+            <a href="http://www.huiyong123.com/index.php?eventId=131" target="_blank">天翼•汇用市场</a> |
+            <a href="http://www.980apk.com/ " target="_blank">澳门手游</a> |
+            <a href="http://www.shouyou520.com/ " target="_blank">爱手游网</a> |
+            <a href="http://www.anfensi.com/" target="_blank">好玩的安卓游戏</a>
+        </p>
+    </div>
+    <div class="footer cfix">
+        <div class="fl">
+            <a href="" target="_blank">
+                <img src="http://cdn.feidou.com/i3/gameplat/beian_70.png" width="39px" height="45px">
+            </a>
+        </div>
+        <div style="margin-left:55px;margin-top:5px">Copyright © 2013 feidou.com All Rights Reserved 飞豆游戏中心·北京开心人信息技术有限公司<br>京网文[2015]2180-400号•京ICP证08005250号-4</div>
+        <div class="fr"><a class="c9" href="/care/" target="_blank">游戏组件未成年人家长监护工程</a>　 <span class="logo"><a href="/">飞豆网_开心网</a></span></div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function(){
+        if($(window).width() > 1000) {
+            $('.smoove').smoove({offset:'40%'});
+        }
+    })
+</script>
+</body>
+</html>

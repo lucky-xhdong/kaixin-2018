@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <style>
+        .quick-thinking {
+            position: relative;
+            z-index: 1;
+        }
+        .quick-thinking ul {
+            font-size: 0;
+            text-align: center;
+            position: relative;
+            width: 935px;
+            height: 272px;
+            margin: 0 auto;
+            padding:0;
+        }
+        .quick-thinking ul li {
+            position: absolute;
+            width: 303px;
+            height: 270px;
+            border:1px solid #ccc;
+            top: 0;
+        }
+        .quick-thinking ul li:first-child {
+            left: 0;
+        }
+        .quick-thinking ul li:first-child + li {
+            left: 315px;
+        }
+        .quick-thinking ul li:first-child + li + li {
+            left: 630px;
+        }
+        .btn-group .btn-start {
+            display: block;
+            width: 143px;
+            height: 41px;
+            margin: 15px auto 0;
+            text-align: center;
+            border-radius: 2px;
+            font: 30px/41px 'Microsoft YaHei';
+            color: #888;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="quick-thinking">
+    <ul>
+        <li data-zIndex="0"><a href="javascript:;"><img src="" alt="扑克牌"></a></li>
+        <li data-zIndex="1"><a href="javascript:;"><img src="" alt="扑克牌"></a></li>
+        <li data-zIndex="2"><a href="javascript:;"><img src="" alt="扑克牌"></a></li>
+    </ul>
+</div>
+<div class="btn-group">
+    <a href="javascript:;" class="btn-start">start</a>
+</div>
+<script>
+    var timeout = null;
+    var item = $(".quick-thinking li"),
+        centerLeft = ($(".quick-thinking ul").width() / 2) - (item.width() / 2);
+    var Poker = function () {};
+    Poker.anim = {
+        init: function () {
+            Poker.anim.mergeCard();
+            Poker.anim.shuffle();
+            Poker.anim.restore();
+        },
+        mergeCard: function () {
+            item.animate({
+                'left': centerLeft
+            }, 500)
+        },
+        shuffle: function () {
+            timeout = setInterval(function () {
+                item.each(function (index, element) {
+                    if (index % 2 == 0) {
+                        item.eq(index).animate({
+                            'left': centerLeft + item.width() / 2
+                        }, 100)
+                    } else {
+                        item.eq(index).animate({
+                            'left': centerLeft - item.width() / 2
+                        }, 100)
+                    }
+                });
+            });
+        },
+        restore: function () {
+            var index = item.index();
+            console.log(index)
+            item.each(function (index, element) {
+//                console.log($(this).width() * index + 10)
+                $(this).animate({
+                    left: $(this).width() * index + 10
+                })
+            })
+        }
+    };
+    $(document).ready(function () {
+        $(".btn-start").on('click', function () {
+            Poker.anim.init();
+        });
+    })
+</script>
+</body>
+</html>

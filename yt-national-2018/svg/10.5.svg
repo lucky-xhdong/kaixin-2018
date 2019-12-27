@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg_dayfive" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1200px" height="770px" viewBox="0 0 1200 770" enable-background="new 0 0 1200 770" xml:space="preserve">
+	<g>
+		<image overflow="visible" width="1200" height="770" xlink:href="../images/bg-castle.png"></image>
+		<image x="-100" y="-120" xlink:href="../images/lvbu.png" class="lvbu">
+			<animateMotion
+					dur="5s"
+					fill="freeze">
+				<mpath xlink:href="#path_dayfive"></mpath>
+			</animateMotion>
+		</image>
+		<path id="path_dayfive" fill="none" d="M612,360.88c0,0,53.5-42.5,80.5-14.5c0,0,21.5,24.5-18,41.5l 0.5,26l-9.5,7c0,0-13,22.5-3,32.5c0,0,5.5,8.5,20.5-2.5c0,0,17.5-13.233,130,20"/>
+	</g>
+	<style>
+		<![CDATA[
+		.lvbu {
+           animation: motion 2s ease-in-out alternate infinite;
+            -o-transform: motion 2s ease-in-out alternate infinite;
+            -ms-transform: motion 2s ease-in-out alternate infinite;
+            -moz-transform: motion 2s ease-in-out alternate infinite;
+            -webkit-animation: motion 2s ease-in-out alternate infinite;
+		}
+		@keyframes motion {
+            0%{
+            	transform: translateY(0);
+            	-o-transform: translateY(0);
+            	-ms-transform: translateY(0);
+            	-moz-transform: translateY(0);
+            	-webkit-transform: translateY(0);
+            }
+            100%{
+            	transform: translateY(10px);
+            	-o-transform: translateY(10px);
+            	-ms-transform: translateY(10px);
+            	-moz-transform: translateY(10px);
+            	-webkit-transform: translateY(10px);
+            }
+		}
+		]]>
+	</style>
+</svg>

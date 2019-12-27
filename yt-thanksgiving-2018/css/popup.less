@@ -1,0 +1,806 @@
+@media (min-width: 1200px) {
+  .gameplat-mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .8;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  }
+
+  .popup {
+    z-index: 11;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 4px solid #fdb730;
+    background-color: #fff;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      bottom: 35px;
+    }
+    &:before {
+      width: 144px;
+      height: 55px;
+      left: 22px;
+      background: url("../images/bg-popup-01.png") no-repeat;
+    }
+    &:after {
+      width: 124px;
+      height: 57px;
+      right: 22px;
+      background: url("../images/bg-popup-02.png") no-repeat;
+    }
+    &.popup-md {
+      width: 480px;
+      height: 322px;
+      margin-left: -240px;
+      margin-top: -161px;
+    }
+    &.popup-lg {
+      width: 618px;
+      height: 426px;
+      margin-left: -309px;
+      margin-top: -213px;
+    }
+    .btn-close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 25px;
+      height: 25px;
+      z-index: 3;
+      font-size: 0;
+      background: url("../images/sprite-icons.png") no-repeat;
+      background-position: -100px -72px;
+    }
+    .pop-body {
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        font: 24px 'SimHei';
+        color: #8d4d1a;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .txt-wrapper {
+        padding: 0 60px;
+        .txt-wrapper__h3, .txt-wrapper__p {
+          color: #8d4d1a;
+          text-align: center;
+        }
+        .txt-wrapper__h3 {
+          font: 24px/30px 'SimHei';
+          margin: 10px 0;
+        }
+        .txt-wrapper__p {
+          font: 14px 'SimHei';
+        }
+      }
+      .btn-group {
+        overflow: hidden;
+        text-align: center;
+        .btn-comfirm, .btn-cancel {
+          width: 92px;
+          height: 28px;
+          display: inline-block;
+          font: 14px/28px 'SimHei';
+          text-align: center;
+          color: #fff;
+          margin: 0 20px;
+          background-color: #8d4d1a;
+          border-radius: 8px;
+        }
+      }
+    }
+    &.pop-signin, &.pop-accumulate-signin, &.pop-scratch-card, &.pop-lottery {
+      .pop-body {
+        .txt-wrapper {
+          min-height: 80px;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &.pop-accumulate-lottery {
+      .pop-body {
+        .txt-wrapper {
+          margin: 30px 0;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &.pop-corns {
+      .thumb-lists {
+        margin: 40px 0;
+      }
+    }
+  }
+
+  .pop-common-image {
+    .pop-body {
+      .thumb-lists {
+        ul {
+          font-size: 0;
+          text-align: center;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 5px;
+
+            a {
+              display: block;
+              width: 81px;
+              height: 71px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pop-signin,
+  .pop-accumulate-signin,
+  .pop-scratch-card,
+  .pop-lottery,
+  .pop-accumulate-lottery,
+  .pop-login,
+  .pop-corns {
+    display: none;
+  }
+  .pop-scratch-card {
+    &.pop-diaochan, &.pop-luxun, &.pop-mayunlu, &.pop-shuijing, &.pop-sunce, &.pop-zhaoyun, &.pop-zuoci {
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: -7px;
+      }
+    }
+    &.pop-diaochan {
+      &:after {
+        background: url("../images/pop-diaochan.png") right bottom no-repeat;
+      }
+    }
+    &.pop-luxun {
+      &:after {
+        background: url("../images/pop-luxun.png") right bottom no-repeat;
+      }
+    }
+    &.pop-mayunlu {
+      &:after {
+        background: url("../images/pop-mayunlu.png") right bottom no-repeat;
+      }
+    }
+    &.pop-shuijing {
+      &:after {
+        background: url("../images/pop-shuijing.png") right bottom no-repeat;
+      }
+    }
+    &.pop-sunce {
+      &:after {
+        background: url("../images/pop-sunce.png") right bottom no-repeat;
+      }
+    }
+    &.pop-zhaoyun {
+      &:after {
+        background: url("../images/pop-zhaoyun.png") right bottom no-repeat;
+      }
+    }
+    &.pop-zuoci {
+      &:after {
+        background: url("../images/pop-zuoci.png") right bottom no-repeat;
+      }
+    }
+  }
+  .pop-login {
+    .pop-body {
+      padding-left: 76px;
+      padding-right: 68px;
+      overflow: hidden;
+      .login-other-ways, .login-form {
+        margin: 20px 0;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font: 14px 'Microsoft YaHei';
+          color: #000;
+        }
+      }
+      .login-other-ways {
+        float: left;
+        .btn-group {
+          &:before {
+            content: attr(data-before);
+            font: 14px 'Microsoft YaHei';
+            color: #7f7f7f;
+            display: block;
+            margin: 20px 0;
+          }
+          .btn-fb {
+            display: block;
+            font: 12px/32px 'Microsoft YaHei';
+            background: url("../images/sprite-buttons.png") no-repeat;
+            background-position: 0px -85px;
+            width: 175px;
+            height: 31px;
+            color: #fff;
+            text-indent: 20px;
+          }
+        }
+      }
+      .login-form {
+        float: right;
+        padding-left: 15px;
+        padding-bottom: 40px;
+        border-left: 1px solid #9a9a9a;
+        .input-group {
+          li {
+            margin-bottom: 22px;
+            &:before {
+              content: attr(data-before);
+              display: inline-block;
+              vertical-align: middle;
+              width: 80px;
+              text-align: right;
+              padding-right: 5px;
+            }
+            .form-control {
+              width: 168px;
+              height: 25px;
+              border: 1px solid #cfd1b1;
+              border-radius: 6px;
+              padding: 5px 10px;
+              background-color: #faffbd;
+              &:focus {
+                border-color: #afc8ef;
+                outline: none;
+              }
+            }
+          }
+        }
+        .check-group {
+          margin: 24px 40px 16px 80px;
+        }
+        .btn-group {
+          overflow: hidden;
+          .btn-login {
+            float: right;
+            background: url("../images/sprite-buttons.png") no-repeat;
+            background-position: 0px -117px;
+            width: 173px;
+            height: 31px;
+            font: 14px/28px 'Microsoft YaHei';
+            color: #69953f;
+          }
+        }
+      }
+    }
+  }
+  .pop-giftbox {
+    display: none;
+    padding: 25px 30px;
+    .pop-body {
+      .gift-table-wrapper {
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font: 24px 'SimHei';
+          color: #8d4d1a;
+          text-align: center;
+          margin: 10px 0;
+        }
+        .gift-table {
+          height: 187px;
+          overflow-y: auto;
+          overflow-x: hidden;
+          background-color: #8d4d1a;
+          table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            thead {
+              th {
+                line-height: 30px;
+                text-align: center;
+                border: 1px solid #fff;
+                color: #fff;
+              }
+            }
+            tbody {
+              td {
+                line-height: 30px;
+                color: #fff;
+                border: 1px solid #fff;
+                a {
+                  background-color: #e99f42;
+                  padding: 4px 6px;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+      .btn-group {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .gameplat-mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .8;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  }
+
+  .popup {
+    z-index: 11;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 4px solid #fdb730;
+    background-color: #fff;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      bottom: 0.56rem;
+    }
+    &:before {
+      width: 2.304rem;
+      height: 0.88rem;
+      left: 0.352rem;
+      background: url("../images/bg-popup-01.png") no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+    }
+    &:after {
+      width: 1.984rem;
+      height: 0.912rem;
+      right: 0.352rem;
+      background: url("../images/bg-popup-02.png") no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+    }
+    &.popup-md, &.popup-lg {
+      width: 15rem;
+      height: 12rem;
+      margin-left: -7.5rem;
+      margin-top: -6rem;
+    }
+    .btn-close {
+      position: absolute;
+      right: 0.32rem;
+      top: 0.32rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      z-index: 3;
+      font-size: 0;
+      background: url("../images/sprite-icons.png") no-repeat;
+      -webkit-background-size: 2.384rem 2.112rem;
+      background-size: 2.384rem 2.112rem;
+      background-position: -1.6rem -1.152rem;
+    }
+    .pop-body {
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        color: #8d4d1a;
+        text-align: center;
+        margin: .5rem 0;
+      }
+      .txt-wrapper {
+        padding: 0 0.96rem;
+        .txt-wrapper__h3, .txt-wrapper__p {
+          color: #8d4d1a;
+          text-align: center;
+        }
+        .txt-wrapper__h3 {
+          margin: 0.16rem 0;
+        }
+      }
+      .btn-group {
+        overflow: hidden;
+        text-align: center;
+        .btn-comfirm, .btn-cancel {
+          width: 2.4rem;
+          height: 1rem;
+          display: inline-block;
+          text-align: center;
+          color: #fff;
+          margin: 0 0.32rem;
+          background-color: #8d4d1a;
+          border-radius: 8px;
+        }
+      }
+    }
+    &.pop-signin, &.pop-accumulate-signin, &.pop-scratch-card, &.pop-lottery {
+      .pop-body {
+        .txt-wrapper {
+          min-height: 4.5rem;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+    &.pop-accumulate-lottery {
+      .pop-body {
+        .txt-wrapper {
+          margin: 2rem 0;
+        }
+        .thumb-lists {
+          margin-bottom: 0.192rem;
+        }
+      }
+    }
+    &.pop-corns {
+      .thumb-lists {
+        margin: 1.8rem 0;
+      }
+    }
+  }
+
+  .pop-common-image {
+    .pop-body {
+      .thumb-lists {
+        ul {
+          font-size: 0;
+          text-align: center;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 .2rem;
+            a {
+              display: block;
+              width: 3rem;
+              height: 3rem;
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pop-signin,
+  .pop-accumulate-signin,
+  .pop-scratch-card,
+  .pop-lottery,
+  .pop-accumulate-lottery,
+  .pop-login,
+  .pop-corns {
+    display: none;
+  }
+
+  .pop-scratch-card {
+    &.pop-diaochan, &.pop-luxun, &.pop-mayunlu, &.pop-shuijing, &.pop-sunce, &.pop-zhaoyun, &.pop-zuoci {
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: -4px;
+      }
+    }
+    &.pop-diaochan {
+      &:after {
+        background: url("../images/pop-diaochan.png") right bottom no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+      }
+    }
+    &.pop-luxun {
+      &:after {
+        background: url("../images/pop-luxun.png") right bottom no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+      }
+    }
+    &.pop-mayunlu {
+      &:after {
+        background: url("../images/pop-mayunlu.png") right bottom no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+      }
+    }
+    &.pop-shuijing {
+      &:after {
+        background: url("../images/pop-shuijing.png") right bottom no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+      }
+    }
+    &.pop-sunce {
+      &:after {
+        background: url("../images/pop-sunce.png") right bottom no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+      }
+    }
+    &.pop-zhaoyun {
+      &:after {
+        background: url("../images/pop-zhaoyun.png") right bottom no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+      }
+    }
+    &.pop-zuoci {
+      &:after {
+        background: url("../images/pop-zuoci.png") right bottom no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+      }
+    }
+  }
+  .pop-login {
+    .pop-body {
+      padding: 0 .5rem;
+      overflow: hidden;
+      .login-other-ways, .login-form {
+        margin: 0.32rem 0;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          color: #000;
+          margin-bottom: .4rem;
+        }
+      }
+      .login-other-ways {
+        float: left;
+        .btn-group {
+          &:before {
+            content: attr(data-before);
+            color: #7f7f7f;
+            display: block;
+            margin: 0.32rem 0;
+          }
+          .btn-fb {
+            display: block;
+            width: 6.5rem;
+            height: 1rem;
+            color: #fff;
+            border-radius: 4px;
+            background-color: #39548a;
+            white-space: nowrap;
+          }
+        }
+      }
+      .login-form {
+        float: right;
+        padding-left: 0.24rem;
+        padding-bottom: 0.64rem;
+        border-left: 1px solid #9a9a9a;
+        .input-group {
+          li {
+            margin-bottom: 0.3rem;
+            &:before {
+              content: attr(data-before);
+              display: block;
+              margin-bottom: .2rem;
+            }
+            .form-control {
+              width: 6.5rem;
+              height: 1rem;
+              border: 1px solid #cfd1b1;
+              border-radius: 6px;
+              padding: 0.08rem 0.16rem;
+              background-color: #faffbd;
+              &:focus {
+                border-color: #afc8ef;
+                outline: none;
+              }
+            }
+          }
+        }
+        .check-group {
+          margin: 0.384rem 0.64rem 0.256rem 1.28rem;
+        }
+        .btn-group {
+          overflow: hidden;
+          .btn-login {
+            float: right;
+            width: 3rem;
+            height: 0.8rem;
+            color: #69953f;
+            border-radius: 4px;
+            background-color: #d3ebaf;
+          }
+        }
+      }
+    }
+  }
+  .pop-giftbox {
+    display: none;
+    padding: 0.4rem 0.48rem;
+    .pop-body {
+      .gift-table-wrapper {
+        &:before {
+          content: attr(data-before);
+          display: block;
+          color: #8d4d1a;
+          text-align: center;
+          margin: 0.16rem 0;
+        }
+        .gift-table {
+          height: 6rem;
+          overflow-y: auto;
+          overflow-x: hidden;
+          background-color: #8d4d1a;
+          table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            thead {
+              th {
+                line-height: 0.8rem;
+                text-align: center;
+                border: 1px solid #fff;
+                color: #fff;
+              }
+            }
+            tbody {
+              td {
+                line-height: 0.8rem;
+                color: #fff;
+                border: 1px solid #fff;
+                a {
+                  background-color: #e99f42;
+                  padding: 0.064rem 0.096rem;
+                  color: #fff;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+      .btn-group {
+        margin-top: 0.48rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+  .popup {
+    .pop-body {
+      &:before {
+        font: 0.6rem 'SimHei';
+      }
+      .txt-wrapper {
+        .txt-wrapper__h3 {
+          font: 0.32rem/0.8rem 'SimHei';
+        }
+        .txt-wrapper__p {
+          font: 0.32rem 'SimHei';
+        }
+      }
+      .btn-group {
+        .btn-comfirm, .btn-cancel {
+          font: 0.32rem/1rem 'SimHei';
+        }
+      }
+    }
+  }
+
+  .pop-login {
+    .pop-body {
+      .login-other-ways, .login-form {
+        &:before {
+          font: 0.32rem 'Microsoft YaHei';
+        }
+      }
+      .login-other-ways {
+        .btn-group {
+          &:before {
+            font: 0.32rem 'Microsoft YaHei';
+          }
+          .btn-fb {
+            font: 0.32rem/1rem 'Microsoft YaHei';
+          }
+        }
+      }
+      .login-form {
+        .btn-group {
+          .btn-login {
+            font: 0.32rem/0.8rem 'Microsoft YaHei';
+          }
+        }
+      }
+    }
+  }
+  .pop-giftbox {
+    .pop-body {
+      .gift-table-wrapper {
+        &:before {
+          font: 0.32rem 'SimHei';
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) and (orientation: portrait) {
+  .popup {
+    .pop-body {
+      &:before {
+        font: 0.8rem 'SimHei';
+      }
+      .txt-wrapper {
+        .txt-wrapper__h3 {
+          font: 0.48rem/0.8rem 'SimHei';
+        }
+        .txt-wrapper__p {
+          font: 0.48rem 'SimHei';
+        }
+      }
+      .btn-group {
+        .btn-comfirm, .btn-cancel {
+          font: 0.48rem/1rem 'SimHei';
+        }
+      }
+    }
+  }
+
+  .pop-login {
+    .pop-body {
+      .login-other-ways, .login-form {
+        &:before {
+          font: 0.48rem 'Microsoft YaHei';
+        }
+      }
+      .login-other-ways {
+        .btn-group {
+          &:before {
+            font: 0.48rem 'Microsoft YaHei';
+          }
+          .btn-fb {
+            font: 0.48rem/1rem 'Microsoft YaHei';
+          }
+        }
+      }
+      .login-form {
+        .btn-group {
+          .btn-login {
+            font: 0.48rem/0.8rem 'Microsoft YaHei';
+          }
+        }
+      }
+    }
+  }
+  .pop-giftbox {
+    .pop-body {
+      .gift-table-wrapper {
+        &:before {
+          font: 0.48rem 'SimHei';
+        }
+      }
+    }
+  }
+}

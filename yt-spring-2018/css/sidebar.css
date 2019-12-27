@@ -1,0 +1,374 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.sidebar {
+    position: fixed;
+    width: 190px;
+    height: 100%;
+    z-index: 1;
+    background: url("../images/bg-sidebar.jpg") repeat-y;
+}
+
+.sidebar .top {
+    padding-left: 5px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+}
+
+.sidebar .top .logo-wrapper .logo {
+    display: block;
+    font-size: 0;
+    width: 163px;
+    height: 112px;
+    margin: 0 auto;
+    background: url("../images/logo.png") no-repeat;
+}
+
+.sidebar .top .link-wrapper {
+    font-size: 0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sidebar .top .link-wrapper .link {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 11px;
+    font: 14px 'SimSun';
+    color: #fffefe;
+    border-left: 1px solid #fffefe;
+}
+
+.sidebar .top .link-wrapper .link:hover {
+    color: #fff500;
+}
+.sidebar .top .link-wrapper .link:first-child {
+    border-left: 0;
+}
+
+.sidebar .top .profile {
+    padding: 0 15px;
+}
+
+.sidebar .top .profile p {
+    display: block;
+    color: #fff600;
+    margin:0;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sidebar .top .profile .nickname {
+    font: 14px/26px 'SimHei';
+}
+
+.sidebar .top .profile .nickname a {
+    color: #fff600;
+}
+.sidebar .top .profile .nickname a:hover {
+    text-decoration: underline;
+}
+.sidebar .top .profile .username {
+    font: 20px/28px 'SimHei';
+}
+
+.sidebar .top .btn-group {
+    font-size: 20px;
+    color: #fff600;
+}
+
+.sidebar .top .btn-group .btn-collect,
+.sidebar .top .btn-group .btn-download {
+    display: block;
+    width: 154px;
+    background-color: #75570c;
+    border: 1px solid #75570c;
+    font: 18px 'SimHei';
+    text-align: center;
+    border-radius: 2px;
+    margin: 9px auto;
+    padding: 6px 0;
+    color: #fff;
+    position: relative;
+    text-indent: 20px;
+    -webkit-transition: all .1s ease .1s;
+    -moz-transition: all .1s ease .1s;
+    -ms-transition: all .1s ease .1s;
+    -o-transition: all .1s ease .1s;
+    transition: all .1s ease .1s;
+}
+
+.sidebar .top .btn-group .btn-collect:hover,
+.sidebar .top .btn-group .btn-download:hover {
+    border-color: #aaa102;
+}
+.sidebar .top .btn-group .btn-collect:before,
+.sidebar .top .btn-group .btn-download:before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    background: url("../images/sprite-sidebar.png") no-repeat;
+}
+
+.sidebar .top .btn-group .btn-collect:before {
+    width: 17px;
+    height: 17px;
+    top: 7px;
+    background-position: 0 0;
+}
+
+.sidebar .top .btn-group .btn-download:before {
+    width: 16px;
+    height: 15px;
+    top: 8px;
+    background-position: -17px 0;
+}
+
+.sidebar .notice-wrapper {
+    display: block;
+    width: 163px;
+    height: 102px;
+    overflow: hidden;
+    margin-left: 8px;
+    padding-bottom: 9px;
+    position: relative;
+    background: url("../images/bg-sidebar-sm.png") no-repeat;
+}
+
+.sidebar .notice-wrapper:before {
+    position: absolute;
+    content: attr(data-before);
+    font: 16px 'SimSun';
+    top: 16px;
+    left: 34px;
+    color: #fff600;
+}
+
+.sidebar .notice-wrapper:after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    left: 11px;
+    top: 17px;
+    background: url("../images/sprite-sidebar.png") no-repeat;
+    background-position: -33px 0;
+}
+
+.sidebar .notice-wrapper .notice {
+    height: 52px;
+    overflow: hidden;
+    margin: 40px 8px 0;
+}
+
+.sidebar .notice-wrapper ul li {
+    font: 14px/24px 'SimSun';
+    color: #fff;
+    height: 52px;
+    overflow: hidden;
+}
+
+.sidebar .qrcode {
+    display: block;
+    width: 163px;
+    height: 180px;
+    margin-left: 8px;
+    padding: 12px 4px 9px;
+    background: url("../images/bg-sidebar-lg.png") no-repeat;
+}
+
+.sidebar .qrcode .p1 {
+    font: 14px/16px 'SimHei';
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar .qrcode .p1 span {
+    display: block;
+}
+.sidebar .qrcode .img {
+    display: block;
+    margin: 10px auto 4px;
+}
+
+.sidebar .qrcode .btn-join {
+    width: 84px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font: 14px/22px 'SimHei';
+    color: #fff;
+    background-color: #1caae6;
+    border-radius: 2px;
+    position: relative;
+    text-indent: 20px;
+}
+.sidebar .qrcode .btn-join:hover {
+    background-color: #0f93e6;
+}
+.sidebar .qrcode .btn-join:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    left: 6px;
+    top: 3px;
+    background: url("../images/sprite-sidebar.png") no-repeat;
+    background-position: -67px 0;
+}
+.sidebar .service {
+    display: block;
+    width: 163px;
+    height: 126px;
+    margin-left: 8px;
+    padding: 38px 4px 12px 10px;
+    position: relative;
+    background: url("../images/bg-sidebar-md.png") no-repeat;
+}
+.sidebar .service:before {
+    position: absolute;
+    content: attr(data-before);
+    font: 16px 'SimSun';
+    top: 16px;
+    left: 34px;
+    color: #fff600;
+}
+
+.sidebar .service:after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    left: 11px;
+    top: 17px;
+    background: url("../images/sprite-sidebar.png") no-repeat;
+    background-position: -50px 0;
+}
+
+.sidebar .service .p1:before {
+    content: attr(data-before);
+    font: 14px/26px 'SimSun';
+    display: block;
+}
+.sidebar .service .p1,
+.sidebar .service .p2 {
+    font: 14px/26px 'SimSun';
+    color: #fff;
+    margin:0;
+}
+.sidebar .service .p2 a {
+    color: #fff600;
+}
+.sidebar .service .p2 a:hover {
+    text-decoration: underline;
+}
+.sidebar .bottom {
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    left:0;
+    right: 10px;
+    bottom:0;
+    font-size: 0;
+}
+.sidebar .bottom .kaixin,
+.sidebar .bottom .feidou {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    background: url("../images/sprite-sidebar.png") no-repeat;
+}
+.sidebar .bottom .kaixin {
+    width: 71px;
+    background-position: 0 -18px;
+}
+.sidebar .bottom .feidou {
+    width: 72px;
+    background-position: 0 -43px;
+}
+@media (max-height: 768px) {
+    .sidebar .top {
+        padding-bottom:0;
+    }
+    .sidebar .top .logo-wrapper .logo {
+        width: 110px;
+        height: 78px;
+        -webkit-background-size:100%;
+        background-size:100%;
+    }
+    .sidebar .top .link-wrapper {
+        margin:5px 0;
+    }
+    .sidebar .top .profile .nickname {
+        font: 14px/22px 'SimHei';
+    }
+    .sidebar .top .profile .username {
+        font: 20px/24px 'SimHei';
+    }
+    .sidebar .top .btn-group .btn-collect, .sidebar .top .btn-group .btn-download {
+        margin:5px auto;
+    }
+    .sidebar .notice-wrapper {
+        padding-bottom: 5px;
+    }
+    .sidebar .qrcode {
+        width: 155px;
+        height: 166px;
+        padding: 8px 4px 5px;
+        margin-bottom: 3px;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+    .sidebar .qrcode .img {
+        margin:4px auto;
+    }
+    .sidebar .top .btn-group .btn-collect, .sidebar .top .btn-group .btn-download {
+        width: 134px;
+        font: 16px 'SimHei';
+        padding: 4px 0;
+    }
+    .sidebar .top .btn-group .btn-collect:before {
+        left: 25px;
+        top: 5px;
+    }
+    .sidebar .top .btn-group .btn-download:before {
+        left: 25px;
+        top: 6px;
+    }
+    .sidebar .service {
+        width: 151px;
+        height: 66px;
+        position: relative;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+    .sidebar .service .p1:before {
+        font: 14px/20px 'SimSun';
+    }
+}
+iframe {
+    position: absolute;
+    height: 100%;
+}

@@ -1,0 +1,412 @@
+body {
+    margin:0;
+    padding:0;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    padding:0;
+    margin:0;
+}
+li {
+    list-style: none;
+}
+p {
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+/*横屏*/
+@media all and (orientation : landscape) {
+    @media (min-width: 1000px) {
+        .sharearena-container {
+            width:100%;
+            height:100%;
+            position: fixed;
+            top:0;
+            left:0;
+            overflow: hidden;
+            background: url("../images/bg-body-landscape.jpg") no-repeat;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+        .sharearena-container .sa-logo {
+            position: absolute;
+            width: 307px;
+            height: 192px;
+            left:0;
+            top:0;
+        }
+        .sharearena-container .sa-logo .logo {
+            display: block;
+            width: 307px;
+            height: 192px;
+            font-size: 0;
+            background: url("../images/bg-logo.png") no-repeat;
+        }
+        .sharearena-container .sa-role {
+            overflow: hidden;
+            position: absolute;
+            width:667px;
+            height: 655px;
+            left: 86px;
+            top: 46px;
+        }
+        .sharearena-container .sa-role img {
+            max-width: 100%;
+        }
+        .sharearena-container .sa-lists {
+            position: absolute;
+            width: 801px;
+            height: 53px;
+            left:0;
+            bottom:0;
+            background: url("../images/bg-lists-landscape.png") no-repeat;
+        }
+        .sharearena-container .sa-lists ul {
+            font-size: 0;
+            text-align: center;
+        }
+        .sharearena-container .sa-lists ul li {
+            display: inline-block;
+            vertical-align: middle;
+            margin:0 40px;
+        }
+        .sharearena-container .sa-lists ul li :before {
+            content: attr(data-before);
+            font: 26px/53px 'SimHei';
+            color: #ffba00;
+        }
+        .sharearena-container .sa-lists ul li a {
+            display: block;
+            font: 26px/53px 'SimHei';
+            color: #ffba00;
+        }
+        .sharearena-container .sa-ranking {
+            position: absolute;
+            width: 456px;
+            height: 177px;
+            top: 172px;
+            right: 42px;
+        }
+        .sharearena-container .sa-ranking.sky {
+            background: url("../images/bg-sky.png") no-repeat;
+        }
+        .sharearena-container .sa-ranking.land {
+            background: url("../images/bg-land.png") no-repeat;
+        }
+        .sharearena-container .sa-ranking span {
+            display: block;
+            text-align: center;
+            font: 50px/75px 'SimHei';
+            color: #fff;
+            margin-top: 100px;
+        }
+        .sharearena-container .btn-group {
+            position: absolute;
+            width: 312px;
+            height: 104px;
+            bottom: 120px;
+            right: 126px;
+        }
+        .sharearena-container .btn-group .btn-download {
+            display: block;
+            width: 312px;
+            height: 104px;
+            font-size: 0;
+            background: url("../images/btn-download.png") no-repeat;
+        }
+        .sharearena-container .sa-slogan {
+            position: absolute;
+            bottom: 18px;
+            right:0;
+        }
+        .sharearena-container .sa-slogan:hover .qrcode {
+            display: block;
+        }
+        .sharearena-container .sa-slogan .qrcode {
+            width: 139px;
+            height: 140px;
+            float: right;
+            margin-right: 35px;
+            display: none;
+        }
+        .sharearena-container .sa-slogan .p1 {
+            font: 24px/40px 'SimHei';
+            color: #fff8c2;
+            padding:0 20px;
+            clear: both;
+            text-shadow: 0 1px 1px #ac8c03;
+        }
+    }
+    @media (max-width: 1000px) {
+        .sharearena-container {
+            width:100%;
+            height:100%;
+            position: fixed;
+            top:0;
+            left:0;
+            overflow: hidden;
+            background: url("../images/bg-body-landscape.jpg") no-repeat;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+        .sharearena-container .sa-logo {
+            position: absolute;
+            width: 4.912rem;
+            height: 3.072rem;
+            left:0;
+            top:0;
+        }
+        .sharearena-container .sa-logo .logo {
+            display: block;
+            width: 4.912rem;
+            height: 3.072rem;
+            font-size: 0;
+            background: url("../images/bg-logo.png") no-repeat;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+        .sharearena-container .sa-role {
+            overflow: hidden;
+            position: absolute;
+            width:10.672rem;
+            height: 10.48rem;
+            left: 0;
+            top: 0.736rem;
+        }
+        .sharearena-container .sa-role img {
+            max-width: 100%;
+        }
+        .sharearena-container .sa-lists {
+            position: absolute;
+            width: 12.816rem;
+            height: 0.848rem;
+            left:0;
+            bottom:0;
+            background: url("../images/bg-lists-landscape.png") no-repeat;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+        .sharearena-container .sa-lists ul {
+            font-size: 0;
+        }
+        .sharearena-container .sa-lists ul li {
+            display: inline-block;
+            vertical-align: middle;
+            margin:0 0.4rem;
+        }
+        .sharearena-container .sa-lists ul li :before {
+            content: attr(data-before);
+            font: 0.48rem/0.848rem 'SimHei';
+            color: #ffba00;
+        }
+        .sharearena-container .sa-lists ul li a {
+            display: block;
+            font: 0.48rem/0.848rem 'SimHei';
+            color: #ffba00;
+        }
+        .sharearena-container .sa-ranking {
+            position: absolute;
+            width: 7.296rem;
+            height: 2.832rem;
+            top: 2.752rem;
+            right: 0.672rem;
+        }
+        .sharearena-container .sa-ranking.sky {
+            background: url("../images/bg-sky.png") no-repeat;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+        .sharearena-container .sa-ranking.land {
+            background: url("../images/bg-land.png") no-repeat;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+        .sharearena-container .sa-ranking span {
+            display: block;
+            text-align: center;
+            font: 0.8rem/1.2rem 'SimHei';
+            color: #fff;
+            margin-top: 1.6rem;
+        }
+        .sharearena-container .btn-group {
+            position: absolute;
+            width: 4.992rem;
+            height: 1.664rem;
+            bottom: 1.4rem;
+            right: 2.016rem;
+        }
+        .sharearena-container .btn-group .btn-download {
+            display: block;
+            width: 4.992rem;
+            height: 1.664rem;
+            font-size: 0;
+            background: url("../images/btn-download.png") no-repeat;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+        .sharearena-container .sa-slogan {
+            position: absolute;
+            bottom: 0.1rem;
+            right:0;
+        }
+        .sharearena-container .sa-slogan:hover .qrcode {
+            display: block;
+        }
+        .sharearena-container .sa-slogan .qrcode {
+            width: 2.224rem;
+            height: 2.24rem;
+            float: right;
+            margin-right: 0.56rem;
+            display: none;
+        }
+        .sharearena-container .sa-slogan .p1 {
+            font: 0.48rem/0.64rem 'SimHei';
+            color: #fff8c2;
+            padding:0 0.32rem;
+            clear: both;
+            text-shadow: 0 0.016rem 0.016rem #ac8c03;
+        }
+    }
+}
+/*竖屏*/
+@media all and (orientation : portrait){
+    .sharearena-container {
+        width:100%;
+        height:100%;
+        position: fixed;
+        top:0;
+        left:0;
+        overflow: hidden;
+        background: url("../images/bg-body-portrait.jpg") no-repeat;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+    .sharearena-container .sa-logo {
+        position: absolute;
+        width: 4.912rem;
+        height: 3.072rem;
+        left:0;
+        top:0;
+    }
+    .sharearena-container .sa-logo .logo {
+        display: block;
+        width: 4.912rem;
+        height: 3.072rem;
+        font-size: 0;
+        background: url("../images/bg-logo.png") no-repeat;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+    .sharearena-container .sa-slogan {
+        position: absolute;
+        top: 0.256rem;
+        right:0;
+    }
+    .sharearena-container .sa-slogan:hover .qrcode {
+        display: block;
+    }
+    .sharearena-container .sa-slogan .qrcode {
+        width: 2.24rem;
+        height: 2.24rem;
+        right: 0.56rem;
+        position: absolute;
+        top: 0.72rem;
+        display: none;
+    }
+    .sharearena-container .sa-slogan .p1 {
+        font: 0.6rem/0.64rem 'SimHei';
+        color: #fff8c2;
+        padding:0 0.32rem;
+        clear: both;
+        text-shadow: 0 0.016rem 0.016rem #ac8c03;
+    }
+    .sharearena-container .sa-role {
+        overflow: hidden;
+        position: absolute;
+        width:100%;
+        left: 0;
+        top: 2.944rem;
+    }
+    .sharearena-container .sa-role img {
+        max-width: 100%;
+    }
+    .sharearena-container .sa-ranking {
+        position: absolute;
+        width: 7.296rem;
+        height: 2.832rem;
+        bottom: 4.544rem;
+        left:50%;
+        margin-left: -3.648rem;
+    }
+    .sharearena-container .sa-ranking.sky {
+        background: url("../images/bg-sky.png") no-repeat;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+    .sharearena-container .sa-ranking.land {
+        background: url("../images/bg-land.png") no-repeat;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+    .sharearena-container .sa-lists {
+        position: absolute;
+        width: 100%;
+        height: 0.848rem;
+        left:0;
+        bottom: 3.232rem;
+        background: url("../images/bg-lists-portrait.png") no-repeat;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+    .sharearena-container .sa-lists ul {
+        font-size: 0;
+        text-align: center;
+    }
+    .sharearena-container .sa-lists ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin:0 0.64rem;
+    }
+    .sharearena-container .sa-lists ul li :before {
+        content: attr(data-before);
+        font: 0.6rem/0.848rem 'SimHei';
+        color: #ffba00;
+    }
+    .sharearena-container .sa-lists ul li a {
+        display: block;
+        font: 0.6rem/0.848rem 'SimHei';
+        color: #ffba00;
+    }
+    .sharearena-container .sa-ranking span {
+        display: block;
+        text-align: center;
+        font: 0.8rem/1.2rem 'SimHei';
+        color: #fff;
+        margin-top: 1.6rem;
+    }
+    .sharearena-container .btn-group {
+        position: absolute;
+        width: 4.992rem;
+        height: 1.664rem;
+        bottom: 0.96rem;
+        left:50%;
+        margin-left: -2.496rem;
+    }
+    .sharearena-container .btn-group .btn-download {
+        display: block;
+        width: 4.992rem;
+        height: 1.664rem;
+        font-size: 0;
+        background: url("../images/btn-download.png") no-repeat;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+}

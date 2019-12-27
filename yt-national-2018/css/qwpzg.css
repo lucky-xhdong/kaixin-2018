@@ -1,0 +1,25 @@
+.national-cn2018-qwrzg {
+  background: url("../images/bg-gqgwc-body.jpg") top center no-repeat;
+}
+.national-cn2018-qwrzg .national-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 332px;
+  padding-bottom: 100px;
+  background: url("../images/bg-gqgwc-container.jpg") top center no-repeat;
+}
+.national-cn2018-qwrzg .national-container .nc-interest-splling {
+  width: 1299px;
+  height: 707px;
+  margin-left: -50px;
+  padding: 50px 100px;
+  background: url("../images/bg-spelling.png") no-repeat;
+}
+.national-cn2018-qwrzg .national-container .nc-interest-splling .intro .txt,
+.national-cn2018-qwrzg .national-container .nc-interest-splling .remark .txt {
+  font: 20px 'Microsoft YaHei';
+  color: #fbefc4;
+}
+.national-cn2018-qwrzg .national-container .nc-interest-splling .img-wrapper img {
+  max-width: 100%;
+}

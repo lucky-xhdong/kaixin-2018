@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+<div class="appletehui-profile">
+    <!-- 顶部logo，当前订单阶段 -->
+    <div class="ap-main" id="products-gome" data-before="提交个人信息">
+        <p class="tips-attention">注：应苹果官网要求需填写学生信息，可参加学生特惠促销活动。</p>
+        <div class="form-group required">
+            <div class="select-group">
+                <!--默认选择新生，展示证件照片选项。选择新生：展示“证件照”选项。选择在校生：隐藏“证件照”选项。-->
+                <span class="label-control" data-before="*">身份类型</span>
+                <select class="form-control" id="selectIdentityType"></select>
+            </div>
+            <div class="input-group">
+                <span class="label-control" data-before="*">姓名</span>
+                <input type="text" class="form-control">
+                <p class="error-tip">请输入姓名</p>
+            </div>
+            <div class="input-group">
+                <span class="label-control" data-before="*">身份证号</span>
+                <!--校验包含：18位数字，无英文、汉字、无特殊字符、表情符号。-->
+                <input type="text" class="form-control">
+                <p class="error-tip">请输入身份证号</p>
+            </div>
+            <div class="select-group select-schools">
+                <span class="label-control" data-before="*">学校名称</span>
+                <select class="form-control" id="select-school-province">
+                    <option value="0">学校省份</option>
+                </select>
+                <div class="btn-group__inset disabled" id="btn-select-school" data-before="请先选择学校省份再选择学校名称">
+                    <a href="javascript:;" class="btn-select">选择学校</a>
+                </div>
+                <p class="error-tip">请选择学校</p>
+            </div>
+            <div class="select-group">
+                <span class="label-control" data-before="*">入学年份</span>
+                <!--默认7个可选项。范围：（当前年份-7）至( 当前年份)。-->
+                <select class="form-control" id="select-joinschool-year"></select>
+            </div>
+            <div class="select-group">
+                <span class="label-control">专业</span>
+                <select class="form-control">
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+            <div class="select-group">
+                <span class="label-control" data-before="*">学历</span>
+                <select class="form-control" id="select-diploma"></select>
+            </div>
+            <div class="file-group" id="certificatesPhoto">
+                <span class="label-control" data-before="*">证件照片</span>
+                <div class="file-control">
+                    <!--
+                    功能点1：校验上传证件照数量（n）：n=2。n<2：提示‘上传2张照片’。
+                    功能点2：文件最大1024KB。
+                    功能点3：图片格式支持: jpeg, png,gif, pdf格式。
+                    -->
+                    <div class="file-control__tips">
+                        <p class="txt">注：新生请上传录取通知书、学生证等证明资料。您提供的身份信息国美将予以加密保护。最多可上传2张照片，每张不超过1M</p>
+                    </div>
+                    <div class="file-control__normal1">
+                        <div class="upload-group">
+                            <a href="javascript:;" class="btn-upload"></a>
+                            <input accept="image/*" name="file_1" type="file" class="file">
+                        </div>
+                        <div class="img-group">
+                            <img width="180" height="120" class="img" name="photo1" src="" alt="">
+                        </div>
+                        <div class="btn-group__inset">
+                            <a href="javascript:;" class="btn-modify">修改</a>
+                        </div>
+                        <p class="error-tip"></p>
+                    </div>
+                    <div class="file-control__normal2">
+                        <div class="upload-group">
+                            <a href="javascript:;" class="btn-upload"></a>
+                            <input accept="image/*" name="file_1" type="file" class="file">
+                        </div>
+                        <div class="img-group">
+                            <img width="180" height="120" class="img" name="photo2" src="" alt="">
+                        </div>
+                        <div class="btn-group__inset">
+                            <a href="javascript:;" class="btn-modify">修改</a>
+                        </div>
+                        <p class="error-tip"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox-group">
+                <!--默认勾选“同意参加学生特惠”，未勾选“下一步”按钮置灰。-->
+                <div class="checkbox-control">
+                    <label><input type="checkbox" id="ckx-agreements">同意参加苹果特惠商品促销</label>
+                </div>
+            </div>
+            <div class="btn-group">
+                <!--统一校验必选信息是否填写，未填写不给予提交并显示未填写提示语信息。校验通过可进入提交订单页。（点击下一步后台校验购买数量限制为1件。）-->
+                <a href="javascript:;" class="btn-confirm">下一步</a>
+            </div>
+        </div>
+        <div class="rules-group" data-before="提交信息规则：">
+            <p class="txt">1、学生信息未通过，均取消订单，请重新购买上传学生信息。</p>
+            <p class="txt">2、新入职、在校学生参与学生特惠促销</p>
+            <p class="txt">3、上传身份证信息：正反面证件照，图片大小100M以下</p>
+            <p class="txt">4、一次购买一件</p>
+            <p class="txt">注：本次活动支持电子发票</p>
+        </div>
+    </div>
+</div>
+<!--授权协议 start -->
+<div class="popup popup-agreements">
+    <div class="popup-inner">
+        <div class="pop-header">
+            <h2 class="txt-title">授权协议</h2>
+        </div>
+        <div class="pop-body">
+            <p class="txt">
+                为参加苹果教育活动，需要您先完成实名认证，认证后，您同意并授权国美将您的以下信息传输给苹果公司指定的数据服务公司【北京真证数据科技有限公司】用于完成教育活动参与资格审核。您授权的信息包括：</p>
+            <p class="txt-item">个人姓名、身份证信息、学籍信息</p>
+        </div>
+        <div class="pop-footer">
+            <a href="javascript:;" class="btn-cancel">取消</a>
+            <a href="javascript:;" class="btn-confirm" id="btn-comfirm-agreements">同意</a>
+        </div>
+    </div>
+</div>
+<!--授权协议 end -->
+<!--选择学校 start -->
+<div class="popup popup-schools">
+    <div class="popup-inner">
+        <a href="javascript:;" class="btn-close">关闭</a>
+        <div class="pop-header">
+            <div class="input-group">
+                <input type="text" class="form-control" id="input-school-name">
+                <button class="btn-search" type="button"><i class="icon-search">搜索</i></button>
+            </div>
+        </div>
+        <div class="pop-body">
+            <div class="school-list">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="pop-footer">
+            <a href="javascript:;" class="btn-confirm" id="btn-confirm-schools">确定</a>
+        </div>
+    </div>
+</div>
+<!--选择学校 end -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $.extend({
+            //确认授权协议
+            comfirmAgreements: function () {
+                var button = $("#btn-comfirm-agreements"),
+                    checkbox = $("#ckx-agreements"),
+                    popup = '.popup-agreements';
+                button.on('click', function () {
+                    $(this).parents(popup).hide();
+                    checkbox.attr('checked', true);
+                });
+            },
+
+            //身份类型
+            identityType: function () {
+                //添加身份类型项
+                function addEvent() {
+                    var identityTypeArr = [
+                            {id: 0, name: '新生'},
+                            {id: 1, name: '在校生'}
+                        ], html = '', i, len,
+                        select = $("#selectIdentityType"),
+                        fileUpload = $("#certificatesPhoto");
+                    for (i = 0, len = identityTypeArr.length; i < len; i++) {
+                        html += '<option value=' + parseInt(identityTypeArr[i].id) + '>' + identityTypeArr[i].name + '</option>';
+                    }
+                    if (fileUpload.find('option').length <= 0) {
+                        select.append(html);
+                        select.change(function () {
+                            changeEvent($(this), fileUpload);
+                        });
+                    }
+                }
+
+                //选择身份类型：选择新生：展示“证件照”选项。选择在校生：隐藏“证件照”选项。
+                function changeEvent(select, fileUpload) {
+                    (select.val() && select.val() == 0) ? fileUpload.show() : fileUpload.hide()
+                }
+
+                addEvent();
+            },
+
+            //学校省份
+            schoolProvinces: function () {
+                //添加省份
+                function addEvent() {
+                    var schoolProviceArr = [
+                            {id: 0, name: '北京'},
+                            {id: 1, name: '上海'},
+                            {id: 2, name: '湖北'},
+                            {id: 3, name: '湖南'},
+                        ], html = '', i, len = schoolProviceArr.length,
+                        select = $("#select-school-province"),
+                        btnSelectSchool = $("#btn-select-school");
+                    for (i = 0; i < len; i++) {
+                        html += '<option value=' + parseInt(schoolProviceArr[i].id + 1) + '>' + schoolProviceArr[i].name + '</option>';
+                    }
+                    select.append(html);
+                    select.on('change', function () {
+                        changeEvent($(this), btnSelectSchool)
+                    })
+                }
+
+                //省份选择
+                function changeEvent(select, btnSelect) {
+                    if (select.val() && select.val() != 0) {
+                        btnSelect.removeClass('disabled');
+                        chooseSchool();
+                    } else {
+                        btnSelect.addClass('disabled');
+                    }
+                }
+
+                //选择学校
+                function chooseSchool() {
+                    var schoolListArr = [
+                            {id: 0, name: '北京大学'},
+                            {id: 1, name: '清华大学'},
+                            {id: 2, name: '林业大学'},
+                            {id: 3, name: '农业大学'},
+                            {id: 3, name: '科技大学'},
+                            {id: 3, name: '武汉大学'},
+                            {id: 3, name: '华中科技大学'},
+                        ],
+                        btnSelectSchool = $("#btn-select-school .btn-select"),
+                        btnClose = $(".popup-schools .btn-close"),
+                        btnConfirm = $(".popup-schools .btn-confirm"),
+                        popupSchools = $(".popup-schools"),
+                        inputSchoolName = "#input-school-name";
+
+                    //选择学校点击事件
+                    btnSelectSchool.on('click', function () {
+                        popupSchools.show();
+                        var html = '',
+                            ul = $(".school-list ul"),
+                            li = $(".school-list li");
+                        for (var i = 0; i < schoolListArr.length; i++) {
+                            html += '<li data-id=' + parseInt(schoolListArr[i].id + 1) + '><a href="javascript:;" class="txt">' + schoolListArr[i].name + '</a></li>';
+                        }
+                        if (li.length <= 0) {
+                            ul.append(html);
+
+                            //学校当前项选中事件
+                            ul.undelegate('li', 'click').delegate('li', 'click', function () {
+                                $(this).addClass('active').siblings().removeClass('active');
+                                $(inputSchoolName).val($(this).text());
+                            });
+                        }
+                        hidePopup(btnClose, popupSchools);
+                        hidePopup(btnConfirm, popupSchools);
+                    });
+
+                    //输入框模糊查询
+                    $(inputSchoolName).on('keyup', function () {
+                        // $(".school-list li").css('display', 'block');//只要输入就显示列表框
+                        var li = $(".school-list li");
+                        if ($(this).val().length <= 0) {
+                            li.show().removeClass('active');//如果什么都没填，跳出，保持全部显示状态
+                            return;
+                        } else {
+                            li.hide();//如果填了，先将所有的选项隐藏
+                            for (var i = 0; i < $(".school-list li").length; i++) {
+                                //模糊匹配，将所有匹配项显示
+                                if (li.eq(i).text().substr(0, $(this).val().length) == $(this).val()) {
+                                    li.eq(i).show();
+                                }
+                            }
+                        }
+                    });
+
+                    //隐藏弹窗
+                    function hidePopup(button, popupSchools) {
+                        button.on('click', function () {
+                            popupSchools.hide();
+                        });
+                    }
+                }
+
+                addEvent();
+            },
+
+            //入学年份
+            joinSchoolYear: function () {
+                var date = new Date(), year, html = '', i,
+                    selectJoinSchoolYear = $("#select-joinschool-year");
+                year = date.getFullYear();
+                for (i = 0; i < 7; i++) {
+                    html += '<option value=' + year + '>' + year + '</option>';
+                    year--;
+                }
+                selectJoinSchoolYear.append(html);
+            },
+
+            //学历
+            diploma: function () {
+                var diplomaListArr = [
+                        {id: 0, name: '专科'},
+                        {id: 1, name: '本科'},
+                        {id: 2, name: '博士'},
+                        {id: 3, name: '硕士'}
+                    ],
+                    html = '', i,
+                    len = diplomaListArr.length,
+                    selectDiploma = $("#select-diploma");
+                for (i = 0; i < len; i++) {
+                    html += '<option value=' + parseInt(diplomaListArr[i].id + 1) + '>' + diplomaListArr[i].name + '</option>';
+                }
+                selectDiploma.append(html);
+            },
+
+            //证件照片
+            certificatesPhoto: function () {
+                //先把照片
+                function changeEvent(fileControl) {
+                    var maxSize = 1024;// 1TB=1024GB, 1GB=1024MB, 1MB=1024KB, 1KB=1024字节
+                    $(fileControl).undelegate('.file', 'change').delegate('.file', 'change', function (e) {
+                        var file = e.target.files[0] || (e.dataTransfer && e.dataTransfer.files[0]);
+                        if (file) {
+                            if (file.size && file.size > maxSize) {
+                                $(fileControl).find(".error-tip").show().html('文件最大上传1024KB！');
+                                file.name = '';
+                            } else {
+                                $(fileControl).find(".error-tip").hide().html('');
+                                var reader = new FileReader();
+                                reader.onload = function () {
+                                    $(fileControl).find(".upload-group").hide();
+                                    $(fileControl).find(".img-group, .btn-group__inset").show();
+                                    $(fileControl).find(".img").attr("src", this.result);
+                                    modifyEvent(fileControl);
+                                };
+                                reader.readAsDataURL(file);
+                            }
+                        }
+                    });
+                }
+
+                //修改照片
+                function modifyEvent(fileControl) {
+                    $(fileControl).find(".btn-modify").on('click', function () {
+                        $(fileControl).find(".file").click();
+                    });
+                }
+
+                changeEvent('.file-control__normal1');
+                changeEvent('.file-control__normal2');
+            },
+
+            //初始化个人信息
+            profileInit: function () {
+                $.comfirmAgreements();
+                $.identityType();
+                $.schoolProvinces();
+                $.certificatesPhoto();
+                $.joinSchoolYear();
+                $.diploma();
+            }
+        });
+        $.profileInit();
+    })
+</script>
+</body>
+</html>

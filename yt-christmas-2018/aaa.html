@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+</head>
+<style>
+    .gift{
+        background-color:#FFF;
+        display:inline-table;
+        width:100px;
+        height:100px;
+        text-align:center;
+        padding:40px;
+    }
+</style>
+<body>
+<div>
+    <div class="gift gift1">1</div>
+    <div class="gift gift2">2</div>
+    <div class="gift gift3">3</div>
+    <div class="gift gift4">4</div>
+    <div class="gift gift5">5</div>
+    <div class="gift gift6">6</div>
+    <div class="gift gift7">7</div>
+    <div class="gift gift0">8</div>
+</div>
+<div>
+</div>
+<div>
+</div>
+<div style="display:inline-table;"><button style="width:100px; height:100px;">ooo</button></div>
+<script>
+    $(function (e) {
+        var stopStep = 1;//表示最终奖品位置
+        var timeout = null;//转动方法
+        var step = -1;//计算转动的步数，控制转速和停止
+        var speed = 2;//转速
+        $("button").click(function (e) {
+            stopStep = Math.floor(Math.random() * 8 + 1);
+//            timeout = setTimeout(rotate, 100);
+            rotate();
+        });
+        function rotate () {
+            if (step >= (32 + stopStep))//设置转动多少圈
+            {
+                $(".gift" + (step % 8)).css("background-color", "#F00");
+                step = stopStep;
+                alert("you get" + step);
+                clearTimeout(timeout);//停止转动
+                return false;
+            }
+            if (step >= (24 + stopStep)) { //在即将结束转动前减速
+                speed++;
+            } else {
+                if (speed <= 2) { //控制中间转速
+                    speed = 2;
+                }
+                speed--;
+            }
+            step++;
+            $(".gift" + (step % 8)).css("background-color", "#F00").siblings().css("background-color", "#FFF");
+            timeout = setTimeout(rotate, speed * 50);
+        }
+    });
+
+
+</script>
+</body>
+</html>

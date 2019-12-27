@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" height="100%">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/jquery.smoove.js"></script><!--支持页面动画效果插件-->
+    <link rel="stylesheet" href="css/gameplat_global.css"><!--飞豆 公共头尾样式-->
+    <link rel="stylesheet" href="css/gameplat-anniversary-cn2018.css">
+    <script src="js/respond.src.js"></script><!--支持IE8使用媒体查询-->
+    <script src="js/rem.js"></script><!--支持响应式适配使用-->
+</head>
+<body>
+<div class="topBar">
+    <div class="inner">
+        <h1 class="logoC">
+            <div class="kxLogo"><a href="http://www.kaixin001.com" target="_blank">开心网</a></div>
+            <div class="line"></div>
+            <div class="fdLogo"><a href="/">飞豆网_开心网</a></div>
+        </h1>
+        <!-- BEGIN login_menu -->
+        <div class="fr">
+            <ul class="funList">
+                <li><a href="/">游戏首页</a></li>
+                <li><a href="/pay/" target="_blank">充值中心</a></li>
+                <li><a href="/bbs/" target="_blank">游戏论坛</a></li>
+                <!-- <li id="userCenter" class="userCenter"><a href="javascript:;">账号<i></i></a></li> -->
+                <li class="userCenter" id="userCenter">
+                    <a href="javascript:;">账号<i></i></a>
+                    <ul class="userCenterFun dn" id="userCenterFun">
+                        <li class="set"><a href="/set/"><i></i>设置中心</a></li>
+                        <li class="exit"><a href="/logout.php"><i></i>退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- END login_menu -->
+    </div>
+</div>
+<div class="anniversary-cn2018">
+    <div class="anniversary-container">
+        <div class="anniversary-nav">
+            <div class="smoove" data-move-x="0" data-move-y="100px">
+                <ul>
+                    <li><a href="index.html">签到集武将</a></li>
+                    <li class="active"><a href="msgboard.html">周年留言板</a></li>
+                    <li><a href="prize.html">填词赢大奖</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="anniversary-msgboard smoove" data-move-x="0" data-move-y="100px">
+            <div class="comment">
+                <div class="select-lists">
+                    <select name="" id="1">
+                        <option value="请选择服务器">请选择服务器</option>
+                        <option value="请选择服务器">请选择服务器</option>
+                        <option value="请选择服务器">请选择服务器</option>
+                        <option value="请选择服务器">请选择服务器</option>
+                    </select>
+                    <select name="" id="2">
+                        <option value="请选择角色名">请选择角色名</option>
+                        <option value="请选择角色名">请选择角色名</option>
+                        <option value="请选择角色名">请选择角色名</option>
+                        <option value="请选择角色名">请选择角色名</option>
+                    </select>
+                </div>
+                <textarea name="content" id="content" cols="30" rows="10" placeholder="请您先登录再留言！" onblur="this.placeholder='请您先登录再留言！'" onfocus="this.placeholder=''"></textarea>
+                <div class="toolbar">
+                    <div class="toolbar-left" data-before="验证码：">
+                        <input id="verify" name="verify" type="text">
+                        <a href="javascript:;"><img src="images/qrcode.jpg" alt="验证码"></a>
+                    </div>
+                    <div class="toolbar-right">
+                        <button data-event="clear_message" type="button" class="btn-clear-sm">清空内容</button>
+                        <button data-event="post_message" type="button" class="btn-publish-sm">发&nbsp;表</button>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-lists">
+                <ul>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="page">
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="active">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">下一页</a>
+                </div>
+            </div>
+        </div>
+        <div class="anniversary-instructions smoove" data-move-x="0" data-move-y="100px">
+            <div class="time" data-before="活动时间">
+                <span>7天</span>
+            </div>
+            <div class="content" data-before="活动内容">
+                <p>活动期间玩家可每天签到获得奖励及当日问题，答对可获得翻牌机会，翻开任意栏位，获得对应奖励及下列武将：</p>
+                <p>&emsp;&emsp;魏：张辽、典韦、夏侯惇、司马懿、郭嘉</p>
+                <p>&emsp;&emsp;蜀：关羽、张飞、赵云、马超、黄忠</p>
+                <p>&emsp;&emsp;吴：孙坚、孙策、周瑜、太史慈、陆逊</p>
+                <p>&emsp;&emsp;群雄：董卓、吕布、张角、袁绍、贾诩</p>
+                <p>4个阵营20个武将随机分布在栏位后，该活动中，所有主公的武将在栏位后面对应的排序都是相同的哦~</p>
+            </div>
+            <div class="reward" data-before="活动奖励">
+                <p>签到奖励：200W粮食+100募兵令</p>
+                <br>
+                <p>武将奖励：魏：150募兵令、蜀：20至尊洗炼令</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;吴：10W武魂、群雄：300W粮食</p>
+                <br>
+                <p>资源转盘大奖：游戏内道具：金币*300、7级宝石*1、点券*1888、粮食*888W万</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;金币*300、7级宝石*1、点券*1888、粮食*888W万</p>
+                <br>
+                <p>幸运转盘大奖：游戏内道具：金币*300、7级宝石*1、点券*1888、粮食*888W万</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;实物奖励：抱枕、纪念笔、纪念邮票、纪念银币</p>
+            </div>
+            <div class="reward" data-before="活动奖励">
+                <p>1、每个账号每天只可签到一次；</p>
+                <p>2、每个礼品码每个账号只可领取一次；</p>
+                <p>3、本活动最终解释权归《一统天下》团队所有。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div style="width: 980px;margin: 20px auto -30px;">
+        <h3 class="mb f14">友情链接</h3>
+        <p>
+            <a href="http://www.ptbus.com" target="_blank">口袋巴士</a> |
+            <a href="http://apple.766.com" target="_blank">766苹果中文网</a> |
+            <a href="http://www.shouyoubus.com/" target="_blank">手游巴士</a> |
+            <a href="http://app.kaifu.com/" target="_blank">手机网游</a> |
+            <a href="http://kf.40407.com/" target="_blank">网页游戏开服表</a> |
+            <a href="http://www.huiyong123.com/index.php?eventId=131" target="_blank">天翼•汇用市场</a> |
+            <a href="http://www.980apk.com/ " target="_blank">澳门手游</a> |
+            <a href="http://www.shouyou520.com/ " target="_blank">爱手游网</a> |
+            <a href="http://www.anfensi.com/" target="_blank">好玩的安卓游戏</a>
+        </p>
+    </div>
+    <div class="footer cfix">
+        <div class="fl">
+            <a href="" target="_blank">
+                <img src="http://cdn.feidou.com/i3/gameplat/beian_70.png" width="39px" height="45px">
+            </a>
+        </div>
+        <div style="margin-left:55px;margin-top:5px">Copyright © 2013 feidou.com All Rights Reserved 飞豆游戏中心·北京开心人信息技术有限公司<br>京网文[2015]2180-400号•京ICP证08005250号-4</div>
+        <div class="fr"><a class="c9" href="/care/" target="_blank">游戏组件未成年人家长监护工程</a>　 <span class="logo"><a href="/">飞豆网_开心网</a></span></div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function(){
+        if($(window).width() > 1000) {
+            $('.smoove').smoove({offset:'40%'});
+        }
+    })
+</script>
+</body>
+</html>

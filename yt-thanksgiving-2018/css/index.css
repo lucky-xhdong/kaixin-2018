@@ -1,0 +1,92 @@
+.national-cn2018-index {
+  min-height: 1200px;
+  background: url("../images/bg-index-body.jpg") top center no-repeat;
+}
+.national-cn2018-index .nci-nav {
+  width: 1175px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 685px;
+}
+.national-cn2018-index .nci-nav ul {
+  font-size: 0;
+  position: relative;
+  min-height: 283px;
+}
+.national-cn2018-index .nci-nav ul li {
+  position: absolute;
+  width: 132px;
+  height: 283px;
+  top: 0;
+  background: url("../images/sprite-index-nav.png") no-repeat;
+}
+.national-cn2018-index .nci-nav ul li:after {
+  content: '';
+  position: absolute;
+  width: 368px;
+  height: 123px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -184px;
+  background: url("../images/sprite-index-nav.png") no-repeat;
+  background-position: -527px 0;
+  -webkit-transition: all 0.2s ease 0.1s;
+  -moz-transition: all 0.2s ease 0.1s;
+  -ms-transition: all 0.2s ease 0.1s;
+  -o-transition: all 0.2s ease 0.1s;
+  transition: all 0.2s ease 0.1s;
+  animation: nav-scale 5s ease-in-out infinite;
+  -moz-animation: nav-scale 5s ease-in-out infinite;
+  -webkit-animation: nav-scale 5s ease-in-out infinite;
+  -ms-animation: nav-scale 5s ease-in-out infinite;
+  -o-animation: nav-scale 5s ease-in-out infinite;
+  visibility: hidden;
+}
+.national-cn2018-index .nci-nav ul li a {
+  display: block;
+  width: 132px;
+  height: 283px;
+}
+.national-cn2018-index .nci-nav ul li:first-child {
+  left: 0;
+  background-position: -394px 0;
+}
+.national-cn2018-index .nci-nav ul li:first-child + li {
+  left: 354px;
+  background-position: -262px 0;
+}
+.national-cn2018-index .nci-nav ul li:first-child + li + li {
+  left: 696px;
+  background-position: 0 0;
+}
+.national-cn2018-index .nci-nav ul li:first-child + li + li + li {
+  left: 1040px;
+  background-position: -131px 0;
+}
+.national-cn2018-index .nci-nav ul li:hover:after,
+.national-cn2018-index .nci-nav ul li.active:after {
+  visibility: visible;
+}
+.giftbox-wrapper {
+  position: fixed;
+  width: 296px;
+  height: 306px;
+  background: url("../images/bg-giftbox.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  font-size: 0;
+  top: 50%;
+  margin-top: -153px;
+  right: 0;
+  z-index: 1;
+}
+.giftbox-wrapper .btn-giftbox {
+  display: block;
+  width: 296px;
+  height: 306px;
+}
+.giftbox-wrapper:hover {
+  background: url("../images/bg-giftbox-hover.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}

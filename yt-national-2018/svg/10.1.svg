@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg_dayone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1200px" height="770px" viewBox="0 0 1200 770" enable-background="new 0 0 1200 770" xml:space="preserve">
+	<g>
+		<image overflow="visible" width="1200" height="770" xlink:href="../images/bg-castle.png"></image>
+		<image x="-90" y="-120" xlink:href="../images/lvbu.png" class="lvbu">
+			<animateMotion
+					dur="5s"
+					fill="freeze">
+				<mpath xlink:href="#path_dayone"></mpath>
+			</animateMotion>
+		</image>
+		<path id="path_dayone" fill="none" d="M165,578.68l9.5-5.5c0,0,23-31.5,46.5-84.5c0,0,10-18.5,14.5-54c0,0,9-14.5-31-42c0,0-14-6-36-6.5
+	c0,0-28.5,0-41-46.5c0,0-8-35.5,168.5-41"/>
+	</g>
+	<style>
+		<![CDATA[
+		.lvbu {
+           animation: motion 2s ease-in-out alternate infinite;
+            -o-transform: motion 2s ease-in-out alternate infinite;
+            -ms-transform: motion 2s ease-in-out alternate infinite;
+            -moz-transform: motion 2s ease-in-out alternate infinite;
+            -webkit-animation: motion 2s ease-in-out alternate infinite;
+		}
+		@keyframes motion {
+            0%{
+            	transform: translateY(0);
+            	-o-transform: translateY(0);
+            	-ms-transform: translateY(0);
+            	-moz-transform: translateY(0);
+            	-webkit-transform: translateY(0);
+            }
+            100%{
+            	transform: translateY(10px);
+            	-o-transform: translateY(10px);
+            	-ms-transform: translateY(10px);
+            	-moz-transform: translateY(10px);
+            	-webkit-transform: translateY(10px);
+            }
+		}
+		]]>
+	</style>
+</svg>

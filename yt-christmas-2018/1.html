@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+    var shop = [{id:1,name:"2B铅笔"},{id:2,name:"BOSS墨水"},{id:3,name:"天堂雨伞"},{id:4,name:"麻辣烫"}];
+    $(function(){
+        for(var i=0;i<shop.length;i++){
+            var tr = $("<tr></tr>")
+            tr.append("<td>"+shop[i].id+"</td>");
+            tr.append("<td>"+shop[i].name+"</td>");
+            $("#tbody").append(tr);
+        }
+    });
+
+    function selectShop(){
+        var s = parseInt(Math.random()*shop.length);
+        $("#selected").append("选择的商品：ID:"+shop[s].id+",Name:"+shop[s].name+"<br>");
+        shop[s].id += shop[s].id
+        var abc = shop[s].id;
+        console.log(abc)
+        $("#sum").html(abc)
+        //append换成html就不会累加显示选择结果。而是只显示最新选择的商品
+    }
+</script>
+</HEAD>
+
+<BODY>
+<table id="table" border="1" width="200px">
+    <thead>
+    <tr>
+        <td>ID</td><td>商品</td>
+    </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
+
+<br><br><br>
+<input type="button" value="随机选取" onclick="selectShop();"/>
+<div id="selected"></div>
+<p id="sum"></p>
+</BODY>
+</html>

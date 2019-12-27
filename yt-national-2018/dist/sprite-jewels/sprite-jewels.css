@@ -1,0 +1,168 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-bg-jewel-left {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1406px;
+  width: 83px;
+  height: 86px;
+}
+.icon-bg-jewel-red {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1584px;
+  width: 107px;
+  height: 107px;
+}
+.icon-bg-jewel-right {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1324px;
+  width: 80px;
+  height: 81px;
+}
+.icon-cheng-gray {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -101px;
+  width: 56px;
+  height: 52px;
+}
+.icon-cheng-left {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -928px;
+  width: 76px;
+  height: 76px;
+}
+.icon-cheng-r {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -434px;
+  width: 67px;
+  height: 67px;
+}
+.icon-hong-left {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1084px;
+  width: 80px;
+  height: 79px;
+}
+.icon-hong-right {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1493px;
+  width: 91px;
+  height: 90px;
+}
+.icon-huang-gray {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -154px;
+  width: 63px;
+  height: 53px;
+}
+.icon-huang-left {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -373px;
+  width: 76px;
+  height: 60px;
+}
+.icon-huang-right {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -317px;
+  width: 71px;
+  height: 55px;
+}
+.icon-lan-gray {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -208px;
+  width: 53px;
+  height: 53px;
+}
+.icon-lan-left {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1244px;
+  width: 65px;
+  height: 79px;
+}
+.icon-lan-right {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -709px;
+  width: 58px;
+  height: 70px;
+}
+.icon-lv-gray {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px 0px;
+  width: 49px;
+  height: 48px;
+}
+.icon-lv-left {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1164px;
+  width: 62px;
+  height: 79px;
+}
+.icon-lv-right {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -639px;
+  width: 53px;
+  height: 69px;
+}
+.icon-qing-gray {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -49px;
+  width: 52px;
+  height: 51px;
+}
+.icon-qing-left {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -852px;
+  width: 75px;
+  height: 75px;
+}
+.icon-qing-right {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -570px;
+  width: 70px;
+  height: 68px;
+}
+.icon-red-gray {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -780px;
+  width: 71px;
+  height: 71px;
+}
+.icon-sprite-jewels {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1692px;
+  width: 107px;
+  height: 1691px;
+}
+.icon-zi-gray {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -262px;
+  width: 54px;
+  height: 54px;
+}
+.icon-zi-left {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -1005px;
+  width: 76px;
+  height: 78px;
+}
+.icon-zi-right {
+  background-image: url(sprite-jewels.png);
+  background-position: 0px -502px;
+  width: 67px;
+  height: 67px;
+}

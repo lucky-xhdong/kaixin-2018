@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>js烟花效果</title>
+    <script type="text/javascript">
+        document.onclick = function (ev) {
+            var oEvent = ev || event;
+            var aDiv = [];
+            var oDiv = null;
+            var _oDiv = document.createElement('div');
+            var i = 0;
+            var x = oEvent.clientX;
+            var y = oEvent.clientY;
+            _oDiv.style.position = 'absolute';
+            _oDiv.style.background = 'red';
+            _oDiv.style.width = '3px';
+            _oDiv.style.height = '30px';
+            _oDiv.style.left = oEvent.clientX + 'px';
+            _oDiv.style.top = document.documentElement.clientHeight + 'px';
+            document.body.appendChild(_oDiv);
+            var t = setInterval(function () {
+                if (_oDiv.offsetTop <= y) {
+                    clearInterval(t);
+                    show();
+                    document.body.removeChild(_oDiv);
+                }
+                _oDiv.style.top = _oDiv.offsetTop - 30 + 'px';
+            }, 30);
+
+            function show () {
+                var oDiv = null;
+                for (i = 0; i < 100; i++) {
+                    oDiv = document.createElement('div');
+                    oDiv.style.width = '3px';
+                    oDiv.style.height = '3px';
+                    oDiv.style.background = '#' + Math.ceil(Math.random() * 0xEFFFFF + 0x0FFFFF).toString(16);
+                    oDiv.style.position = 'absolute';
+                    oDiv.style.left = x + 'px';
+                    oDiv.style.top = y + 'px';
+                    var a = Math.random() * 360;
+                    //oDiv.speedX=Math.random()*40-20;
+                    //oDiv.speedY=Math.random()*40-20;
+                    oDiv.speedX = Math.sin(a * 180 / Math.PI) * 20 * Math.random();
+                    oDiv.speedY = Math.cos(a * 180 / Math.PI) * 20 * Math.random();
+                    document.body.appendChild(oDiv);
+                    aDiv.push(oDiv);
+                }
+            }
+
+            setInterval(doMove, 30);
+            function doMove () {
+                for (i = 0; i < aDiv.length; i++) {
+                    aDiv[i].style.left = aDiv[i].offsetLeft + aDiv[i].speedX + 'px';
+                    aDiv[i].style.top = aDiv[i].offsetTop + aDiv[i].speedY + 'px';
+                    aDiv[i].speedY += 1;
+                    if (aDiv[i].offsetLeft < 0 || aDiv[i].offsetLeft > document.documentElement.clientWidth || aDiv[i].offsetTop < 0 || aDiv[i].offsetTop > document.documentElement.clientHeight) {
+                        document.body.removeChild(aDiv[i]);
+                        aDiv.splice(i, 1);
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body style="overflow:hidden; background:black;">
+</body>
+</html>

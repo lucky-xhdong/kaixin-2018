@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/jquery.smoove.js"></script><!--支持页面动画效果插件-->
+    <script src="js/gameplat-national.js"></script>
+    <link rel="stylesheet" href="css/gameplat_global.css"><!--飞豆 公共头尾样式-->
+    <link rel="stylesheet" href="css/gameplat-national-cn2018.css">
+    <script src="js/respond.src.js"></script><!--支持IE8使用媒体查询-->
+    <script src="js/rem.js"></script><!--支持响应式适配使用-->
+    <title>留言聚宝盆</title>
+</head>
+<body>
+<div class="national-cn2018-lyjbx">
+    <!--顶部导航 start-->
+    <div class="national-header-wrapper">
+        <div class="national-header">
+            <div class="national-header_left">
+                <ul>
+                    <li><a href="javascript:;">官网首页</a></li>
+                    <li><a href="javascript:;">新闻公告</a></li>
+                    <li><a href="javascript:;">游戏资料</a></li>
+                </ul>
+            </div>
+            <div class="national-header_right">
+                <ul>
+                    <li><a href="javascript:;">游戏充值</a></li>
+                    <li><a href="javascript:;">游戏论坛</a></li>
+                    <li><a href="javascript:;">客服中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--顶部导航 end-->
+    <div class="national-container">
+        <!--导航 start-->
+        <div class="nc-nav">
+            <ul>
+                <li><a href="gqgwc.html">国庆古城游</a></li>
+                <li><a href="xydzp.html">幸运大转盘</a></li>
+                <li class="active"><a href="lyjbx.html">留言聚宝盆</a></li>
+                <li><a href="qwpzg.html">趣味拼字格</a></li>
+                <li><a href="index.html">首页</a></li>
+            </ul>
+        </div>
+        <!--导航 end-->
+        <!--聚宝箱 start-->
+        <div class="smoove" data-move-x="0" data-move-y="100px">
+            <div class="nc-treasure-box">
+                <p class="txt">幸运点数：8</p>
+                <ul>
+                    <li class="first close">
+                        <figure class="box">箱子</figure>
+                        <a href="javascript:;" class="btn-close">开启</a>
+                    </li>
+                    <li class="second open">
+                        <figure class="box">箱子</figure>
+                        <a href="javascript:;" class="btn-open">开启</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--聚宝箱 end-->
+        <!--留言版 start-->
+        <div class="nc-msgboard smoove" data-move-x="0" data-move-y="100px">
+            <div class="comment">
+                <div class="select-lists">
+                    <select name="" id="1">
+                        <option value="请选择服务器">请选择服务器</option>
+                        <option value="请选择服务器">请选择服务器</option>
+                        <option value="请选择服务器">请选择服务器</option>
+                        <option value="请选择服务器">请选择服务器</option>
+                    </select>
+                    <select name="" id="2">
+                        <option value="请选择角色名">请选择角色名</option>
+                        <option value="请选择角色名">请选择角色名</option>
+                        <option value="请选择角色名">请选择角色名</option>
+                        <option value="请选择角色名">请选择角色名</option>
+                    </select>
+                </div>
+                <textarea name="content" id="content" cols="30" rows="10" placeholder="请您先登录再留言！" onblur="this.placeholder='请您先登录再留言！'" onfocus="this.placeholder=''"></textarea>
+                <div class="toolbar">
+                    <div class="toolbar-left" data-before="验证码：">
+                        <input id="verify" name="verify" type="text">
+                        <a href="javascript:;"><img src="images/qrcode.jpg" alt="验证码"></a>
+                    </div>
+                    <div class="toolbar-right">
+                        <button data-event="clear_message" type="button" class="btn-clear-sm">清空内容</button>
+                        <button data-event="post_message" type="button" class="btn-publish-sm">发&nbsp;表</button>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-lists">
+                <ul>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lists-left">
+                            <a href="javascript:;"><img src="images/avatar.jpg" alt="eedsa"></a>
+                        </div>
+                        <div class="lists-right">
+                            <div class="msg">
+                                <div class="msg-left">
+                                    <span>eedsa</span>
+                                    <span>2015年07月05日 14:47</span>
+                                </div>
+                                <div class="msg-right"><span>28楼</span></div>
+                                <div class="clearfix"></div>
+                                <div class="msg-bottom">
+                                    <span>希望降低典韦英雄副本难度</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="page">
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="active">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">下一页</a>
+                </div>
+            </div>
+        </div>
+        <!--留言版 end-->
+        <!--规则 start-->
+        <div class="smoove" data-move-x="0" data-move-y="100px">
+            <div class="nc-rules-wrapper">
+                <div class="nc-rules">
+                    <div class="nc-rules__module1">
+                        <ul>
+                            <li data-before="活动时间：">
+                                <p class="txt">2018年10月1日-2018年10月7日</p>
+                            </li>
+                            <li data-before="活动内容：">
+                                <p class="txt">活动期间主公们通过参与留言，说出你心中的国庆祝福或十一长假度假计划，即可领取一份留言奖励~另外，主公们首次参与留言即可直接获得幸运点*8~活动期间主公们每消耗8点幸运点即可开启一次聚宝箱，快来参与活动积攒幸运点开启赢得聚宝箱将宝物纳入囊中吧~</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nc-rules__remark2" data-before="注：">
+                        <ul>
+                            <li>
+                                <p class="txt">1.	“国庆古城游”活动页所获幸运点在聚宝盆区域累计；</p>
+                                <p class="txt">2.	主公们只在第一次留言时可获得幸运点，幸运点数可在“聚宝箱”区域查看；</p>
+                                <p class="txt">3.	活动期间获得的礼品码仅限本账号下的游戏角色使用；</p>
+                                <p class="txt">4.	获得的礼品码及实物奖励信息可通过“礼品箱”查看；</p>
+                                <p class="txt">5.	如果活动中的回帖不符合活动要求，那么该楼获奖资格取消；</p>
+                                <p class="txt">6.	严禁回帖中出现谩骂，人身攻击等内容，蓄意破坏活动的人员，一经发现直接取消活动获奖资格；</p>
+                                <p class="txt">7.	本活动最终解释权归《一统天下》团队所有；</p>
+                                <p class="txt">8.	礼品码使用截止时间为2018年11月30日23:59:59。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--规则 end-->
+    </div>
+</div>
+</body>
+</html>

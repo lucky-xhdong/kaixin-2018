@@ -1,0 +1,478 @@
+.gameplat-mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+.popup {
+  z-index: 11;
+  position: fixed;
+  width: 596px;
+  height: 383px;
+  top: 50%;
+  left: 50%;
+  margin-left: -298px;
+  margin-top: -192px;
+  background: url("../images/bg-popup.jpg") no-repeat;
+}
+.popup .btn-close {
+  position: absolute;
+  right: 41px;
+  top: 32px;
+  width: 21px;
+  height: 20px;
+  z-index: 3;
+  font-size: 0;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 -74px;
+}
+.popup .pop-body .txt-wrapper1 {
+  text-align: center;
+}
+.popup .pop-body .btn-group {
+  overflow: hidden;
+  text-align: center;
+}
+.popup .pop-body .btn-group .btn-comfirm,
+.popup .pop-body .btn-group .btn-cancel {
+  width: 136px;
+  height: 46px;
+  display: inline-block;
+  font: 16px/46px 'Microsoft YaHei';
+  font-weight: bold;
+  text-align: center;
+  color: #e4be4a;
+  margin: 0 20px;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: 0 0;
+}
+.popup.pop-signin .pop-body:before {
+  content: '';
+  display: block;
+  width: 335px;
+  height: 36px;
+  margin: 28px auto 10px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -256px;
+}
+.popup.pop-signin .pop-body .txt-wrapper {
+  min-height: 120px;
+}
+.popup.pop-signin .pop-body .txt-wrapper,
+.popup.pop-signin .pop-body .thumb-lists {
+  margin-bottom: 12px;
+}
+.popup.pop-turnable .pop-body:before {
+  content: '';
+  display: block;
+  width: 295px;
+  height: 35px;
+  margin: 28px auto 10px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -36px;
+}
+.popup.pop-turnable .pop-body .txt-wrapper {
+  min-height: 90px;
+}
+.popup.pop-turnable .pop-body .txt-wrapper,
+.popup.pop-turnable .pop-body .thumb-lists {
+  margin-bottom: 12px;
+}
+.popup.pop-reward .pop-body:before {
+  content: '';
+  display: block;
+  width: 536px;
+  height: 36px;
+  margin: 28px auto 10px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -108px;
+}
+.popup.pop-reward .pop-body .txt-wrapper {
+  min-height: 90px;
+  margin-bottom: 12px;
+}
+.popup.pop-reward .pop-body .thumb-lists {
+  margin-bottom: 40px;
+}
+.popup.pop-poker .pop-body:before {
+  content: '';
+  display: block;
+  width: 295px;
+  height: 36px;
+  margin: 28px auto 0;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -219px;
+}
+.popup.pop-poker .pop-body .txt-wrapper {
+  min-height: 90px;
+}
+.popup.pop-poker .pop-body .txt-wrapper,
+.popup.pop-poker .pop-body .thumb-lists {
+  margin-bottom: 12px;
+}
+.popup.pop-poker-success .pop-body:before {
+  content: '';
+  display: block;
+  width: 295px;
+  height: 35px;
+  margin: 28px auto 0;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -72px;
+}
+.popup.pop-poker-success .pop-body .txt-wrapper {
+  min-height: 130px;
+}
+.popup.pop-poker-success .pop-body .txt-wrapper,
+.popup.pop-poker-success .pop-body .thumb-lists {
+  margin-bottom: 12px;
+}
+.popup.pop-question {
+  padding: 25px 30px;
+}
+.popup.pop-question.right:before {
+  content: '';
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  right: 150px;
+  bottom: 150px;
+  z-index: 2;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: -22px -74px;
+}
+.popup.pop-question.wrong:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  right: 150px;
+  bottom: 150px;
+  z-index: 2;
+  background: url("../images/sprite-buttons.png") no-repeat;
+  background-position: -44px -74px;
+}
+.popup.pop-question.right:after,
+.popup.pop-question.wrong:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+.popup.pop-question .pop-body:before {
+  content: '';
+  display: block;
+  width: 455px;
+  height: 104px;
+  margin: 28px auto 10px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -437px;
+}
+.popup.pop-question .pop-body .pop-question__list {
+  width: 400px;
+  min-height: 140px;
+  margin: 0 auto;
+}
+.popup.pop-question .pop-body .pop-question__list:before {
+  content: attr(data-before);
+  display: block;
+  font: 15px/28px 'SumHei';
+  color: #791c06;
+  text-shadow: 0 0 1px #fff;
+}
+.popup.pop-question .pop-body .pop-question__list ul li {
+  margin-bottom: 15px;
+}
+.popup.pop-question .pop-body .pop-question__list ul li:before {
+  content: attr(data-before);
+  font: 15px 'SumHei';
+  color: #791c06;
+  text-shadow: 0 0 1px #fff;
+}
+.popup.pop-question .pop-body .pop-question__list ul li a {
+  font: 15px 'SumHei';
+  color: #791c06;
+  word-break: break-word;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0 5px;
+  text-shadow: 0 0 1px #fff;
+}
+.popup.pop-question .pop-body .pop-question__list ul li:hover a,
+.popup.pop-question .pop-body .pop-question__list ul li.active a {
+  background-color: #c95c1d;
+}
+.popup.pop-wrong .pop-body:before {
+  content: '';
+  display: block;
+  width: 381px;
+  height: 35px;
+  margin: 110px auto 20px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 0;
+}
+.popup.pop-wrong .pop-body .btn-group:before {
+  content: '';
+  display: block;
+  width: 535px;
+  height: 36px;
+  margin: 20px auto 100px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -330px;
+}
+.popup.pop-repeat .pop-body:before {
+  content: '';
+  display: block;
+  width: 541px;
+  height: 36px;
+  margin: 160px auto 120px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -145px;
+}
+.popup.pop-lucky-points .pop-body:before {
+  content: '';
+  display: block;
+  width: 462px;
+  height: 69px;
+  margin: 140px auto 60px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -367px;
+}
+.popup.pop-success .pop-body:before {
+  content: '';
+  display: block;
+  width: 455px;
+  height: 118px;
+  margin: 95px auto 60px;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -542px;
+}
+.popup.pop-success .pop-body .btn-group {
+  margin-bottom: 20px;
+}
+.popup.pop-success .pop-body .btn-group .btn-lg {
+  width: 230px;
+  height: 46px;
+  display: inline-block;
+  font: 16px/46px 'Microsoft YaHei';
+  font-weight: bold;
+  text-align: center;
+  color: #e4be4a;
+  margin: 0 20px;
+  background: url("../images/sprite-buttons.png") repeat-x;
+  background-position: 0px -47px;
+}
+.popup.pop-success .pop-body .p1 {
+  font: 12px/28px 'SumHei';
+  color: #791c06;
+  text-shadow: 0 0 1px #fff;
+  padding: 0 40px;
+}
+.popup.pop-success .pop-body .p1 a {
+  color: #791c06;
+  padding: 0 5px;
+}
+.popup.pop-success .pop-body .p1 a:hover {
+  text-decoration: underline;
+}
+.popup.pop-goods {
+  width: 709px;
+  height: 455px;
+  margin-left: -354px;
+  margin-top: -227px;
+  background: url("../images/bg-popup-lg.jpg") no-repeat;
+}
+.pop-common-image {
+  padding: 25px 30px;
+}
+.pop-common-image .pop-body .txt-wrapper .txt-wrapper__p,
+.pop-common-image .pop-body .txt-wrapper1 .txt-wrapper__p {
+  font: 15px/28px 'SumHei';
+  color: #791c06;
+  padding-left: 20px;
+  text-shadow: 0 0 1px #fff;
+}
+.pop-common-image .pop-body .txt-wrapper .txt-wrapper__p span,
+.pop-common-image .pop-body .txt-wrapper1 .txt-wrapper__p span {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+  text-shadow: 0 0 1px #fff;
+}
+.pop-common-image .pop-body .txt-wrapper .txt-wrapper__p a,
+.pop-common-image .pop-body .txt-wrapper1 .txt-wrapper__p a {
+  color: #791c06;
+  text-shadow: 0 0 1px #fff;
+}
+.pop-common-image .pop-body .thumb-lists ul {
+  font-size: 0;
+  text-align: center;
+}
+.pop-common-image .pop-body .thumb-lists ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 23px;
+  width: 77px;
+  height: 77px;
+  border-radius: 10px;
+  border: 3px solid #c95c1d;
+  overflow: hidden;
+  box-shadow: 0 0 5px inset rgba(252, 243, 182, 0.45);
+}
+.pop-common-image .pop-body .thumb-lists ul li:first-child {
+  margin-left: 0;
+}
+.pop-common-image .pop-body .thumb-lists ul li img {
+  max-width: 100%;
+}
+.pop-signin,
+.pop-turnable,
+.pop-reward,
+.pop-poker,
+.pop-poker-success,
+.pop-question,
+.pop-wrong,
+.pop-repeat,
+.pop-lucky-points,
+.pop-success {
+  display: none;
+}
+.pop-goods {
+  display: none;
+}
+.pop-goods .pop-body {
+  padding: 40px 20px 0;
+}
+.pop-goods .pop-body:before {
+  content: '';
+  display: block;
+  width: 375px;
+  height: 36px;
+  margin: 0 auto;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -293px;
+}
+.pop-goods .pop-body .form-group h3 {
+  text-align: center;
+  font: 20px/28px 'SumHei';
+  color: #791c06;
+  text-shadow: 0 0 1px #fff;
+  margin: 0;
+}
+.pop-goods .pop-body .form-group ul:before {
+  content: attr(data-before);
+  display: block;
+  text-align: center;
+  font: 14px 'SumHei';
+  color: #791c06;
+  text-shadow: 0 0 1px #fff;
+}
+.pop-goods .pop-body .form-group ul li {
+  width: 450px;
+  margin: 0 auto 5px;
+}
+.pop-goods .pop-body .form-group ul li:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  font: 15px/25px 'SumHei';
+  text-shadow: 0 0 1px #fff;
+  color: #791c06;
+  width: 100px;
+  text-align: right;
+}
+.pop-goods .pop-body .form-group ul li:after {
+  content: attr(data-after);
+  display: block;
+  font: 14px 'SimSun';
+  text-shadow: 0 0 1px #fff;
+  color: #791c06;
+  margin-left: 100px;
+}
+.pop-goods .pop-body .form-group ul li input,
+.pop-goods .pop-body .form-group ul li select {
+  width: 313px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  color: #791c06;
+  background-color: transparent;
+  border: 1px solid #791c06;
+}
+.pop-goods .pop-body .form-group ul li input:focus,
+.pop-goods .pop-body .form-group ul li select:focus {
+  outline: none;
+}
+.pop-goods .pop-body .form-group .p1,
+.pop-goods .pop-body .form-group .p2 {
+  font: 12px 'SimSun';
+  color: #791c06;
+  text-align: center;
+  line-height: 22px;
+  text-shadow: 0 0 1px #fff;
+  margin: 0;
+}
+.pop-goods .pop-body .form-group .p1 a,
+.pop-goods .pop-body .form-group .p2 a {
+  color: #791c06;
+}
+.pop-giftbox {
+  display: none;
+  padding: 25px 30px;
+}
+.pop-giftbox .pop-body:before {
+  content: '';
+  display: block;
+  width: 115px;
+  height: 36px;
+  margin: 10px auto;
+  background: url("../images/sprite-popup.png") no-repeat;
+  background-position: 0 -182px;
+}
+.pop-giftbox .pop-body:after {
+  content: attr(data-after);
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font: 14px 'SimHei';
+  color: #791c06;
+  text-shadow: 0 0 1px #fff;
+}
+.pop-giftbox .pop-body .gift-table-wrapper {
+  height: 249px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table {
+  background-color: #c95c1d;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table table thead th {
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table table tbody td {
+  line-height: 30px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table table tbody td a {
+  background-color: #e99f42;
+  padding: 4px 6px;
+  color: #fff;
+}

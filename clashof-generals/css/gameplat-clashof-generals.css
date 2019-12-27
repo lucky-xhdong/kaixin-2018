@@ -1,0 +1,671 @@
+body {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+@media (min-width: 1000px) {
+  .clashof-generals-container {
+    width: 1000px;
+    min-height: 800px;
+    margin: 0 auto;
+    position: relative;
+    background: #000 url("../images/bg-body.jpg") no-repeat;
+  }
+  .clashof-generals-container:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .clashof-generals-container .cgc-left {
+    float: left;
+    width: 442px;
+    margin-left: 130px;
+    position: relative;
+    z-index: 1;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__logo {
+    margin-top: 48px;
+    margin-left: 10px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__solo {
+    margin-top: 26px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__rule {
+    max-width: 408px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__rule ul li span {
+    display: block;
+    word-break: break-word;
+    word-wrap: break-word;
+    font: 18px/30px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle {
+    padding-bottom: 15px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font: 12px/30px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group {
+    overflow: hidden;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner {
+    width: 263px;
+    height: 47px;
+    padding: 0 7px;
+    float: left;
+    border: 1px solid #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner:before {
+    content: attr(data-before);
+    font: 12px/30px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner .input-control {
+    width: 212px;
+    height: 47px;
+    line-height: 47px;
+    font: 12px/47px 'SimHei';
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .btn-confirm {
+    float: right;
+    width: 104px;
+    height: 47px;
+    text-align: center;
+    font: 18px/47px 'SimHei';
+    color: #fff;
+    margin-right: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, #76a1f9, #3b5997);
+    background: -o-linear-gradient(top, #76a1f9, #3b5997);
+    background: -mos-linear-gradient(top, #76a1f9, #3b5997);
+    background: -moz-linear-gradient(top, #76a1f9, #3b5997);
+    background: linear-gradient(top, #76a1f9, #3b5997);
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -moz-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    -o-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+    border-radius: 6px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .btn-confirm:hover {
+    background: -webkit-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -o-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -mos-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -moz-linear-gradient(top, #76a1f9, #76a1f9);
+    background: linear-gradient(top, #76a1f9, #76a1f9);
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .error-tip {
+    font: 12px/30px 'SimHei';
+    color: #f00;
+    margin: 0;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font: 12px/30px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper .input-group {
+    overflow: hidden;
+    width: 263px;
+    height: 47px;
+    padding: 0 7px;
+    border: 1px solid #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper .input-group span {
+    font: 12px/47px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group .btn-lg {
+    display: block;
+    width: 303px;
+    height: 69px;
+    margin: 10px auto;
+    text-align: center;
+    font: 18px/69px 'SimHei';
+    color: #fff;
+    background: -webkit-linear-gradient(top, #76a1f9, #3b5997);
+    background: -o-linear-gradient(top, #76a1f9, #3b5997);
+    background: -mos-linear-gradient(top, #76a1f9, #3b5997);
+    background: -moz-linear-gradient(top, #76a1f9, #3b5997);
+    background: linear-gradient(top, #76a1f9, #3b5997);
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -moz-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    -o-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+    border-radius: 6px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group .btn-lg:hover {
+    background: -webkit-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -o-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -mos-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -moz-linear-gradient(top, #76a1f9, #76a1f9);
+    background: linear-gradient(top, #76a1f9, #76a1f9);
+  }
+  .clashof-generals-container .cgc-right {
+    position: absolute;
+    right: 50px;
+    top: 17px;
+  }
+}
+@media (orientation: landscape) and (max-width: 1000px) {
+  .clashof-generals-container {
+    width: 100%;
+    min-height: 12.8rem;
+    margin: 0 auto;
+    position: relative;
+    background: #000 url("../images/bg-body.jpg") no-repeat;
+  }
+  .clashof-generals-container:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .clashof-generals-container .cgc-left {
+    width: 9rem;
+    position: relative;
+    z-index: 1;
+    float: left;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__logo {
+    padding-top: .5rem;
+    text-align: center;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__solo {
+    padding: 0 .5rem;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__solo img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__rule {
+    padding: 0 .4rem;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__rule ul li span {
+    display: block;
+    word-break: break-word;
+    word-wrap: break-word;
+    font: 16px/0.6rem 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle {
+    padding-bottom: 0.24rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    margin: 10px 0;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font: 14px/30px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group {
+    overflow: hidden;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner {
+    width: 5rem;
+    height: 42px;
+    padding: 0 0.2rem;
+    float: left;
+    font-size: 0;
+    border: 1px solid #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner:before {
+    content: attr(data-before);
+    font: 12px/42px 'SimHei';
+    vertical-align: middle;
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner .input-control {
+    width: 3.8rem;
+    height: 42px;
+    font: 12px/42px 'SimHei';
+    vertical-align: middle;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .btn-confirm {
+    float: right;
+    width: 1.5rem;
+    height: 42px;
+    text-align: center;
+    font: 12px/42px 'SimHei';
+    color: #fff;
+    margin-right: 0.48rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, #76a1f9, #3b5997);
+    background: -o-linear-gradient(top, #76a1f9, #3b5997);
+    background: -mos-linear-gradient(top, #76a1f9, #3b5997);
+    background: -moz-linear-gradient(top, #76a1f9, #3b5997);
+    background: linear-gradient(top, #76a1f9, #3b5997);
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -moz-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    -o-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+    border-radius: 6px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .btn-confirm:hover {
+    background: -webkit-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -o-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -mos-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -moz-linear-gradient(top, #76a1f9, #76a1f9);
+    background: linear-gradient(top, #76a1f9, #76a1f9);
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .error-tip {
+    font: 12px/0.5rem 'SimHei';
+    color: #f00;
+    margin: 0;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font: 12px/0.5rem 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper .input-group {
+    overflow: hidden;
+    width: 5rem;
+    height: 42px;
+    font-size: 0;
+    padding: 0 0.2rem;
+    border: 1px solid #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper .input-group span {
+    font: 12px/42px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group .btn-lg {
+    display: block;
+    width: 8rem;
+    height: 42px;
+    margin: 0.16rem auto;
+    text-align: center;
+    font: 18px/42px 'SimHei';
+    color: #fff;
+    background: -webkit-linear-gradient(top, #76a1f9, #3b5997);
+    background: -o-linear-gradient(top, #76a1f9, #3b5997);
+    background: -mos-linear-gradient(top, #76a1f9, #3b5997);
+    background: -moz-linear-gradient(top, #76a1f9, #3b5997);
+    background: linear-gradient(top, #76a1f9, #3b5997);
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -moz-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    -o-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+    border-radius: 6px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group .btn-lg:hover {
+    background: -webkit-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -o-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -mos-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -moz-linear-gradient(top, #76a1f9, #76a1f9);
+    background: linear-gradient(top, #76a1f9, #76a1f9);
+  }
+  .clashof-generals-container .cgc-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8rem;
+    text-align: center;
+  }
+  .clashof-generals-container .cgc-right img {
+    max-width: 100%;
+  }
+}
+@media (orientation: landscape) and (max-width: 640px) {
+  .clashof-generals-container {
+    width: 100%;
+    min-height: 12.8rem;
+    margin: 0 auto;
+    position: relative;
+    background: #000 url("../images/bg-body.jpg") no-repeat;
+  }
+  .clashof-generals-container:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .clashof-generals-container .cgc-left {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__logo {
+    text-align: center;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__solo {
+    padding: 0 .5rem;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__solo img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__rule {
+    padding: 0 .4rem;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__rule ul li span {
+    display: block;
+    word-break: break-word;
+    word-wrap: break-word;
+    font: 16px/1rem 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle {
+    padding-bottom: 0.24rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    margin: 10px 0;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font: 14px/30px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group {
+    overflow: hidden;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner {
+    width: 10rem;
+    height: 42px;
+    padding: 0 0.2rem;
+    float: left;
+    font-size: 0;
+    border: 1px solid #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner:before {
+    content: attr(data-before);
+    font: 12px/42px 'SimHei';
+    vertical-align: middle;
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner .input-control {
+    width: 8rem;
+    height: 42px;
+    font: 12px/42px 'SimHei';
+    vertical-align: middle;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .btn-confirm {
+    float: right;
+    width: 2.5rem;
+    height: 42px;
+    text-align: center;
+    font: 12px/42px 'SimHei';
+    color: #fff;
+    margin-right: 0.48rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, #76a1f9, #3b5997);
+    background: -o-linear-gradient(top, #76a1f9, #3b5997);
+    background: -mos-linear-gradient(top, #76a1f9, #3b5997);
+    background: -moz-linear-gradient(top, #76a1f9, #3b5997);
+    background: linear-gradient(top, #76a1f9, #3b5997);
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -moz-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    -o-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+    border-radius: 6px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .btn-confirm:hover {
+    background: -webkit-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -o-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -mos-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -moz-linear-gradient(top, #76a1f9, #76a1f9);
+    background: linear-gradient(top, #76a1f9, #76a1f9);
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .error-tip {
+    font: 12px/0.5rem 'SimHei';
+    color: #f00;
+    margin: 0;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font: 12px/0.5rem 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper .input-group {
+    overflow: hidden;
+    width: 10rem;
+    height: 42px;
+    font-size: 0;
+    padding: 0 0.2rem;
+    border: 1px solid #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper .input-group span {
+    font: 12px/42px 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group .btn-lg {
+    display: block;
+    width: 8rem;
+    height: 42px;
+    margin: 0.16rem auto;
+    text-align: center;
+    font: 18px/42px 'SimHei';
+    color: #fff;
+    background: -webkit-linear-gradient(top, #76a1f9, #3b5997);
+    background: -o-linear-gradient(top, #76a1f9, #3b5997);
+    background: -mos-linear-gradient(top, #76a1f9, #3b5997);
+    background: -moz-linear-gradient(top, #76a1f9, #3b5997);
+    background: linear-gradient(top, #76a1f9, #3b5997);
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -moz-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    -o-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+    border-radius: 6px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group .btn-lg:hover {
+    background: -webkit-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -o-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -mos-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -moz-linear-gradient(top, #76a1f9, #76a1f9);
+    background: linear-gradient(top, #76a1f9, #76a1f9);
+  }
+  .clashof-generals-container .cgc-right {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .clashof-generals-container .cgc-right img {
+    max-width: 100%;
+  }
+}
+@media (orientation: portrait) and (max-width: 1000px) {
+  .clashof-generals-container {
+    width: 100%;
+    min-height: 12.8rem;
+    margin: 0 auto;
+    position: relative;
+    background: #000 url("../images/bg-body.jpg") no-repeat;
+  }
+  .clashof-generals-container:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .clashof-generals-container .cgc-left {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__logo {
+    text-align: center;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__solo {
+    padding: .5rem;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__solo img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__rule {
+    padding: 0 .4rem;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__rule ul li span {
+    display: block;
+    word-break: break-word;
+    word-wrap: break-word;
+    font: 16px/1rem 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle {
+    padding-bottom: 0.24rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    margin: 10px 0;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font: 14px/1rem 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group {
+    overflow: hidden;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner {
+    width: 10rem;
+    height: 1.5rem;
+    padding: 0 0.4rem;
+    float: left;
+    border: 1px solid #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner:before {
+    content: attr(data-before);
+    font: 12px/1.5rem 'SimHei';
+    vertical-align: middle;
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .input-group__inner .input-control {
+    width: 7rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    font: 12px/1.4rem 'SimHei';
+    vertical-align: middle;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .btn-confirm {
+    float: right;
+    width: 3.5rem;
+    height: 1.5rem;
+    text-align: center;
+    font: 12px/1.5rem 'SimHei';
+    color: #fff;
+    margin-right: 0.48rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, #76a1f9, #3b5997);
+    background: -o-linear-gradient(top, #76a1f9, #3b5997);
+    background: -mos-linear-gradient(top, #76a1f9, #3b5997);
+    background: -moz-linear-gradient(top, #76a1f9, #3b5997);
+    background: linear-gradient(top, #76a1f9, #3b5997);
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -moz-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    -o-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+    border-radius: 6px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .input-group .btn-confirm:hover {
+    background: -webkit-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -o-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -mos-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -moz-linear-gradient(top, #76a1f9, #76a1f9);
+    background: linear-gradient(top, #76a1f9, #76a1f9);
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .email-wrapper .error-tip {
+    font: 12px/1.5rem 'SimHei';
+    color: #f00;
+    margin: 0;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font: 12px/1.5rem 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper .input-group {
+    overflow: hidden;
+    width: 10rem;
+    height: 1.4rem;
+    padding: 0 0.4rem;
+    border: 1px solid #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .giftcode-wrapper .input-group span {
+    font: 12px/1.2rem 'SimHei';
+    color: #fff;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group {
+    padding: 0 .4rem;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group .btn-lg {
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin: 0.16rem auto;
+    text-align: center;
+    font: 18px/42px 'SimHei';
+    color: #fff;
+    background: -webkit-linear-gradient(top, #76a1f9, #3b5997);
+    background: -o-linear-gradient(top, #76a1f9, #3b5997);
+    background: -mos-linear-gradient(top, #76a1f9, #3b5997);
+    background: -moz-linear-gradient(top, #76a1f9, #3b5997);
+    background: linear-gradient(top, #76a1f9, #3b5997);
+    -webkit-transition: all 0.2s ease-in 0.2s;
+    -moz-transition: all 0.2s ease-in 0.2s;
+    -ms-transition: all 0.2s ease-in 0.2s;
+    -o-transition: all 0.2s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+    border-radius: 6px;
+  }
+  .clashof-generals-container .cgc-left .cgc-left__handdle .btn-group .btn-lg:hover {
+    background: -webkit-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -o-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -mos-linear-gradient(top, #76a1f9, #76a1f9);
+    background: -moz-linear-gradient(top, #76a1f9, #76a1f9);
+    background: linear-gradient(top, #76a1f9, #76a1f9);
+  }
+  .clashof-generals-container .cgc-right {
+    text-align: center;
+  }
+  .clashof-generals-container .cgc-right img {
+    max-width: 100%;
+  }
+}

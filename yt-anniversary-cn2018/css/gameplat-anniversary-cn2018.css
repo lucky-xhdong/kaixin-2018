@@ -1,0 +1,1413 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #3c2c15;
+}
+.topBar .logoC {
+  height: 35px;
+}
+.anniversary-cn2018 {
+  background: url("../images/bg-body.jpg") top center no-repeat;
+}
+.anniversary-cn2018 .anniversary-container {
+  width: 1200px;
+  margin: 0 auto;
+  background: url("../images/bg-container.jpg") top center no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .icon-gift {
+  position: fixed;
+  width: 155px;
+  height: 134px;
+  text-align: center;
+  font: 28px 'MicroSoft YaHei';
+  line-height: 134px;
+  font-weight: bold;
+  color: #ee5f19;
+  text-shadow: 0 1px 1px #fff;
+  top: 50%;
+  margin-top: -67px;
+  right: 0;
+  z-index: 1;
+  background: url("../images/sprite-anniversary.png") no-repeat;
+  background-position: 0 -693px;
+}
+.anniversary-cn2018 .anniversary-container .icon-gift:hover {
+  background-position: -159px -693px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav {
+  padding-top: 1022px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul {
+  font-size: 0;
+  text-align: center;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 30px 16px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li a {
+  display: block;
+  width: 322px;
+  height: 124px;
+  background: url("../images/sprite-nav.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child a {
+  background-position: 0 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child:hover a,
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child.active a {
+  background-position: -322px 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child + li a {
+  background-position: 0 -124px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child + li:hover a,
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child + li.active a {
+  background-position: -322px -124px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child + li + li a {
+  background-position: 0 -245px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child + li + li:hover a,
+.anniversary-cn2018 .anniversary-container .anniversary-nav ul li:first-child + li + li.active a {
+  background-position: -322px -245px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword {
+  width: 1200px;
+  height: 462px;
+  margin-top: 102px;
+  margin-bottom: 160px;
+  position: relative;
+  background: url("../images/bg-block1.jpg") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword:before {
+  content: '';
+  position: absolute;
+  width: 844px;
+  height: 62px;
+  top: -90px;
+  left: 50%;
+  margin-left: -422px;
+  background: url("../images/header-title1.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword:after {
+  content: '';
+  display: table;
+  clear: both;
+  height: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left {
+  width: 1044px;
+  float: left;
+  position: relative;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .sword-wrapper {
+  position: relative;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .sword-wrapper .sword-gray,
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .sword-wrapper .sword-light {
+  position: absolute;
+  width: 975px;
+  height: 340px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .sword-wrapper .sword-gray {
+  background: url("../images/baojian-gray.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .total-times {
+  position: absolute;
+  font: 28px/30px 'Microsoft YaHei';
+  color: #b64a1e;
+  left: 40px;
+  bottom: 45px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .time-lists {
+  margin-top: 220px;
+  margin-left: 100px;
+  position: relative;
+  z-index: 1;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .time-lists ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .time-lists ul li span {
+  font: 22px/24px 'Microsoft YaHei';
+  color: #f29223;
+  text-shadow: 0 1px 0 #000;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .box-lists {
+  margin-top: 20px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .box-lists ul {
+  margin-left: 240px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .box-lists ul li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 103px;
+  height: 120px;
+  margin: 0 50px;
+  position: relative;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .box-lists ul li.box-open {
+  background: url("../images/img-box-open.png") bottom center no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .box-lists ul li.box-close {
+  background: url("../images/img-box.png") bottom center no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-left .box-lists ul li .btn-open {
+  display: block;
+  width: 96px;
+  height: 32px;
+  font-size: 0;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  margin-left: -48px;
+  background: url("../images/btn-open-normal.jpg") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-right .btn-sword {
+  width: 260px;
+  height: 300px;
+  margin: 80px 0;
+  border: none;
+  font-size: 0;
+  background: url("../images/btn-zhujian.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-sword .sword-right .btn-sword:focus {
+  outline: none;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle {
+  width: 1200px;
+  height: 760px;
+  margin-bottom: 160px;
+  position: relative;
+  background: url("../images/bg-block2.jpg") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle:before {
+  content: '';
+  position: absolute;
+  width: 784px;
+  height: 62px;
+  top: -90px;
+  left: 50%;
+  margin-left: -392px;
+  background: url("../images/header-title2.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-left {
+  float: left;
+  width: 400px;
+  margin-left: 120px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-left .btn-group .btn-confirm {
+  display: block;
+  width: 225px;
+  height: 63px;
+  background: url("../images/btn-confirm.png") no-repeat;
+  margin: 0 auto;
+  font-size: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-left ul {
+  margin: 30px 0;
+  text-align: center;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-left ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-left ul li:hover:before,
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-left ul li.select:before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  border: 2px solid #f00;
+  right: 11px;
+  bottom: 11px;
+  border-radius: 6px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right {
+  width: 564px;
+  height: 740px;
+  margin-right: 100px;
+  float: right;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul {
+  position: relative;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li {
+  position: absolute;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:hover:before,
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li.select:before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  border: 2px solid #f00;
+  right: 18px;
+  bottom: 24px;
+  border-radius: 8px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child {
+  left: 0;
+  top: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child + li {
+  left: 175px;
+  top: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child + li + li {
+  left: 350px;
+  top: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child + li + li + li {
+  left: 0;
+  top: 236px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child + li + li + li + li {
+  left: 175px;
+  top: 236px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child + li + li + li + li + li {
+  left: 350px;
+  top: 236px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child + li + li + li + li + li + li {
+  left: 0;
+  top: 472px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child + li + li + li + li + li + li + li {
+  left: 175px;
+  top: 472px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-puzzle .puzzle-right ul li:first-child + li + li + li + li + li + li + li + li {
+  left: 350px;
+  top: 472px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts {
+  position: relative;
+  margin: 0 4px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts:after {
+  content: '';
+  display: table;
+  clear: both;
+  height: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points {
+  float: left;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery {
+  float: right;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points {
+  width: 580px;
+  background: url("../images/bg-block3.jpg") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  position: relative;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points:before {
+  content: '';
+  position: absolute;
+  width: 541px;
+  height: 47px;
+  top: -90px;
+  left: 50%;
+  margin-left: -270px;
+  background: url("../images/header-title3.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul {
+  text-align: center;
+  margin: 10px 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 141px;
+  height: 176px;
+  margin: 5px 15px;
+  background: url("../images/bg-points.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li .img-wrapper {
+  position: absolute;
+  height: 90px;
+  margin-top: 10px;
+  width: 100%;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li .img-wrapper .img-point {
+  text-align: center;
+  max-width: 100%;
+  margin-top: 5px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li .p1 {
+  font: 15px 'Microsoft YaHei';
+  margin-top: 95px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li .p2 {
+  font: 12px 'Microsoft YaHei';
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li .p1,
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li .p2,
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li .p3 {
+  color: #fff;
+  height: 18px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-points ul li .btn-exchange {
+  display: block;
+  width: 87px;
+  height: 24px;
+  margin: 2px auto;
+  font-size: 0;
+  background: url("../images/btn-exchange.jpg") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery {
+  position: relative;
+  width: 580px;
+  background: url("../images/bg-block3.jpg") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery:before {
+  content: '';
+  position: absolute;
+  width: 541px;
+  height: 58px;
+  top: -90px;
+  left: 50%;
+  margin-left: -270px;
+  background: url("../images/header-title4.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul {
+  position: relative;
+  width: 444px;
+  height: 362px;
+  margin: 15px auto;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li {
+  position: absolute;
+  display: table;
+  width: 141px;
+  height: 119px;
+  background: url("../images/bg-lottery.png") no-repeat;
+  text-align: center;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li.active:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #d31a11;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li a {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li a:after {
+  content: attr(data-after);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font: 18px 'MicroSoft YaHei';
+  color: #eabe6a;
+  text-shadow: 0 1px 1px #f00;
+  line-height: 30px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li img {
+  max-width: 100%;
+  -webkit-transition: all .2s ease .2s;
+  -moz-transition: all .2s ease .2s;
+  -ms-transition: all .2s ease .2s;
+  -o-transition: all .2s ease .2s;
+  transition: all .2s ease .2s;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:hover img {
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child {
+  left: 0;
+  top: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child + li {
+  left: 152px;
+  top: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child + li + li {
+  left: 304px;
+  top: 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child + li + li + li {
+  left: 304px;
+  top: 122px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child + li + li + li + li {
+  left: 304px;
+  top: 244px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child + li + li + li + li + li {
+  left: 152px;
+  top: 244px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child + li + li + li + li + li + li {
+  left: 0;
+  top: 244px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child + li + li + li + li + li + li + li {
+  left: 0;
+  top: 122px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li:first-child + li + li + li + li + li + li + li + li {
+  left: 152px;
+  top: 122px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li.btn-group .btn-start,
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li.btn-group .btn-won,
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li.btn-group .btn-unactive {
+  font-size: 0;
+  width: 110px;
+  height: 110px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li.btn-group .btn-start {
+  background: url("../images/btn-start.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li.btn-group .btn-won {
+  background: url("../images/btn-won.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-gifts .anniversary-lottery .lottery ul li.btn-group .btn-unactive {
+  background: url("../images/btn-unactive.png") no-repeat;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard {
+  padding: 18px 30px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists {
+  font-size: 0;
+  margin-bottom: 10px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists select {
+  display: inline-block;
+  vertical-align: middle;
+  width: 171px;
+  height: 32px;
+  margin-right: 30px;
+  font: 14px 'SimSun';
+  border: 1px solid #f1c894;
+  background-color: #fef6ec;
+  color: #c07414;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .select-lists select:focus {
+  outline: none;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment textarea {
+  width: 100%;
+  height: 233px;
+  padding: 30px 20px;
+  font: 14px 'SimSun';
+  border: 1px solid #fcf5eb;
+  background-color: #f1c894;
+  color: #c07414;
+  resize: none;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment textarea:focus {
+  outline: none;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar {
+  text-align: right;
+  margin: 17px 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left,
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  font: 14px 'SimSun';
+  color: #f1c894;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left input,
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left img {
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left input {
+  width: 91px;
+  height: 32px;
+  border: 1px solid #f1c894;
+  background-color: #fef6ec;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-left img {
+  width: 71px;
+  height: 32px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm,
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 91px;
+  height: 32px;
+  margin: 0 5px;
+  border: none;
+  font: 16px 'Microsoft YaHei';
+  color: #a2170f;
+  line-height: 32px;
+  background: url("../images/sprite-anniversary.png") no-repeat;
+  background-position: -172px -829px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm:hover,
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm:hover {
+  background-position: -172px -863px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-clear-sm:focus,
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment .toolbar-right .btn-publish-sm:focus {
+  outline: none;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists {
+  margin: 50px 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li {
+  margin-bottom: 34px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-left {
+  float: left;
+  width: 114px;
+  height: 114px;
+  border: 2px solid #f1c894;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-left img {
+  max-width: 100%;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right {
+  float: right;
+  width: 772px;
+  border: 2px solid #f1c894;
+  background-color: #fbead5;
+  padding: 20px 40px;
+  position: relative;
+  min-height: 114px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right:before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 32px;
+  left: -23px;
+  top: -2px;
+  background: url("../images/sprite-anniversary.png") no-repeat;
+  background-position: -304px 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left span,
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right span {
+  font: 16px 'SimSun';
+  color: #e78304;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left {
+  float: left;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-left span {
+  margin-right: 42px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right {
+  float: right;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-right span {
+  font: 16px 'SimSun';
+  color: #a2170f;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg .clearfix {
+  clear: both;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-bottom {
+  margin-top: 20px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists ul li .lists-right .msg-bottom span {
+  font: 12px 'SimSun';
+  color: #e78304;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page {
+  font-size: 0;
+  text-align: center;
+  margin: 30px 0;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 8px;
+  border: 1px solid #fcf5eb;
+  background-color: #f1c894;
+  font: 12px 'SimSun';
+  color: #e78304;
+  margin: 0 5px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a:hover,
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a.active {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-msgboard .comment-lists .page a.active {
+  cursor: default;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions {
+  padding: 26px 43px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .time {
+  margin-bottom: 15px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .time:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  font: 22px 'Microsoft YaHei';
+  line-height: 54px;
+  color: #a0907c;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .time span {
+  font: 20px 'Microsoft YaHei';
+  color: #a0907c;
+  vertical-align: middle;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .content,
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .rule {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 118px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .content:before,
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .rule:before {
+  content: attr(data-before);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 141px;
+  font: 22px/30px 'Microsoft YaHei';
+  color: #a0907c;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .content p,
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .rule p {
+  font: 20px 'Microsoft YaHei';
+  color: #a0907c;
+  line-height: 32px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .reward {
+  margin-bottom: 52px;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .reward:before {
+  content: attr(data-before);
+  display: block;
+  width: 141px;
+  font: 22px/30px 'Microsoft YaHei';
+  color: #a0907c;
+}
+.anniversary-cn2018 .anniversary-container .anniversary-instructions .reward p {
+  font: 20px 'Microsoft YaHei';
+  color: #a0907c;
+  line-height: 32px;
+}
+.mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: .8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+.popup {
+  z-index: 11;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 5px solid #fef3e5;
+  background-color: #f1c894;
+}
+.popup .close {
+  position: absolute;
+  border: 5px solid #fef3e5;
+  right: -5px;
+  top: -5px;
+  font-size: 0;
+  width: 57px;
+  height: 57px;
+  background: #f1c894 url("../images/sprite-anniversary.png") no-repeat;
+  background-position: -282px -32px;
+}
+.popup.pop-girl:before {
+  content: '';
+  position: absolute;
+  width: 413px;
+  height: 429px;
+  background: url("../images/bg-pop.png") no-repeat;
+  left: -206px;
+  bottom: -5px;
+}
+.popup.pop-girl-lg:before {
+  content: '';
+  position: absolute;
+  background: url("../images/bg-pop-lg.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  z-index: -1;
+}
+.popup.pop-girl-lg.pop-goods:before {
+  width: 492px;
+  height: 500px;
+  left: -290px;
+  top: -50px;
+}
+.popup.pop-girl-lg.pop-giftbox:before {
+  width: 358px;
+  height: 364px;
+  left: -150px;
+  top: -130px;
+}
+.pop-giftcode {
+  display: none;
+  width: 750px;
+  height: 303px;
+  margin-left: -320px;
+  margin-top: -150px;
+  padding-top: 55px;
+}
+.pop-giftcode .pop-body h1 {
+  text-align: center;
+  padding-bottom: 54px;
+  font: 24px 'Arial';
+  color: #b41618;
+  font-weight: bold;
+}
+.pop-giftcode .pop-body h1:before {
+  content: attr(data-before);
+  display: block;
+  font: 32px 'NSimHei';
+  color: #931d01;
+  text-shadow: 0 1px 1px #fff;
+  margin-bottom: 8px;
+}
+.pop-giftcode .pop-body .p1,
+.pop-giftcode .pop-body .p2 {
+  font: 14px 'SimSun';
+  color: #b41618;
+  text-align: center;
+  line-height: 26px;
+}
+.pop-giftcode .pop-body .p1 a,
+.pop-giftcode .pop-body .p2 a {
+  color: #b41618;
+}
+.pop-questions {
+  display: none;
+  width: 750px;
+  height: 384px;
+  margin-left: -320px;
+  margin-top: -192px;
+  padding: 40px 130px;
+}
+.pop-questions .pop-body h2 {
+  text-align: center;
+  padding-bottom: 18px;
+  margin-bottom: 14px;
+  margin-left: 18px;
+  margin-right: 18px;
+  border-bottom: 1px solid #a2290a;
+  font: 20px 'Arial';
+  font-weight: bold;
+  color: #b41618;
+}
+.pop-questions .pop-body h2:before {
+  content: attr(data-before);
+  display: block;
+  font: 26px 'NSimHei';
+  color: #931d01;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 1px #fff;
+}
+.pop-questions .pop-body p {
+  font: 14px 'SimSun';
+  color: #b41618;
+  text-align: center;
+  line-height: 26px;
+}
+.pop-questions .pop-body .question {
+  position: relative;
+  padding-left: 35px;
+}
+.pop-questions .pop-body .question.right:before,
+.pop-questions .pop-body .question.wrong:before {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font: 36px 'SimHei';
+  font-weight: bold;
+  margin-left: -15px;
+  margin-top: -15px;
+  top: 50%;
+  left: 50%;
+}
+.pop-questions .pop-body .question.right:before {
+  content: attr(data-right);
+  color: #13a709;
+}
+.pop-questions .pop-body .question.wrong:before {
+  content: attr(data-wrong);
+  color: #b41618;
+}
+.pop-questions .pop-body .question .caption {
+  font: 20px 'NSimHei';
+  text-shadow: 0 1px 1px #fff;
+  color: #931d01;
+  display: block;
+  margin-top: 24px;
+}
+.pop-questions .pop-body .question ul li {
+  margin: 5px 0;
+}
+.pop-questions .pop-body .question ul li a {
+  display: inline-block;
+  font: 16px 'SimSun';
+  color: #b41618;
+  padding: 6px 18px;
+}
+.pop-questions .pop-body .question ul li a:before {
+  content: attr(data-before);
+}
+.pop-questions .pop-body .question ul li.active a {
+  background-color: #f2e0c9;
+}
+.pop-questions .pop-body .question .btn-submit {
+  display: block;
+  margin: 0 auto;
+  width: 117px;
+  height: 36px;
+  font: 20px 'Microsoft YaHei';
+  color: #480a33;
+  text-align: center;
+  line-height: 38px;
+  font-weight: bold;
+  background: url("../images/sprite-anniversary.png") no-repeat;
+  background-position: -172px -897px;
+}
+.pop-questions .pop-body .question .btn-submit:hover {
+  background-position: -172px -937px;
+}
+.pop-wrong {
+  display: none;
+  width: 750px;
+  height: 296px;
+  margin-left: -320px;
+  margin-top: -148px;
+  padding: 90px 130px;
+}
+.pop-wrong .pop-body h2 {
+  font: 32px 'NSimHei';
+  color: #931d01;
+  text-shadow: 0 1px 1px #fff;
+  margin-bottom: 42px;
+  text-align: center;
+}
+.pop-wrong .pop-body .btn-submit {
+  display: block;
+  margin: 0 auto;
+  width: 117px;
+  height: 38px;
+  font: 20px 'Microsoft YaHei';
+  color: #480a33;
+  text-align: center;
+  line-height: 38px;
+  font-weight: bold;
+  background: url("../images/sprite-anniversary.png") no-repeat;
+  background-position: -172px -897px;
+}
+.pop-wrong .pop-body .btn-submit:hover {
+  background-position: -172px -937px;
+}
+.pop-right {
+  display: none;
+  width: 750px;
+  height: 296px;
+  margin-left: -320px;
+  margin-top: -148px;
+  padding: 50px 130px;
+}
+.pop-right .pop-body h2 {
+  color: #931d01;
+  text-align: center;
+  font: 20px 'NSimHei';
+  text-shadow: 0 1px 1px #fff;
+}
+.pop-right .pop-body h2:before {
+  content: attr(data-before);
+  display: block;
+  font: 30px 'NSimHei';
+  margin-bottom: 15px;
+}
+.pop-right .pop-body h2:after {
+  content: attr(data-after);
+  display: block;
+  font: 24px 'NSimHei';
+  margin-top: 35px;
+}
+.pop-right .pop-body .btn-group {
+  width: 290px;
+  margin: 20px auto;
+}
+.pop-right .pop-body .btn-group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.pop-right .pop-body .btn-group .btn-submit {
+  float: left;
+}
+.pop-right .pop-body .btn-group .btn-cancel {
+  float: right;
+}
+.pop-right .pop-body .btn-submit,
+.pop-right .pop-body .btn-cancel {
+  display: block;
+  margin: 0 auto;
+  width: 117px;
+  height: 38px;
+  font: 20px 'Microsoft YaHei';
+  color: #480a33;
+  text-align: center;
+  line-height: 38px;
+  font-weight: bold;
+  background: url("../images/sprite-anniversary.png") no-repeat;
+}
+.pop-right .pop-body .btn-submit {
+  background-position: -172px -895px;
+}
+.pop-right .pop-body .btn-submit:hover {
+  background-position: -172px -934px;
+}
+.pop-right .pop-body .btn-cancel {
+  background-position: -172px -973px;
+}
+.pop-right .pop-body .btn-cancel:hover {
+  background-position: -172px -1012px;
+}
+.pop-generals {
+  display: none;
+  width: 868px;
+  height: 295px;
+  margin-left: -434px;
+  margin-top: -147px;
+  padding: 50px 34px;
+}
+.pop-generals .pop-body:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.pop-generals .pop-body-left {
+  float: left;
+}
+.pop-generals .pop-body-right {
+  float: right;
+  width: 626px;
+  margin-right: 24px;
+}
+.pop-generals .pop-body-right h2 {
+  text-align: center;
+  font: 24px 'NSimHei';
+  color: #931d01;
+  text-shadow: 0 1px 1px #fff;
+  margin: 15px 0 25px;
+}
+.pop-generals .pop-body-right h3 {
+  text-align: center;
+  font: 18px 'Arial';
+  font-weight: bold;
+  color: #931d01;
+  margin-bottom: 30px;
+}
+.pop-generals .pop-body-right h3:before {
+  content: attr(data-before);
+  display: block;
+  color: #931d01;
+  font: 22px 'NSimHei';
+  text-shadow: 0 1px 1px #fff;
+  margin-bottom: 5px;
+}
+.pop-generals .pop-body-right .p1,
+.pop-generals .pop-body-right .p2 {
+  font: 14px 'SimSun';
+  color: #b41618;
+  text-align: center;
+  line-height: 26px;
+}
+.pop-generals .pop-body-right .p1 a,
+.pop-generals .pop-body-right .p2 a {
+  color: #b41618;
+}
+.pop-turntable {
+  display: none;
+  width: 878px;
+  height: 325px;
+  margin-left: -380px;
+  margin-top: -162px;
+  padding: 80px 80px 65px 200px;
+}
+.pop-turntable .pop-body h2 {
+  font: 24px 'NSimHei';
+  color: #931d01;
+  text-shadow: 0 1px 1px #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pop-turntable .pop-body h3 {
+  font: 20px 'NSimHei';
+  color: #931d01;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  margin-bottom: 45px;
+}
+.pop-turntable .pop-body h3 .caption {
+  font: 24px 'Microsoft YaHei';
+  color: #931d01;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.pop-turntable .pop-body .p1,
+.pop-turntable .pop-body .p2 {
+  font: 14px 'SimSun';
+  color: #b41618;
+  text-align: center;
+  line-height: 26px;
+}
+.pop-turntable .pop-body .p1 a,
+.pop-turntable .pop-body .p2 a {
+  color: #b41618;
+}
+.pop-avatar-turntable {
+  display: none;
+  width: 878px;
+  height: 375px;
+  margin-left: -380px;
+  margin-top: -186px;
+  padding: 25px 46px;
+}
+.pop-avatar-turntable .pop-body-left {
+  float: left;
+  width: 220px;
+  height: 326px;
+}
+.pop-avatar-turntable .pop-body-left ul {
+  position: relative;
+  width: 220px;
+  height: 326px;
+}
+.pop-avatar-turntable .pop-body-left ul li {
+  position: absolute;
+  width: 91px;
+  height: 122px;
+}
+.pop-avatar-turntable .pop-body-left ul li:first-child {
+  left: 0;
+  top: 0;
+  z-index: 11;
+}
+.pop-avatar-turntable .pop-body-left ul li:first-child + li {
+  right: 0;
+  top: 0;
+  z-index: 11;
+}
+.pop-avatar-turntable .pop-body-left ul li:first-child + li + li {
+  top: 50%;
+  left: 50%;
+  margin-left: -45px;
+  margin-top: -61px;
+  z-index: 1;
+}
+.pop-avatar-turntable .pop-body-left ul li:first-child + li + li + li {
+  left: 0;
+  bottom: 0;
+  z-index: 11;
+}
+.pop-avatar-turntable .pop-body-left ul li:first-child + li + li + li + li {
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+}
+.pop-avatar-turntable .pop-body-left ul li img {
+  max-width: 100%;
+}
+.pop-avatar-turntable .pop-body-right {
+  float: right;
+  width: 550px;
+  padding: 80px 20px;
+}
+.pop-avatar-turntable .pop-body-right h2 {
+  font: 22px 'NSimHei';
+  color: #931d01;
+  text-shadow: 0 1px 1px #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pop-avatar-turntable .pop-body-right h3 {
+  font: 18px 'NSimHei';
+  color: #931d01;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  margin-bottom: 45px;
+}
+.pop-avatar-turntable .pop-body-right h3 .caption {
+  font: 22px 'Microsoft YaHei';
+  color: #931d01;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.pop-avatar-turntable .pop-body-right .p1,
+.pop-avatar-turntable .pop-body-right .p2 {
+  font: 14px 'SimSun';
+  color: #b41618;
+  text-align: center;
+  line-height: 26px;
+}
+.pop-avatar-turntable .pop-body-right .p1 a,
+.pop-avatar-turntable .pop-body-right .p2 a {
+  color: #b41618;
+}
+.pop-goods {
+  display: none;
+  width: 657px;
+  height: 560px;
+  margin-left: -300px;
+  margin-top: -280px;
+}
+.pop-goods .pop-body {
+  padding: 40px 56px;
+  border: 5px solid #fef3e5;
+  background-color: #f1c894;
+  margin: -5px;
+}
+.pop-goods .pop-body .form-group h3 {
+  text-align: center;
+  font: 20px 'NSimHei';
+  color: #b41618;
+}
+.pop-goods .pop-body .form-group h3:before {
+  content: attr(data-before);
+  display: block;
+  font: 26px 'NSimHei';
+  color: #931d01;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 1px #fff;
+}
+.pop-goods .pop-body .form-group ul:before {
+  content: attr(data-before);
+  display: block;
+  font: 14px 'SimSun';
+  color: #b41618;
+  margin-bottom: 10px;
+}
+.pop-goods .pop-body .form-group ul li {
+  margin-bottom: 10px;
+  padding: 0 50px;
+}
+.pop-goods .pop-body .form-group ul li:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  font: 14px 'SimSun';
+  color: #b41618;
+  width: 100px;
+  text-align: right;
+}
+.pop-goods .pop-body .form-group ul li:after {
+  content: attr(data-after);
+  display: block;
+  font: 14px 'SimSun';
+  color: #b41618;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.pop-goods .pop-body .form-group ul li input,
+.pop-goods .pop-body .form-group ul li select {
+  width: 250px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  color: #b41618;
+  background-color: #f1c894;
+  border: 1px solid #b41618;
+}
+.pop-goods .pop-body .form-group ul li input:focus,
+.pop-goods .pop-body .form-group ul li select:focus {
+  outline: none;
+}
+.pop-goods .pop-body .form-group .btn-submit {
+  display: block;
+  margin: 10px auto;
+  width: 117px;
+  height: 38px;
+  font: 20px 'Microsoft YaHei';
+  color: #480a33;
+  text-align: center;
+  line-height: 38px;
+  font-weight: bold;
+  border: none;
+  background: url("../images/sprite-anniversary.png") no-repeat;
+  background-position: -172px -895px;
+}
+.pop-goods .pop-body .form-group .btn-submit:hover {
+  background-position: -172px -935px;
+}
+.pop-goods .pop-body .form-group .p1,
+.pop-goods .pop-body .form-group .p2 {
+  font: 14px 'SimSun';
+  color: #b41618;
+  text-align: center;
+  line-height: 26px;
+}
+.pop-goods .pop-body .form-group .p1 a,
+.pop-goods .pop-body .form-group .p2 a {
+  color: #b41618;
+}
+.pop-success {
+  display: none;
+  width: 749px;
+  height: 373px;
+  margin-left: -375px;
+  margin-top: -186px;
+  padding-top: 80px;
+  padding-bottom: 64px;
+}
+.pop-success .pop-body {
+  padding-left: 50px;
+}
+.pop-success .pop-body h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  font: 24px 'Arial';
+  color: #b41618;
+  font-weight: bold;
+}
+.pop-success .pop-body h3:before {
+  content: attr(data-before);
+  display: block;
+  font: 32px 'NSimHei';
+  color: #931d01;
+  text-shadow: 0 1px 1px #fff;
+  margin-bottom: 8px;
+}
+.pop-success .pop-body .btn-lg {
+  display: block;
+  width: 386px;
+  height: 58px;
+  text-align: center;
+  margin: 20px auto;
+  font: 24px 'MicroSoft YaHei';
+  font-weight: bold;
+  line-height: 50px;
+  color: #480a33;
+  background: url("../images/btn-lg.jpg") no-repeat;
+}
+.pop-success .pop-body .p1 {
+  font: 14px 'SimSun';
+  color: #b41618;
+  text-align: center;
+  line-height: 26px;
+}
+.pop-success .pop-body .p1 a {
+  color: #b41618;
+}
+.pop-giftbox {
+  display: none;
+  width: 760px;
+  height: 393px;
+  margin-left: -380px;
+  margin-top: -196px;
+}
+.pop-giftbox .pop-body {
+  padding: 50px 76px;
+  border: 5px solid #fef3e5;
+  background-color: #f1c894;
+  margin: -5px;
+}
+.pop-giftbox .pop-body:before {
+  content: attr(data-before);
+  display: block;
+  text-align: center;
+  font: 28px 'NSimHei';
+  color: #931d01;
+  text-shadow: 0 1px 1px #fff;
+  margin-bottom: 15px;
+}
+.pop-giftbox .pop-body:after {
+  content: attr(data-after);
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  font: 14px 'SimSun';
+  color: #b41618;
+}
+.pop-giftbox .pop-body .gift-table-wrapper {
+  height: 186px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #b41618;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table table thead th {
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #b41618;
+  color: #f6dcaa;
+  background-color: #9f0e06;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table table tbody td {
+  line-height: 35px;
+  color: #b41618;
+  border: 1px solid #b41618;
+}
+.pop-giftbox .pop-body .gift-table-wrapper .gift-table table tbody td a {
+  background-color: #e99f42;
+  padding: 4px 6px;
+  color: #9f0e06;
+}

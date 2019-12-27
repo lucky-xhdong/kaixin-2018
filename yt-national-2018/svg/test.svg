@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg">-->
+    <!--<rect x="50" y ="50" width="100" height="50" fill="red">-->
+        <!--<animate attributeType="XML"-->
+                 <!--attributeName="x"-->
+                 <!--from="50"-->
+                 <!--to="400"-->
+                 <!--dur="5s"-->
+                 <!--fill="freeze">-->
+        <!--</animate>-->
+    <!--</rect>-->
+    <!--<rect x="50" y ="150" width="100" height="50" fill="green">-->
+        <!--<animate attributeType="XML"-->
+                 <!--attributeName="x"-->
+                 <!--from="50"-->
+                 <!--by="400"-->
+                 <!--dur="5s"-->
+                 <!--fill="freeze">-->
+        <!--</animate>-->
+    <!--</rect>-->
+    <!--<rect x="50" y ="250" width="100" height="50" fill="blue">-->
+        <!--<animate attributeType="XML"-->
+                 <!--attributeName="x"-->
+                 <!--values="50;450;50"-->
+                 <!--dur="10s"-->
+        <!--&gt;-->
+        <!--</animate>-->
+    <!--</rect>-->
+    <!--<rect x="50" y ="350" width="100" height="50" fill="orange">-->
+        <!--<animate attributeType="XML"-->
+                 <!--attributeName="x"-->
+                 <!--dur="10s"-->
+                 <!--values="50;450;50"-->
+                 <!--calcMode="spline"-->
+                 <!--keySplines=".5 0 .5 1; 0 0 1 1"-->
+                 <!--fill="freeze"-->
+        <!--&gt;-->
+        <!--</animate>-->
+    <!--</rect>-->
+    <!--<rect x="50" y ="450" width="100" height="50" fill="black">-->
+        <!--<animate attributeType="XML"-->
+                 <!--attributeName="x"-->
+                 <!--from="50"-->
+                 <!--by="400"-->
+                 <!--dur="5s"-->
+                 <!--calcMode="discrete"-->
+                 <!--keySplines=".5 0 .5 1; 0 0 1 1"-->
+                 <!--fill="freeze"-->
+        <!--&gt;-->
+        <!--</animate>-->
+    <!--</rect>-->
+<!--</svg>-->
+
+<!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg">-->
+<!--<text x="50" y="30" id="t" stroke="red">click red go</text>-->
+<!--<rect x="50" y ="50" width="100" height="50" fill="red">-->
+    <!--<animate attributeType="XML"-->
+             <!--attributeName="x"-->
+             <!--begin="t.click"-->
+             <!--from="50"-->
+             <!--to="400"-->
+             <!--dur="5s"-->
+             <!--fill="freeze">-->
+    <!--</animate>-->
+<!--</rect>-->
+<!--<rect x="50" y ="150" width="100" height="50" fill="green">-->
+    <!--&lt;!&ndash;表示的是3s之后动画开始，10s时候动画再开始一次-->
+         <!--（如果之前动画没走完，会立即停止从头开始）&ndash;&gt;-->
+    <!--<animate attributeType="XML"-->
+             <!--attributeName="x"-->
+             <!--begin="3s;10s"-->
+             <!--from="50"-->
+             <!--to="400"-->
+             <!--dur="5s"-->
+             <!--fill="freeze">-->
+    <!--</animate>-->
+<!--</rect>-->
+<!--<rect x="50" y ="250" width="100" height="50" fill="blue">-->
+    <!--<animate id="goleft" attributeType="XML"-->
+             <!--attributeName="x"-->
+             <!--from="50"-->
+             <!--to="400"-->
+             <!--dur="5s"-->
+             <!--fill="freeze"-->
+    <!--&gt;-->
+    <!--</animate>-->
+    <!--&lt;!&ndash;注意begin的id是animate的id，不是元素的&ndash;&gt;-->
+    <!--<animate attributeType="XML"-->
+             <!--attributeName="y"-->
+             <!--begin="goleft.end"-->
+             <!--to="350"-->
+             <!--dur="2s"-->
+             <!--fill="freeze"-->
+    <!--&gt;-->
+    <!--</animate>-->
+<!--</rect>-->
+<!--<rect x="50" y ="350" width="100" height="50" fill="orange">-->
+    <!--<animate id="goleft" attributeType="XML"-->
+             <!--attributeName="x"-->
+             <!--from="50"-->
+             <!--to="400"-->
+             <!--dur="5s"-->
+             <!--fill="freeze"-->
+    <!--&gt;-->
+    <!--</animate>-->
+    <!--&lt;!&ndash;注意begin的id是animate的id，不是元素的&ndash;&gt;-->
+    <!--<animate attributeType="XML"-->
+             <!--attributeName="y"-->
+             <!--to="400"-->
+             <!--dur="5s"-->
+             <!--fill="freeze"-->
+    <!--&gt;-->
+    <!--</animate>-->
+<!--</rect>-->
+<!--<line stroke='black' x1="50" y1="350" x2="500" y2="350"/>-->
+<!--<line stroke='black' x1="50" y1="400" x2="500" y2="400"/>-->
+<!--</svg>-->
+<!--<svg class="move_line1" xmlns="http://www.w3.org/2000/svg" width="600px" height="150px">-->
+    <!--<path d="M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191-->
+ <!--101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7-->
+ <!--18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1" stroke="#000" stroke-width="4" fill="none">-->
+    <!--</path>-->
+    <!--<script>-->
+<!--<![CDATA[-->
+             <!--//svg 动画一般用transtion和animation-->
+             <!--var path1 = document.querySelector(".move_line1 path");-->
+             <!--var length1 = path1.getTotalLength();-->
+             <!--//清除动作-->
+             <!--path1.style.transtion = path1.style.WebkitTransition = "none";-->
+             <!--//设置起点-->
+             <!--path1.style.strokeDasharray = length1 + ' ' + length1;-->
+             <!--path1.style.strokeDashoffset = length1;-->
+             <!--//获取一个区域，获取相关的样式，让浏览器寻找一个起始点-->
+             <!--path1.getBoundingClientRect();-->
+             <!--//定义动作-->
+             <!--path1.style.transition = path1.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';-->
+             <!--//GO-->
+             <!--path1.style.strokeDashoffset = '0';-->
+        <!--]]>-->
+<!--</script>-->
+<!--</svg>-->
+<div class="move_line2">
+<svg xmlns="http://www.w3.org/2000/svg" width="600px" height="500px">
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M335.088,373.962c23.125-7.219,54.068,12.896,69.115,44.93s8.498,63.855-14.625,71.074c-23.125,7.221-54.068-12.895-69.115-44.928
+ S311.965,381.183,335.088,373.962z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M209.983,9.426c87.495,4.372,158.857,76.303,158.857,160.122c0,46.699-22.158,87.484-56.91,113.702
+ c22.268,46.217,33.992,89.483,14.348,125.051c4.02-7.537,6.611-15.313,8.555-23.193c11.648,26.85,14.068,52.875-6.887,75.711
+ c-64.363,13.082-86.986-18.811-194.209-8.391l-3.699-107.049l-0.92-22.406l0.873,22.42c-22.874-5.814-45.173-11.861-65.204-17.99
+ l10.062-44.714l49.898,2.646c-43.949-22.82-74.717-76.747-73.621-131.665C51.125,69.85,122.487,5.053,209.983,9.426L209.983,9.426z
+ "></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M127.866,299.414c53.621-10.396,87.391,17.968,94.62,65.603c4.205,55.014-54.168,83.619-90.647,43.756L127.866,299.414
+ L127.866,299.414z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M129.575,285.055c66.294-2.505,120.602-16.571,186.912-12.424c7.652,1.256,7.152,14.774-1.5,16.288
+ c-60.402-0.255-119.506,7.59-181.203,10.898c-14.98-0.357-17.425-6.778-13.476-11.896
+C123.096,284.311,125.291,285.217,129.575,285.055L129.575,285.055z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M304.605,309.06c-8.162-29.413-11.222-57.848-11.791-87.262c-17.005,8.999-41.066-6.278-40.584-17.486
+ c-7.021,31.961-10.248,65.548-9.677,100.763"></path>
+    <ellipse fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" cx="279.449" cy="193.855" rx="30.133" ry="30.788"></ellipse>
+    <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" cx="90.681" cy="49.358" r="27.412"></circle>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M124.459,285.183c-36.085-18.873-63.232-58.725-71.063-102.821c-0.052-0.295-0.019-0.163-0.069-0.457
+ c-43.423-5.859-35.264-73.124,0.427-55.668c0.067-0.353,0.019-0.145,0.088-0.496c8.143-41.139,34.012-75.528,69.743-96.045
+ c98.492,58.677,146.511,142.883,108.603,245.678c-33.24,3.419-66.109,8.303-102.612,9.683
+C127.472,285.135,125.873,284.957,124.459,285.183L124.459,285.183z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+M116.536,84.903c15.737,3.062,31.281,7.092,46.398,13.256"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+M106.601,103.6c18.341,9.617,40.867,18.074,61.067,27.228"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+M89.075,124.2c17.643,12.621,37.999,25.581,60.603,38.823"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+M73.603,179.492c6.986,16.398,13.1,33.481,21.251,48.996c17.011,32.372,42.229,39.539,76.563,39.358
+ c39.524-0.208,50.969-18.655,47.774-57.118C215.006,160.335,155.059,151.715,73.603,179.492L73.603,179.492z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M219.192,210.728c-4.165-50.15-63.557-58.928-144.414-31.635c-65.936,21.271-63.065-77.932-17.728-51.101"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M128.618,261.235c2.627-35.702,22.275-49.91,52.536-47.821c-5.862,4.452-11.342,9.899-14.83,16.185
+ c13.539-21.654,32.21-27.477,53.206-13.829c1.774,35.034-10.356,51.879-48.112,52.077
+C155.131,267.931,140.898,266.362,128.618,261.235L128.618,261.235z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M173.097,17.836c8.253,8.589,0.384,26.394-17.518,39.635c-17.901,13.242-39.232,17.036-47.484,8.448
+ c-8.253-8.589-0.384-26.395,17.517-39.635C143.514,13.042,164.844,9.248,173.097,17.836L173.097,17.836z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M136.222,26.971c2.455,2.555,0.114,7.852-5.211,11.791c-5.326,3.939-11.672,5.068-14.127,2.514
+ c-2.455-2.556-0.114-7.853,5.211-11.791C127.421,25.544,133.767,24.416,136.222,26.971L136.222,26.971z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M90.681,22.774c1.076,0,2.138,0.063,3.183,0.187
+ c-0.154,3.607-3.144,6.503-6.788,6.503c-3.034,0-5.614-2.008-6.483-4.761C83.718,23.458,87.122,22.774,90.681,22.774L90.681,22.774
+ z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+ M133.591,410.618c-0.59-0.598-1.174-1.213-1.753-1.846l-2.156-59.363c14.439-5.217,36.941-4.068,65.022,1.484
+C198.269,391.583,158.652,421.507,133.591,410.618L133.591,410.618z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" d="
+M94.52,343.827c23.684,0,46.699,27.789,51.407,62.068s-10.676,62.068-34.359,62.068s-46.699-27.789-51.407-62.068
+ S70.835,343.827,94.52,343.827z"></path>
+    <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" cx="45.643" cy="299.778" r="33.549"></circle>
+    <line fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" x1="330.418" y1="358.101" x2="350.104" y2="352.659"></line>
+    <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.8347" stroke-miterlimit="2.4142" cx="356.516" cy="351.396" r="9.241"></circle>
+    <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.2677" stroke-miterlimit="2.4142" cx="144.495" cy="309.078" r="11.591"></circle>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.2677" stroke-miterlimit="2.4142" d=" M155.516,305.494c0.344,1.052,0.54,2.168,0.566,3.322l-23.157-0.421c0.067-1.153,0.305-2.262,0.687-3.3L155.516,305.494
+ L155.516,305.494z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M134.718,315.29c-0.978-1.533-1.605-3.309-1.771-5.207
+ c0.481-0.335,1.067-0.533,1.701-0.533c1.619,0,2.938,1.291,2.938,2.871C137.587,313.979,136.305,315.253,134.718,315.29
+ L134.718,315.29z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="0.216" stroke-miterlimit="2.4142" d="
+M136.491,313.87c1.044,1.918,2.604,3.514,5.015,4.564l-1.693,2.01l-5.378-5.162L136.491,313.87L136.491,313.87z"></path>
+    <script>
+        <![CDATA[
+            (function() {
+             function toArray(arr) {
+                return Array.prototype.slice.call(arr);
+             }
+             var svg2 = document.querySelector('.move_line2 svg');
+             //svg2.parentNode.style.display = 'block';
+             svg2.style.visibility = 'hidden';
+             function fullSketch() {
+                 svg2.style.visibility = '';
+                 var paths = toArray(svg2.children);
+                 var begin = 0;
+                 var durations = paths.map(function(path2) {
+                      var length;
+                      console.log(path2);
+                      if(path2.tagName == "path"){
+                          length = path2.getTotalLength();
+                      }else if(path2.tagName == "ellipse"){
+                          length = Math.PI*path2.getAttribute("rx") * path2.getAttribute("ry");
+                      }else if(path2.tagName == "circle"){
+                          length = 2 * Math.PI * path2.getAttribute("r");
+                      }else if(path2.tagName == "line"){
+                          var x_1=path2.getAttribute("x1"),
+                              y_1=path2.getAttribute("y1"),
+                              x_2=path2.getAttribute("x2"),
+                              y_2=path2.getAttribute("y2");
+                          length = Math.sqrt(Math.pow((x_1-x_2),2) + Math.pow((y_1-y_2),2));
+                      }
+                      path2.style.strokeDasharray = length + ' ' + length;
+                      path2.style.strokeDashoffset = length;
+                      return Math.pow(length, 0.5) * 0.02;
+                 });
+                 paths[0].getBoundingClientRect();
+                 paths.forEach(function(path, i) {
+                      path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset ' + durations[i] + 's ' + begin + 's ease-in-out';
+                      path.style.strokeDashoffset = '0';
+                      path.setAttribute("class", "shade");
+                      begin += durations[i] + 0.1;
+                 });
+             }
+                window.addEventListener('load', fullSketch);
+             }());
+        ]]>
+    </script>
+</svg>
+
+</div>

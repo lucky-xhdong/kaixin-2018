@@ -1,0 +1,1290 @@
+@media (min-width: 1200px) {
+  .gameplat-mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .8;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  }
+
+  .popup {
+    z-index: 11;
+    position: fixed;
+    width: 596px;
+    height: 383px;
+    top: 50%;
+    left: 50%;
+    margin-left: -298px;
+    margin-top: -192px;
+    background: url("../images/bg-popup.jpg") no-repeat;
+    .btn-close {
+      position: absolute;
+      right: 41px;
+      top: 32px;
+      width: 21px;
+      height: 20px;
+      z-index: 3;
+      font-size: 0;
+      background: url("../images/sprite-buttons.png") no-repeat;
+      background-position: -489px -99px;
+    }
+    .pop-body {
+      .txt-wrapper {
+        padding: 0 60px;
+      }
+      .txt-wrapper1 {
+        text-align: center;
+      }
+      .btn-group {
+        overflow: hidden;
+        text-align: center;
+        .btn-comfirm, .btn-cancel {
+          width: 136px;
+          height: 46px;
+          display: inline-block;
+          font: 16px/46px 'Microsoft YaHei';
+          font-weight: bold;
+          text-align: center;
+          color: #e4be4a;
+          margin: 0 20px;
+          background: url("../images/sprite-buttons.png") no-repeat;
+          background-position: -354px -52px;
+        }
+      }
+    }
+    &.pop-signin {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 335px;
+          height: 36px;
+          margin: 28px auto 10px;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -256px;
+        }
+        .txt-wrapper {
+          min-height: 120px;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &.pop-turnable {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 295px;
+          height: 35px;
+          margin: 28px auto 10px;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 -36px;
+        }
+        .txt-wrapper {
+          min-height: 90px;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &.pop-reward {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 536px;
+          height: 36px;
+          margin: 28px auto 10px;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 -108px;
+        }
+        .txt-wrapper {
+          min-height: 90px;
+          margin-bottom: 12px;
+        }
+        .thumb-lists {
+          margin-bottom: 40px;
+        }
+      }
+    }
+    &.pop-poker {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 295px;
+          height: 36px;
+          margin: 28px auto 0;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 -219px;
+        }
+        .txt-wrapper {
+          min-height: 90px;
+          padding: 20px 100px;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &.pop-poker-success {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 295px;
+          height: 35px;
+          margin: 28px auto 0;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 -72px;
+        }
+        .txt-wrapper {
+          min-height: 130px;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &.pop-question {
+      padding: 25px 30px;
+      &.right {
+        &:before {
+          content: '';
+          position: absolute;
+          width: 21px;
+          height: 17px;
+          right: 150px;
+          bottom: 150px;
+          z-index: 2;
+          background: url("../images/sprite-buttons.png") no-repeat;
+          background-position: -354px -126px;
+        }
+      }
+      &.wrong {
+        &:before {
+          content: '';
+          position: absolute;
+          width: 15px;
+          height: 14px;
+          right: 150px;
+          bottom: 150px;
+          z-index: 2;
+          background: url("../images/sprite-buttons.png") no-repeat;
+          background-position: -376px -126px;
+        }
+      }
+      &.right, &.wrong {
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: transparent;
+          z-index: 1;
+        }
+      }
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 398px;
+          height: 143px;
+          margin: 0 auto;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 -556px;
+        }
+        .pop-question__list {
+          width: 400px;
+          min-height: 140px;
+          margin: 0 auto;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            font: 15px/28px 'SumHei';
+            color: #791c06;
+            text-shadow: 0 0 1px #fff;
+          }
+          ul {
+            li {
+              margin-bottom: 15px;
+              &:before {
+                content: attr(data-before);
+                font: 15px 'SumHei';
+                color: #791c06;
+                text-shadow: 0 0 1px #fff;
+              }
+              a {
+                font: 15px 'SumHei';
+                color: #791c06;
+                word-break: break-word;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 0 5px;
+                text-shadow: 0 0 1px #fff;
+              }
+              &:hover, &.active {
+                a {
+                  background-color: #c95c1d;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.pop-wrong {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 381px;
+          height: 35px;
+          margin: 110px auto 20px;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 0;
+        }
+        .btn-group {
+          &:before {
+            content: '';
+            display: block;
+            width: 535px;
+            height: 36px;
+            margin: 20px auto 100px;
+            background: url("../images/sprite-popup.png") no-repeat;
+            background-position: 0 -330px;
+          }
+        }
+      }
+    }
+    &.pop-repeat {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 541px;
+          height: 36px;
+          margin: 160px auto 120px;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 -145px;
+        }
+      }
+    }
+    &.pop-lucky-points {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 462px;
+          height: 69px;
+          margin: 140px auto 60px;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 -367px;
+        }
+      }
+    }
+    &.pop-success {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 455px;
+          height: 118px;
+          margin: 95px auto 60px;
+          background: url("../images/sprite-popup.png") no-repeat;
+          background-position: 0 -437px;
+        }
+        .btn-group {
+          margin-bottom: 20px;
+          .btn-lg {
+            width: 230px;
+            height: 46px;
+            display: inline-block;
+            font: 16px/46px 'Microsoft YaHei';
+            font-weight: bold;
+            text-align: center;
+            color: #e4be4a;
+            margin: 0 20px;
+            background: url("../images/btn-lg.png") no-repeat;
+          }
+        }
+        .p1 {
+          font: 12px/28px 'SumHei';
+          color: #791c06;
+          text-shadow: 0 0 1px #fff;
+          padding: 0 40px;
+          a {
+            color: #791c06;
+            padding:0 5px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    &.pop-goods {
+      width: 709px;
+      height: 455px;
+      margin-left: -354px;
+      margin-top: -227px;
+      background: url("../images/bg-popup-lg.jpg") no-repeat;
+    }
+  }
+
+  .pop-common-image {
+    padding: 25px 30px;
+    .pop-body {
+      .txt-wrapper, .txt-wrapper1 {
+        .txt-wrapper__p {
+          font: 15px/28px 'SumHei';
+          color: #791c06;
+          padding-left: 20px;
+          text-shadow: 0 0 1px #fff;
+          span {
+            display: inline-block;
+            text-align: center;
+            margin: 0 10px;
+            text-shadow: 0 0 1px #fff;
+          }
+          a {
+            color: #791c06;
+            text-shadow: 0 0 1px #fff;
+          }
+        }
+      }
+      .thumb-lists {
+        ul {
+          font-size: 0;
+          text-align: center;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 23px;
+            width: 77px;
+            height: 77px;
+            overflow: hidden;
+            &:first-child {
+              margin-left: 0;
+            }
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pop-signin,
+  .pop-turnable,
+  .pop-reward,
+  .pop-poker,
+  .pop-poker-success,
+  .pop-question,
+  .pop-wrong,
+  .pop-repeat,
+  .pop-lucky-points,
+  .pop-success {
+    display: none;
+  }
+
+  .pop-goods {
+    display: none;
+    .pop-body {
+      padding: 40px 20px 0;
+      &:before {
+        content: '';
+        display: block;
+        width: 375px;
+        height: 36px;
+        margin: 0 auto;
+        background: url("../images/sprite-popup.png") no-repeat;
+        background-position: 0 -293px;
+      }
+      .form-group {
+        h3 {
+          text-align: center;
+          font: 20px/28px 'SumHei';
+          color: #791c06;
+          text-shadow: 0 0 1px #fff;
+          margin: 0;
+        }
+        ul {
+          &:before {
+            content: attr(data-before);
+            display: block;
+            text-align: center;
+            font: 14px 'SumHei';
+            color: #791c06;
+            text-shadow: 0 0 1px #fff;
+          }
+          li {
+            width: 450px;
+            margin: 0 auto 5px;
+            &:before {
+              content: attr(data-before);
+              display: inline-block;
+              vertical-align: middle;
+              font: 15px/25px 'SumHei';
+              text-shadow: 0 0 1px #fff;
+              color: #791c06;
+              width: 100px;
+              text-align: right;
+            }
+            &:after {
+              content: attr(data-after);
+              display: block;
+              font: 14px 'SimSun';
+              text-shadow: 0 0 1px #fff;
+              color: #791c06;
+              margin-left: 100px;
+            }
+            input, select {
+              width: 313px;
+              height: 25px;
+              line-height: 25px;
+              padding: 0 5px;
+              color: #791c06;
+              background-color: transparent;
+              border: 1px solid #791c06;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .p1, .p2 {
+          font: 12px 'SimSun';
+          color: #791c06;
+          text-align: center;
+          line-height: 22px;
+          text-shadow: 0 0 1px #fff;
+          margin: 0;
+          a {
+            color: #791c06;
+          }
+        }
+      }
+    }
+  }
+
+  .pop-giftbox {
+    display: none;
+    padding: 25px 30px;
+    .pop-body {
+      &:before {
+        content: '';
+        display: block;
+        width: 115px;
+        height: 36px;
+        margin: 10px auto;
+        background: url("../images/sprite-popup.png") no-repeat;
+        background-position: 0 -182px;
+      }
+      &:after {
+        content: attr(data-after);
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font: 14px 'SimHei';
+        color: #791c06;
+        text-shadow: 0 0 1px #fff;
+      }
+      .gift-table-wrapper {
+        height: 249px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .gift-table {
+          background-color: #c95c1d;
+          table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            thead {
+              th {
+                line-height: 30px;
+                text-align: center;
+                border: 1px solid #fff;
+                color: #fff;
+              }
+            }
+            tbody {
+              td {
+                line-height: 30px;
+                color: #fff;
+                border: 1px solid #fff;
+                a {
+                  background-color: #e99f42;
+                  padding: 4px 6px;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .gameplat-mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .8;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  }
+
+  .popup {
+    z-index: 11;
+    position: fixed;
+    width: 15rem;
+    height: 9.6rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -7.5rem;
+    margin-top: -4.8rem;
+    background: url("../images/bg-popup.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    .btn-close {
+      position: absolute;
+      right: 0.656rem;
+      top: 0.512rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      z-index: 3;
+      font-size: 0;
+      background: url("../images/sprite-buttons.png") no-repeat;
+      -webkit-background-size: 13.8rem 9rem;
+      background-size: 13.8rem 9rem;
+      background-position: -12.8rem -2.7rem;
+    }
+    .pop-body {
+      .txt-wrapper {
+        padding: 0 0.96rem;
+      }
+      .txt-wrapper1 {
+        text-align: center;
+      }
+      .btn-group {
+        overflow: hidden;
+        text-align: center;
+        .btn-comfirm, .btn-cancel {
+          width: 3rem;
+          height: 1rem;
+          display: inline-block;
+          font-weight: bold;
+          text-align: center;
+          color: #e4be4a;
+          margin: 0 0.32rem;
+          background: url("../images/sprite-buttons.png") no-repeat;
+          -webkit-background-size: 13.4rem 10.312rem;
+          background-size: 13.4rem 10.312rem;
+          background-position: -9.2rem -1.832rem;
+        }
+      }
+    }
+    &.pop-signin {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 5.36rem;
+          height: 0.576rem;
+          margin: 0.448rem auto 0.16rem;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -4.096rem;
+        }
+        .txt-wrapper {
+          min-height: 1.92rem;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin-bottom: 0.192rem;
+        }
+      }
+    }
+    &.pop-turnable {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 4.72rem;
+          height: 0.56rem;
+          margin: 0.448rem auto 0.16rem;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -0.576rem;
+        }
+        .txt-wrapper {
+          min-height: 1.44rem;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin: .5rem 0;
+        }
+        .txt-wrapper1 {
+          margin-bottom: .5rem;
+        }
+      }
+    }
+    &.pop-reward {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 8.576rem;
+          height: 0.576rem;
+          margin: 0.448rem auto 0.16rem;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -1.728rem;
+        }
+        .txt-wrapper {
+          min-height: 1.44rem;
+          margin: 1.2rem 0 .5rem;
+        }
+        .thumb-lists {
+          margin-bottom: 0.64rem;
+        }
+      }
+    }
+    &.pop-poker {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 4.72rem;
+          height: 0.576rem;
+          margin: 0.448rem auto 0;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -3.504rem;
+        }
+        .txt-wrapper {
+          min-height: 1.44rem;
+          padding: 0.5rem 1.6rem 0.32rem;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin: 0.192rem;
+        }
+        .txt-wrapper1 {
+          margin-bottom: .5rem;
+        }
+      }
+    }
+    &.pop-poker-success {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 4.72rem;
+          height: 0.56rem;
+          margin: 0.448rem auto 0;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -1.152rem;
+        }
+        .txt-wrapper {
+          min-height: 2.08rem;
+        }
+        .txt-wrapper, .thumb-lists {
+          margin: .8rem 0;
+        }
+      }
+    }
+    &.pop-question {
+      padding: 0.4rem 0.48rem;
+      &.right {
+        &:before {
+          content: '';
+          position: absolute;
+          width: 0.6rem;
+          height: 0.6rem;
+          right: 2.4rem;
+          bottom: 2.4rem;
+          z-index: 2;
+          background: url("../images/sprite-buttons.png") no-repeat;
+          -webkit-background-size: 14rem 10rem;
+          background-size: 14rem 10rem;
+          background-position: -9.4rem -3.7rem;
+        }
+      }
+      &.wrong {
+        &:before {
+          content: '';
+          position: absolute;
+          width: 0.6rem;
+          height: 0.6rem;
+          right: 2.4rem;
+          bottom: 2.4rem;
+          z-index: 2;
+          background: url("../images/sprite-buttons.png") no-repeat;
+          -webkit-background-size: 14rem 10rem;
+          background-size: 14rem 10rem;
+          background-position: -10rem -3.7rem;
+        }
+      }
+      &.right, &.wrong {
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: transparent;
+          z-index: 1;
+        }
+      }
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 6.368rem;
+          height: 2.288rem;
+          margin: 0 auto;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -8.896rem;
+        }
+        .pop-question__list {
+          width: 12rem;
+          min-height: 4.6rem;
+          margin: 0 auto;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            color: #791c06;
+            text-shadow: 0 0 0.016rem #fff;
+          }
+          ul {
+            li {
+              margin-bottom: 0.24rem;
+              &:before {
+                content: attr(data-before);
+                color: #791c06;
+                text-shadow: 0 0 0.016rem #fff;
+              }
+              a {
+                color: #791c06;
+                word-break: break-word;
+                display: inline-block;
+                border-radius: 10px;
+                padding: 0 0.08rem;
+                text-shadow: 0 0 0.016rem #fff;
+              }
+              &:hover, &.active {
+                a {
+                  background-color: #c95c1d;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.pop-wrong {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 6.096rem;
+          height: 0.56rem;
+          margin: 1.76rem auto 0.32rem;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 0;
+        }
+        .btn-group {
+          &:before {
+            content: '';
+            display: block;
+            width: 8.56rem;
+            height: 0.576rem;
+            margin: 1.6rem auto;
+            background: url("../images/sprite-popup.png") no-repeat;
+            -webkit-background-size: 8.656rem 11.184rem;;
+            background-size: 8.656rem 11.184rem;;
+            background-position: 0 -5.28rem;
+          }
+        }
+      }
+    }
+    &.pop-repeat {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 8.656rem;
+          height: 0.576rem;
+          margin: 3.2rem auto 2rem;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -2.32rem;
+        }
+      }
+    }
+    &.pop-lucky-points {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 7.392rem;
+          height: 1.104rem;
+          margin: 3.2rem auto 0.96rem;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -5.872rem;
+        }
+      }
+    }
+    &.pop-success {
+      .pop-body {
+        &:before {
+          content: '';
+          display: block;
+          width: 7.28rem;
+          height: 1.888rem;
+          margin: 1.52rem auto 0.96rem;
+          background: url("../images/sprite-popup.png") no-repeat;
+          -webkit-background-size: 8.656rem 11.184rem;;
+          background-size: 8.656rem 11.184rem;;
+          background-position: 0 -6.992rem;
+        }
+        .btn-group {
+          margin-bottom: 0.32rem;
+          .btn-lg {
+            width: 9rem;
+            height: 1.4rem;
+            display: inline-block;
+            font-weight: bold;
+            text-align: center;
+            color: #e4be4a;
+            margin: 0 0.32rem;
+            background: url(../images/btn-lg.png) no-repeat;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+          }
+        }
+        .p1 {
+          color: #791c06;
+          text-shadow: 0 0 0.016rem #fff;
+          padding: 0 0.64rem;
+          a {
+            color: #791c06;
+            padding:0 0.08rem;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    &.pop-goods {
+      width: 15.6rem;
+      height: 10rem;
+      margin-left: -7.8rem;
+      margin-top: -5rem;
+      background: url(../images/bg-popup-lg.jpg) no-repeat;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+    }
+  }
+
+  .pop-common-image {
+    padding: 0.8rem 0.48rem;
+    .pop-body {
+      .txt-wrapper, .txt-wrapper1 {
+        .txt-wrapper__p {
+          color: #791c06;
+          padding-left: 0.32rem;
+          text-shadow: 0 0 0.016rem #fff;
+          span {
+            display: inline-block;
+            text-align: center;
+            margin: 0 0.16rem;
+            text-shadow: 0 0 0.016rem #fff;
+          }
+          a {
+            color: #791c06;
+            text-shadow: 0 0 0.016rem #fff;
+          }
+        }
+      }
+      .thumb-lists {
+        ul {
+          font-size: 0;
+          text-align: center;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 0.368rem;
+            width: 1.232rem;
+            height: 1.232rem;
+            overflow: hidden;
+            &:first-child {
+              margin-left: 0;
+            }
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pop-signin,
+  .pop-turnable,
+  .pop-reward,
+  .pop-poker,
+  .pop-poker-success,
+  .pop-question,
+  .pop-wrong,
+  .pop-repeat,
+  .pop-lucky-points,
+  .pop-success {
+    display: none;
+  }
+
+  .pop-goods {
+    display: none;
+    .pop-body {
+      padding: 0.64rem 0.32rem;
+      max-height: 10rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      &:before {
+        content: '';
+        display: block;
+        width: 6rem;
+        height: 0.576rem;
+        margin: 0 auto;
+        background: url("../images/sprite-popup.png") no-repeat;
+        -webkit-background-size: 8.656rem 11.184rem;;
+        background-size: 8.656rem 11.184rem;;
+        background-position: 0 -4.688rem;
+      }
+      .form-group {
+        h3 {
+          text-align: center;
+          color: #791c06;
+          text-shadow: 0 0 0.016rem #fff;
+          margin: 0;
+        }
+        ul {
+          &:before {
+            content: attr(data-before);
+            display: block;
+            text-align: center;
+            color: #791c06;
+            text-shadow: 0 0 0.016rem #fff;
+          }
+          li {
+            margin: 0 auto 0.08rem;
+            &:before {
+              content: attr(data-before);
+              display: inline-block;
+              vertical-align: middle;
+              text-shadow: 0 0 0.016rem #fff;
+              color: #791c06;
+              width: 4rem;
+              text-align: right;
+            }
+            &:after {
+              content: attr(data-after);
+              display: block;
+              text-shadow: 0 0 0.016rem #fff;
+              color: #791c06;
+              margin-left: 1.6rem;
+            }
+            input, select {
+              width: 10rem;
+              height: 1rem;
+              line-height: 1rem;
+              padding: 0 0.08rem;
+              color: #791c06;
+              background-color: transparent;
+              border: 1px solid #791c06;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .p1, .p2 {
+          color: #791c06;
+          text-align: center;
+          line-height: 0.8rem;
+          text-shadow: 0 0 0.016rem #fff;
+          margin: 0;
+          a {
+            color: #791c06;
+          }
+        }
+      }
+    }
+  }
+
+  .pop-giftbox {
+    display: none;
+    padding: 0.4rem 0.48rem;
+    .pop-body {
+      &:before {
+        content: '';
+        display: block;
+        width: 1.84rem;
+        height: 0.576rem;
+        margin: 0.16rem auto;
+        background: url("../images/sprite-popup.png") no-repeat;
+        -webkit-background-size: 8.656rem 11.184rem;;
+        background-size: 8.656rem 11.184rem;;
+        background-position: 0 -2.912rem;
+      }
+      &:after {
+        content: attr(data-after);
+        display: block;
+        text-align: center;
+        margin-top: 0.16rem;
+        color: #791c06;
+        text-shadow: 0 0 0.016rem #fff;
+      }
+      .gift-table-wrapper {
+        height: 6.5rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .gift-table {
+          background-color: #c95c1d;
+          table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            thead {
+              th {
+                line-height: 0.8rem;
+                text-align: center;
+                border: 1px solid #fff;
+                color: #fff;
+              }
+            }
+            tbody {
+              td {
+                line-height: 0.8rem;
+                color: #fff;
+                border: 1px solid #fff;
+                a {
+                  background-color: #e99f42;
+                  padding: 0.064rem 0.096rem;
+                  color: #fff;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+  .popup {
+    .pop-body {
+      .btn-group {
+        .btn-comfirm, .btn-cancel {
+          font: 0.32rem/.8rem 'Microsoft YaHei';
+        }
+      }
+    }
+    &.pop-question {
+      .pop-body {
+        .pop-question__list {
+          &:before {
+            font: 0.32rem/0.6rem 'SumHei';
+          }
+          ul {
+            li {
+              &:before {
+                font: 0.32rem 'SumHei';
+              }
+              a {
+                font: 0.32rem 'SumHei';
+              }
+            }
+          }
+        }
+      }
+    }
+    &.pop-success {
+      .pop-body {
+        .btn-group {
+          .btn-lg {
+            font: 0.32rem/1rem 'Microsoft YaHei';
+          }
+        }
+        .p1 {
+          font: 0.32rem/0.6rem 'SumHei';
+        }
+      }
+    }
+  }
+
+  .pop-common-image {
+    .pop-body {
+      .txt-wrapper, .txt-wrapper1 {
+        .txt-wrapper__p {
+          font: 0.32rem/0.6rem 'SumHei';
+        }
+      }
+    }
+  }
+
+  .pop-goods {
+    .pop-body {
+      .form-group {
+        h3 {
+          font: 0.32rem/0.6rem 'SumHei';
+        }
+        ul {
+          &:before {
+            font: 0.32rem 'SumHei';
+          }
+          li {
+            &:before {
+              font: 0.32rem/0.6rem 'SumHei';
+            }
+            &:after {
+              font: 0.32rem 'SimSun';
+            }
+          }
+        }
+        .p1, .p2 {
+          font: 0.32rem 'SimSun';
+        }
+      }
+    }
+  }
+
+  .pop-giftbox {
+    .pop-body {
+      &:after {
+        font: 0.32rem 'SimHei';
+      }
+    }
+  }
+}
+@media (max-width: 1200px) and (orientation: portrait) {
+  .popup {
+    .pop-body {
+      .btn-group {
+        .btn-comfirm, .btn-cancel {
+          font: 0.4rem/1rem 'Microsoft YaHei';
+        }
+      }
+    }
+    &.pop-question {
+      .pop-body {
+        .pop-question__list {
+          &:before {
+            font: 0.48rem/0.8rem 'SumHei';
+          }
+          ul {
+            li {
+              &:before {
+                font: 0.48rem 'SumHei';
+              }
+              a {
+                font: 0.48rem 'SumHei';
+              }
+            }
+          }
+        }
+      }
+    }
+    &.pop-success {
+      .pop-body {
+        .btn-group {
+          .btn-lg {
+            font: 0.48rem/1.6rem 'Microsoft YaHei';
+          }
+        }
+        .p1 {
+          font: 0.48rem/0.8rem 'SumHei';
+        }
+      }
+    }
+  }
+
+  .pop-common-image {
+    .pop-body {
+      .txt-wrapper, .txt-wrapper1 {
+        .txt-wrapper__p {
+          font: 0.48rem/0.8rem 'SumHei';
+        }
+      }
+    }
+  }
+
+  .pop-goods {
+    .pop-body {
+      .form-group {
+        h3 {
+          font: 0.48rem/0.8rem 'SumHei';
+        }
+        ul {
+          &:before {
+            font: 0.48rem 'SumHei';
+          }
+          li {
+            &:before {
+              font: 0.48rem/0.8rem 'SumHei';
+            }
+            &:after {
+              font: 0.48rem 'SimSun';
+            }
+          }
+        }
+        .p1, .p2 {
+          font: 0.48rem 'SimSun';
+        }
+      }
+    }
+  }
+
+  .pop-giftbox {
+    .pop-body {
+      &:after {
+        font: 0.48rem 'SimHei';
+      }
+    }
+  }
+}

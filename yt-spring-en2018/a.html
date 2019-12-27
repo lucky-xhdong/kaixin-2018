@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>html5移动端手机微信抢红包雨代码</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <!--在iPhone 手机上禁止了把数字转化为拨号链接-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--删除默认的苹果工具栏和菜单栏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- 网站开启对web app程序的支持，在web app应用下状态条（屏幕顶部条）的颜色，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #eee;
+            background-size:  100%;
+        }
+        .couten {
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*position: absolute;*/
+            /*left:0;*/
+            /*top:0;*/
+            z-index: 11;
+        }
+        .couten li {
+            position: absolute;
+            top:-100px;
+            width: 140px;
+            height: 150px;
+            list-style: none;
+            z-index: 11;
+            background-color: #f00;
+        }
+        .couten li a{
+            display: block;
+        }
+        .pop-tip-success, .pop-tip-fail, .mask {
+            display: none;
+        }
+        .mask {
+            display: none;
+            position: fixed;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            background-color: rgba(0, 0, 0, .2);
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <script type="text/javascript">
+        (function ($) {
+            $.fn.snow = function (opts) {
+                var self = $(this),
+                    height = $(window).height(),
+                    width = $(window).width(),
+                    defaults = {
+                        speed: 500,
+                        maxValue: 45,
+                        hide: 'fn-hide',
+                        fallSpeed: 5,
+                        maxLength: 10,
+                        poptipsuccess: '',
+                        poptipfail: '',
+                        mask: ''
+                    }, timeout, timeId,
+                    id = 0, total = 0,
+                    opts = $.extend({}, defaults, opts);
+                var num = -1;
+                //阻止默认跳转事件
+                function stopDefault(e) {
+                    if (e && e.preventDefault)
+                        e.preventDefault();
+                    else
+                        window.event.returnValue = false;
+                }
+                opts.mask.on('click', function (e) {
+                    opts.poptipfail.show();
+                    setTimeout(function () {
+                        opts.poptipfail.hide()
+                    }, 500)
+                });
+                var fall = function () {
+                    var left = parseInt(Math.random() * width);//红包下降的left值
+                    var maxLeft = width - 240;
+                    var dur = height * opts.fallSpeed + Math.random() * 1600;//红包下降的速度
+                    if(left >= maxLeft) {
+                        left = maxLeft;
+                    }
+                    self.append('<li class=li-'+ num+' ></li>');
+
+                    opts.mask.show().on('click', function (e) {
+                        stopDefault(e);
+                    });
+                    $(".li-" + num).css({
+                        "left": left
+                    }).animate({'top': height}, 1000, 'linear', function () {
+                        //删掉已经显示的红包
+                        this.remove();
+                        if (num == opts.maxValue - 1) {
+                            self.hide();
+                            setTimeout(function () {
+                                opts.mask.hide();
+                            }, 1000)
+                            return false;
+                        }
+                    })
+                    //点击红包的时候弹出模态层
+                        .unbind('click').bind('click', function (e) {
+                        stopDefault(e);
+                        $(this).remove();
+                        opts.poptipsuccess.show();
+                        setTimeout(function () {
+                            opts.poptipsuccess.hide()
+                        }, 500)
+                    });
+                    num++;
+                    if(num < opts.maxValue) {
+                        setTimeout(fall, opts.speed);
+                        return false;
+                    }
+                };
+                //增加红包
+                setTimeout(fall, opts.speed);
+            };
+        })(jQuery);
+        $(document).ready(function() {
+            $(".couten").snow({
+                speed: 1000,
+                hide: 'fn-hide',
+                fallSpeed: 10,
+                maxValue: 45,
+                poptipsuccess: $(".pop-tip-success"),
+                poptipfail: $(".pop-tip-fail"),
+                mask: $(".mask")
+            })
+        })
+    </script>
+
+</head>
+<body>
+<ul class="couten"></ul>
+<div class="pop-tip-success">点击成功！</div>
+<div class="pop-tip-fail">点击失败！</div>
+<div class="mask"></div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-gwsy-hover {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -158px;
+  width: 112px;
+  height: 31px;
+}
+.icon-gwsy {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -190px;
+  width: 112px;
+  height: 31px;
+}
+.icon-kfzx-hover {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -62px;
+  width: 113px;
+  height: 31px;
+}
+.icon-kfzx {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -94px;
+  width: 113px;
+  height: 31px;
+}
+.icon-line {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -389px;
+  width: 4px;
+  height: 66px;
+}
+.icon-xwgg-hover {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -31px;
+  width: 112px;
+  height: 30px;
+}
+.icon-xwgg {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px 0px;
+  width: 112px;
+  height: 30px;
+}
+.icon-yxcz-hover {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -222px;
+  width: 112px;
+  height: 31px;
+}
+.icon-yxcz {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -254px;
+  width: 112px;
+  height: 31px;
+}
+.icon-yxlt-hover {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -286px;
+  width: 112px;
+  height: 31px;
+}
+.icon-yxlt {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -126px;
+  width: 112px;
+  height: 31px;
+}
+.icon-yxzl-hover {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -318px;
+  width: 112px;
+  height: 32px;
+}
+.icon-yxzl {
+  background-image: url(sprite-index-header.png);
+  background-position: 0px -351px;
+  width: 115px;
+  height: 37px;
+}

@@ -1,0 +1,3798 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img,
+textarea,
+input,
+button {
+  border: none;
+}
+@media (min-width: 1000px) {
+  body {
+    background: url("../images/bg-body-repeat.jpg") top center repeat-y;
+  }
+  .topBar .logoC {
+    height: 35px;
+  }
+  .gift-wrapper {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    margin-top: -141px;
+    z-index: 111;
+  }
+  .gift-wrapper .btn-gift-box {
+    display: block;
+    font-size: 0;
+    width: 277px;
+    height: 282px;
+    background: url("../images/bg-giftbox.png") no-repeat;
+  }
+  .spring-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 5770px;
+    background: url("../images/bg-body.jpg") top center no-repeat;
+  }
+  .spring-wrapper .spring-container {
+    position: absolute;
+    left: 50%;
+    margin-left: -771px;
+    top: 0;
+    width: 1542px;
+    height: 5700px;
+    background: url("../images/bg-container.jpg") no-repeat;
+  }
+  .spring-header {
+    width: 1280px;
+    margin: 0 auto 784px;
+  }
+  .spring-header:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .spring-header .logo {
+    float: left;
+    width: 265px;
+    height: 120px;
+    margin-top: 48px;
+    font-size: 0;
+    margin-left: 168px;
+  }
+  .spring-header ul {
+    position: relative;
+    float: right;
+    width: 389px;
+    height: 74px;
+    font-size: 0;
+    padding: 18px 0;
+    text-align: center;
+    background: url("../images/bg-nav.png") no-repeat;
+  }
+  .spring-header ul:after {
+    content: '';
+    position: absolute;
+    width: 117px;
+    height: 159px;
+    background: url("../images/bg-nav-denglong.png") no-repeat;
+    left: -44px;
+    top: 70px;
+  }
+  .spring-header ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 0;
+  }
+  .spring-header ul li:first-child a {
+    border-left: 0;
+  }
+  .spring-header ul li a {
+    display: block;
+    font: 22px/22px 'Microsoft YaHei';
+    color: #fff;
+    padding: 0 10px;
+    text-transform: capitalize;
+    border-left: 1px solid #ffc773;
+  }
+  .spring-wishes {
+    width: 1002px;
+    margin: 0 auto 140px;
+    border: 10px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-wishes:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 45px/100px 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 1396px;
+    height: 174px;
+    left: 50%;
+    top: -122px;
+    margin-left: -698px;
+    background: url("../images/bg-module-01.png") no-repeat;
+  }
+  .spring-wishes .wish-lists {
+    width: 884px;
+    margin: 98px auto;
+    padding: 20px 70px;
+    position: relative;
+    background: url("../images/bg-list-repeat.png") repeat-y;
+  }
+  .spring-wishes .wish-lists:before,
+  .spring-wishes .wish-lists:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .spring-wishes .wish-lists:before {
+    height: 109px;
+    top: -109px;
+    background: url("../images/bg-list-01.png") no-repeat;
+  }
+  .spring-wishes .wish-lists:after {
+    height: 117px;
+    bottom: -117px;
+    left: -3px;
+    background: url("../images/bg-list-02.png") no-repeat;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee {
+    margin-top: -40px;
+    margin-bottom: -40px;
+    height: 210px;
+    overflow: hidden;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee ul {
+    position: relative;
+    z-index: 1;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee ul li {
+    position: relative;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee ul li:before {
+    content: attr(data-before);
+    font: 20px/30px 'Microsoft YaHei';
+    color: #500313;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee ul li span {
+    font: 20px/30px 'Microsoft YaHei';
+    color: #500313;
+    word-break: normal !important;
+  }
+  .spring-wishes .wish-text {
+    width: 887px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 20px 70px;
+    background: url("../images/bg-list.png") no-repeat;
+  }
+  .spring-wishes .wish-text p {
+    font: 20px/30px 'Microsoft YaHei';
+    color: #500313;
+    word-break: normal !important;
+  }
+  .spring-wishes .wish-input {
+    display: none;
+    overflow: hidden;
+    width: 887px;
+    height: 135px;
+    margin: 0 auto;
+  }
+  .spring-wishes .wish-input .left {
+    float: left;
+    width: 730px;
+    height: 111px;
+    background: url("../images/bg-list-sm.png") no-repeat;
+  }
+  .spring-wishes .wish-input .left textarea {
+    width: 100%;
+    height: 111px;
+    background-color: transparent;
+    resize: none;
+    padding: 20px 50px;
+    font: 20px/30px 'Microsoft YaHei';
+    color: #500313;
+    word-break: normal !important;
+  }
+  .spring-wishes .wish-input .left textarea:focus {
+    outline: none;
+  }
+  .spring-wishes .wish-input .right {
+    float: right;
+    width: 113px;
+    height: 89px;
+  }
+  .spring-wishes .wish-input .right .btn-send {
+    font-size: 0;
+    display: block;
+    width: 113px;
+    height: 89px;
+    margin: 10px 0;
+    background: url("../images/btn-send.png") no-repeat;
+  }
+  .spring-wishes .wish-input .right .btn-send:focus {
+    outline: none;
+  }
+  .spring-lantern {
+    width: 1002px;
+    margin: 0 auto 140px;
+    border: 10px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-lantern:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 45px/100px 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 1542px;
+    height: 415px;
+    left: 50%;
+    top: -122px;
+    margin-left: -771px;
+    background: url("../images/bg-module-02.png") no-repeat;
+  }
+  .spring-lantern .lantern-lists {
+    position: relative;
+    z-index: 1;
+  }
+  .spring-lantern .lantern-lists ul {
+    text-align: center;
+    font-size: 0;
+  }
+  .spring-lantern .lantern-lists ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 147px;
+    margin: 0 25px 20px;
+    cursor: pointer;
+    position: relative;
+    background: url("../images/denglong-normal.png") no-repeat;
+  }
+  .spring-lantern .lantern-lists ul li .pop-tips {
+    display: none;
+    position: absolute;
+    width: 120px;
+    min-height: 100px;
+    padding: 10px 0;
+    top: 60px;
+    left: 100px;
+    z-index: 1;
+  }
+  .spring-lantern .lantern-lists ul li .pop-tips:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .4;
+    filter: alpha(opacity=40);
+  }
+  .spring-lantern .lantern-lists ul li .pop-tips p {
+    position: relative;
+    z-index: 11;
+    font: 16px/30px 'Microsoft YaHei';
+    color: #fff;
+  }
+  .spring-lantern .lantern-lists ul li:hover,
+  .spring-lantern .lantern-lists ul li.active {
+    background: url("../images/denglong-light.png") no-repeat;
+  }
+  .spring-lantern .lantern-lists ul li:hover .pop-tips,
+  .spring-lantern .lantern-lists ul li.active .pop-tips {
+    display: block;
+  }
+  .spring-lantern .lantern-lists ul li .date {
+    display: block;
+    margin-top: 250px;
+    font: 20px/30px 'Microsoft YaHei';
+    text-align: center;
+    color: #c20000;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim {
+    font: 22px/36px 'Microsoft YaHei';
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px 0;
+    width: 125px;
+    display: inline-block;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim.btn-claim-normal {
+    background-color: #d71718;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim.btn-claim-normal:hover {
+    color: #fed905;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim.btn-claim-light {
+    background-color: #d71718;
+    color: #fed905;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim.btn-claim-gray {
+    cursor: default;
+    background-color: #562424;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray,
+  .spring-lantern .lantern-lists ul li.opened-redbag {
+    background: none;
+    cursor: pointer;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag:before,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray:before,
+  .spring-lantern .lantern-lists ul li.opened-redbag:before,
+  .spring-lantern .lantern-lists ul li.open-redbag:after,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray:after,
+  .spring-lantern .lantern-lists ul li.opened-redbag:after {
+    content: '';
+    position: absolute;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag:before,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray:before,
+  .spring-lantern .lantern-lists ul li.opened-redbag:before {
+    width: 155px;
+    height: 209px;
+    top: 0;
+    left: 50%;
+    margin-left: -54px;
+    background: url("../images/redbag.png") no-repeat;
+    z-index: 1;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag:after,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray:after,
+  .spring-lantern .lantern-lists ul li.opened-redbag:after {
+    width: 264px;
+    height: 252px;
+    left: -40px;
+    top: -5px;
+    background: url("../images/bg-redbag.png") no-repeat;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag .btn-open,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray .btn-open,
+  .spring-lantern .lantern-lists ul li.opened-redbag .btn-open {
+    display: block;
+    width: 69px;
+    height: 69px;
+    position: relative;
+    background: url("../images/btn-open.png") no-repeat;
+    z-index: 1;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag .btn-open,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray .btn-open {
+    margin-top: 35px;
+    margin-left: 62px;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag:hover:before {
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: shake-leftright;
+    animation-name: shake-leftright;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag-gray {
+    cursor: default;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag-gray .btn-open {
+    display: block;
+    width: 69px;
+    height: 69px;
+    cursor: default;
+    position: relative;
+    background: url("../images/btn-open-gray.png") no-repeat;
+    z-index: 1;
+  }
+  .spring-lantern .lantern-lists ul li.opened-redbag {
+    cursor: default;
+  }
+  .spring-lantern .lantern-lists ul li.opened-redbag .btn-open {
+    display: block;
+    width: 96px;
+    height: 104px;
+    margin-top: 30px;
+    margin-left: 50px;
+    cursor: default;
+    position: relative;
+    background: url("../images/btn-opened.png") no-repeat;
+    z-index: 1;
+  }
+  .spring-thinking {
+    width: 1002px;
+    margin: 0 auto 140px;
+    border: 10px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-thinking:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 45px/100px 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 1328px;
+    height: 395px;
+    left: 50%;
+    top: -122px;
+    margin-left: -664px;
+    background: url("../images/bg-module-03.png") no-repeat;
+  }
+  .spring-thinking.spring-thinking-mask:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .spring-thinking .quick-thinking {
+    position: relative;
+    z-index: 1;
+  }
+  .spring-thinking .quick-thinking ul {
+    font-size: 0;
+    text-align: center;
+    position: relative;
+    width: 935px;
+    height: 272px;
+    margin: 0 auto;
+  }
+  .spring-thinking .quick-thinking ul li {
+    position: absolute;
+    width: 305px;
+    height: 272px;
+    top: 0;
+  }
+  .spring-thinking .quick-thinking ul li:first-child {
+    left: 0;
+  }
+  .spring-thinking .quick-thinking ul li:first-child + li {
+    left: 315px;
+  }
+  .spring-thinking .quick-thinking ul li:first-child + li + li {
+    left: 630px;
+  }
+  .spring-thinking .btn-group {
+    position: relative;
+  }
+  .spring-thinking .btn-group .btn-start {
+    display: block;
+    width: 143px;
+    height: 41px;
+    margin: 15px auto 0;
+    text-align: center;
+    border-radius: 2px;
+    font: 30px/41px 'Microsoft YaHei';
+    color: #fff;
+    background-color: #d71718;
+  }
+  .spring-monster {
+    width: 1002px;
+    margin: 0 auto 140px;
+    border: 10px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-monster:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 45px/100px 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 1475px;
+    height: 277px;
+    left: 50%;
+    top: -122px;
+    margin-left: -737px;
+    background: url("../images/bg-module-04.png") no-repeat;
+  }
+  .spring-monster .toolbar {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .spring-monster .toolbar .btn-start {
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin: 10px 31px 13px;
+    text-align: center;
+    border-radius: 2px;
+    font: 20px/30px 'Microsoft YaHei';
+    color: #fff;
+    background-color: #d71718;
+  }
+  .spring-monster .toolbar .count {
+    float: right;
+    font: 20px/40px 'Microsoft YaHei';
+    margin: 0 10px;
+    color: #c20000;
+  }
+  .spring-monster .toolbar .count:before {
+    content: attr(data-before);
+    padding: 5px 10px 5px 60px;
+    display: inline-block;
+    background: url("../images/monster-sm.png") left center no-repeat;
+    color: #3b3939;
+  }
+  .spring-monster .monster-lists,
+  .spring-monster .gift-lists,
+  .spring-monster .firecracker-lists {
+    position: relative;
+    z-index: 1;
+  }
+  .spring-monster .monster-lists ul,
+  .spring-monster .gift-lists ul,
+  .spring-monster .firecracker-lists ul {
+    font-size: 0;
+    text-align: center;
+  }
+  .spring-monster .monster-lists ul li,
+  .spring-monster .gift-lists ul li,
+  .spring-monster .firecracker-lists ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 202px;
+    margin: 0 10px;
+    background: url("../images/bg-card.png") no-repeat;
+    position: relative;
+  }
+  .spring-monster .monster-lists ul li:before,
+  .spring-monster .gift-lists ul li:before,
+  .spring-monster .firecracker-lists ul li:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font: 12px/24px 'Microsoft YaHei';
+    color: #444;
+  }
+  .spring-monster .monster-lists ul li:after,
+  .spring-monster .gift-lists ul li:after,
+  .spring-monster .firecracker-lists ul li:after {
+    content: attr(data-after);
+    display: block;
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    top: 222px;
+    text-align: center;
+    font: 14px/34px 'Microsoft YaHei';
+    color: #fff;
+    letter-spacing: -1px;
+  }
+  .spring-monster .monster-lists ul li .gift,
+  .spring-monster .gift-lists ul li .gift,
+  .spring-monster .firecracker-lists ul li .gift,
+  .spring-monster .monster-lists ul li .firecracker,
+  .spring-monster .gift-lists ul li .firecracker,
+  .spring-monster .firecracker-lists ul li .firecracker {
+    display: block;
+    position: relative;
+    width: 84px;
+    height: 84px;
+    margin: 10px auto;
+    overflow: hidden;
+    background: url("../images/bg-firecracker.png") no-repeat;
+  }
+  .spring-monster .monster-lists ul li .gift:before,
+  .spring-monster .gift-lists ul li .gift:before,
+  .spring-monster .firecracker-lists ul li .gift:before,
+  .spring-monster .monster-lists ul li .firecracker:before,
+  .spring-monster .gift-lists ul li .firecracker:before,
+  .spring-monster .firecracker-lists ul li .firecracker:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 65px;
+    left: 50%;
+    margin-left: -25px;
+  }
+  .spring-monster .monster-lists ul li .gift .text,
+  .spring-monster .gift-lists ul li .gift .text,
+  .spring-monster .firecracker-lists ul li .gift .text,
+  .spring-monster .monster-lists ul li .firecracker .text,
+  .spring-monster .gift-lists ul li .firecracker .text,
+  .spring-monster .firecracker-lists ul li .firecracker .text {
+    display: block;
+    margin-top: 60px;
+    text-align: center;
+    font: 12px/24px 'Microsoft YaHei';
+    color: #fff;
+  }
+  .spring-monster .monster-lists ul li .gift:before,
+  .spring-monster .gift-lists ul li .gift:before,
+  .spring-monster .firecracker-lists ul li .gift:before {
+    background: url("../images/gift.png") center no-repeat;
+  }
+  .spring-monster .monster-lists ul li .firecracker:before,
+  .spring-monster .gift-lists ul li .firecracker:before,
+  .spring-monster .firecracker-lists ul li .firecracker:before {
+    background: url("../images/firecracker.png") center no-repeat;
+  }
+  .spring-monster .monster-lists ul li:first-child .firecracker,
+  .spring-monster .gift-lists ul li:first-child .firecracker,
+  .spring-monster .firecracker-lists ul li:first-child .firecracker {
+    margin: 57px auto;
+  }
+  .spring-monster .monster-lists ul li .btn-claim,
+  .spring-monster .gift-lists ul li .btn-claim,
+  .spring-monster .firecracker-lists ul li .btn-claim {
+    font: 22px/36px 'Microsoft YaHei';
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px 0;
+    width: 125px;
+    margin-top: 80px;
+    display: inline-block;
+  }
+  .spring-monster .monster-lists ul li .btn-claim.btn-claim-normal,
+  .spring-monster .gift-lists ul li .btn-claim.btn-claim-normal,
+  .spring-monster .firecracker-lists ul li .btn-claim.btn-claim-normal {
+    background-color: #d71718;
+  }
+  .spring-monster .monster-lists ul li .btn-claim.btn-claim-normal:hover,
+  .spring-monster .gift-lists ul li .btn-claim.btn-claim-normal:hover,
+  .spring-monster .firecracker-lists ul li .btn-claim.btn-claim-normal:hover {
+    color: #fed905;
+  }
+  .spring-monster .monster-lists ul li .btn-claim.btn-claim-light,
+  .spring-monster .gift-lists ul li .btn-claim.btn-claim-light,
+  .spring-monster .firecracker-lists ul li .btn-claim.btn-claim-light {
+    background-color: #d71718;
+    color: #fed905;
+  }
+  .spring-monster .monster-lists ul li .btn-claim.btn-claim-gray,
+  .spring-monster .gift-lists ul li .btn-claim.btn-claim-gray,
+  .spring-monster .firecracker-lists ul li .btn-claim.btn-claim-gray {
+    cursor: default;
+    background-color: #562424;
+  }
+  .spring-monster .monster-lists ul li .firecracker {
+    display: block;
+    position: relative;
+    width: 84px;
+    height: 84px;
+    margin: 10px auto;
+    overflow: hidden;
+    background: url("../images/bg-firecracker.png") no-repeat;
+  }
+  .spring-monster .monster-lists ul li .firecracker:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 65px;
+    left: 50%;
+    margin-left: -25px;
+    background: url("../images/firecracker.png") center no-repeat;
+  }
+  .spring-monster .monster-lists ul li .firecracker .text {
+    display: block;
+    margin-top: 60px;
+    text-align: center;
+    font: 12px/24px 'Microsoft YaHei';
+    color: #fff;
+  }
+  .spring-attack {
+    width: 1002px;
+    margin: 0 auto 140px;
+    border: 10px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-attack:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 45px/100px 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 1417px;
+    height: 293px;
+    left: 50%;
+    top: -122px;
+    margin-left: -708px;
+    background: url("../images/bg-module-05.png") no-repeat;
+  }
+  .spring-attack .left {
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+  .spring-attack .left .figure-card,
+  .spring-attack .left .count-wrapper,
+  .spring-attack .left .monster-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .spring-attack .left .figure-card {
+    width: 261px;
+    height: 371px;
+  }
+  .spring-attack .left .figure-card img {
+    max-width: 100%;
+  }
+  .spring-attack .left .count-wrapper .top {
+    margin-bottom: 10px;
+  }
+  .spring-attack .left .count-wrapper .top span {
+    display: inline-block;
+    padding-left: 25px;
+    font: 16px/30px 'Microsoft YaHei';
+    color: #c20000;
+    background: url("../images/firecracker.png") left center no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+  }
+  .spring-attack .left .count-wrapper .top span em {
+    font-style: normal;
+  }
+  .spring-attack .left .count-wrapper .bottom {
+    width: 149px;
+    height: 43px;
+    text-align: center;
+    background: url("../images/bg-count.png") no-repeat;
+  }
+  .spring-attack .left .count-wrapper .bottom .left-decrease,
+  .spring-attack .left .count-wrapper .bottom .right-increase {
+    display: inline-block;
+    vertical-align: middle;
+    font: 20px/43px 'Microsoft YaHei';
+    color: #fff;
+  }
+  .spring-attack .left .count-wrapper .bottom .left-decrease {
+    content: attr(data-before);
+  }
+  .spring-attack .left .count-wrapper .bottom .right-increase {
+    content: attr(data-after);
+  }
+  .spring-attack .left .count-wrapper .bottom .count {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font: 20px/30px 'Microsoft YaHei';
+    color: #fff;
+    background-color: transparent;
+  }
+  .spring-attack .left .count-wrapper .bottom .count:focus {
+    outline: none;
+  }
+  .spring-attack .left .monster-wrapper {
+    margin-top: -15px;
+  }
+  .spring-attack .left .monster-wrapper ul li {
+    width: 167px;
+    height: 182px;
+    overflow: hidden;
+    background: url("../images/bg-monster.png") no-repeat;
+  }
+  .spring-attack .left .monster-wrapper ul li .btn-attack {
+    display: block;
+    width: 100px;
+    margin-top: 145px;
+    margin-left: 64px;
+    background-color: #f4c444;
+    border: 3px solid #d17b02;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font: 20px/26px 'Microsoft YaHei';
+    color: #b00505;
+  }
+  .spring-attack .right {
+    float: right;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+  .spring-attack .right .health-point,
+  .spring-attack .right .btn-group {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .spring-attack .right .health-point {
+    width: 50px;
+    height: 369px;
+    background: url("../images/bg-hp-red.png") no-repeat;
+  }
+  .spring-attack .right .health-point .ht-wrapper {
+    width: 48px;
+    margin: 24px auto 0;
+    height: 300px;
+    position: relative;
+  }
+  .spring-attack .right .health-point .ht-wrapper .hp-percent {
+    position: absolute;
+    font-size: 0;
+    bottom: 0;
+    width: 48px;
+    background: url("../images/bg-hp-yellow.png") no-repeat;
+  }
+  .spring-attack .right .btn-group {
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 170px;
+  }
+  .spring-attack .right .btn-group ul {
+    position: relative;
+  }
+  .spring-attack .right .btn-group ul li {
+    position: absolute;
+  }
+  .spring-attack .right .btn-group ul li .hp-value,
+  .spring-attack .right .btn-group ul li .btn-claim {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .spring-attack .right .btn-group ul li .hp-value {
+    width: 95px;
+    font: 15px/24px 'Microsoft YaHei';
+    color: #f2bd3b;
+    text-shadow: 2px 1px 1px #90071b;
+  }
+  .spring-attack .right .btn-group ul li .btn-claim {
+    font: 14px/20px 'Microsoft YaHei';
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px 0;
+    width: 70px;
+  }
+  .spring-attack .right .btn-group ul li .btn-claim.btn-claim-normal {
+    background-color: #d71718;
+  }
+  .spring-attack .right .btn-group ul li .btn-claim.btn-claim-normal:hover {
+    color: #fed905;
+  }
+  .spring-attack .right .btn-group ul li .btn-claim.btn-claim-gray {
+    cursor: default;
+    background-color: #562424;
+  }
+  .spring-attack .right .btn-group ul li:first-child {
+    top: 0;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li {
+    top: 60px;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li {
+    top: 120px;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li + li {
+    top: 180px;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li + li + li {
+    top: 210px;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li + li + li + li {
+    top: 240px;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li + li + li + li + li {
+    top: 270px;
+  }
+  .spring-attack .rules {
+    clear: both;
+  }
+  .rules {
+    width: 935px;
+    margin: 40px auto 60px;
+    padding: 0 30px;
+    position: relative;
+    background: url("../images/bg-rule-repeat.png") repeat-y;
+  }
+  .rules:before,
+  .rules:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .rules:before {
+    top: -20px;
+    height: 20px;
+    background: url("../images/bg-rule-top.png") no-repeat;
+  }
+  .rules:after {
+    bottom: -43px;
+    height: 43px;
+    background: url("../images/bg-rule-bottom.png") no-repeat;
+  }
+  .rules ul li {
+    padding-left: 100px;
+    position: relative;
+  }
+  .rules ul li:before {
+    content: attr(data-before);
+    position: absolute;
+    left: 0;
+    font: 20px/30px 'Microsoft YaHei';
+    color: #500313;
+  }
+  .rules ul li p {
+    font: 20px/30px 'Microsoft YaHei';
+    color: #500313;
+    word-break: normal !important;
+  }
+  .float-nav {
+    width: 218px;
+    height: 279px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 111;
+    margin-top: -140px;
+    background: url("../images/bg-pop-nav.png") no-repeat;
+  }
+  .float-nav ul {
+    padding: 55px 20px;
+  }
+  .float-nav ul li {
+    text-align: center;
+  }
+  .float-nav ul li a {
+    font: 14px/28px 'Arial';
+    font-weight: bold;
+    color: #feda9a;
+  }
+  .float-nav ul li a.anchor {
+    display: block;
+    padding: 0 10px;
+    background: url("../images/bg-border.png") bottom center no-repeat;
+  }
+  .float-nav ul li a.shareTofb {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  .float-nav ul li a.shareTofb em {
+    font-style: normal;
+    font: 14px/28px 'Arial';
+    font-weight: bold;
+    color: #feda9a;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 5px;
+    background: url("../images/firecracker.png") left center no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+  }
+  .float-nav ul li a.gototop {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 25px;
+    background: url("../images/bg-top.png") right center no-repeat;
+  }
+  .footer {
+    margin-top: 5770px;
+  }
+  .popup {
+    position: fixed;
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+    z-index: 1111;
+  }
+  .popup:before,
+  .popup:after {
+    content: '';
+    position: absolute;
+  }
+  .popup:before {
+    width: 100%;
+    height: 150px;
+    top: -97px;
+    left: -4px;
+    background: url("../images/bg-pop-t.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup:after {
+    width: 556px;
+    height: 14px;
+    bottom: -14px;
+    left: 72px;
+    background: url("../images/bg-pop-b.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup .close {
+    font: 26px 'SimHei';
+    color: #fff;
+    position: absolute;
+    right: 85px;
+    top: -25px;
+  }
+  .popup.pop-combination {
+    display: none;
+    top: 50%;
+    margin-top: -60px;
+  }
+  .popup.pop-combination .pop-body {
+    position: relative;
+    width: 556px;
+    height: 172px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 180px;
+    padding-top: 20px;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-combination .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 255px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-combination .pop-body .p1 {
+    font: 18px/30px 'SimHei';
+    color: #931d01;
+  }
+  .popup.pop-combination .pop-body .p1:before {
+    content: attr(data-before);
+    font: 18px/30px 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-combination .pop-body .p1:after {
+    content: attr(data-after);
+    font: 14px/30px 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-combination .pop-body .p2 {
+    width: 240px;
+    margin: 0 auto;
+    padding: 5px 0;
+    font: 18px/30px 'SimHei';
+    color: #fff;
+    background: url("../images/bg-code.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-combination .pop-body .p2:before {
+    content: attr(data-before);
+    font: 18px/30px 'SimHei';
+    color: #fff;
+  }
+  .popup.pop-giftcode {
+    display: none;
+    top: 50%;
+    margin-top: -60px;
+  }
+  .popup.pop-giftcode .pop-body {
+    position: relative;
+    width: 556px;
+    height: 172px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 180px;
+    padding-top: 20px;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-giftcode .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 255px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-giftcode .pop-body .p1 {
+    font: 18px/30px 'SimHei';
+    color: #931d01;
+  }
+  .popup.pop-giftcode .pop-body .p1:before {
+    content: attr(data-before);
+    font: 18px/30px 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-giftcode .pop-body .p1:after {
+    content: attr(data-after);
+    font: 14px/30px 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-giftcode .pop-body .p2 {
+    width: 240px;
+    margin: 0 auto;
+    padding: 5px 0;
+    font: 18px/30px 'SimHei';
+    color: #fff;
+    background: url("../images/bg-code.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-giftcode .pop-body .p2:before {
+    content: attr(data-before);
+    font: 18px/30px 'SimHei';
+    color: #fff;
+  }
+  .popup.pop-firetracker {
+    display: none;
+    top: 50%;
+    margin-top: -60px;
+  }
+  .popup.pop-firetracker .pop-body {
+    position: relative;
+    width: 556px;
+    height: 172px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 180px;
+    padding-top: 60px;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-firetracker .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 255px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-firetracker .pop-body .p1 {
+    font: 18px/30px 'SimHei';
+    color: #931d01;
+  }
+  .popup.pop-firetracker .pop-body .p1:before {
+    content: attr(data-before);
+    font: 18px/30px 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-firetracker .pop-body .p1:after {
+    content: attr(data-after);
+    font: 14px/30px 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-firetracker .pop-body .p2 {
+    width: 240px;
+    margin: 0 auto;
+    padding: 5px 0;
+    font: 18px/30px 'SimHei';
+    color: #fff;
+    background: url("../images/bg-code.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-firetracker .pop-body .p2:before {
+    content: attr(data-before);
+    font: 18px/30px 'SimHei';
+    color: #fff;
+  }
+  .popup.pop-questions {
+    display: none;
+    top: 50%;
+    margin-top: -150px;
+  }
+  .popup.pop-questions .pop-body {
+    position: relative;
+    width: 556px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 215px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-questions .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 270px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-md.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-questions .pop-body .p1 {
+    font: 14px/22px 'Microsoft YaHei';
+    color: #931d01;
+    word-break: normal !important;
+  }
+  .popup.pop-questions .pop-body .p1:before {
+    content: attr(data-before);
+    display: block;
+    font: 14px/22px 'Microsoft YaHei';
+  }
+  .popup.pop-questions .pop-body .question-wrapper.right:before {
+    content: attr(data-right);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 50px;
+    bottom: 0;
+    text-align: right;
+    font: 18px/200px 'Microsoft YaHei';
+    font-weight: bold;
+    color: #931d01;
+  }
+  .popup.pop-questions .pop-body .question-wrapper.wrong:before {
+    content: attr(data-wrong);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 50px;
+    bottom: 0;
+    text-align: right;
+    font: 18px/200px 'Microsoft YaHei';
+    font-weight: bold;
+    color: #931d01;
+  }
+  .popup.pop-questions .pop-body .question-wrapper h2 {
+    font: 20px/30px 'Microsoft YaHei';
+    color: #931d01;
+    font-weight: bold;
+  }
+  .popup.pop-questions .pop-body .question-wrapper ul li a {
+    font: 16px/20px 'Microsoft YaHei';
+    color: #931d01;
+    padding: 5px;
+    display: inline-block;
+  }
+  .popup.pop-questions .pop-body .question-wrapper ul li a:before {
+    content: attr(data-before);
+    padding-right: 10px;
+  }
+  .popup.pop-questions .pop-body .question-wrapper ul li a:hover {
+    background-color: #f2e0c9;
+  }
+  .popup.pop-questions .pop-body .btn-group .btn-ok {
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 2px;
+    font: 20px/30px 'Microsoft YaHei';
+    color: #fff;
+    background: url("../images/btn-pop.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-fail {
+    display: none;
+    top: 50%;
+    margin-top: -60px;
+  }
+  .popup.pop-fail .pop-body {
+    position: relative;
+    width: 556px;
+    height: 172px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 250px;
+    padding-top: 40px;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    text-align: center;
+  }
+  .popup.pop-fail .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 255px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-fail .pop-body .p1 {
+    font: 20px/30px 'Microsoft YaHei';
+    color: #931d01;
+    font-weight: bold;
+  }
+  .popup.pop-fail .pop-body .p2 {
+    font: 14px/30px 'Microsoft YaHei';
+    color: #931d01;
+  }
+  .popup.pop-fail .pop-body .p2:before {
+    content: attr(data-before);
+    font: 14px/30px 'Microsoft YaHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-success {
+    display: none;
+    top: 50%;
+    margin-top: -60px;
+  }
+  .popup.pop-success .pop-body {
+    position: relative;
+    width: 556px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 250px;
+    padding-top: 40px;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-success .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 255px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-success .pop-body .p1 {
+    font: 16px/30px 'Microsoft YaHei';
+    color: #931d01;
+    text-align: right;
+    padding-right: 100px;
+    position: relative;
+  }
+  .popup.pop-success .pop-body .p1:before {
+    content: attr(data-before);
+    font: 20px/30px 'Microsoft YaHei';
+    color: #931d01;
+    display: block;
+    text-align: center;
+    text-indent: 70px;
+    white-space: nowrap;
+  }
+  .popup.pop-success .pop-body .p1:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background: url("../images/gift.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    right: 70px;
+    bottom: 5px;
+  }
+  .popup.pop-success .pop-body .p2 {
+    font: 16px/30px 'Microsoft YaHei';
+    color: #931d01;
+    text-align: right;
+    padding-right: 100px;
+    position: relative;
+  }
+  .popup.pop-success .pop-body .p2:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background: url("../images/firecracker.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    right: 70px;
+    bottom: 2px;
+  }
+  .popup.pop-success .pop-body .p3 {
+    width: 240px;
+    margin: 0 auto;
+    padding: 5px 0;
+    font: 18px/30px 'SimHei';
+    color: #fff;
+    text-align: center;
+    background: url("../images/bg-code.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-success .pop-body .p3:before {
+    content: attr(data-before);
+    font: 18px/30px 'Microsoft YaHei';
+    color: #fff;
+  }
+  .popup.pop-attack {
+    display: none;
+    top: 50%;
+    margin-top: -60px;
+  }
+  .popup.pop-attack .pop-body {
+    position: relative;
+    width: 556px;
+    height: 172px;
+    margin: 0 auto;
+    padding-left: 220px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-attack .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 255px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-attack .pop-body .p1 {
+    font: 18px/30px 'Microsoft YaHei';
+    color: #931d01;
+    word-break: normal !important;
+  }
+  .popup.pop-attack .pop-body .p1 span {
+    font: 18px/30px 'Microsoft YaHei';
+    color: #931d01;
+    padding: 0 10px;
+    text-decoration: underline;
+  }
+  .popup.pop-attack .pop-body .btn-group {
+    text-align: center;
+  }
+  .popup.pop-attack .pop-body .btn-group .btn-yes,
+  .popup.pop-attack .pop-body .btn-group .btn-no {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 2px;
+    font: 20px/30px 'Microsoft YaHei';
+    color: #fff;
+    text-transform: capitalize;
+    background: url("../images/btn-pop.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-shuffle {
+    display: none;
+    top: 50%;
+    margin-top: -60px;
+  }
+  .popup.pop-shuffle .pop-body {
+    position: relative;
+    width: 556px;
+    height: 172px;
+    margin: 0 auto;
+    padding-left: 220px;
+    padding-top: 60px;
+    padding-right: 20px;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-shuffle .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 172px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-shuffle .pop-body .p1 {
+    font: 18px/30px 'Microsoft YaHei';
+    color: #931d01;
+    word-break: normal !important;
+  }
+  .popup.pop-shuffle .pop-body .btn-group {
+    text-align: center;
+  }
+  .popup.pop-shuffle .pop-body .btn-group .btn-ok {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 2px;
+    font: 20px/30px 'Microsoft YaHei';
+    color: #fff;
+    text-transform: capitalize;
+    background: url("../images/btn-pop.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-giftbox {
+    display: none;
+    top: 50%;
+    margin-top: -60px;
+  }
+  .popup.pop-giftbox .pop-body {
+    position: relative;
+    width: 556px;
+    height: 200px;
+    margin: 0 auto;
+    padding-left: 240px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-giftbox .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 255px;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-giftbox .pop-body .gift-table {
+    position: relative;
+    z-index: 1;
+    max-height: 151px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table {
+    border-collapse: collapse;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table thead tr {
+    background-color: #7c0c0a;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table thead tr th {
+    border: 1px solid #7c0c0a;
+    text-align: center;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table thead tr th span {
+    padding: 5px;
+    display: block;
+    color: #ffffde;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table tbody tr td {
+    border: 1px solid #7c0c0a;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table tbody tr td span {
+    padding: 5px;
+    display: block;
+    color: #c20000;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table tbody tr td a {
+    display: block;
+    background-color: #c20000;
+    color: #fff;
+    padding: 2px;
+    margin: 2px;
+  }
+  .pop-tip {
+    position: fixed;
+    height: 28px;
+    left: 50%;
+    top: 50%;
+    margin-top: -14px;
+    z-index: 1111;
+  }
+  .pop-tip p {
+    font: 20px/28px 'MicroSoft YaHei';
+    color: #794c19;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  .pop-tip.pop-tip-success {
+    display: none;
+    width: 554px;
+    margin-left: -277px;
+    background: url("../images/bg-pop-01.png") no-repeat;
+  }
+  .pop-tip.pop-tip-fail {
+    display: none;
+    width: 450px;
+    margin-left: -225px;
+    background: url("../images/bg-pop-02.png") no-repeat;
+  }
+  .mask {
+    display: none;
+    position: fixed;
+    z-index: 111;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+    -ms-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+  }
+  .fn-hide {
+    display: none;
+  }
+  .monster-snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    width: 100%;
+    height: 100%;
+    cursor: url("../images/firecracker.cur"), auto;
+  }
+  .monster-item {
+    position: absolute;
+    top: -50px;
+    z-index: 2;
+    background: url("../images/monster.png") center bottom no-repeat;
+  }
+  .monster-item,
+  .monster-extra {
+    display: block;
+    width: 140px;
+    height: 159px;
+  }
+  .monster-item {
+    padding-top: 50px;
+  }
+  @-webkit-keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+  @-moz-keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+  @-ms-keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+  @-o-keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+  @keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    background: url("../images/bg-body-repeat.jpg") top center repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .topBar .logoC {
+    height: 35px;
+    padding: 5px 0 !important;
+  }
+  .topBar .inner,
+  footer {
+    width: auto;
+  }
+  footer {
+    padding: 0 .5rem;
+  }
+  footer > div {
+    width: auto !important;
+  }
+  .topBar .logoC .line {
+    margin: 0 2px;
+  }
+  .topBar .logoC .kxLogo {
+    width: 40px;
+    background-position: center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .topBar .logoC .fdLogo {
+    width: 40px;
+    background-position: center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .topBar .funList li {
+    padding: 0 5px;
+  }
+  .topBar .facebookLogin {
+    margin: 5px 0 0 0 ;
+  }
+  .gift-wrapper {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -2.256rem;
+    z-index: 111;
+  }
+  .gift-wrapper .btn-gift-box {
+    display: block;
+    font-size: 0;
+    width: 4.432rem;
+    height: 4.512rem;
+    background: url("../images/bg-giftbox.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 162.8rem;
+    background: url("../images/bg-body.jpg") top center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wrapper .spring-container {
+    width: 100%;
+    height: 164rem;
+    background: url("../images/bg-container.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-header {
+    width: 100%;
+    margin: 0 auto 13.5rem;
+  }
+  .spring-header:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .spring-header .logo {
+    float: left;
+    width: 4rem;
+    height: 1.5rem;
+    margin-top: 0.4rem;
+    font-size: 0;
+    margin-left: 2.5rem;
+  }
+  .spring-header ul {
+    position: relative;
+    float: right;
+    font-size: 0;
+    padding: 0.288rem .5rem;
+    text-align: center;
+    background: url("../images/bg-nav.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-header ul:after {
+    content: '';
+    position: absolute;
+    width: 1.872rem;
+    height: 2.544rem;
+    background: url("../images/bg-nav-denglong.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: -0.704rem;
+    top: 1.6rem;
+  }
+  .spring-header ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.08rem 0;
+  }
+  .spring-header ul li:first-child a {
+    border-left: 0;
+  }
+  .spring-header ul li a {
+    display: block;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+    padding: 0 0.16rem;
+    text-transform: capitalize;
+    border-left: 1px solid #ffc773;
+  }
+  .spring-wishes {
+    width: 100%;
+    margin: 0 auto 2.24rem;
+    border: 3px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-wishes:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 0.72rem/1.6rem 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 20rem;
+    height: 2.784rem;
+    left: 50%;
+    top: -1.952rem;
+    margin-left: -10rem;
+    background: url("../images/bg-module-01.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wishes .wish-lists {
+    width: 15.4rem;
+    margin: 1.15rem auto 1.9rem;
+    padding: 0.32rem 1.12rem;
+    position: relative;
+    background: url("../images/bg-list-repeat.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wishes .wish-lists:before,
+  .spring-wishes .wish-lists:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .spring-wishes .wish-lists:before {
+    height: 1.744rem;
+    top: -1.744rem;
+    background: url("../images/bg-list-01.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wishes .wish-lists:after {
+    height: 1.872rem;
+    bottom: -1.872rem;
+    left: -0.048rem;
+    background: url("../images/bg-list-02.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee {
+    margin-top: -0.64rem;
+    margin-bottom: -0.64rem;
+    height: 3.2rem;
+    overflow: hidden;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee ul {
+    position: relative;
+    z-index: 1;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee ul li {
+    position: relative;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee ul li:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #500313;
+  }
+  .spring-wishes .wish-lists .wish-lists-marquee ul li span {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #500313;
+    word-break: normal !important;
+  }
+  .spring-wishes .wish-text {
+    width: 15.4rem;
+    height: 2.2rem;
+    margin: 0 auto;
+    padding: 0.4rem 1.12rem;
+    background: url("../images/bg-list.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wishes .wish-text p {
+    font: 0.32rem/0.48rem 'Microsoft YaHei';
+    color: #500313;
+    word-break: normal !important;
+  }
+  .spring-wishes .wish-input {
+    display: none;
+    overflow: hidden;
+    width: 15.4rem;
+    height: 2.16rem;
+    margin: 0 auto;
+  }
+  .spring-wishes .wish-input .left {
+    float: left;
+    width: 13.4rem;
+    height: 2rem;
+    background: url("../images/bg-list-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wishes .wish-input .left textarea {
+    width: 100%;
+    height: 1.776rem;
+    background-color: transparent;
+    resize: none;
+    padding: 0.32rem 0.8rem;
+    font: 0.32rem/0.48rem 'Microsoft YaHei';
+    color: #500313;
+    word-break: normal !important;
+  }
+  .spring-wishes .wish-input .left textarea:focus {
+    outline: none;
+  }
+  .spring-wishes .wish-input .right {
+    float: right;
+    width: 1.808rem;
+    height: 2rem;
+  }
+  .spring-wishes .wish-input .right .btn-send {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.808rem;
+    height: 1.424rem;
+    margin: 0.3rem 0;
+    background: url("../images/btn-send.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-wishes .wish-input .right .btn-send:focus {
+    outline: none;
+  }
+  .spring-lantern {
+    width: 100%;
+    margin: 0 auto 2.24rem;
+    position: relative;
+  }
+  .spring-lantern:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 0.72rem/1.6rem 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 20rem;
+    height: 6.64rem;
+    left: 50%;
+    top: -1.952rem;
+    margin-left: -10rem;
+    background: url("../images/bg-module-02.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-lantern .lantern-lists {
+    position: relative;
+    border: 3px solid #fadfa1;
+    background-color: #fff;
+    z-index: 11;
+  }
+  .spring-lantern .lantern-lists ul {
+    text-align: center;
+    font-size: 0;
+  }
+  .spring-lantern .lantern-lists ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 2.5rem;
+    margin: 0 0.4rem 0.32rem;
+    cursor: pointer;
+    position: relative;
+    background: url("../images/denglong-normal.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-lantern .lantern-lists ul li .pop-tips {
+    display: none;
+    position: absolute;
+    width: 3rem;
+    min-height: 1.6rem;
+    padding: 0.16rem 0;
+    top: 1.5rem;
+    left: 1.6rem;
+    z-index: 11;
+  }
+  .spring-lantern .lantern-lists ul li .pop-tips:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .4;
+    filter: alpha(opacity=40);
+  }
+  .spring-lantern .lantern-lists ul li .pop-tips p {
+    position: relative;
+    z-index: 11;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+  }
+  .spring-lantern .lantern-lists ul li:nth-child(4) .pop-tips {
+    left: auto;
+    right: 0;
+  }
+  .spring-lantern .lantern-lists ul li:hover .pop-tips {
+    display: block;
+  }
+  .spring-lantern .lantern-lists ul li:hover,
+  .spring-lantern .lantern-lists ul li.active {
+    background: url("../images/denglong-light.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-lantern .lantern-lists ul li .date {
+    display: block;
+    margin-top: 4rem;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    text-align: center;
+    color: #c20000;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0.032rem 0;
+    width: 2rem;
+    display: inline-block;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim.btn-claim-normal {
+    background-color: #d71718;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim.btn-claim-normal:hover {
+    color: #fed905;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim.btn-claim-light {
+    background-color: #d71718;
+    color: #fed905;
+  }
+  .spring-lantern .lantern-lists ul li .btn-claim.btn-claim-gray {
+    cursor: default;
+    background-color: #562424;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray,
+  .spring-lantern .lantern-lists ul li.opened-redbag {
+    background: none;
+    cursor: pointer;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag:before,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray:before,
+  .spring-lantern .lantern-lists ul li.opened-redbag:before,
+  .spring-lantern .lantern-lists ul li.open-redbag:after,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray:after,
+  .spring-lantern .lantern-lists ul li.opened-redbag:after {
+    content: '';
+    position: absolute;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag:before,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray:before,
+  .spring-lantern .lantern-lists ul li.opened-redbag:before {
+    width: 2.48rem;
+    height: 3.344rem;
+    top: 0;
+    left: 50%;
+    margin-left: -0.864rem;
+    background: url("../images/redbag.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    z-index: 1;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag:after,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray:after,
+  .spring-lantern .lantern-lists ul li.opened-redbag:after {
+    width: 4.224rem;
+    height: 4.032rem;
+    left: -0.64rem;
+    top: -0.08rem;
+    background: url("../images/bg-redbag.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag .btn-open,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray .btn-open,
+  .spring-lantern .lantern-lists ul li.opened-redbag .btn-open {
+    display: block;
+    width: 1.104rem;
+    height: 1.104rem;
+    position: relative;
+    background: url("../images/btn-open.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    z-index: 1;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag .btn-open,
+  .spring-lantern .lantern-lists ul li.open-redbag-gray .btn-open {
+    margin-top: 0.56rem;
+    margin-left: 0.992rem;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag:hover:before {
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: shake-leftright;
+    animation-name: shake-leftright;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag-gray {
+    cursor: default;
+  }
+  .spring-lantern .lantern-lists ul li.open-redbag-gray .btn-open {
+    display: block;
+    width: 1.104rem;
+    height: 1.104rem;
+    cursor: default;
+    position: relative;
+    background: url("../images/btn-open-gray.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    z-index: 1;
+  }
+  .spring-lantern .lantern-lists ul li.opened-redbag {
+    cursor: default;
+  }
+  .spring-lantern .lantern-lists ul li.opened-redbag .btn-open {
+    display: block;
+    width: 1.536rem;
+    height: 1.664rem;
+    margin-top: 0.48rem;
+    margin-left: 0.9rem;
+    cursor: default;
+    position: relative;
+    background: url("../images/btn-opened.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    z-index: 1;
+  }
+  .spring-thinking {
+    width: 100%;
+    margin: 0 auto 2.24rem;
+    border: 3px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-thinking:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 0.72rem/1.6rem 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 20rem;
+    height: 6.32rem;
+    left: 50%;
+    top: -1.952rem;
+    margin-left: -10rem;
+    background: url("../images/bg-module-03.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-thinking.spring-thinking-mask:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .spring-thinking .quick-thinking {
+    position: relative;
+    z-index: 1;
+  }
+  .spring-thinking .quick-thinking ul {
+    font-size: 0;
+    text-align: center;
+    position: relative;
+    width: 14.96rem;
+    height: 4.352rem;
+    margin: 0 auto;
+  }
+  .spring-thinking .quick-thinking ul li {
+    position: absolute;
+    width: 4.88rem;
+    height: 4.352rem;
+    top: 0;
+  }
+  .spring-thinking .quick-thinking ul li:first-child {
+    left: 0;
+  }
+  .spring-thinking .quick-thinking ul li:first-child + li {
+    left: 5.04rem;
+  }
+  .spring-thinking .quick-thinking ul li:first-child + li + li {
+    left: 10.08rem;
+  }
+  .spring-thinking .quick-thinking ul li img {
+    max-width: 100%;
+  }
+  .spring-thinking .btn-group .btn-start {
+    display: block;
+    width: 2.288rem;
+    height: 0.8rem;
+    margin: 0.24rem auto 0;
+    text-align: center;
+    border-radius: 2px;
+    font: 0.48rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+    background-color: #d71718;
+  }
+  .spring-monster {
+    width: 100%;
+    margin: 0 auto 2.24rem;
+    border: 3px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-monster:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 0.72rem/1.6rem 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 20rem;
+    height: 4.432rem;
+    left: 50%;
+    top: -1.952rem;
+    margin-left: -10rem;
+    background: url("../images/bg-module-04.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-monster .toolbar {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .spring-monster .toolbar .btn-start {
+    float: left;
+    width: 2rem;
+    height: 0.8rem;
+    margin: 0.16rem 0.4rem 0.208rem;
+    text-align: center;
+    border-radius: 2px;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+    background-color: #d71718;
+  }
+  .spring-monster .toolbar .count {
+    float: right;
+    font: 0.32rem/0.64rem 'Microsoft YaHei';
+    margin: 0 0.16rem;
+    color: #c20000;
+  }
+  .spring-monster .toolbar .count:before {
+    content: attr(data-before);
+    padding: .4rem 0.16rem 0.08rem 0.96rem;
+    display: inline-block;
+    background: url("../images/monster-sm.png") left center no-repeat;
+    -webkit-background-size: 1rem;
+    background-size: 1rem;
+    color: #3b3939;
+  }
+  .spring-monster .monster-lists {
+    position: relative;
+    z-index: 1;
+  }
+  .spring-monster .monster-lists ul {
+    font-size: 0;
+    text-align: center;
+  }
+  .spring-monster .monster-lists ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 6.8rem;
+    margin: 0 0.4rem;
+    background: url("../images/bg-card.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    position: relative;
+  }
+  .spring-monster .monster-lists ul li:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #444;
+  }
+  .spring-monster .monster-lists ul li:after {
+    content: attr(data-after);
+    display: block;
+    position: absolute;
+    left: 0.224rem;
+    right: 0.224rem;
+    top: 7.6rem;
+    text-align: center;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+    letter-spacing: -1px;
+  }
+  .spring-monster .monster-lists ul li .gift,
+  .spring-monster .monster-lists ul li .firecracker {
+    display: block;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.16rem auto;
+    overflow: hidden;
+    background: url("../images/bg-firecracker.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-monster .monster-lists ul li .gift:before,
+  .spring-monster .monster-lists ul li .firecracker:before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 2rem;
+    left: 50%;
+    margin-left: -0.7rem;
+  }
+  .spring-monster .monster-lists ul li .gift .text,
+  .spring-monster .monster-lists ul li .firecracker .text {
+    display: block;
+    margin-top: 2.4rem;
+    text-align: center;
+    font: 0.28rem/0.6rem 'Arial';
+    color: #fff;
+    white-space: nowrap;
+    letter-spacing: -1px;
+  }
+  .spring-monster .monster-lists ul li .gift:before {
+    background: url("../images/gift.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-monster .monster-lists ul li .firecracker:before {
+    background: url("../images/firecracker.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-monster .monster-lists ul li:first-child .firecracker {
+    margin: 2rem auto 1.5rem;
+  }
+  .spring-monster .monster-lists ul li .btn-claim {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0.032rem 0;
+    width: 2rem;
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+  }
+  .spring-monster .monster-lists ul li .btn-claim.btn-claim-normal {
+    background-color: #d71718;
+  }
+  .spring-monster .monster-lists ul li .btn-claim.btn-claim-normal:hover {
+    color: #fed905;
+  }
+  .spring-monster .monster-lists ul li .btn-claim.btn-claim-light {
+    background-color: #d71718;
+    color: #fed905;
+  }
+  .spring-monster .monster-lists ul li .btn-claim.btn-claim-gray {
+    cursor: default;
+    background-color: #562424;
+  }
+  .spring-attack {
+    width: 100%;
+    margin: 0 auto 2.24rem;
+    border: 3px solid #fadfa1;
+    background-color: #fff;
+    position: relative;
+  }
+  .spring-attack:before {
+    content: attr(data-before);
+    text-align: center;
+    font: 0.72rem/1.6rem 'Microsoft YaHei';
+    color: #c20000;
+    position: absolute;
+    width: 20rem;
+    height: 4.688rem;
+    left: 50%;
+    top: -1.952rem;
+    margin-left: -10rem;
+    background: url("../images/bg-module-05.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-attack .left {
+    text-align: center;
+    position: relative;
+    margin: .32rem .48rem;
+    z-index: 1;
+  }
+  .spring-attack .left .figure-card,
+  .spring-attack .left .count-wrapper,
+  .spring-attack .left .monster-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .spring-attack .left .figure-card {
+    width: 6rem;
+    height: 8.6rem;
+  }
+  .spring-attack .left .figure-card img {
+    max-width: 100%;
+  }
+  .spring-attack .left .count-wrapper .top {
+    margin-bottom: .5rem;
+  }
+  .spring-attack .left .count-wrapper .top span {
+    display: inline-block;
+    padding-top: 1.25rem;
+    font: 0.4rem/1rem 'Microsoft YaHei';
+    color: #c20000;
+    background: url("../images/firecracker.png") top center no-repeat;
+    -webkit-background-size: 1rem;
+    background-size: 1rem;
+  }
+  .spring-attack .left .count-wrapper .top span em {
+    font-style: normal;
+    display: block;
+  }
+  .spring-attack .left .count-wrapper .bottom {
+    width: 3.6rem;
+    height: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    background: url("../images/bg-count.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-attack .left .count-wrapper .bottom .left-decrease,
+  .spring-attack .left .count-wrapper .bottom .right-increase {
+    display: inline-block;
+    vertical-align: middle;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+  }
+  .spring-attack .left .count-wrapper .bottom .left-decrease {
+    content: attr(data-before);
+  }
+  .spring-attack .left .count-wrapper .bottom .right-increase {
+    content: attr(data-after);
+  }
+  .spring-attack .left .count-wrapper .bottom .count {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.48rem;
+    height: 1rem;
+    text-align: center;
+    font: 0.4rem/1rem 'Microsoft YaHei';
+    color: #fff;
+    background-color: transparent;
+  }
+  .spring-attack .left .count-wrapper .bottom .count:focus {
+    outline: none;
+  }
+  .spring-attack .left .monster-wrapper {
+    margin-top: -0.24rem;
+  }
+  .spring-attack .left .monster-wrapper ul li {
+    width: 4rem;
+    height: 4.5rem;
+    overflow: hidden;
+    background: url("../images/bg-monster.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-attack .left .monster-wrapper ul li .btn-attack {
+    display: block;
+    width: 3rem;
+    margin-top: 3.4rem;
+    margin-left: 1.024rem;
+    background-color: #f4c444;
+    border: 1px solid #d17b02;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #b00505;
+  }
+  .spring-attack .right {
+    width: 11rem;
+    position: relative;
+    margin: .32rem auto;
+    z-index: 1;
+  }
+  .spring-attack .right .health-point,
+  .spring-attack .right .btn-group {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .spring-attack .right .health-point {
+    width: 1.8rem;
+    height: 14rem;
+    background: url("../images/bg-hp-red.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-attack .right .health-point .ht-wrapper {
+    width: 1.8rem;
+    margin: 0.8rem auto 0;
+    height: 10.9rem;
+    position: relative;
+  }
+  .spring-attack .right .health-point .ht-wrapper .hp-percent {
+    position: absolute;
+    font-size: 0;
+    bottom: 0;
+    width: 100%;
+    background: url("../images/bg-hp-yellow.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .spring-attack .right .btn-group {
+    margin: 1rem .5rem;
+    width: 8rem;
+  }
+  .spring-attack .right .btn-group ul {
+    position: relative;
+  }
+  .spring-attack .right .btn-group ul li {
+    position: absolute;
+  }
+  .spring-attack .right .btn-group ul li .hp-value,
+  .spring-attack .right .btn-group ul li .btn-claim {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .spring-attack .right .btn-group ul li .hp-value {
+    width: 5rem;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #f2bd3b;
+    text-shadow: 0.032rem 0.016rem 0.016rem #90071b;
+  }
+  .spring-attack .right .btn-group ul li .btn-claim {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0.032rem 0;
+    width: 2.6rem;
+  }
+  .spring-attack .right .btn-group ul li .btn-claim.btn-claim-normal {
+    background-color: #d71718;
+  }
+  .spring-attack .right .btn-group ul li .btn-claim.btn-claim-normal:hover {
+    color: #fed905;
+  }
+  .spring-attack .right .btn-group ul li .btn-claim.btn-claim-gray {
+    cursor: default;
+    background-color: #562424;
+  }
+  .spring-attack .right .btn-group ul li:first-child {
+    top: 0;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li {
+    top: 2.2rem;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li {
+    top: 4.4rem;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li + li {
+    top: 6.6rem;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li + li + li {
+    top: 7.7rem;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li + li + li + li {
+    top: 8.8rem;
+  }
+  .spring-attack .right .btn-group ul li:first-child + li + li + li + li + li + li {
+    top: 9.9rem;
+  }
+  .spring-attack .rules {
+    clear: both;
+  }
+  .rules {
+    width: 14.96rem;
+    margin: 0.64rem auto 0.96rem;
+    padding: 0 0.48rem;
+    position: relative;
+    background: url("../images/bg-rule-repeat.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .rules:before,
+  .rules:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .rules:before {
+    top: -0.32rem;
+    height: 0.32rem;
+    background: url("../images/bg-rule-top.png") no-repeat;
+  }
+  .rules:after {
+    bottom: -0.688rem;
+    height: 0.688rem;
+    background: url("../images/bg-rule-bottom.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .rules ul li {
+    padding-left: 2.5rem;
+    position: relative;
+  }
+  .rules ul li:before {
+    content: attr(data-before);
+    position: absolute;
+    left: 0;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #500313;
+  }
+  .rules ul li p {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #500313;
+    word-break: normal !important;
+  }
+  .float-nav {
+    position: absolute;
+    top: 11rem;
+    left: .2rem;
+    right: .2rem;
+    border: 2px solid #d1af78;
+    background-color: #931b20;
+  }
+  .float-nav ul {
+    text-align: center;
+    padding: .2rem 0;
+  }
+  .float-nav ul li {
+    text-align: center;
+    width: 15%;
+    word-break: normal !important;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #c82f34;
+  }
+  .float-nav ul li:first-child {
+    border-left: 0;
+  }
+  .float-nav ul li a {
+    font: 0.4rem/0.8rem 'Arial';
+    font-weight: bold;
+    color: #feda9a;
+  }
+  .float-nav ul li a.anchor {
+    display: block;
+  }
+  .float-nav ul li a.shareTofb {
+    display: inline-block;
+    padding: 0 0.16rem;
+  }
+  .float-nav ul li a.shareTofb em {
+    font-style: normal;
+    font: 0.4rem/0.8rem 'Arial';
+    font-weight: bold;
+    color: #feda9a;
+    display: inline-block;
+    padding-left: 0.9rem;
+    padding-right: 0.08rem;
+    background: url("../images/firecracker.png") left center no-repeat;
+    -webkit-background-size: 0.8rem;
+    background-size: 0.8rem;
+  }
+  .float-nav ul li:last-child {
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    right: 1rem;
+    bottom: 1rem;
+    border: 2px solid #d1af78;
+    background-color: #931b20;
+    border-radius: 50%;
+    z-index: 11;
+  }
+  .float-nav ul li:last-child .gototop {
+    display: block;
+    font: 0.4rem/1.8rem 'Arial';
+    text-align: center;
+  }
+  .footer {
+    margin-top: 164rem;
+    padding: 0 .2rem;
+  }
+  .popup {
+    position: fixed;
+    width: 16rem;
+    left: 50%;
+    margin-left: -8rem;
+    z-index: 1111;
+  }
+  .popup:before,
+  .popup:after {
+    content: '';
+    position: absolute;
+  }
+  .popup:before {
+    width: 100%;
+    height: 4rem;
+    top: -2.56rem;
+    left: -0.08rem;
+    background: url("../images/bg-pop-t.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup:after {
+    width: 12.7rem;
+    height: 0.224rem;
+    bottom: -0.224rem;
+    left: 1.65rem;
+    background: url("../images/bg-pop-b.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup .close {
+    font: 0.8rem 'SimHei';
+    color: #fff;
+    position: absolute;
+    right: 2rem;
+    top: -0.9rem;
+  }
+  .popup.pop-combination {
+    display: none;
+    top: 50%;
+    margin-top: -0.96rem;
+  }
+  .popup.pop-combination .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    padding-left: 2.88rem;
+    padding-top: 0.6rem;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-combination .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-combination .pop-body .p1 {
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+  }
+  .popup.pop-combination .pop-body .p1:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-combination .pop-body .p1:after {
+    content: attr(data-after);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-combination .pop-body .p2 {
+    width: 7.6rem;
+    margin: 0 auto;
+    padding: 0.08rem 0;
+    font: 0.4rem/1rem 'SimHei';
+    color: #fff;
+    background: url("../images/bg-code.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-combination .pop-body .p2:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #fff;
+  }
+  .popup.pop-giftcode {
+    display: none;
+    top: 50%;
+    margin-top: -0.96rem;
+  }
+  .popup.pop-giftcode .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    padding-left: 2.88rem;
+    padding-top: 0.6rem;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-giftcode .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-giftcode .pop-body .p1 {
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+  }
+  .popup.pop-giftcode .pop-body .p1:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-giftcode .pop-body .p1:after {
+    content: attr(data-after);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-giftcode .pop-body .p2 {
+    width: 7.6rem;
+    margin: 0 auto;
+    padding: 0.08rem 0;
+    font: 0.4rem/1rem 'SimHei';
+    color: #fff;
+    background: url("../images/bg-code.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-giftcode .pop-body .p2:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #fff;
+  }
+  .popup.pop-firetracker {
+    display: none;
+    top: 50%;
+    margin-top: -0.96rem;
+  }
+  .popup.pop-firetracker .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    padding-left: 2.88rem;
+    padding-top: 1.7rem;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-firetracker .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-firetracker .pop-body .p1 {
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+  }
+  .popup.pop-firetracker .pop-body .p1:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-firetracker .pop-body .p1:after {
+    content: attr(data-after);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #931d01;
+    display: block;
+  }
+  .popup.pop-firetracker .pop-body .p2 {
+    width: 7.6rem;
+    margin: 0 auto;
+    padding: 0.08rem 0;
+    font: 0.4rem/1rem 'SimHei';
+    color: #fff;
+    background: url("../images/bg-code.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-firetracker .pop-body .p2:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'SimHei';
+    color: #fff;
+  }
+  .popup.pop-questions {
+    display: none;
+    top: 50%;
+    margin-top: -2.4rem;
+  }
+  .popup.pop-questions .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 8rem;
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-questions .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-questions .pop-body .p1 {
+    padding: 0 .5rem;
+    font: 0.4rem/0.6rem 'Microsoft YaHei';
+    color: #931d01;
+    word-break: normal !important;
+  }
+  .popup.pop-questions .pop-body .p1:before {
+    content: attr(data-before);
+    display: block;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+  }
+  .popup.pop-questions .pop-body .question-wrapper {
+    padding-left: 3rem;
+  }
+  .popup.pop-questions .pop-body .question-wrapper.right:before {
+    content: attr(data-right);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0.8rem;
+    bottom: 0;
+    text-align: right;
+    font: 0.4rem/3.2rem 'Microsoft YaHei';
+    font-weight: bold;
+    color: #931d01;
+  }
+  .popup.pop-questions .pop-body .question-wrapper.wrong:before {
+    content: attr(data-wrong);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0.8rem;
+    bottom: 0;
+    text-align: right;
+    font: 0.4rem/3.2rem 'Microsoft YaHei';
+    font-weight: bold;
+    color: #931d01;
+  }
+  .popup.pop-questions .pop-body .question-wrapper h2 {
+    font: 0.4rem/0.6rem 'Microsoft YaHei';
+    color: #931d01;
+    font-weight: bold;
+  }
+  .popup.pop-questions .pop-body .question-wrapper ul li a {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    padding: 0.08rem;
+    display: inline-block;
+  }
+  .popup.pop-questions .pop-body .question-wrapper ul li a:before {
+    content: attr(data-before);
+    padding-right: 0.16rem;
+  }
+  .popup.pop-questions .pop-body .question-wrapper ul li a:hover {
+    background-color: #f2e0c9;
+  }
+  .popup.pop-questions .pop-body .btn-group .btn-ok {
+    display: block;
+    width: 3rem;
+    height: 1rem;
+    margin: 0.16rem auto;
+    text-align: center;
+    border-radius: 2px;
+    font: 0.4rem/1rem 'Microsoft YaHei';
+    color: #fff;
+    background: url("../images/btn-pop.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-fail {
+    display: none;
+    top: 50%;
+    margin-top: -0.96rem;
+  }
+  .popup.pop-fail .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem .5rem .5rem 4rem;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-fail .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-fail .pop-body .p1 {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    font-weight: bold;
+    word-break: normal !important;
+  }
+  .popup.pop-fail .pop-body .p2 {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    word-break: normal !important;
+  }
+  .popup.pop-fail .pop-body .p2:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    display: block;
+    word-break: normal !important;
+  }
+  .popup.pop-success {
+    display: none;
+    top: 50%;
+    margin-top: -0.96rem;
+  }
+  .popup.pop-success .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    padding: .4rem .5rem .5rem 4rem;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-success .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-success .pop-body .p1 {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    text-align: right;
+    padding-right: 1rem;
+    position: relative;
+  }
+  .popup.pop-success .pop-body .p1:before {
+    content: attr(data-before);
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    display: block;
+    text-align: center;
+    text-indent: 1.12rem;
+    white-space: nowrap;
+    margin-bottom: .4rem;
+  }
+  .popup.pop-success .pop-body .p1:after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1.3rem;
+    background: url("../images/gift.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    right: 0;
+    bottom: -0.2rem;
+  }
+  .popup.pop-success .pop-body .p2 {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    text-align: right;
+    padding-right: 1.6rem;
+    padding-top: .4rem;
+    position: relative;
+  }
+  .popup.pop-success .pop-body .p2:before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1.3rem;
+    background: url("../images/firecracker.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    right: .25rem;
+    bottom: 0;
+  }
+  .popup.pop-success .pop-body .p3 {
+    width: 7rem;
+    margin: 0 auto;
+    padding: 0.08rem 0;
+    font: 0.4rem/1rem 'SimHei';
+    color: #fff;
+    text-align: center;
+    background: url("../images/bg-code.png") center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-success .pop-body .p3:before {
+    content: attr(data-before);
+    font: 0.4rem/1rem 'Microsoft YaHei';
+    color: #fff;
+  }
+  .popup.pop-attack {
+    display: none;
+    top: 50%;
+    margin-top: -0.96rem;
+  }
+  .popup.pop-attack .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    padding: .8rem .5rem .5rem 4rem;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-attack .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-attack .pop-body .p1 {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    word-break: normal !important;
+  }
+  .popup.pop-attack .pop-body .p1 span {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    padding: 0 0.16rem;
+    text-decoration: underline;
+  }
+  .popup.pop-attack .pop-body .btn-group {
+    text-align: center;
+  }
+  .popup.pop-attack .pop-body .btn-group .btn-yes,
+  .popup.pop-attack .pop-body .btn-group .btn-no {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3rem;
+    height: 1rem;
+    margin: 0.16rem;
+    text-align: center;
+    border-radius: 2px;
+    font: 0.4rem/1rem 'Microsoft YaHei';
+    color: #fff;
+    text-transform: capitalize;
+    background: url("../images/btn-pop.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-giftbox {
+    display: none;
+    top: 50%;
+    margin-top: -2rem;
+  }
+  .popup.pop-giftbox .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 8rem;
+    display: block;
+    margin: 0 auto;
+    padding: .2rem .5rem .5rem 4rem;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-giftbox .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-giftbox .pop-body .gift-table {
+    position: relative;
+    z-index: 1;
+    max-height: 7.6rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table {
+    border-collapse: collapse;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table thead tr {
+    background-color: #7c0c0a;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table thead tr th {
+    border: 1px solid #7c0c0a;
+    text-align: center;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table thead tr th span {
+    padding: 0.08rem;
+    display: block;
+    color: #ffffde;
+    white-space: nowrap;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table tbody tr td {
+    border: 1px solid #7c0c0a;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table tbody tr td span {
+    padding: 0.08rem;
+    display: block;
+    color: #c20000;
+  }
+  .popup.pop-giftbox .pop-body .gift-table table tbody tr td a {
+    display: block;
+    background-color: #c20000;
+    color: #fff;
+    padding: 0.032rem;
+    margin: 0.032rem;
+  }
+  .popup.pop-shuffle {
+    display: none;
+    top: 50%;
+    margin-top: -0.96rem;
+  }
+  .popup.pop-shuffle .pop-body {
+    position: relative;
+    width: 12.68rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    padding: 1.2rem 1rem .5rem 4rem;
+    text-align: center;
+    background: url("../images/bg-pop-m.png") repeat-y;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .popup.pop-shuffle .pop-body:before {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4.08rem;
+    z-index: 1;
+    background: url("../images/pop-diaochan-sm.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .popup.pop-shuffle .pop-body .p1 {
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #931d01;
+    word-break: normal !important;
+  }
+  .popup.pop-shuffle .pop-body .btn-group {
+    text-align: center;
+  }
+  .popup.pop-shuffle .pop-body .btn-group .btn-ok {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3rem;
+    height: .8rem;
+    margin: 0.16rem;
+    text-align: center;
+    border-radius: 2px;
+    font: 0.4rem/0.8rem 'Microsoft YaHei';
+    color: #fff;
+    text-transform: capitalize;
+    background: url("../images/btn-pop.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .pop-tip {
+    position: fixed;
+    height: 0.448rem;
+    left: 50%;
+    top: 50%;
+    margin-top: -0.224rem;
+    z-index: 1111;
+  }
+  .pop-tip p {
+    font: 0.4rem/1rem 'MicroSoft YaHei';
+    color: #794c19;
+    text-align: center;
+    text-shadow: 0.016rem 0.016rem 0.016rem #fff;
+  }
+  .pop-tip.pop-tip-success {
+    display: none;
+    width: 16rem;
+    height: 1rem;
+    margin-left: -8rem;
+    background: url("../images/bg-pop-01.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  .pop-tip.pop-tip-fail {
+    display: none;
+    width: 15rem;
+    height: 1rem;
+    margin-left: -7.5rem;
+    background: url("../images/bg-pop-02.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .mask {
+    display: none;
+    position: fixed;
+    z-index: 111;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+    -ms-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+  }
+  .fn-hide {
+    display: none;
+  }
+  .monster-snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    width: 100%;
+    height: 100%;
+    cursor: url("../images/firecracker.cur"), auto;
+  }
+  .monster-item {
+    position: absolute;
+    top: -0.8rem;
+    background: url("../images/monster.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .monster-item,
+  .monster-extra {
+    display: block;
+    width: 2.24rem;
+    height: 1.744rem;
+  }
+  @-webkit-keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+  @-moz-keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+  @-ms-keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+  @-o-keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+  @keyframes shake-leftright {
+    0% {
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    20% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    60% {
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    80% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+}
